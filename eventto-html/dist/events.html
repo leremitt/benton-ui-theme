@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="boot, tailwindss, Eventto HTML Template">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  
+    <title>Eventto - HTML Tailwindcss Online Development Boot Camp</title>
+<script defer src="index.js"></script></head>
+
+<body>
+    <header class="container my-6 cmnhed">
+      <nav class="bg-at20 text-nw10 py-3 lg:py-8 px-4 lg:px-10 rounded-3xl">
+    <div class="flex justify-between items-center relative">
+        <a href="../index.html" class="flex items-center gap-3">
+            <img class="w-[40px] md:w-full" src="../assets/images/logo.png" alt="logo">
+            <h3 class="font-bold md:hidden lg:block">Eventto</h3>
+        </a>
+
+        <!-- MOBILE NAV ICON -->
+        <div class="md:hidden block absolute top-[15%] right-0">
+            <button aria-label="navigation" type="button"
+                class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+                    class="ph-thin ph-list text-3xl" id="bars"></i></button>
+        </div>
+
+        <!-- NAVIGATION - LARGE SCREENS -->
+        <div class="hidden md:flex">
+            <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-14">
+                <li class="cmnhed"><a href="../index.html"
+                        class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Home</a>
+                </li>
+                <li class="cmnhed"><a href="../events.html"
+                        class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Events</a>
+                </li>
+                <li class=""><a href="../schedules.html"
+                        class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Schedule</a>
+                </li>
+                <li class=""><a href="../speaker.html"
+                        class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Speaker</a>
+                </li>
+                <li class=""><a href="../venue.html"
+                        class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Venue</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hidden md:flex">
+            <a href="../contact-us.html" class="flex items-center group duration-700">
+                <span class="py-3 lg:py-4 px-4 lg:px-8 bg-primary text-nb10 rounded-2xl duration-500 font-medium" >Contact Us</span>
+                <i
+                    class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+            </a>
+        </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+        <div class="flex flex-col justify-center items-center w-full gap-4">
+            <a href="../index.html"
+                class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Home</a>
+            <a href="../events.html"
+                class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Events</a>
+            <a href="../schedule.html"
+                class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Schedule</a>
+            <a href="../speaker.html"
+                class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Speaker</a>
+            <a href="../venue.html"
+                class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Venue</a>
+            <a href="../contact.html" class="flex items-center group duration-700">
+                <span class="py-3 lg:py-4 px-4 lg:px-8 bg-primary text-nb10 rounded-2xl duration-500 font-medium" >Contact Us</span>
+                <i
+                    class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+            </a>
+        </div>
+    </div>
+</nav>
+    </header>
+    <div class="container">
+        <div class="bg-primary grid grid-cols-2 justify-center rounded-3xl p-4 sm:p-6 md:p-8 xl:p-[60px] overflow-hidden gap-6">
+    <div class="col-span-full xl:col-span-1">
+        <h1 class="display-4 text-nb10">Digital marketing
+            Conference</h1>
+    </div>
+    <div class="col-span-full xl:col-span-1 xl:justify-self-end">
+        <div class="xl:text-center">
+            <div class="count-down mb-6 sm:mb-8 lg:mb-10">
+                <div id="countdown">
+                    <ul class="flex flex-wrap gap-4 sm:gap-6 xxl:gap-10 justify-start">
+                        <li class="relative">
+                            <div class="hexagon3">
+                                <span class="absolute z-50 -top-6 left-[35%] md:left-[25%]" id="days"></span>
+                                <span class="absolute z-50 textstylecount left-[25%] top-2">DAYS</span>
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <div class="hexagon3">
+                                <span class="absolute z-50 -top-6 left-[35%] md:left-[37%]" id="hours"></span>
+                                <span class="absolute z-50 textstylecount left-[20%] top-2">Hours</span>
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <div class="hexagon3">
+                                <span class="absolute z-50 -top-6 left-[35%] md:left-[30%]" id="minutes"></span>
+                                <span class="absolute z-50 textstylecount left-[10%] top-2">Minutes</span>
+                            </div>
+                        </li>
+                        <li class="relative">
+                            <div class="hexagon3">
+                                <span class="absolute z-50 -top-6 left-[35%] md:left-[27%]" id="seconds"></span>
+                                <span class="absolute z-50 textstylecount left-[8%] top-2">Seconds</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inline-block">
+                <a href="#" class="flex items-center group duration-700">
+                    <span class="py-3 lg:py-4 px-4 lg:px-8 bg-nb10 text-nw10 rounded-2xl duration-500 font-medium">Buy Tickets</span>
+                    <i
+                        class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-nb10 text-nw10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-full sm:mt-8 lg:mt-10">
+        <hr class="w-[1018%] -ml-16 block border-[1px] border-nb10 opacity-50">
+    </div>
+    <div class="col-span-full lg:pt-[60px]">
+        <div class="flex items-center justify-between gap-5 flex-wrap xxl:flex-nowrap">
+            <div class="flex items-center gap-3 lg:gap-5 xxxl:gap-20 flex-wrap lg:flex-nowrap">
+                <div class="flex items-center gap-3">
+                    <div class="p-3 border border-nb10 rounded-[48px] flex justify-center items-center size-[40px] lg:size-[60px]">
+                        <i class="ph-fill ph-calendar-plus text-4xl text-nb10"></i>
+                    </div>
+                    <div class="">
+                        <span class="font-medium mb-1 text-nb10">04 Days (Friday-Sunday)</span>
+                        <span class="text-base text-nb10">70+ Workshops</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="p-3 border border-nb10 rounded-[48px] flex justify-center items-center size-[40px] lg:size-[60px]">
+                        <i class="ph-fill ph-map-pin text-4xl text-nb10"></i>
+                    </div>
+                    <div class="">
+                        <span class="font-medium mb-1 text-nb10">14 South Sherman Street</span>
+                        <span class="text-base text-nb10">Astoria, NY 12450</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="tel:+4733378901" class="p-3 border border-nb10 rounded-[48px] flex justify-center items-center size-[40px] lg:size-[60px]">
+                        <i class="ph-fill ph-phone-call text-4xl text-nb10"></i>
+                    </a>
+                    <div class="">
+                        <span class="font-medium mb-1 text-nb10">Drop Us a Line</span>
+                        <span class="text-base text-nb10">support@Eventto.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex p-2 md:p-3 hover:bg-nb10 rounded-full group duration-500">
+                    <i class="ph ph-twitch-logo text-nb10 group-hover:text-primary text-4xl duration-500"></i>
+                </a>
+                <a href="#" class="flex p-2 md:p-3 hover:bg-nb10 rounded-full group duration-500">
+                    <i class="ph ph-linkedin-logo text-nb10 group-hover:text-primary text-4xl duration-500"></i>
+                </a>
+                <a href="#" class="flex p-2 md:p-3 hover:bg-nb10 rounded-full group duration-500">
+                    <i class="ph ph-facebook-logo text-nb10 group-hover:text-primary text-4xl duration-500"></i>
+                </a>
+                <a href="#" class="flex p-2 md:p-3 hover:bg-nb10 rounded-full group duration-500">
+                    <i class="ph ph-discord-logo text-nb10 group-hover:text-primary text-4xl duration-500"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <section class="my-6">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-6 bg-at20 justify-center rounded-3xl p-4 sm:p-6 md:p-8 xl:p-[60px]">
+    <div class="col-span-full lg:col-span-5">
+        <span class="pb-2 lg:pb-4 font-medium">ARE YOU READY TO ATTEND</span>
+        <h1 class="display-4 mb-5 md:mb-6 lg:mb-8">Digital Marketing
+            Conference</h1>
+        <p class="mb-6 md:mb-8 lg:mb-12">Exce Pteur Revolut Ionary Ideas Sint Occ Aecat Cupi Datat Non Proident, Sunt In Culpa
+            Capta Rev
+            Olutio Nary Ideas Qui Officia Dese Runt Mollit Anim Id Est Labo Rum</p>
+        <div class="inline-block">
+            <a href="#" class="flex items-center group duration-700">
+                <span class="py-3 lg:py-4 px-4 lg:px-8 bg-primary text-nb10 rounded-2xl duration-500 font-medium">Buy Tickets</span>
+                <i
+                    class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+            </a>
+        </div>
+    </div>
+    <div class="hidden xxxl:block xxxl:col-span-1"></div>
+    <div class="col-span-full lg:col-span-6">
+        <img class="rounded-3xl" src="../assets/images/confrance-digital.png" alt="image">
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="my-6">
+        <div class="container">
+            <div class="grid grid-cols-11 gap-4 sm:gap-6 bg-at20 justify-center rounded-3xl p-4 sm:p-6 md:p-8 xl:p-[60px]">
+    <div class="col-span-full">
+        <img class="rounded-2xl" src="../assets/images/gallery-one.png" alt="Image">
+    </div>
+    <div class="col-span-full sm:col-span-4">
+        <img class="rounded-2xl" src="../assets/images/gallery-two.png" alt="Image">
+    </div>
+    <div class="col-span-full sm:col-span-7">
+        <img class="rounded-2xl" src="../assets/images/gallery-three.png" alt="Image">
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="my-6">
+        <div class="container">
+            <div class="bg-at20 rounded-3xl p-4 sm:p-6 md:p-10 xxl:p-[60px]">
+    <div class="text-center mb-6 md:mb-10 lg:mb-[60px]">
+        <span class="font-medium mb-3">UNIQUE PEOPLE</span>
+        <h1 class="display-4">Conference Speakers</h1>
+    </div>
+    <div class="grid grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="col-span-full md:col-span-1 justify-center">
+            <div
+                class="px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-8 pb-8 lg:pb-16 border-x border-t border-extra10 mx-2 sm:mx-[30px] rounded-t-xl relative">
+                <span class="mb-3">Brooklyn</span>
+                <h4 class="mb-2 sm:mb-3">McKinney</h4>
+                <span class="mb-3 sm:mb-5 block text-primary font-sm">Creative Designer</span>
+                <p>I’m always saying to my friends and my family and my clients, </p>
+                <span class="v-line lg absolute bottom-6 lg:bottom-9"></span>
+            </div>
+            <div class="px-3 sm:px-10 pt-6 sm:pt-10 bg-at10 rounded-3xl">
+                <div class="flex gap-3 justify-center pb-6 sm:pb-11">
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-facebook-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-instagram-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-twitch-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                </div>
+                <div class="">
+                    <img src="../assets/images/conference.png" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="col-span-full md:col-span-1 justify-center">
+            <div
+                class="px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-8 pb-8 lg:pb-16 border-x border-t border-extra10 mx-2 sm:mx-[30px] rounded-t-xl relative">
+                <span class="mb-3">Darlene</span>
+                <h4 class="mb-2 sm:mb-3">Savannah</h4>
+                <span class="mb-3 sm:mb-5 block text-primary font-sm">UI/UX Designer</span>
+                <p>I’m always saying to my friends and my family and my clients</p>
+                <span class="v-line lg absolute bottom-6 lg:bottom-9"></span>
+            </div>
+            <div class="px-3 sm:px-10 pt-6 sm:pt-10 bg-at10 rounded-3xl">
+                <div class="flex gap-3 justify-center pb-6 sm:pb-11">
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-facebook-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-instagram-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-twitch-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                </div>
+                <div class="">
+                    <img src="../assets/images/speaker-tow.png" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="col-span-full md:col-span-1 justify-center">
+            <div
+                class="px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-8 pb-8 lg:pb-16 border-x border-t border-extra10 mx-2 sm:mx-[30px] rounded-t-xl relative">
+                <span class="mb-3">Nguyen</span>
+                <h4 class="mb-2 sm:mb-3">Ocean</h4>
+                <span class="mb-3 sm:mb-5 block text-primary font-sm">Digital Marketer</span>
+                <p>Voluptatem Qui Voluptas Sapiente Porro Minus Harum Non.</p>
+                <span class="v-line lg absolute bottom-6 lg:bottom-9"></span>
+            </div>
+            <div class="px-3 sm:px-10 pt-6 sm:pt-10 bg-at10 rounded-3xl">
+                <div class="flex gap-3 justify-center pb-6 sm:pb-11">
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-facebook-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-instagram-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                    <a href="#"
+                        class="p-2 sm:p-3 rounded-full border border-extra20 flex group hover:border-primary duration-300 size-[40px] lg:size-[48px] justify-center items-center">
+                        <i
+                            class="ph-light ph-twitch-logo text-xl sm:text-2xl group-hover:text-primary duration-300"></i>
+                    </a>
+                </div>
+                <div class="">
+                    <img src="../assets/images/sagor-sheikh.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="my-6">
+        <div class="container">
+            <div class="bg-at20 rounded-3xl p-4 sm:p-6 md:p-10 xxl:p-[60px]">
+    <div class="text-center mb-6 md:mb-10 lg:mb-[60px]">
+        <span class="font-medium mb-3">WHAT WE HAVE DONE</span>
+        <h1 class="display-4">Our Recent Statics</h1>
+    </div>
+    <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-full lg:col-span-6 xl:col-span-4">
+            <div class="flex items-center flex-nowrap md:flex-wrap gap-4 xxl:gap-9 bg-at10 rounded-xl p-4 sm:p-6 lg:p-10 xxxl:p-[60px]">
+                <div class="">
+                    <img src="../assets/images/icon/ticket-booked.png" alt="Icon">
+                </div>
+                <div class="hero_area rounded-3xl w-full md:w-[48%] lg:w-fit">
+                    <div class="counters mb-3">
+                        <h1 class="odometer" counter-value="475"></h1>
+                    </div>
+                    <span class="font-medium">Ticket Booked</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-full lg:col-span-6 xl:col-span-4">
+            <div class="flex items-center flex-nowrap md:flex-wrap gap-4 xxl:gap-9 bg-at10 rounded-xl p-4 sm:p-6 lg:p-10 xxxl:p-[60px]">
+                <div class="">
+                    <img src="../assets/images/icon/talented-speakers.png" alt="Icon">
+                </div>
+                <div class="hero_area rounded-3xl w-full md:w-[48%] lg:w-fit">
+                    <div class="counters mb-3">
+                        <h1 class="odometer" counter-value="24"></h1>
+                    </div>
+                    <span class="font-medium">Talented Speakers</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-full lg:col-span-6 xl:col-span-4">
+            <div class="flex items-center flex-nowrap md:flex-wrap gap-4 xxl:gap-9 bg-at10 rounded-xl p-4 sm:p-6 lg:p-10 xxxl:p-[60px]">
+                <div class="">
+                    <img src="../assets/images/icon/useful-seccoins.png" alt="Icon">
+                </div>
+                <div class="hero_area rounded-3xl w-full md:w-[48%] lg:w-fit">
+                    <div class="counters mb-3">
+                        <h1 class="odometer" counter-value="745"></h1>
+                    </div>
+                    <span class="font-medium">Useful Seccions</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="my-6">
+        <div class="container">
+            <div class="grid grid-cols-8 items-center p-4 sm:p-6 md:p-10 xxl:p-[60px] bg-at20 rounded-3xl gap-6">
+    <div class="col-span-full xxl:col-span-3 px-4 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 lg:py-12 bg-at10 rounded-3xl">
+        <span class="mb-3">FAQ</span>
+        <span class="display-4 mb-6 md:mb-10">Your questions answered.</span>
+        <div class="border border-nb20 p-3 sm:p-4 lg:p-6 rounded-3xl">
+            <div class="flex items-center flex-wrap sm:flex-nowrap gap-3 mb-4 md:mb-6">
+                <span class="p-3 sm:p-4 lg:p-5 rounded-xl border border-nb20">
+                    <i class="ph-fill ph-question text-primary text-[40px]"></i>
+                </span>
+                <div class="">
+                    <h5 class="mb-3">Still have questions?</h5>
+                    <p class="text-sm">Can’t find the answer you’re looking for?Please chat to our friendly team!</p>
+                </div>
+            </div>
+            <a href="#" class="p-3 bg-primary font-bold text-nb10 rounded-xl w-full block text-center">Get in touch</a>
+        </div>
+    </div>
+    <div class="col-span-full xxl:col-span-5 px-4 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 lg:py-12 bg-at10 rounded-3xl rewards_faq">
+        <div class="accordion-section">
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-nb20 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold"
+                        type="button">
+                        Can i change my package?
+                    </button>
+                    <button class="arrowclickable p-1 md:p-2 lg:p-3 bg-primary rounded-full flex text-at10"><i class="ph ph-caret-down"></i></button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-sm w-[90%]">Our cancellation policy varies depending on the service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-nb20 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold"
+                        type="button">
+                        Is there any refund option?
+                    </button>
+                    <button class="arrowclickable p-1 md:p-2 lg:p-3 bg-primary rounded-full flex text-at10"><i class="ph ph-caret-down"></i></button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-sm w-[90%]">Our cancellation policy varies depending on the service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-nb20 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold"
+                        type="button">
+                        What are the payment option?
+                    </button>
+                    <button class="arrowclickable p-1 md:p-2 lg:p-3 bg-primary rounded-full flex text-at10"><i class="ph ph-caret-down"></i></button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-sm w-[90%]">Our cancellation policy varies depending on the service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle rounded-xl border border-nb20 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold"
+                        type="button">
+                        Any possibilities og schedule chanfe?
+                    </button>
+                    <button class="arrowclickable p-1 md:p-2 lg:p-3 bg-primary rounded-full flex text-at10"><i class="ph ph-caret-down"></i></button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-sm w-[90%]">Our cancellation policy varies depending on the service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="my-6">
+        <div class="container">
+            <div class="grid grid-cols-2 items-center gap-6">
+    <div class="col-span-full lg:col-span-1">
+        <div class="p-4 sm:p-6 md:p-8 lg:p-12 bg-primary rounded-3xl mb-6">
+            <h1 class="display-2 text-nb10 mb-6 lg:mb-10">Book <br class="hidden lg:block"> Your Seat</h1>
+            <div class="inline-block">
+                <a href="#" class="flex items-center group duration-700">
+                    <span class="py-3 lg:py-4 px-4 lg:px-8 bg-nb10 text-nw10 rounded-2xl duration-500 font-medium">Buy Tickets</span>
+                    <i
+                        class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-nb10 text-nw10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+                </a>
+            </div>
+        </div>
+        <div class="p-4 sm:p-6 md:p-8 lg:p-12 bg-secondary1 rounded-3xl">
+            <h1 class="display-4 text-nb10 mb-6 lg:mb-10">Become a Sponsor</h1>
+            <div class="inline-block">
+                <a href="#" class="flex items-center group duration-700">
+                    <span class="py-3 lg:py-4 px-4 lg:px-8 bg-nb10 text-nw10 rounded-2xl duration-500 font-medium">Become Sponsor</span>
+                    <i
+                        class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-nb10 text-nw10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-full lg:col-span-1 p-4 sm:p-6 md:p-8 lg:p-12 rounded-3xl bg-at20 h-full">
+        <h1 class="display-1 mb-6 lg:mb-8">Register 
+            Today</h1>
+        <p class="mb-8 sm:mb-10 lg:mb-[60px]">I’m always saying to my friends and my family and my clients, let’s just multiply this thing. Not one beautiful inflatable unicorn in the swimming  It’s a simple idea but it will make a big impact.</p>
+        <div class="bg-nw10 p-1 sm:pr-2 sm:py-2 rounded-[60px] xxxl:w-[85%]">
+            <form class="flex items-center">
+                <input class="border-none placeholder:text-nb10 text-nb10 font-medium" placeholder="Enter Your Email" type="text">
+                <button type="submit" class="p-2 sm:p-3 md:py-4 md:px-6 bg-primary text-at10 flex items-center font-medium sm:gap-2 rounded-[40px] group max-sm:size-10"><span class="max-sm:hidden">Register</span><i class="ph ph-arrow-up-right text-xl group-hover:rotate-45 duration-300"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <section class="my-6">
+      <div class="container">
+        <div class="grid grid-cols-12 items-center rounded-3xl bg-at20">
+    <div class="col-span-12 p-6 lg:p-12 flex items-center flex-wrap gap-4 sm:gap-0 justify-center sm:justify-between  relative md:border-b border-[#B3B6B9] border-opacity-[0.3] overflow-hidden">
+        <div class="flex justify-center">
+            <img class="w-[70%] lg:w-[100%]" src="../assets/images/footer-logo.png" alt="Logo">
+        </div>
+        <span class="v-line lgx before:top-0 hidden md:block"></span>
+        <div class=" hidden md:block">
+            <a href="#"><i class="ph ph-twitch-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden md:block"></span>
+        <div class=" hidden md:block">
+            <a href="#"><i class="ph ph-discord-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden md:block"></span>
+        <div class=" hidden md:block">
+            <a href="#"><i class="ph ph-linkedin-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden md:block"></span>
+        <div class=" hidden md:block">
+            <a href="#"><i class="ph ph-facebook-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden md:block"></span>
+        <div class="flex items-center text-center sm:flex-col gap-2 sm:gap-1">
+            <div class="flex gap-2 sm:gap-6 lg:gap-10">
+                <a href="../index.html">Home</a>
+                <a href="../event.html">Event</a>
+            </div>
+            <div class="flex gap-2 sm:gap-6 lg:gap-5">
+                <a href="javascript:void(0);">Schedule</a>
+                <a href="javascript:void(0);">Venue</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-12 flex justify-between w-full relative px-10 md:hidden">
+        <span class="v-line lgx before:top-0 hidden"></span>
+        <div class="">
+            <a href="#"><i class="ph ph-twitch-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden"></span>
+        <div class="">
+            <a href="#"><i class="ph ph-discord-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden"></span>
+        <div class="">
+            <a href="#"><i class="ph ph-linkedin-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden"></span>
+        <div class="">
+            <a href="#"><i class="ph ph-facebook-logo text-[40px] text-primary"></i></a>
+        </div>
+        <span class="v-line lgx before:top-0 hidden"></span>
+    </div>
+    <div class="col-span-12 py-6 px-12">
+        <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-between flex-wrap gap-1 sm:gap-6">
+            <span class="text-base text-center">Copyright @ 2024 Eventto</span>
+            <span class="text-base text-center">Designed By <a href="https://themeforest.net/user/pixelaxis" class="text-primary">Pixelaxis</a></span>
+        </div>
+    </div>
+</div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/plguins.js"></script>
+    <script src="./assets/js/plguins-custom.js"></script>
+    <script src="./assets/js/rouned.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

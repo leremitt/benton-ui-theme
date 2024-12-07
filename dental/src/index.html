@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ flatpickr css  ============ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <title>Applex Two - HTML Tailwind css</title>
+  </head>
+
+  <body class="bg-white-1 p-4 text-black-1 sm:p-6">
+    <main class="relative overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ home banner start ============ -->
+      <section class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-12 grid grid-cols-6 gap-4 lg:col-span-6 lg:gap-6">
+          <!-- smile bright -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spx32px spy40px col-span-6 rounded-xl bg-primary"
+          >
+            <h1 class="h1 bg-clip-text font-bold text-white-1">
+              Smile Bright: Your Premier Dental Destination
+            </h1>
+            <div
+              class="spl32px smt40px flex items-center justify-between gap-2 rounded-full border border-white-3 py-1 pe-1"
+            >
+              <input
+                type="text"
+                class="placeholder:m-text m-text w-full bg-primary text-white-1 placeholder:text-white-1"
+                placeholder="Search"
+              />
+              <button
+                class="flex items-center justify-center rounded-full bg-white-1 p-3"
+              >
+                <i class="ph ph-magnifying-glass text-[24px]"></i>
+              </button>
+            </div>
+          </div>
+          <!-- teeth -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="col-span-6 overflow-hidden rounded-xl sm:col-span-3"
+          >
+            <img
+              src="./assets/images/teeth-image-1.png"
+              class="h-full w-full object-cover duration-500 hover:scale-105"
+              alt="Front Teeth Image"
+            />
+          </div>
+          <!-- teeth -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="col-span-6 overflow-hidden rounded-xl sm:col-span-3"
+          >
+            <img
+              src="./assets/images/teeth-image-2.png"
+              class="h-full w-full object-cover duration-500 hover:scale-105"
+              alt="Front Teeth Image"
+            />
+          </div>
+          <!-- teeth -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="sp32px col-span-6 flex flex-col rounded-xl bg-white-3"
+          >
+            <div
+              class="flex items-center justify-between gap-4 max-xs:order-2 max-xs:flex-wrap max-xs:pt-6 lg:gap-6"
+            >
+              <p class="l-text font-semibold capitalize">Consultation</p>
+              <a
+                href="#"
+                class="l-text rounded-full bg-primary px-6 py-3 font-medium text-white-1"
+              >
+                Book Online
+              </a>
+            </div>
+            <div
+              class="spt32px flex items-center justify-between max-sm:flex-wrap max-sm:gap-4"
+            >
+              <h3 class="h2 max-w-[243px] font-bold capitalize">
+                Dental Restoration Services
+              </h3>
+              <div>
+                <div
+                  class="flex items-center justify-center -space-x-4 rounded-full border-2 border-primary p-1"
+                >
+                  <img
+                    src="./assets/images/ratting-1.png"
+                    alt="Ratting Image"
+                    class="rounded-full border-2 border-white-3"
+                  />
+                  <img
+                    src="./assets/images/ratting-2.png"
+                    alt="Ratting Image"
+                    class="rounded-full border-2 border-white-3"
+                  />
+                  <img
+                    src="./assets/images/ratting-3.png"
+                    alt="Ratting Image"
+                    class="rounded-full border-2 border-white-3"
+                  />
+                  <img
+                    src="./assets/images/ratting-4.png"
+                    alt="Ratting Image"
+                    class="rounded-full border-2 border-white-3"
+                  />
+                  <div
+                    class="flex size-11 items-center justify-center rounded-full border-2 border-white-1 bg-primary text-white-1"
+                  >
+                    <i class="ph ph-plus text-[24px]"></i>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 pt-3">
+                  <p class="h3 font-bold">4.7</p>
+                  <div
+                    class="flex items-center gap-1 text-[24px] text-[#FFAB00]"
+                  >
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- banner -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="col-span-12 overflow-hidden rounded-xl lg:col-span-6"
+        >
+          <img
+            src="./assets/images/banner-big-image.png"
+            class="h-full w-full rounded-xl object-cover duration-500 hover:scale-105"
+            alt="Banner Image for Smile Bright: Your Premier Dental Destination"
+          />
+        </div>
+        <!-- text slider -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="col-span-12 overflow-hidden rounded-3xl bg-secondary py-6 ps-6 text-white-1"
+        >
+          <div class="text-slider smooth text-white-1">
+            <div class="swiper-wrapper">
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Oral Care
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Teeth Cleaning
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Maintenance
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Oral Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Mouth Wellness
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Cleanse
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Gum Care
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Oral Care
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Teeth Cleaning
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Maintenance
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Oral Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Mouth Wellness
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Cleanse
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Gum Care
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Oral Care
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Teeth Cleaning
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Maintenance
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Oral Hygiene
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Mouth Wellness
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-tooth text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Dental Cleanse
+                  </span>
+                </div>
+              </div>
+              <!-- slider item -->
+              <div class="swiper-slide">
+                <div class="flex items-center gap-4">
+                  <i class="ph ph-thumbs-up text-[32px]"></i>
+                  <span
+                    class="lead-text whitespace-nowrap font-semibold capitalize"
+                  >
+                    Gum Care
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ home banner end ============ -->
+      <!-- =========== basic dental care section start ============ -->
+      <include-servicesAllCard />
+      <!-- =========== basic dental care section end ============ -->
+      <!-- =========== Our Expert Team section start ============ -->
+      <include-our-expart />
+      <!-- =========== Our Expert Team section end ============ -->
+      <!-- ============ faq start ============ -->
+      <include-faq-section />
+      <!-- ============ faq end ============ -->
+      <!-- =========== testimonial section start ============ -->
+      <include-testimonial />
+      <!-- =========== testimonial section end ============ -->
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

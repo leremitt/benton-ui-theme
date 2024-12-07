@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Restura - HTML Tailwindcss">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>Restura - HTML Tailwindcss</title>
+
+</head>
+
+<body>
+  <section class="container p-3 sm:p-6">
+    <div class="grid grid-cols-12 gap-6">
+      <div class="bg-[#1A1A1A] rounded-lg col-span-full xl:col-span-1">
+        <div class="navheight flex xl:flex-col justify-between px-3 py-3 xl:py-10 xl:min-h-svh">
+          <div class="flex justify-center items-center">
+            <a class="flex xl:flex-col items-center gap-2 md:gap-3 xl:gap-0" href="index.html">
+              <img class="max-w-fit md:mb-3 w-10 sm:w-13 xl:w-full" src="./assets/images/logo-main.png" alt="Logo">
+              <span class="xxxl:text-xl">RESTURA</span>
+            </a>
+          </div>
+          <div class="relative order-first xl:order-none mt-1 xl:mt-0">
+            <include-navbar />
+            <div class="flex justify-center items-center">
+              <div class=" cursor-pointer border border-primary px-2 md:px-3 py-1 md:py-1.5 rounded-3xl">
+                <span class="text-2xl lg:text-3xl text-primary" onclick="openNav()">&#9776;</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <a class="flex items-center justify-center" href="reservation.html">
+              <img class="w-10 sm:w-13 xl:w-full" src="./assets/images/icon/regave.png" alt="Icon">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class=" col-span-12 md:col-span-4 navmenu scrollcontrol md:max-h-dvh md:overflow-y-auto sm:overflow-hidden order-last md:order-none">
+        <include-menu />
+      </div>
+      <div class="col-span-12 md:col-span-8 xl:col-span-7">
+        <div class="relative">
+          <div class="relative h-[350px] md:h-[450px] lg:h-dvh">
+            <!-- For use image -->
+            <!-- <img class="imagemain" src="./assets/images/panthouse-tonic.png" alt="icon"> -->
+            <video class="absolute w-full h-full object-cover rounded-3xl" muted loop autoplay>
+              <source src="https://softivuspro.com/rest/videoplayback.mp4" type="video/mp4">
+            </video>
+
+            <span class="display-1 text-primary absolute bottom-5 left-5 md:bottom-20 md:left-20 uppercase">Panthouse
+              <br>
+              Tonic</span>
+          </div>
+          <div class="absolute right-0 bottom-0 flex justify-center gap-3 bg-nb10 p-3 rounded-tl-3xl">
+            <a class="border border-secondary2 hover:border-primary duration-300 pt-2 pb-0.5 px-2 md:pt-2 md:pb-1 md:px-2 rounded-full"
+              href="#">
+              <i class="ph ph-instagram-logo text-sm md:text-2xl text-primary"></i>
+            </a>
+            <a class="border border-secondary2 hover:border-primary duration-300 pt-2 pb-0.5 px-2 md:pt-2 md:pb-1 md:px-2 rounded-full"
+              href="#">
+              <i class="ph ph-facebook-logo text-sm md:text-2xl text-primary"></i>
+            </a>
+            <a class="border border-secondary2 hover:border-primary duration-300 pt-2 pb-0.5 px-2 md:pt-2 md:pb-1 md:px-2 rounded-full"
+              href="#">
+              <i class="ph ph-twitch-logo text-sm md:text-2xl text-primary"></i>
+            </a>
+          </div>
+          <img class="absolute right-0 bottom-[56px] md:bottom-[67px] xxl:bottom-[67px] xxxl:bottom-[67px]"
+            src="./assets/images/icon/shape-for-restora.png" alt="shape">
+          <img
+            class="absolute right-[144px] md:right-[174px] xl:right-[174px] xxl:right-[174px]  xxxl:right-[174px] bottom-0"
+            src="./assets/images/icon/shape-for-restora.png" alt="shape">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

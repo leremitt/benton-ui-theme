@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Speaker-Event Booking Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-white-3 p-4 text-black-1 sm:p-6">
+    <main class="relative">
+      <!-- ============ navbar start ============ -->
+      <header
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1500"
+  class="relative z-20"
+>
+  <!-- desktop navbar -->
+  <div class="hidden pb-6 lg:block">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul class="menu flex items-center justify-between gap-10">
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 hover:text-primary"
+            >
+              Event
+            </a>
+          </li>
+          <li>
+            <a
+              href="schedule.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 hover:text-primary"
+            >
+              Schedule
+            </a>
+          </li>
+          <li>
+            <a
+              href="speaker.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 hover:text-primary"
+            >
+              Speaker
+            </a>
+          </li>
+          <li>
+            <a
+              href="venue.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 hover:text-primary"
+            >
+              Venue
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 hover:text-primary"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <div class="btn-area right-0 z-20">
+            <a
+              href="ticket-price.html"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-8 py-3 font-medium uppercase"
+              >
+                BUY TICKET
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="pb-4 lg:hidden lg:pb-6">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img
+              src="./assets/images/logo.png"
+              alt="mobile Logo"
+              class="max-sm:w-2/3"
+            />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative z-10 font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul
+              class="menu relative z-20 flex flex-col rounded-md bg-white-1 py-3"
+            >
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Events</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="schedule.html" class="single-menu">Schedule</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="speaker.html" class="single-menu">Speaker</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="venue.html" class="single-menu">Venue</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="contact.html" class="single-menu">Contact</a>
+              </li>
+            </ul>
+
+            <div class="btn-area z-20">
+              <a
+                href="ticket-price.html"
+                aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+              >
+                <span
+                  class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                >
+                  BUY TICKET
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                >
+                  <i
+                    class="ph ph-arrow-up-right text-[24px]"
+                    data-icon-name="arrow-right"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ navbar end ============ -->
+
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <!-- column one start -->
+        <div class="flex flex-col gap-4 lg:gap-6">
+          <!-- speaker card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp60px group flex grow flex-col items-center justify-center rounded-xl bg-white-1">
+            <div class="relative mx-auto w-fit rounded-full">
+              <img src="./assets/images/speaker-1.png" alt="speaker one" class="rounded-full" />
+              <div class="theme-transition-3 absolute inset-0 z-10 flex items-center justify-center rounded-full bg-black-1/50 opacity-0 group-hover:opacity-100">
+                <button id="speaker-one-modal-open-btn" class="flex items-center justify-center rounded-full border border-white-2 p-4 text-white-1">
+                  <i class="ph ph-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pt-5 text-center">
+              <h3 class="h3 font-bold">Darrell Steward</h3>
+              <p class="m-text pt-2">Senior Vice President</p>
+              <div class="spt32px flex items-center justify-center gap-3">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- speaker card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="spx60px spy40px group flex flex-col items-center justify-center rounded-xl bg-white-1">
+            <div class="relative mx-auto w-fit">
+              <img src="./assets/images/speaker-4.png" alt="speaker one" class="rounded-full" />
+              <div class="theme-transition-3 absolute inset-0 z-10 flex items-center justify-center rounded-full bg-black-1/50 opacity-0 group-hover:opacity-100">
+                <button id="speaker-four-modal-open-btn" class="flex items-center justify-center rounded-full border border-white-2 p-4 text-white-1">
+                  <i class="ph ph-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pt-5 text-center">
+              <h3 class="h3 font-bold">Darrell Steward</h3>
+              <p class="m-text pt-1">Senior Vice President</p>
+              <div class="flex items-center justify-center gap-3 pt-6">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column one end -->
+        <!-- column two start -->
+        <div class="flex flex-col gap-4 lg:gap-6">
+          <!-- speaker card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp60px group flex flex-col items-center justify-center rounded-xl bg-white-1">
+            <div class="relative mx-auto w-fit">
+              <img src="./assets/images/speaker-2.png" alt="speaker one" class="rounded-full" />
+              <div class="theme-transition-3 absolute inset-0 z-10 flex items-center justify-center rounded-full bg-black-1/50 opacity-0 group-hover:opacity-100">
+                <button id="speaker-two-modal-open-btn" class="flex items-center justify-center rounded-full border border-white-2 p-4 text-white-1">
+                  <i class="ph ph-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="spt40px text-center">
+              <h3 class="h3 font-bold">Darrell Steward</h3>
+              <p class="m-text pt-2">Senior Vice President</p>
+              <div class="spt40px flex items-center justify-center gap-3">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- speaker card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="spx60px spy32px group flex flex-col items-center justify-center rounded-xl bg-white-1">
+            <div class="relative mx-auto w-fit">
+              <img src="./assets/images/speaker-5.png" alt="speaker one" class="rounded-full" />
+              <div class="theme-transition-3 absolute inset-0 z-10 flex items-center justify-center rounded-full bg-black-1/50 opacity-0 group-hover:opacity-100">
+                <button id="speaker-five-modal-open-btn" class="flex items-center justify-center rounded-full border border-white-2 p-4 text-white-1">
+                  <i class="ph ph-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pt-5 text-center">
+              <h3 class="h3 font-bold">Darrell Steward</h3>
+              <p class="m-text pt-1">Senior Vice President</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column two end -->
+        <!-- column three start -->
+        <div class="flex gap-4 max-md:flex-col md:max-lg:col-span-2 lg:flex-col lg:gap-6">
+          <!-- speaker card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="sp60px group flex grow flex-col items-center justify-center rounded-xl bg-white-1 max-lg:w-full"
+          >
+            <div class="relative mx-auto w-fit">
+              <img src="./assets/images/speaker-3.png" alt="speaker one" class="rounded-full" />
+              <div class="theme-transition-3 absolute inset-0 z-10 flex items-center justify-center rounded-full bg-black-1/50 opacity-0 group-hover:opacity-100">
+                <button id="speaker-three-modal-open-btn" class="flex items-center justify-center rounded-full border border-white-2 p-4 text-white-1">
+                  <i class="ph ph-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pt-5 text-center">
+              <h3 class="h3 font-bold">Darrell Steward</h3>
+              <p class="m-text pt-2">Senior Vice President</p>
+              <div class="spt32px flex items-center justify-center gap-3">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- speaker card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spx60px spy40px group flex flex-col items-center justify-center rounded-xl bg-white-1 max-lg:w-full"
+          >
+            <div class="relative mx-auto w-fit">
+              <img src="./assets/images/speaker-6.png" alt="speaker one" class="rounded-full" />
+              <div class="theme-transition-3 absolute inset-0 z-10 flex items-center justify-center rounded-full bg-black-1/50 opacity-0 group-hover:opacity-100">
+                <button id="speaker-six-modal-open-btn" class="flex items-center justify-center rounded-full border border-white-2 p-4 text-white-1">
+                  <i class="ph ph-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="pt-5 text-center">
+              <h3 class="h3 font-bold">Darrell Steward</h3>
+              <p class="m-text pt-1">Senior Vice President</p>
+              <div class="flex items-center justify-center gap-3 pt-6">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column three end -->
+      </div>
+
+      <!-- speaker modal one -->
+      <div
+        id="speaker-1-modal-content"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[1120px]"
+      >
+        <div class="relative flex h-full items-center overflow-y-auto max-xl:flex-col">
+          <div class="shrink-0 xl:h-full">
+            <img
+              src="./assets/images/speaker-modal-image-1.png"
+              alt="Speaker
+            image in modal"
+              class="h-full max-xl:w-[250px] max-xl:rounded-xl xl:rounded-bl-xl xl:rounded-tl-xl"
+            />
+          </div>
+          <div class="spx40px spt40px spb60px">
+            <h3 class="h3 font-bold text-black-1">Ralph Edwards</h3>
+            <p class="m-text pt-3">Principal Software Engineer</p>
+            <p class="l-text spt32px text-black-2">
+              World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience gender, gender identity and expression
+            </p>
+            <div class="spt32px flex items-center gap-5 max-md:flex-col">
+              <p class="h4 font-bold text-black-1">Follow Us</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="smt32px smb32px h-px w-full bg-white-2/40"></div>
+            <div>
+              <p class="h4 font-bold">Details</p>
+              <div class="spt24px fade-top flex items-center gap-5">
+                <div class="flex flex-col gap-3">
+                  <p class="m-text text-black-2">Location:</p>
+                  <p class="m-text text-black-2">Position:</p>
+                  <p class="m-text text-black-2">Email:</p>
+                  <p class="m-text text-black-2">Age:</p>
+                  <p class="m-text text-black-2">Gender:</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="m-text">Spain, Barcelona</p>
+                  <p class="m-text">Founder &amp; CEO</p>
+                  <p class="m-text">sara.cruz@example.com</p>
+                  <p class="m-text">42</p>
+                  <p class="m-text">Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-modal-close-btn-1 group theme-transition-3 absolute right-5 top-5 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary">
+            <i class="ph ph-x text-[16px]"></i>
+          </button>
+        </div>
+      </div>
+      <!-- speaker modal two -->
+      <div
+        id="speaker-2-modal-content"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[1120px]"
+      >
+        <div class="relative flex h-full items-center overflow-y-auto max-xl:flex-col">
+          <div class="shrink-0 xl:h-full">
+            <img
+              src="./assets/images/speaker-modal-image-2.png"
+              alt="Speaker
+            image in modal"
+              class="h-full max-xl:w-[250px] max-xl:rounded-xl xl:rounded-bl-xl xl:rounded-tl-xl"
+            />
+          </div>
+          <div class="spx40px spt40px spb60px">
+            <h3 class="h3 font-bold text-black-1">Ralph Edwards</h3>
+            <p class="m-text pt-3">Principal Software Engineer</p>
+            <p class="l-text spt32px text-black-2">
+              World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience gender, gender identity and expression
+            </p>
+            <div class="spt32px flex items-center gap-5 max-md:flex-col">
+              <p class="h4 font-bold text-black-1">Follow Us</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="smt32px smb32px h-px w-full bg-white-2/40"></div>
+            <div>
+              <p class="h4 font-bold">Details</p>
+              <div class="spt24px fade-top flex items-center gap-5">
+                <div class="flex flex-col gap-3">
+                  <p class="m-text text-black-2">Location:</p>
+                  <p class="m-text text-black-2">Position:</p>
+                  <p class="m-text text-black-2">Email:</p>
+                  <p class="m-text text-black-2">Age:</p>
+                  <p class="m-text text-black-2">Gender:</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="m-text">Spain, Barcelona</p>
+                  <p class="m-text">Founder &amp; CEO</p>
+                  <p class="m-text">sara.cruz@example.com</p>
+                  <p class="m-text">42</p>
+                  <p class="m-text">Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-modal-close-btn-2 group theme-transition-3 absolute right-5 top-5 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary">
+            <i class="ph ph-x text-[16px]"></i>
+          </button>
+        </div>
+      </div>
+      <!-- speaker modal three -->
+      <div
+        id="speaker-3-modal-content"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[1120px]"
+      >
+        <div class="relative flex h-full items-center overflow-y-auto max-xl:flex-col">
+          <div class="shrink-0 xl:h-full">
+            <img
+              src="./assets/images/speaker-modal-image-3.png"
+              alt="Speaker
+            image in modal"
+              class="h-full max-xl:w-[250px] max-xl:rounded-xl xl:rounded-bl-xl xl:rounded-tl-xl"
+            />
+          </div>
+          <div class="spx40px spt40px spb60px">
+            <h3 class="h3 font-bold text-black-1">Ralph Edwards</h3>
+            <p class="m-text pt-3">Principal Software Engineer</p>
+            <p class="l-text spt32px text-black-2">
+              World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience gender, gender identity and expression
+            </p>
+            <div class="spt32px flex items-center gap-5 max-md:flex-col">
+              <p class="h4 font-bold text-black-1">Follow Us</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="smt32px smb32px h-px w-full bg-white-2/40"></div>
+            <div>
+              <p class="h4 font-bold">Details</p>
+              <div class="spt24px fade-top flex items-center gap-5">
+                <div class="flex flex-col gap-3">
+                  <p class="m-text text-black-2">Location:</p>
+                  <p class="m-text text-black-2">Position:</p>
+                  <p class="m-text text-black-2">Email:</p>
+                  <p class="m-text text-black-2">Age:</p>
+                  <p class="m-text text-black-2">Gender:</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="m-text">Spain, Barcelona</p>
+                  <p class="m-text">Founder &amp; CEO</p>
+                  <p class="m-text">sara.cruz@example.com</p>
+                  <p class="m-text">42</p>
+                  <p class="m-text">Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-modal-close-btn-3 group theme-transition-3 absolute right-5 top-5 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary">
+            <i class="ph ph-x text-[16px]"></i>
+          </button>
+        </div>
+      </div>
+      <!-- speaker modal four start -->
+      <div
+        id="speaker-4-modal-content"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[1120px]"
+      >
+        <div class="relative flex h-full items-center overflow-y-auto max-xl:flex-col">
+          <div class="shrink-0 xl:h-full">
+            <img
+              src="./assets/images/speaker-modal-image-4.png"
+              alt="Speaker
+            image in modal"
+              class="h-full max-xl:w-[250px] max-xl:rounded-xl xl:rounded-bl-xl xl:rounded-tl-xl"
+            />
+          </div>
+          <div class="spx40px spt40px spb60px">
+            <h3 class="h3 font-bold text-black-1">Ralph Edwards</h3>
+            <p class="m-text pt-3">Principal Software Engineer</p>
+            <p class="l-text spt32px text-black-2">
+              World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience gender, gender identity and expression
+            </p>
+            <div class="spt32px flex items-center gap-5 max-md:flex-col">
+              <p class="h4 font-bold text-black-1">Follow Us</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="smt32px smb32px h-px w-full bg-white-2/40"></div>
+            <div>
+              <p class="h4 font-bold">Details</p>
+              <div class="spt24px fade-top flex items-center gap-5">
+                <div class="flex flex-col gap-3">
+                  <p class="m-text text-black-2">Location:</p>
+                  <p class="m-text text-black-2">Position:</p>
+                  <p class="m-text text-black-2">Email:</p>
+                  <p class="m-text text-black-2">Age:</p>
+                  <p class="m-text text-black-2">Gender:</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="m-text">Spain, Barcelona</p>
+                  <p class="m-text">Founder &amp; CEO</p>
+                  <p class="m-text">sara.cruz@example.com</p>
+                  <p class="m-text">42</p>
+                  <p class="m-text">Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-modal-close-btn-4 group theme-transition-3 absolute right-5 top-5 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary">
+            <i class="ph ph-x text-[16px]"></i>
+          </button>
+        </div>
+      </div>
+      <!-- speaker modal five start -->
+      <div
+        id="speaker-5-modal-content"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[1120px]"
+      >
+        <div class="relative flex h-full items-center overflow-y-auto max-xl:flex-col">
+          <div class="shrink-0 xl:h-full">
+            <img
+              src="./assets/images/speaker-modal-image-5.png"
+              alt="Speaker
+            image in modal"
+              class="h-full max-xl:w-[250px] max-xl:rounded-xl xl:rounded-bl-xl xl:rounded-tl-xl"
+            />
+          </div>
+          <div class="spx40px spt40px spb60px">
+            <h3 class="h3 font-bold text-black-1">Ralph Edwards</h3>
+            <p class="m-text pt-3">Principal Software Engineer</p>
+            <p class="l-text spt32px text-black-2">
+              World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience gender, gender identity and expression
+            </p>
+            <div class="spt32px flex items-center gap-5 max-md:flex-col">
+              <p class="h4 font-bold text-black-1">Follow Us</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="smt32px smb32px h-px w-full bg-white-2/40"></div>
+            <div>
+              <p class="h4 font-bold">Details</p>
+              <div class="spt24px fade-top flex items-center gap-5">
+                <div class="flex flex-col gap-3">
+                  <p class="m-text text-black-2">Location:</p>
+                  <p class="m-text text-black-2">Position:</p>
+                  <p class="m-text text-black-2">Email:</p>
+                  <p class="m-text text-black-2">Age:</p>
+                  <p class="m-text text-black-2">Gender:</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="m-text">Spain, Barcelona</p>
+                  <p class="m-text">Founder &amp; CEO</p>
+                  <p class="m-text">sara.cruz@example.com</p>
+                  <p class="m-text">42</p>
+                  <p class="m-text">Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-modal-close-btn-5 group theme-transition-3 absolute right-5 top-5 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary">
+            <i class="ph ph-x text-[16px]"></i>
+          </button>
+        </div>
+      </div>
+      <!-- speaker modal six start -->
+      <div
+        id="speaker-6-modal-content"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[1120px]"
+      >
+        <div class="relative flex h-full items-center overflow-y-auto max-xl:flex-col">
+          <div class="shrink-0 xl:h-full">
+            <img
+              src="./assets/images/speaker-modal-image-6.png"
+              alt="Speaker
+            image in modal"
+              class="h-full max-xl:w-[250px] max-xl:rounded-xl xl:rounded-bl-xl xl:rounded-tl-xl"
+            />
+          </div>
+          <div class="spx40px spt40px spb60px">
+            <h3 class="h3 font-bold text-black-1">Ralph Edwards</h3>
+            <p class="m-text pt-3">Principal Software Engineer</p>
+            <p class="l-text spt32px text-black-2">
+              World is committed to making participation in the event a harass ment free experience for everyone, regardless of level experience gender, gender identity and expression
+            </p>
+            <div class="spt32px flex items-center gap-5 max-md:flex-col">
+              <p class="h4 font-bold text-black-1">Follow Us</p>
+              <div class="flex items-center justify-center gap-3 md:pt-4">
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-twitch-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-linkedin-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-facebook-logo text-[24px]"></i>
+                </a>
+                <a href="#" class="theme-transition-3 rounded-full border border-white-2 p-4 hover:border-black-1 hover:bg-black-1 hover:text-primary">
+                  <i class="ph ph-discord-logo text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="smt32px smb32px h-px w-full bg-white-2/40"></div>
+            <div>
+              <p class="h4 font-bold">Details</p>
+              <div class="spt24px fade-top flex items-center gap-5">
+                <div class="flex flex-col gap-3">
+                  <p class="m-text text-black-2">Location:</p>
+                  <p class="m-text text-black-2">Position:</p>
+                  <p class="m-text text-black-2">Email:</p>
+                  <p class="m-text text-black-2">Age:</p>
+                  <p class="m-text text-black-2">Gender:</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="m-text">Spain, Barcelona</p>
+                  <p class="m-text">Founder &amp; CEO</p>
+                  <p class="m-text">sara.cruz@example.com</p>
+                  <p class="m-text">42</p>
+                  <p class="m-text">Female</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-modal-close-btn-6 group theme-transition-3 absolute right-5 top-5 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary">
+            <i class="ph ph-x text-[16px]"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ============ footer start ============ -->
+      <footer
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1500"
+  class="l-text mt-4 flex items-center justify-between rounded-xl bg-primary p-6 text-black-1 max-sm:flex-col max-sm:gap-3 lg:mt-6"
+>
+  <p>Copyright @ 2024 ConFon</p>
+  <p>
+    Designed By
+    <a
+      href="/"
+      class="theme-transition-3 underline underline-offset-4 hover:text-white-1"
+      >Pixelaxis</a
+    >
+  </p>
+</footer>
+
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

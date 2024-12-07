@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>About-Car Repairing Service Template</title>
+  </head>
+
+  <body class="bg-neutral-3 text-neutral-1">
+    <main>
+      <!-- ============ header section ============ -->
+      <include-Header />
+      <!-- ============ Breadcrumb ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="container">
+        <div class="bg-neutral-4 sp60px border rounded-xl border-neutral-2/15">
+          <p class="h2 font-bold text-center">About Us</p>
+          <div class="flex items-center justify-center pt-3 l-text gap-3">
+            <a href="/">Home</a>
+            <i class="ph ph-caret-double-right text-primary"></i>
+            <a href="./about.html" class="text-primary">About Us</a>
+          </div>
+        </div>
+      </div>
+      <!-- ============ About video Section ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="container smt60px">
+        <div class="grid grid-cols-12 gap-6 items-center bg-neutral-4 border border-neutral-2/20 max-xs:py-6 max-xs:px-3 xs:sp60px rounded-xl">
+          <div class="col-span-12 xl:col-span-7 max-md:flex flex-col gap-6 max-md:justify-center md:grid grid-cols-7 md:space-y-[200px] 3xl:space-y-[150px] md:-space-x-[300px] relative">
+            <div class="col-span-5 h-full relative">
+              <img src="./assets/images/about-video-section-image-1.png" alt="Information section image" class="rounded-3xl md:max-3xl:h-[80%] max-3xl:object-cover" />
+              <div class="absolute bottom-10 left-10 max-xxl:hidden">
+                <p class="h4 font-bold text-primary text-center">100%</p>
+                <p class="m-text opacity-80 text-center">Quality Service</p>
+              </div>
+            </div>
+            <div class="w-fit self-center md:self-end col-span-2 relative">
+              <img src="./assets/images/about-video-section-image-2.png" alt="Information section image two" class="rounded-3xl" />
+              <!-- video -->
+              <div
+                id="video-content"
+                class="hide absolute right-1/2 top-1/2 z-20 h-fit origin-center -translate-y-1/2 translate-x-1/2 rounded-md bg-neutral-3 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 w-[300px] xs:w-[350px] sm:w-[430px] md:w-[630px] xl:w-[800px]"
+              >
+                <iframe src="https://youtube.com/embed/4DCTTrGjGU4" class="video aspect-video w-full"> </iframe>
+                <button
+                  class="video-close-btn group theme-transition-3 absolute right-0 top-0 z-40 block rounded-full bg-primary p-2 text-neutral-3 hover:bg-secondary hover:text-neutral-1 sm:-right-16 sm:p-3"
+                >
+                  <i class="ph ph-x text-[20px] sm:text-[28px]"></i>
+                </button>
+              </div>
+              <div class="absolute left-1/2 top-1/2 inline-block -translate-x-1/2 -translate-y-1/2">
+                <div class="video-main relative inline-block">
+                  <button id="video-btn" class="video z-10 flex size-[60px] items-center justify-center rounded-full bg-secondary text-neutral-3">
+                    <i class="ph ph-play text-[24px]"> </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="xl:col-span-5 col-span-12 rounded-3xl h-full flex flex-col justify-center">
+            <h6 class="m-text">About Us</h6>
+            <h4 class="h2 font-bold pt-3 max-w-[300px]">CrafterX Car Service & Repair</h4>
+            <p class="l-text pt-3 opacity-80">
+              Car repair quisque sodales dui ut varius vestibulum drana tortor turpis porttiton tellus eu euismod nisl massa ut odio in the miss volume placerat urna, a lacinia eros nunta urna mauris,
+              vehicula rutrum tempus in the interdum felis.
+            </p>
+            <ul class="list-disc pt-6 flex flex-col gap-3">
+              <li class="l-text list-inside">We offer multiple services</li>
+              <li class="l-text list-inside">Multiple car repair locations</li>
+              <li class="l-text list-inside">Original products</li>
+            </ul>
+            <div class="spt40px flex items-center flex-wrap gap-10">
+              <div class="btn-area group">
+                <a href="./about.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                  <span class="one h5 font-semibold theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full bg-primary text-neutral-3 px-8 py-2.5 capitalize">About Us</span>
+                  <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center text-neutral-3 rounded-full bg-primary p-2.5 text-center">
+                    <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =========== Meet The Professional Team ============ -->
+      <div class="container spt120px">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:sp40px rounded-xl lg:grid grid-cols-12 gap-6"
+        >
+          <h2 class="h2 font-bold col-span-6">Meet The Professional Team Artists</h2>
+          <div class="col-start-8 col-span-5 max-xl:smt40px">
+            <p class="l-text opacity-80">The experts at Crafter Complete Auto Care have years of experience in a range of auto repair services.</p>
+            <div class="btn-area group mt-6 w-fit">
+              <a href="./price.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize"
+                  >Explore More</span
+                >
+                <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+                  <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <!-- team card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="group">
+            <div class="overflow-hidden rounded-xl relative">
+              <img src="./assets/images/team-1.png" alt="Team one" class="w-full object-cover rounded-xl hover:scale-105 duration-300" />
+              <div class="absolute top-6 right-6 lg:top-8 lg:right-8 opacity-0 group-hover:opacity-100 theme-transition-3">
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-facebook-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-twitter-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-instagram-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-linkedin-logo text-[24px] text-neutral-3"></i>
+                </a>
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="h3 font-bold">Brooklyn Simmons</h3>
+              <p class="xl-text pt-3 opacity-80">Engineer</p>
+            </div>
+          </div>
+          <!-- team card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="group">
+            <div class="overflow-hidden rounded-xl relative">
+              <img src="./assets/images/team-2.png" alt="Team one" class="w-full object-cover rounded-xl hover:scale-105 duration-300" />
+              <div class="absolute top-6 right-6 lg:top-8 lg:right-8 opacity-0 group-hover:opacity-100 theme-transition-3">
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-facebook-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-twitter-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-instagram-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-linkedin-logo text-[24px] text-neutral-3"></i>
+                </a>
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="h3 font-bold">Esther Howard</h3>
+              <p class="xl-text pt-3 opacity-80">Advisor</p>
+            </div>
+          </div>
+          <!-- team card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="group">
+            <div class="overflow-hidden rounded-xl relative">
+              <img src="./assets/images/team-3.png" alt="Team one" class="w-full object-cover rounded-xl hover:scale-105 duration-300" />
+              <div class="absolute top-6 right-6 lg:top-8 lg:right-8 opacity-0 group-hover:opacity-100 theme-transition-3">
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-facebook-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-twitter-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-instagram-logo text-[24px] text-neutral-3"></i>
+                </a>
+                <a href="#" class="p-3 bg-neutral-1 flex items-center justify-center hover:bg-primary duration-300">
+                  <i class="ph ph-linkedin-logo text-[24px] text-neutral-3"></i>
+                </a>
+              </div>
+            </div>
+            <div class="pt-6 text-center">
+              <h3 class="h3 font-bold">Leslie Alexander</h3>
+              <p class="xl-text pt-3 opacity-80">Parts Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============ About Us ============ -->
+      <include-About-us />
+      <!-- ============ testimonial slider ============ -->
+      <include-Testimonial />
+      <!-- =========== brand slider ============ -->
+      <div class="spb120px">
+        <include-Brand-slider />
+      </div>
+      <!-- =========== footer section ============ -->
+      <include-Footer />
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

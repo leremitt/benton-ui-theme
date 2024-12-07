@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Caffez - Coffee Shop Website Template</title>
+  </head>
+
+  <body class="bg-white-1 text-secondary text-base p-4 sm:p-6">
+    <main class="custom-container grid grid-cols-12 gap-6">
+      <!-- ================= side video ================= -->
+      <include-sidebarVideo />
+      <!-- ================= main content ================= -->
+      <div class="col-span-12 xl:col-span-8 overflow-hidden 3xl:col-span-6 flex flex-col gap-10 bg-white-4 rounded-20px p-4 md:p-6">
+        <!-- ================= header ================= -->
+        <include-header />
+        <!-- ================= welcome section ================= -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-20px border relative border-black-4 sp32px">
+          <h5 class="h-5 font-bold text-primary text-center">You're always welcome</h5>
+          <div class="spt32px">
+            <h1 class="h1">Fueling Your Day,</h1>
+          </div>
+          <div class="flex max-sm:flex-col pt-10 xs:pt-[50px] gap-8 relative z-10">
+            <div>
+              <img src="./assets/images/welcome-section-image-1.png" alt="Welcome section image one" class="rounded-lg" />
+            </div>
+            <div class="flex flex-col justify-between">
+              <h1 class="h1">The Gourmet Way</h1>
+            </div>
+          </div>
+          <a
+            href="#scrollPosition"
+            class="rounded-32px max-md:hidden absolute left-1/2 bottom-6 max-sm:mt-6 mx-auto bg-black-4 w-[72px] h-[52px] border border-white-3 text-secondary flex items-center justify-center"
+          >
+            <ph class="ph ph-arrow-down text-2xl"></ph>
+          </a>
+          <div class="absolute max-sm:hidden right-8 top-1/2 -translate-y-1/2">
+            <img src="./assets/images/welcome-section-image-2.png" alt="Welcome section image two" class="rounded-lg max-lg:w-[150px]" />
+          </div>
+        </div>
+        <!-- ================= story section ================= -->
+        <include-story />
+        <!-- ================= Our specials section ================= -->
+        <div class="rounded-20px border relative border-black-4 sp32px">
+          <h5 class="h5 font-bold text-primary text-center">From our menu</h5>
+          <h3 class="h3 font-bold text-secondary text-center pt-3">Our specials</h3>
+          <div class="flex flex-col gap-6 xxl:gap-10 3xl:gap-15 spt40px">
+            <!-- card one -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <a href="./menu-details.html" class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center group-hover/card:text-secondary duration-300">Tropical Mocha Bliss</h2>
+                <p class="l-text text-white-2 group-hover/card:text-secondary duration-300">Coffees</p>
+              </a>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+            <!-- card two -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <a href="./menu-details.html" class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center group-hover/card:text-secondary duration-300">Hazelnut Americano</h2>
+                <p class="l-text text-white-2 group-hover/card:text-secondary duration-300">Coffees</p>
+              </a>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+            <!-- card three -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <a href="./blog-details.html" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <div class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center group-hover/card:text-secondary duration-300">Caramel Latte</h2>
+                <p class="l-text text-white-2 group-hover/card:text-secondary duration-300">Coffees</p>
+              </div>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </a>
+            <!-- card four -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <a href="./menu-details.html" class="text-center">
+                <h2 class="h1 font-bold text-white-2 group-hover/card:text-secondary duration-300 text-center">Mocha Frappuccino</h2>
+                <p class="l-text text-white-2 group-hover/card:text-secondary duration-300">Coffees</p>
+              </a>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="btn-area w-fit mx-auto spt40px z-20">
+            <a href="./menu.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-secondary">
+              <span class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-black-4 px-8 py-3 font-medium capitalize"> View All Menu </span>
+              <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-black-4 bg-black-4 p-2.5 text-center">
+                <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- ================= counter ================== -->
+        <div class="rounded-20px border relative flex-wrap flex items-center justify-center xs:justify-between gap-4 border-black-4 sp32px">
+          <div class="relative shrink-0">
+            <span class="odometer d1 font-bold text-black-4" data-counter-value="98"> 0 </span>
+            <span class="xl-text text-black-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> Projects </span>
+          </div>
+          <div class="h-10 w-px bg-black-4 max-xs:hidden"></div>
+          <div class="relative shrink-0">
+            <span class="odometer d1 font-bold text-black-4" data-counter-value="65"> 0 </span>
+            <span class="xl-text text-black-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> People </span>
+          </div>
+          <div class="h-10 w-px bg-black-4 max-xs:hidden"></div>
+          <div class="relative shrink-0">
+            <span class="odometer d1 font-bold text-black-4" data-counter-value="10"> 0 </span>
+            <span class="xl-text text-black-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> Years </span>
+          </div>
+          <div class="h-10 w-px bg-black-4 max-xs:hidden"></div>
+          <div class="relative shrink-0">
+            <span class="odometer d1 font-bold text-black-4" data-counter-value="15"> 0 </span>
+            <span class="xl-text text-black-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> Cafes </span>
+          </div>
+        </div>
+        <!-- ================= country of origin section ================= -->
+        <include-countryOrigin />
+        <!-- ================= team section ================= -->
+        <div class="rounded-20px border relative border-black-4 sp32px">
+          <h5 class="h5 font-bold text-primary text-center">Team</h5>
+          <h3 class="h3 font-bold text-secondary text-center pt-3">Meet our chefs</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 spt40px">
+            <!-- card one -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="border border-primary/30 group duration-500 spt60px spx60px spb40px rounded-xl">
+              <div class="relative">
+                <img src="./assets/images/chef-1.png" alt="A smiling chef with a mischievous grin" class="rounded-tr-[120px] rounded-bl-[120px] relative z-10 mx-auto" />
+                <div class="absolute rounded-tr-[120px] rounded-bl-[120px] bottom-5 left-5 w-full h-full border duration-500 border-transparent group-hover:border-primary/80"></div>
+              </div>
+              <div class="spt40px">
+                <h5 class="h5 font-bold uppercase text-center">HENRI CALLAHAN</h5>
+                <p class="m-text text-center pt-3">Chef</p>
+              </div>
+            </div>
+            <!-- card two -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="border border-primary/30 group duration-500 spt60px spx60px spb40px rounded-xl">
+              <div class="relative">
+                <img src="./assets/images/chef-2.png" alt="A smiling chef with a mischievous grin" class="rounded-tr-[120px] rounded-bl-[120px] relative z-10 mx-auto" />
+                <div class="absolute rounded-tr-[120px] rounded-bl-[120px] bottom-5 left-5 w-full h-full border duration-500 border-transparent group-hover:border-primary/80"></div>
+              </div>
+              <div class="spt40px">
+                <h5 class="h5 font-bold uppercase text-center">DONNA SHIELDS</h5>
+                <p class="m-text text-center pt-3">Assistant Chef</p>
+              </div>
+            </div>
+            <!-- card three -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="border border-primary/30 group duration-500 spt60px spx60px spb40px rounded-xl">
+              <div class="relative">
+                <img src="./assets/images/chef-3.png" alt="A smiling chef with a mischievous grin" class="rounded-tr-[120px] rounded-bl-[120px] relative z-10 mx-auto" />
+                <div class="absolute rounded-tr-[120px] rounded-bl-[120px] bottom-5 left-5 w-full h-full border duration-500 border-transparent group-hover:border-primary/80"></div>
+              </div>
+              <div class="spt40px">
+                <h5 class="h5 font-bold uppercase text-center">NOAH CANNON</h5>
+                <p class="m-text text-center pt-3">Assistant Chef</p>
+              </div>
+            </div>
+            <!-- card four -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="border border-primary/30 group duration-500 spt60px spx60px spb40px rounded-xl">
+              <div class="relative">
+                <img src="./assets/images/chef-4.png" alt="A smiling chef with a mischievous grin" class="rounded-tr-[120px] rounded-bl-[120px] relative z-10 mx-auto" />
+                <div class="absolute rounded-tr-[120px] rounded-bl-[120px] bottom-5 left-5 w-full h-full border duration-500 border-transparent group-hover:border-primary/80"></div>
+              </div>
+              <div class="spt40px">
+                <h5 class="h5 font-bold uppercase text-center">MARCEL FULTON</h5>
+                <p class="m-text text-center pt-3">Chef</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ Testimonials section ============ -->
+        <include-testimonials />
+        <!-- ============ Latest blog Post Section ============ -->
+        <div class="rounded-20px border relative border-black-4 sp32px">
+          <h5 class="h5 font-bold text-primary text-center">From the blog</h5>
+          <h3 class="h3 font-bold text-secondary text-center pt-3">Latest posts</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 spt40px">
+            <!-- blog card one -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-xl overflow-hidden bg-white-1">
+              <div>
+                <img src="./assets/images/blog-image-1.png" alt="blog image one" class="object-cover w-full" />
+              </div>
+              <div class="relative p-6 max-xs:pt-10">
+                <p class="flex items-center"><span class="l-text text-primary">News </span><span class="m-text text-primary/60">. 0 Comments</span></p>
+                <h4 class="h4 font-bold pt-3">The magical vibe of a small cafe</h4>
+                <a href="./blog-details.html" class="pt-6 flex justify-between items-center">
+                  <span class="text-primary m-text font-bold"> View Details </span>
+                  <span
+                    class="text-primary before:absolute group hover:before:h-0 before:h-5 theme-transition-3 before:theme-transition-3 xs:before:w-2 before:bg-white-1 before:-left-1 relative border size-10 flex items-center justify-center rounded-full border-primary"
+                  >
+                    <i
+                      class="ph ph-arrow-right group-hover:ml-0 xs:-ml-4 text-2xl group-hover:after:scale-0 after:theme-transition-3 after:h-px relative theme-transition-6 xs:after:w-12 after:origin-right after:right-5 after:top-1/2 after:absolute after:-mt-px after:bg-primary"
+                    ></i>
+                  </span>
+                </a>
+                <div class="px-4 py-2.5 bg-primary text-white-1 text-center absolute top-0 -translate-y-1/2 right-6">
+                  <p class="h3 font-bold">03</p>
+                  <p class="m-text">JUN</p>
+                </div>
+              </div>
+            </div>
+            <!-- blog card two -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-xl overflow-hidden bg-white-1">
+              <div>
+                <img src="./assets/images/blog-image-2.png" alt="blog image tow" class="object-cover w-full" />
+              </div>
+              <div class="relative p-6 max-xs:pt-10">
+                <p class="flex items-center"><span class="l-text text-primary">News </span><span class="m-text text-primary/60">. 0 Comments</span></p>
+                <h4 class="h4 font-bold pt-3">Must-try exotic coffee drinks in 2024</h4>
+                <a href="./blog-details.html" class="pt-6 flex justify-between items-center">
+                  <span class="text-primary m-text font-bold"> View Details </span>
+                  <span
+                    class="text-primary before:absolute group hover:before:h-0 before:h-5 theme-transition-3 before:theme-transition-3 xs:before:w-2 before:bg-white-1 before:-left-1 relative border size-10 flex items-center justify-center rounded-full border-primary"
+                  >
+                    <i
+                      class="ph ph-arrow-right group-hover:ml-0 xs:-ml-4 text-2xl group-hover:after:scale-0 after:theme-transition-3 after:h-px relative theme-transition-6 xs:after:w-12 after:origin-right after:right-5 after:top-1/2 after:absolute after:-mt-px after:bg-primary"
+                    ></i>
+                  </span>
+                </a>
+                <div class="px-4 py-2.5 bg-primary text-white-1 text-center absolute top-0 -translate-y-1/2 right-6">
+                  <p class="h3 font-bold">03</p>
+                  <p class="m-text">JUN</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="btn-area w-fit mx-auto spt40px z-20">
+            <a href="#" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-secondary">
+              <span class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-black-4 px-8 py-3 font-medium capitalize"> More News </span>
+              <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-black-4 bg-black-4 p-2.5 text-center">
+                <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= footer ================= -->
+        <include-footer />
+      </div>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

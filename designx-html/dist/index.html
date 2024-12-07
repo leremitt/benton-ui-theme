@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Design Agency HTML, Tailwindcss Template">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>DesignX - Design Agency HTML, Tailwindcss Template </title>
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+  <!-- Header Starts -->
+  <header class="sticky top-0 z-50 bg-nc20">
+    <div class="container py-5 cmnhed rounded-3xl">
+      <nav class="text-nw10 rounded-3xl">
+        <div class="flex justify-between items-center relative">
+          <a href="../index.html" class="flex items-center gap-3">
+            <img class="w-[40px] md:w-full" src="./assets/images/main-logo.png" alt="logo">
+            <div class="flex items-center gap-1">
+              <h3 class="font-bold md:hidden lg:block font-OpenSans">Design</h3>
+              <span class="font-bold md:hidden lg:block font-OpenSans fs-three text-primary">X</span>
+            </div>
+          </a>
+
+          <!-- MOBILE NAV ICON -->
+          <div class="md:hidden block absolute top-[15%] right-0">
+            <button aria-label="navigation" type="button"
+              class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+                class="ph-thin ph-list text-3xl" id="bars"></i></button>
+          </div>
+
+          <!-- NAVIGATION - LARGE SCREENS -->
+          <div class="hidden md:flex">
+            <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10">
+              <li class="cmnhed"><a href="#slider"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Our
+                  Work</a>
+              </li>
+              <li class="cmnhed"><a href="#features"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Features</a>
+              </li>
+              <li class=""><a href="#scope"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Scope
+                  of work</a>
+              </li>
+              <li class=""><a href="#plans"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Plans</a>
+              </li>
+              <li class=""><a href="#faqs"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-area max-sm:hidden z-20 hidden md:flex duration-500">
+            <a href="#" aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-secondary  duration-500">
+              <span
+                class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-8 py-3 font-light border-2 border-primary duration-500">
+                Subscribe
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full border-2 border-primary bg-black-4 p-2.5 text-center duration-500">
+                <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+          <!-- <div class="hidden md:flex">
+            <a href="../contact-us.html" class="flex items-center group duration-700">
+              <span class="py-2 md:py-3 px-4 lg:px-5 bg-primary text-nb10 rounded-2xl duration-500 font-normal">Contact
+                Us</span>
+              <i
+                class="ph ph-arrow-up-right p-3 lg:p-[14px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+            </a>
+          </div> -->
+        </div>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+          <div class="flex flex-col justify-center items-center w-full gap-4">
+            <a href="#slider"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Our
+              Work</a>
+            <a href="#features"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Features</a>
+            <a href="#scope"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Scope
+              of work</a>
+            <a href="#plans"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Plans</a>
+            <a href="#faqs"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">FAQs</a>
+            <!-- <a href="../contact-us.html" class="flex items-center group duration-700">
+              <span class="py-3 lg:py-4 px-4 lg:px-8 bg-primary text-nb10 rounded-2xl duration-500 font-medium">Contact
+                Us</span>
+              <i
+                class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+            </a> -->
+            <div class="btn-area z-20 md:flex duration-500">
+              <a href="#" aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-secondary  duration-500">
+                <span
+                  class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-8 py-3 font-light border-2 border-primary duration-500">
+                  Subscribe
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full border-2 border-primary bg-black-4 p-2.5 text-center duration-500">
+                  <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Ends -->
+  <!-- Hero Section Starts -->
+  <section class="py-14 md:py-[80px] lg:py-[100px]">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-6 items-end">
+        <div class="col-span-full lg:col-span-7">
+          <div class="mb-6 sm:mb-12 md:mb-[60px] lg:mb-20" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="display-3 leading-[32px] lg:leading-[64px]">Your all-in-one <br class="max-lg:hidden">
+              design solution under
+              <span class="text-primary display-3 leading-[32px] lg:leading-[64px] inline-block underline">one
+                subscription.</span>
+            </h1>
+          </div>
+          <div class="flex items-center max-sm:flex-wrap gap-2 lg:gap-3" data-aos="fade-up-right"
+            data-aos-duration="1000">
+            <div class="">
+              <img class="shrink-0" src="./assets/images/bedimanush.png" alt="Image">
+            </div>
+            <div class="">
+              <p class="mb-1 fs-five">“They absolutely crush all requests. Every <br class="max-lg:hidden"> design has
+                been spot on!</p>
+              <span class="text-sm opacity-80">Octav Cretu, Managing Partner @ Nexus Media</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-5">
+          <div class="relative">
+            <img class="absolute top-[-30%] left-[-40%] xl:left-[-25%] max-lg:hidden" src="assets/images/icon/kirmi.png"
+              alt="Icon" data-aos="fade-right" data-aos-duration="1200">
+            <div class="flex justify-center mb-12 md:mb-16 lg:mb-20">
+              <div class="inline-block relative">
+                <img draggable="false" class="mx-auto ball" src="./assets/images/infinity-text.png" alt="Text Round">
+                <a href="#"
+                  class="size-[48px] bg-primary rounded-full d-center absolute  top-[38%] left-[38%] hover:rotate-45 duration-300">
+                  <i class="ph-bold ph-arrow-up-right text-nc20"></i>
+                </a>
+              </div>
+            </div>
+            <div class="" data-aos="fade-up" data-aos-duration="1200">
+              <p class="fs-four font-light mb-6 md:mb-8">DesignX is a design agency that offers world-class, unlimited
+                design for a flat monthly price.</p>
+              <div class="flex max-sm:flex-wrap gap-3 lg:gap-4">
+                <a href="#"
+                  class="border border-primary rounded-full flex gap-2 lg:gap-3 items-center py-2 px-4 lg:px-5">
+                  <span class="text-lg">See plans</span> <span
+                    class="border border-primary rounded-full size-[32px] d-center p-[6px]"><i
+                      class="ph ph-arrow-up-right"></i></span>
+                </a>
+                <div
+                  class="flex items-center gap-2 border cursor-pointer border-nc40 py-[10px] px-4 lg:px-6 rounded-full">
+                  <span class="size-[12px] rounded-full bg-primary"></span>
+                  <span class="text-lg">2 spots left</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section Ends -->
+  <!-- Slider Section Starts -->
+  <div id="slider" class="px-3 sm:px-6 md:px-10 lg:px-[60px] pb-6 lg:pb-10">
+    <div class="swiper brad-carousel-show">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="items-wrapper">
+            <div class="border-[12px] border-nc40 rounded-[32px]">
+              <img class="rounded-[32px]" src="./assets/images/slider-two.png" alt="Image">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="items-wrapper">
+            <div class="border-[12px] border-nc40 rounded-[32px]">
+              <img class="rounded-[32px]" src="./assets/images/slider-one.png" alt="Image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- <div class="flex items-center gap-6">
+      <div class="border-[12px] border-nc40 rounded-[32px]">
+        <img class="rounded-[32px]" src="./assets/images/slider-two.png" alt="Image">
+      </div>
+      <div class="border-[12px] border-nc40 rounded-[32px]">
+        <img class="rounded-[32px]" src="./assets/images/slider-one.png" alt="Image">
+      </div>
+    </div> -->
+  </div>
+  <!-- Slider Section Ends -->
+  <!-- Partnered Section Starts -->
+  <section class="py-14 sm:py-16 md:py-20 lg:py-[120px]">
+    <div class="container">
+      <div class="flex items-center justify-between max-sm:flex-wrap gap-1 sm:gap-6 mb-6 sm:mb-8 md:mb-10 lg:mb-[60px]">
+        <h5>Partnered with global industry leaders. <a href="#"
+            class="inline-block text-primary underline fs-five">You're in
+            good hands.</a></h5>
+        <span class="text-base opacity-80">Drag horizontally to see our work</span>
+      </div>
+      <div class="swiper brad-carousel">
+        <div class="swiper-wrapper flex">
+          <div class="swiper-slide">
+            <div class="items-wrapper">
+              <img src="./assets/images/gitlap.png" alt="Icon">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="items-wrapper">
+              <img src="./assets/images/dropbox.png" alt="Icon">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="items-wrapper">
+              <img src="./assets/images/lattice.png" alt="Icon">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="items-wrapper">
+              <img src="./assets/images/pingdom.png" alt="Icon">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="items-wrapper">
+              <img src="./assets/images/sendgrid.png" alt="Icon">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="items-wrapper">
+              <img src="./assets/images/pendo.png" alt="Icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Partnered Section Ends -->
+  <!-- Design so good starts -->
+  <section id="features">
+    <div class="container">
+      <div class="mb-8 md:mb-10 lg:mb-[60px]" data-aos="fade-up" data-aos-duration="1200">
+        <h1 class="leading-[50px] text-center">Design so good it will make <br class="max-lg:hidden"> you <span
+            class="fs-one text-primary inline-block">swipe right.</span></h1>
+      </div>
+      <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-full xxl:col-span-4">
+          <div
+            class="p-3 md:p-6 lg:p-10 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="">
+              <h1
+                class="counters flex items-center justify-center text-primary text-[100px] sm:text-[120px] xxl:text-[160px] font-bold leading-[112px] sm:leading-[122px] xxl:leading-[192px]">
+                <span class="odometer" counter-value="45"></span>
+                <span class="">h</span>
+              </h1>
+            </div>
+            <span class="fs-four font-medium mb-3 max-xxl:text-center">Lightning speed delivery</span>
+            <p class="opacity-70 font-light max-xxl:text-center">Make your request, and you'll have it done in around
+              two working days.</p>
+          </div>
+        </div>
+        <div class="col-span-full xxl:col-span-8">
+          <div
+            class="p-3 sm:p-6 md:p-8 lg:p-12 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(310deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="flex justify-center items-center gap-3 md:gap-4 lg:gap-6 mb-6 lg:mb-3 max-sm:flex-wrap">
+              <img class="max-lg:size-[60px]" src="assets/images/icon/surface1.png" alt="Icon">
+              <img class="max-lg:size-[60px]" src="assets/images/icon/figma-icone-svg-150px.png" alt="Icon">
+              <img class="max-lg:size-[60px]" src="assets/images/icon/sketch-icone-svg-150px.png" alt="Icon">
+              <img class="max-lg:size-[60px]" src="assets/images/icon/dribbble-icone-svg-150px.png" alt="Icon">
+              <img class="max-lg:size-[60px]" src="assets/images/icon/webflow-icone-svg-150px.png" alt="Icon">
+              <img class="max-lg:size-[60px]" src="assets/images/icon/adobe-icone-svg-150px.png" alt="Icon">
+            </div>
+            <div class="d-center mb-2 lg:mb-3 max-lg:hidden">
+              <img src="assets/images/icon/you.png" alt="icon">
+            </div>
+            <div class="flex items-center gap-3 md:gap-10 lg:gap-[92px]">
+              <div class="">
+                <h4 class="mb-2 md:mb-3 max-sm:text-center">Unlimited designs and revisions</h4>
+                <p class="text-lg opacity-70 max-sm:text-center">Request unlimited designs and we will work on them one
+                  at a time until you are 100% satisfied.</p>
+              </div>
+              <div class="max-sm:hidden">
+                <img src="assets/images/icon/shanto.png" alt="Shanto">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-7">
+          <div
+            class="ps-3 md:ps-6 lg:ps-10 py-4 md:py-6 lg:py-8 pr-3 md:pr-6 lg:pr-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="flex items-center max-sm:flex-wrap gap-4 md:gap-5">
+              <div class="">
+                <h4 class="mb-3">Top-notch work at a fraction of the cost</h4>
+                <p class="text-lg opacity-70">Say goodbye to costly traditional agencies. Get all your design needs
+                  covered for just $1,990/month.</p>
+              </div>
+              <div
+                class="p-3 sm:p-5 md:p-6 lg:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]">
+                <span class="text-lg opacity-70 mb-3">Invoice</span>
+                <div class="flex items-center gap-2 sm:gap-3 mb-4 md:mb-6 lg:mb-8">
+                  <span class="fs-three text-primary">$19,000</span>
+                  <span class="fs-four text-nc50 stripe line-through">$32,000</span>
+                </div>
+                <div class="">
+                  <img draggable="false" src="./assets/images/line-shape.png" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-5">
+          <div
+            class="px-3 md:px-6 lg:px-8 pb-3 md:pb-6 lg:pb-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)] h-full"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="mb-3">
+              <img draggable="false" src="assets/images/pause.png" alt="Icon">
+            </div>
+            <p class="text-lg opacity-70 font-light">No more requests for the time being? Just hit pause and resume your
+              subscription at a future date.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full p-3 md:p-6 lg:p-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="mb-3 md:mb-4">
+              <img src="assets/images/messages.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3">Connect directly with your dedicated designer</h4>
+            <p class="text-base font-light opacity-70">Forget intermediaries, you &amp; your team will directly
+              collaborate with your designer on Slack.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full p-3 md:p-6 lg:p-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="mb-4 md:mb-8">
+              <img class="mx-auto" src="assets/images/tree.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3">We take your product from seed to series</h4>
+            <p class="text-base font-light opacity-70">We're more than pixel makers. We offer the expertise to guide
+              early founders past common mistakes.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full p-3 md:p-6 lg:p-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-down" data-aos-duration="1200">
+            <div class="mb-3 md:mb-5">
+              <img class="mx-auto" src="assets/images/chats.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3">We take your product from seed to series</h4>
+            <p class="text-base font-light opacity-70">We're more than pixel makers. We offer the expertise to guide
+              early founders past common mistakes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Design so good ends -->
+  <!-- design journey starts -->
+  <section class="py-14 sm:py-16 md:py-20 lg:py-[120px]">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full lg:col-span-6">
+          <div class="" data-aos="fade-right" data-aos-duration="1200">
+            <h1 class="max-md:leading-[32px] xl:leading-[56px] mb-6 md:mb-8 lg:mb-10">Your design journey in <span
+                class="fs-one text-primary inline-block">three effortless steps.</span></h1>
+            <div
+              class="p-4 md:p-6 rounded-xl border border-[rgba(128,128,128,0.30)] duration-500 bg-[linear-gradient(307deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)] flex items-center max-sm:flex-wrap gap-4 md:gap-6 mb-6 md:mb-8">
+              <div class="">
+                <img class="shrink-0" src="./assets/images/icon/slack.png" alt="Icon">
+              </div>
+              <p class="text-base">Subscribe and get immediate access to an exclusive Slack channel, connecting you and
+                your team with a dedicated designer.</p>
+            </div>
+            <div class="p-4 md:p-6 rounded-xl flex items-center max-sm:flex-wrap gap-4 md:gap-6 mb-6 md:mb-8">
+              <div class="">
+                <img class="shrink-0" src="./assets/images/icon/prienterst.png" alt="Icon">
+              </div>
+              <p class="text-base">Start chatting about the work you need, and we will get started right away.</p>
+            </div>
+            <div class="p-4 md:p-6 rounded-xl flex items-center max-sm:flex-wrap gap-4 md:gap-6">
+              <div class="">
+                <img class="shrink-0" src="./assets/images/icon/jotform.png" alt="Icon">
+              </div>
+              <p class="text-base">Once your first request is finished, it's time for the next step: request a revision
+                or move on to another task.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-6">
+          <div class="" data-aos="fade-left" data-aos-duration="1200">
+            <img draggable="false" src="./assets/images/subscribe.png" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- design journey ends -->
+  <!-- Card section Starts -->
+  <section>
+    <div class="container">
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full px-3 md:px-6 lg:px-9 py-6 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-down" data-aos-duration="1200">
+            <div class="mb-6 md:mb-9">
+              <img class="mx-auto" src="assets/images/icon/payroll.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3 text-center">A “payroll” that makes sense</h4>
+            <p class="text-base font-light opacity-70 text-center">Say goodbye to absurd salaries, bonuses, vacations,
+              and sick days.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full px-3 md:px-6 lg:px-9 py-6 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-down" data-aos-duration="1200">
+            <div class="mb-6 md:mb-9">
+              <img class="mx-auto" src="assets/images/icon/spots.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3 text-center">Few available spots</h4>
+            <p class="text-base font-light opacity-70 text-center">We keep our clients list short so you get that
+              special treatment.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full px-3 md:px-6 lg:px-9 py-6 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-down" data-aos-duration="1200">
+            <div class="mb-6 md:mb-9">
+              <img class="mx-auto" src="assets/images/icon/unlimited.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3 text-center">Unlimited brands</h4>
+            <p class="text-base font-light opacity-70 text-center">Only one monthly fee for streamlining your designs
+              across all your businesses.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full px-3 md:px-6 lg:px-9 py-6 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-down" data-aos-duration="1200">
+            <div class="mb-6 md:mb-9">
+              <img class="mx-auto" src="assets/images/icon/meetings.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3 text-center">No (useless) meetings</h4>
+            <p class="text-base font-light opacity-70 text-center">Only one monthly fee for streamlining your designs
+              across all your businesses.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full px-3 md:px-6 lg:px-9 py-6 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-down" data-aos-duration="1200">
+            <div class="mb-6 md:mb-9">
+              <img class="mx-auto" src="assets/images/icon/contacts.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3 text-center">No need for contracts</h4>
+            <p class="text-base font-light opacity-70 text-center">Only one monthly fee for streamlining your designs
+              across all your businesses.</p>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="h-full px-3 md:px-6 lg:px-9 py-6 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(107deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-down" data-aos-duration="1200">
+            <div class="mb-6 md:mb-9">
+              <img class="mx-auto" src="assets/images/icon/tools-love.png" alt="Image">
+            </div>
+            <h4 class="mb-2 md:mb-3 text-center">Tools you know and love</h4>
+            <p class="text-base font-light opacity-70 text-center">We use Figma and the Adobe Creative Suite, Slack to
+              deliver you the best results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Card section Ends -->
+  <!-- Solution design Starts -->
+  <section id="scope" class="py-14 sm:py-16 md:py-20 lg:py-[120px]">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-4 md:gap-6">
+        <div class="col-span-full">
+          <div class="mb-8 md:mb-10 lg:mb-[60px] text-center" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="max-md:leading-[32px] xl:leading-[56px] mb-6 md:mb-8 lg:mb-10">The solution to all your <span
+                class="fs-one text-primary max-xl:inline-block underline">design needs.</span></h1>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/logos.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Logos</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/brand-gui.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Brand Guidelines</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/landing-page.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Landing Pages</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/digital.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Digital Products</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/mobile.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Mobile Apps</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/social-media.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Social Media</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/pitch-decks.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Pitch Decks</h4>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-3">
+          <div
+            class="p-3 py-5 sm:p-6 md:p-8 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="mb-4 md:mb-5 lg:mb-6">
+              <img class="mx-auto" src="assets/images/icon/email-templates.png" alt="Icon">
+            </div>
+            <h4 class="text-center">Email Templates</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Solution design Ends -->
+  <!-- Packages Starts -->
+  <section id="plans">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-full">
+          <div class="mb-8 md:mb-10 lg:mb-[60px]" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="max-md:leading-[32px] xl:leading-[56px] mb-6 md:mb-8 lg:mb-10">Discover our pricing and <span
+                class="fs-one text-primary max-xl:inline-block">get started today.</span></h1>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-6">
+          <div
+            class="p-3 py-5 sm:p-6  md:p-8 lg:p-10 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="inline-block mb-6 md:mb-8">
+              <div
+                class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                <span class="size-[12px] rounded-full bg-primary"></span>
+                <span class="text-lg">2 spots left</span>
+              </div>
+            </div>
+            <h3 class="mb-6 md:mb-8"><span class="text-primary block fs-three font-bold">Monthly</span> $4,490 <span
+                class="inline-block">/mo</span></h3>
+            <p class="text-lg mb-6 md:mb-8">Ideal for startups with an ongoing demand for design services.</p>
+            <div class="flex max-sm:flex-wrap gap-3 lg:gap-4 mb-8 md:mb-10 lg:mb-[60px]">
+              <a href="#"
+                class="border border-primary bg-primary rounded-full flex gap-2 lg:gap-3 items-center py-2 px-4 lg:px-5">
+                <span class="text-lg font-normal text-nc20">Subscribe</span> <span
+                  class="border border-primary rounded-full size-[32px] d-center p-[6px] bg-nc20"><i
+                    class="ph ph-arrow-up-right"></i></span>
+              </a>
+              <a href="#"
+                class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                <span class="text-lg">Book a Call</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-12 gap-4 sm:gap-6">
+              <div class="col-span-full md:col-span-6">
+                <ul class="flex flex-col gap-3 md:gap-4">
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Unlimited requests</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> ~48 hour delivery</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Unlimited requests</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Invite your team</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-full md:col-span-6">
+                <ul class="flex flex-col gap-3 md:gap-4">
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Unlimited requests</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> ~48 hour delivery</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Unlimited requests</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Invite your team</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full lg:col-span-6">
+          <div
+            class="px-3 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 lg:py-11 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)] mb-4 md:mb-6"
+            data-aos="fade-down" data-aos-duration="1000">
+            <h3 class="text-primary font-bold mb-4 md:mb-6">Custom</h3>
+            <p class="text-lg mb-4 md:mb-6">Ideal for startups with project-based design needs.</p>
+            <div class="flex items-center flex-wrap gap-3 justify-between">
+              <a href="#"
+                class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                <span class="text-lg">Book a Call</span>
+              </a>
+              <div class="">
+                <ul class="flex flex-col gap-3 md:gap-4">
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Unlimited requests</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> ~48 hour delivery</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <ul class="flex flex-col gap-3 md:gap-4">
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> Unlimited requests</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph-fill ph-star text-base text-primary"></i>
+                    <span class="text-lg opacity-80"> ~48 hour delivery</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="px-3 sm:px-6 md:px-8 lg:px-10 py-6 md:py-8 lg:py-9 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="fade-up" data-aos-duration="1000">
+            <div class="inline-block mb-4 md:mb-6">
+              <a href="#"
+                class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                <span class="text-lg">Book a Call</span>
+              </a>
+            </div>
+            <div class="mb-4 md:mb-6">
+              <h3 class="text-primary mb-2">Framer development</h3>
+              <div class="flex items-end gap-1">
+                <h2>+$500</h2>
+                <span class="text-base">/mo</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center flex-wrap sm:flex-nowrap  lg:flex-wrap xl:flex-nowrap gap-6 md:gap-8 lg:gap-10">
+              <a href="#"
+                class="border border-primary bg-primary rounded-full flex gap-2 lg:gap-3 items-center py-2 px-4 lg:px-5">
+                <span class="text-lg font-normal text-nc20">Subscribe</span> <span
+                  class="border border-primary rounded-full size-[32px] d-center p-[6px] bg-nc20"><i
+                    class="ph ph-arrow-up-right"></i></span>
+              </a>
+              <p class="text-lg">Framer website development + 3 free months of Pro annual subscription.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full">
+          <div
+            class="py-6 md:py-8 lg:py-10 px-3 rounded-xl border border-[rgba(128,128,128,0.30)] bg-[linear-gradient(207deg,rgba(255,255,255,0.15)_0.76%,rgba(255,255,255,0.00)_100%)]"
+            data-aos="flip-right" data-aos-duration="1200">
+            <div class="flex items-center justify-center max-md:flex-wrap gap-4 sm:gap-6 md:gap-10 lg:gap-[60px]">
+              <div class="flex items-center justify-center max-sm:flex-wrap gap-4 sm:gap-6 lg:gap-8">
+                <h3 class="text-primary">Refer a friend &amp; earn</h3>
+                <p>Receive $250 for <br class="max-xl:hidden"> each referral!</p>
+              </div>
+              <div class="">
+                <a href="" class="py-2 md:py-[10] px-5 md:px-6 rounded-full border border-nc50">Join Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Packages Ends -->
+  <!-- FAQ Section Starts -->
+  <section id="faqs" class="py-14 sm:py-16 md:py-20 lg:py-[120px]">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-full sm:col-span-6">
+          <div class="accordion-section">
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-[#8080804d] p-3 md:p-4 lg:p-6"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-2xl font-normal"
+                  type="button">
+                  Why not hire a full-time designer?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10"><i
+                    class="ph ph-caret-down"></i></button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="font-base w-[90%]">Our cancellation policy varies depending on the service and service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-[#8080804d] p-3 md:p-4 lg:p-6"
+              data-aos="fade-up" data-aos-duration="1400">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-2xl font-normal"
+                  type="button">
+                  What does “unlimited" requests mean?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10"><i
+                    class="ph ph-caret-down"></i></button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="font-base w-[90%]">Our cancellation policy varies depending on the service and service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle rounded-xl border border-[#8080804d] p-3 md:p-4 lg:p-6"
+              data-aos="fade-up" data-aos-duration="1600">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-2xl font-normal"
+                  type="button">
+                  In what tools will the designs be created?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10"><i
+                    class="ph ph-caret-down"></i></button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="font-base w-[90%]">Our cancellation policy varies depending on the service and service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6">
+          <div class="accordion-section">
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-[#8080804d] p-3 md:p-4 lg:p-6"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-2xl font-normal"
+                  type="button">
+                  What is the average turnaround time?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10"><i
+                    class="ph ph-caret-down"></i></button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="font-base w-[90%]">Our cancellation policy varies depending on the service and service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle mb-6 rounded-xl border border-[#8080804d] p-3 md:p-4 lg:p-6"
+              data-aos="fade-up" data-aos-duration="1400">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-2xl font-normal"
+                  type="button">
+                  How does the pause feature work?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10"><i
+                    class="ph ph-caret-down"></i></button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="font-base w-[90%]">Our cancellation policy varies depending on the service and service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle rounded-xl border border-[#8080804d] p-3 md:p-4 lg:p-6"
+              data-aos="fade-up" data-aos-duration="1600">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-2xl font-normal"
+                  type="button">
+                  Is it possible to request a refund?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10"><i
+                    class="ph ph-caret-down"></i></button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="font-base w-[90%]">Our cancellation policy varies depending on the service and service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section Ends -->
+  <!-- Short section Starts -->
+  <div class="container pb-14 sm:pb-16 md:pb-20 lg:pb-[120px]">
+    <div class="p-2 bg-nc30 rounded-[32px]" data-aos="zoom-in" data-aos-duration="1200">
+      <img class="rounded-[32px]" src="./assets/images/big-image.png" alt="Image">
+    </div>
+  </div>
+  <!-- Short section Ends -->
+  <!-- Footer Section Starts -->
+  <footer>
+    <div class="container">
+      <div
+        class="px-3 py-5 sm:p-6 md:p-10 lg:p-[60px] rounded-xl border border-[rgba(128,128,128,0.20)] bg-[linear-gradient(168deg,rgba(255,255,255,0.06)_8.22%,rgba(255,255,255,0.00)_45.73%)]">
+        <div class="grid grid-cols-12 gap-8 xxl:gap-[56px]">
+          <div class="col-span-full sm:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-3">
+            <div class="" data-aos="fade-up" data-aos-duration="1200">
+              <div class="mb-4 md:mb-6">
+                <img class="mb-4" src="./assets/images/logo-footer2.png" alt="Icon">
+                <h6 class="font-bold">Want to make sure we are the <br class="block sm:hidden"> right fit? Book a
+                  discovery call!</h6>
+              </div>
+              <p class="md:text-lg opacity-80 mb-4 md:mb-6 lg:mb-8">Find out how you can up your design <br
+                  class="block sm:hidden"> game, forever.</p>
+              <div class="">
+                <div class="inline-block mb-3 md:mb-4">
+                  <a href="#"
+                    class="border border-primary bg-primary rounded-full flex gap-2 lg:gap-3 items-center py-2 px-4 lg:px-5">
+                    <span class="text-lg font-normal text-nc20">Book a call</span> <span
+                      class="border border-primary rounded-full size-[32px] d-center p-[6px] bg-nc20"><i
+                        class="ph ph-arrow-up-right rotate-45"></i></span>
+                  </a>
+                </div>
+                <div class="hidden sm:inline-block">
+                  <a href="#"
+                    class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                    <span class="text-lg">See our plans</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-full sm:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+            <div class="" data-aos="fade-up" data-aos-duration="1600">
+              <div class="mb-6 md:mb-10 lg:mb-[53px]">
+                <i class="ph ph-grid-four text-primary mb-3 md:mb-4"></i>
+                <h6>Navigation</h6>
+              </div>
+              <div class="">
+                <ul class="flex flex-col gap-2 md:gap-3">
+                  <li><a href="#" class="md:text-lg opacity-80">Log in</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">Subscribe</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">Our work</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">Features</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">Scope of work</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">Plan</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-full sm:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+            <div class="" data-aos="fade-up" data-aos-duration="1800">
+              <div class="mb-6 md:mb-10 lg:mb-[53px]">
+                <i class="ph ph-globe-hemisphere-east text-primary mb-3 md:mb-4"></i>
+                <h6>Legal Info</h6>
+              </div>
+              <div class="">
+                <ul class="flex flex-col gap-2 md:gap-3">
+                  <li><a href="#" class="md:text-lg opacity-80 xl:text-nowrap">Terms &amp; Conditions</a></li>
+                  <li><a href="#" class="md:text-lg opacity-80">Privacy policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-full sm:col-span-6 md:col-span-4 lg:col-span-3 xxl:col-span-2">
+            <div class="" data-aos="fade-up" data-aos-duration="2200">
+              <div class="mb-6 md:mb-10 lg:mb-[53px]">
+                <i class="ph ph-at text-primary mb-3 md:mb-4"></i>
+                <h6>Contact us</h6>
+              </div>
+              <div class="">
+                <ul class="flex flex-col gap-2 md:gap-3 mb-4 md:mb-6">
+                  <li><a href="#" class="md:text-lg opacity-80">Contact@kakku.studio</a></li>
+                </ul>
+                <div class="inline-block mb-3 md:mb-4">
+                  <div class="inline-block mb-4 md:mb-6">
+                    <a href="#"
+                      class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                      <span class="text-lg">Book a call</span>
+                    </a>
+                  </div>
+                  <div class="inline-block">
+                    <a href="#"
+                      class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                      <span class="text-lg">Chat with us</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-full sm:col-span-6 md:col-span-4 lg:col-span-4 xxl:col-span-3">
+            <div class="" data-aos="fade-up" data-aos-duration="2600">
+              <div class="mb-6 md:mb-10 lg:mb-[53px]">
+                <i class="ph ph-heart text-primary mb-3 md:mb-4"></i>
+                <h6>Made by Kakku Badea</h6>
+              </div>
+              <div class="">
+                <ul class="flex flex-col gap-2 md:gap-3 mb-4 md:mb-6">
+                  <li><a href="#" class="md:text-lg opacity-80">sara.cruz@exam.com</a></li>
+                </ul>
+                <div class="inline-block mb-3 md:mb-4">
+                  <div class="inline-block">
+                    <a href="#"
+                      class="flex items-center gap-2 border cursor-pointer border-[#1C1C1C] py-[10px] px-4 lg:px-6 rounded-full">
+                      <span class="text-lg">Follow on</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Ends -->
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/plguins.js"></script>
+  <script src="./assets/js/plguins-custom.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

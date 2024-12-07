@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Blog Details - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <section>
+  <!-- Desktop Menu -->
+  <div
+    class="fixed bottom-10 right-0 left-0 flex justify-center items-center w-full max-lg:hidden z-20"
+  >
+    <div
+      class="text-black bg-n4 rounded-xl uppercase flex justify-between items-center max-w-[900px] px-3 py-4 gap-10"
+    >
+      <a href="./index.html" class="flex justify-center items-center gap-2">
+        <img src="./assets/images/fav.png" class="size-8" alt="" />
+        <h4 class="heading-4">drinko</h4>
+      </a>
+
+      <nav>
+        <ul class="flex justify-center items-center gap-8 heading-6">
+          <li><a href="./about-us.html">about</a></li>
+          <li><a href="./menu.html">menu</a></li>
+          <li><a href="./blog.html">blog</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="heading-6">
+        <a
+          href="./book-table.html"
+          class="uppercase border border-black py-3 px-4 rounded-xl"
+        >
+          book a table
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="relative lg:hidden z-20">
+    <button
+      id="mobileModalButton"
+      class="text-3xl text-n4 border border-n4 !leading-none flex justify-center items-center rounded-md p-1 fixed top-10 left-10"
+    >
+      <i class="ph ph-list"></i>
+    </button>
+
+    <div
+      class="modalClose fixed left-8 top-20 w-[200px] origin-top-left rounded-2xl border border-borderColor text-black bg-n4 py-4 duration-500"
+      id="mobileMenuModal"
+    >
+      <ul class="flex flex-col gap-3 pl-4">
+        <li class="">
+          <a href="./about-us.html">About</a>
+        </li>
+        <li class="">
+          <a href="./menu.html">Menu</a>
+        </li>
+        <li class="">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="">
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li class="">
+          <a href="./book-table.html">Book A Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Header Area End -->
+      <section class="grid grid-cols-12 gap-6">
+        <div class="rounded-[20px] overflow-hidden col-span-12">
+          <img src="./assets/images/blog-details-img.png" alt="" />
+        </div>
+        <div
+          class="col-span-12 4xl:flex 4xl:justify-between 4xl:items-start gap-6 max-4xl:grid max-4xl:grid-cols-12"
+        >
+          <div class="col-span-12 lg:col-span-8 4xl:w-[70%]">
+            <p class="text-lg">April 20, 2024</p>
+            <h2 class="heading-2 pt-5 pb-4">
+              Crafting Cocktails with Character
+            </h2>
+            <p class="text-lg text-n3">
+              In our blog, we delve into the fascinating world of mixology,
+              exploring the latest trends and innovations in cocktail culture.
+              From craft cocktails infused with unique ingredients to innovative
+              techniques for creating visually stunning drinks, we provide
+              inspiration for aspiring home bartenders and seasoned
+              professionals alike. learn insider tips from expert mixologists,
+              and elevate your cocktail game with our comprehensive guides and
+              tutorials.
+            </p>
+
+            <div
+              class="rounded-[20px] py-8 px-6 sm:px-12 border border-borderColor my-6"
+            >
+              <p class="heading-5">
+                Welcome to our drink bar website blog, where we share exciting
+                insights, trends, and tips to elevate your drinking experience.
+                Whether you're a cocktail enthusiast, a coffee aficionado, or
+                simply looking to discover new beverages, our blog has something
+                for everyone.
+              </p>
+            </div>
+
+            <p class="text-lg text-n3">
+              Coffee lovers rejoice! Our blog celebrates the rich and diverse
+              world of coffee, from specialty brews to artisanal roasts. We
+              share informative articles on coffee brewing methods, coffee bean
+              origins, and the latest trends in the coffee industry.
+            </p>
+
+            <h3 class="pt-10 heading-3">
+              Mocktails and Non-Alcoholic Alternatives
+            </h3>
+
+            <p class="text-lg text-n3">
+              For those seeking alcohol-free options, our blog features a
+              variety of refreshing mocktail recipes and non-alcoholic beverages
+              to enjoy guilt-free. From fruity spritzers to aromatic herbal
+              infusions, we showcase creative and delicious drinks that are
+              perfect for any occasion. Whether you're abstaining from alcohol
+              or simply looking to hydrate with something flavorful,
+            </p>
+
+            <ul
+              class="flex flex-col gap-3 text-lg my-5 list-decimal list-inside"
+            >
+              <li>It is a long-established fact that a reader will.</li>
+              <li>The standard chunk of Lorem Ipsum used since the 1500s.</li>
+              <li>It is a long-established fact that a reader will.</li>
+            </ul>
+
+            <p class="text-lg text-n3">
+              whether it's gathering with friends for a cocktail party or
+              enjoying a quiet moment of reflection over a cup of tea. We share
+              stories of camaraderie, friendship, and celebration, reminding our
+              readers that the true joy of drinking lies in the connections we
+              make and the memories we create.
+            </p>
+
+            <div class="stp-15 sbp-15">
+              <div
+                class="flex justify-start items-center gap-4 border-y border-borderColor py-5"
+              >
+                <h4 class="heading-4">Tags:</h4>
+                <ul class="flex justify-start items-center gap-3 flex-wrap">
+                  <li class="py-2 px-4 rounded-full bg-n5">Hot Dog</li>
+                  <li class="py-2 px-4 rounded-full bg-n5">Mojito</li>
+                  <li class="py-2 px-4 rounded-full bg-n5">
+                    Raspberry Cocktail
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="">
+              <h4 class="heading-4">Leave A Comment</h4>
+              <div class="grid grid-cols-12 gap-6 pt-8">
+                <div
+                  class="col-span-12 sm:col-span-6 px-5 py-4 bg-secondaryBg rounded-xl"
+                >
+                  <input
+                    type="text"
+                    class="outline-none placeholder:text-n3 bg-transparent w-full"
+                    placeholder="Name"
+                  />
+                </div>
+                <div
+                  class="col-span-12 sm:col-span-6 px-5 py-4 bg-secondaryBg rounded-xl"
+                >
+                  <input
+                    type="text"
+                    class="outline-none placeholder:text-n3 bg-transparent w-full"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-span-12 px-5 py-4 bg-secondaryBg rounded-xl">
+                  <textarea
+                    type="text"
+                    class="outline-none placeholder:text-n3 bg-transparent w-full min-h-[150px]"
+                    placeholder="Comment"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="z-20 pt-8">
+              <a
+                href="#"
+                aria-label="Contact"
+                class="all 0.4s ease-in-out duration-700 flex items-center text-center move-btn text-black heading-6"
+              >
+                <span
+                  class="all 0.4s ease-in-out duration-700 min-h-[45px] rounded-full bg-black-4 px-8 py-3 capitalize bg-n4"
+                >
+                  Post Comment
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-span-12 lg:col-span-4 bg-secondaryBg border border-borderColor rounded-[20px] flex flex-col gap-8 p-6 4xl:w-[30%]"
+          >
+            <div class="bg-n5 rounded-[20px] py-10 px-6">
+              <div
+                class="border border-borderColor rounded-xl flex justify-between items-center px-4 py-2"
+              >
+                <input
+                  type="text"
+                  class="outline-none w-full bg-transparent text-lg pr-4"
+                  placeholder="Search"
+                />
+                <div
+                  class="bg-n4 p-1 rounded-xl size-8 text-black flex justify-center items-center"
+                >
+                  <i class="ph ph-magnifying-glass text-2xl"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-n5 rounded-[20px] p-6">
+              <h5 class="heading-5">Recent Posts</h5>
+              <div class="flex flex-col gap-6 pt-8">
+                <a
+                  href="./blog-details.html"
+                  class="flex justify-start items-center gap-6 max-[450px]:flex-col lg:max-xl:flex-col"
+                >
+                  <div class="rounded-xl overflow-hidden">
+                    <img src="./assets/images/recent-blog-img-1.png" alt="" />
+                  </div>
+                  <div class="">
+                    <h5 class="heading-5">Barkeep's Buzzworthy Blends</h5>
+                    <p class="text-n3 pt-2">July 23, 2024</p>
+                  </div>
+                </a>
+                <a
+                  href="./blog-details.html"
+                  class="flex justify-start items-center gap-6 max-[450px]:flex-col lg:max-xl:flex-col"
+                >
+                  <div class="rounded-xl overflow-hidden">
+                    <img
+                      src="./assets/images/recent-blog-img-2.png"
+                      alt=""
+                      class="w-full"
+                    />
+                  </div>
+                  <div class="">
+                    <h5 class="heading-5">Barkeep's Buzzworthy Blends</h5>
+                    <p class="text-n3 pt-2">July 28, 2024</p>
+                  </div>
+                </a>
+                <a
+                  href="./blog-details.html"
+                  class="flex justify-start items-center gap-6 max-[450px]:flex-col lg:max-xl:flex-col"
+                >
+                  <div class="rounded-xl overflow-hidden">
+                    <img src="./assets/images/recent-blog-img-3.png" alt="" />
+                  </div>
+                  <div class="">
+                    <h5 class="heading-5">Crafting Cocktail Creations</h5>
+                    <p class="text-n3 pt-2">July 02, 2024</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-n5 rounded-[20px] p-6">
+              <h5 class="heading-5">Categories:</h5>
+              <ul class="flex flex-col gap-4 pt-6">
+                <li class="text-lg pb-4 border-b border-borderColor">
+                  Hot Dog
+                </li>
+                <li class="text-lg pb-4 border-b border-borderColor">Mojito</li>
+                <li class="text-lg pb-4 border-b border-borderColor">
+                  Raspberry Cocktail
+                </li>
+                <li class="text-lg pb-4 border-b border-borderColor">Burger</li>
+                <li class="text-lg pb-4 border-b border-borderColor">
+                  Beef Rezala
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-n5 rounded-[20px] p-6">
+              <h5 class="heading-5">Popular Tag:</h5>
+              <ul class="pt-6 flex flex-wrap gap-3">
+                <li>
+                  <a
+                    href=""
+                    class="py-2 px-4 rounded-full bg-black hover:bg-n4 hover:text-black duration-500 block"
+                    >Hot Dog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="py-2 px-4 rounded-full bg-black hover:bg-n4 hover:text-black duration-500 block"
+                    >Mojito</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="py-2 px-4 rounded-full bg-black hover:bg-n4 hover:text-black duration-500 block"
+                    >Burger</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="py-2 px-4 rounded-full bg-black hover:bg-n4 hover:text-black duration-500 block"
+                    >Beef</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="py-2 px-4 rounded-full bg-black hover:bg-n4 hover:text-black duration-500 block"
+                    >Cocktails</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="py-2 px-4 rounded-full bg-black hover:bg-n4 hover:text-black duration-500 block"
+                    >Soft Drinks</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

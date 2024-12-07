@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="boot, tailwindss, Benfit - HTML Tailwindcss Gym Fitness template">
+    <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+    <title>HotelX - </title>
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+
+  <!-- Header Starts -->
+  <header class="sticky top-0 z-50 mt-3 md:mt-6 max-md:px-3">
+    <div class="container p-4 sm:p-6 bg-secondary1 border border-nc20">
+      <nav class="text-nw10 rounded-3xl">
+        <div class="flex justify-between items-center relative">
+          <a href="../index.html" class="flex items-center gap-3">
+            <img class="w-[40px] md:w-full" src="./assets/images/logo.png" alt="logo">
+            <h3 class="font-bold max-lg:hidden flex items-center gap-[2px]">Hotel <span
+                class="fs-three text-primary">X</span></h3>
+          </a>
+
+          <!-- MOBILE NAV ICON -->
+          <div class="md:hidden block absolute top-[15%] right-0">
+            <button aria-label="navigation" type="button"
+              class="md:hidden text-nc50 transition duration-300 focus:outline-none focus:text-nc50 hover:text-nc50"><i
+                class="ph-thin ph-list text-3xl" id="bars"></i></button>
+          </div>
+
+          <!-- NAVIGATION - LARGE SCREENS -->
+          <div class="hidden md:flex">
+            <ul class="hidden md:flex gap-1 lg:gap-1 xl:gap-1">
+              <li
+                class="hover:bg-primary duration-500 cmnhed px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./about.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">About</a>
+              </li>
+              <li
+                class="hover:bg-primary duration-500 cmnhedpx-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./services.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">Services</a>
+              </li>
+              <li class="hover:bg-primary duration-500 px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./properties.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">Rooms</a>
+              </li>
+              <li class="hover:bg-primary duration-500 px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./blog.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-area max-sm:hidden z-20 hidden md:flex duration-500">
+            <a href="./contact.html" aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+              <span
+                class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                Contact Us
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+          <div class="flex flex-col justify-center items-center w-full gap-4">
+            <a href="./about.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">About</a>
+            <a href="./services.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">services</a>
+            <a href="./properties.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">Properties</a>
+            <a href="./blog.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">Blog</a>
+            <div class="btn-area z-20 md:flex duration-500">
+              <a href="./contact.html" aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+                <span
+                  class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                  Contact Us
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                  <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Ends -->
+    <!-- Breadcrumb Section Starts -->
+    <div class="container mt-4 md:mt-6">
+        <div class=" p-10 sm:p-12 md:p-[60px] bg-nc30 rounded-xl">
+            <h2 class="text-center text-nc10 mb-3">Booking Process</h2>
+            <div class="flex items-center gap-2 justify-center">
+                <a href="#" class="text-nc10 font-medium md:text-lg">Home</a>
+                <i class="ph-bold ph-caret-double-right text-primary text-xl"></i>
+                <a href="#" class="text-primary md:text-lg">Booking Process</a>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends -->
+    <!-- Booking Process Section Starts -->
+    <section class="py-10 sm:py-14 md:py-20 lg:y-[120px]">
+        <div class="container">
+            <div
+                class="grid grid-cols-12 gap-6 bg-secondary1 border-1 border-nc20 rounded-xl px-3 sm:px-6 md:px-8 lg:px-12 py-6 md:py-10 lg:py-[60px] border border-[rgba(34,34,34,0.20)]">
+                <div class="col-span-full 3xl:col-span-7">
+                    <div class="rounded-xl border border-[rgba(34,34,34,0.20)]">
+                        <div class="flex items-center max-sm:flex-wrap gap-3 bg-[rgba(254,201,47,0.05)] p-4 lg:p-6 ">
+                            <div class="size-[60px] d-center bg-primary rounded-lg shrink-0">
+                                <i class="ph-bold ph-check"></i>
+                            </div>
+                            <div class="">
+                                <span class="font-medium mb-2">Your booking is confirmed</span>
+                                <p class="text-sm">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor, Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. Nulla Lorem mollit cupidatat inure.</p>
+                            </div>
+                        </div> 
+                        <div class="p-4 lg:p-6">
+                            <span class="font-medium mb-4 lg:mb-6">Booking details</span>
+                            <div class="grid grid-cols-12 gap-10 2xl:gap-[46px] mb-8 md:mb-10 lg:mb-[60px]">
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">CUEST</span>
+                                        <span class="text-base font-normal">Maciej Kuropatwa</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">CHECK-IN</span>
+                                        <span class="text-base mb-3 font-normal">Sun, 22 May 2022</span>
+                                        <span class="text-base opacity-60">from 16:00</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">CHECK OUT</span>
+                                        <span class="text-base mb-3 font-normal">Wed, 25 May 2022</span>
+                                        <span class="text-base opacity-60">End 11:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-12 gap-10 2xl:gap-[46px] mb-8 md:mb-10 lg:mb-[60px]">
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">YOUR RESERVATION</span>
+                                        <span class="text-base font-normal">3 Nights, 1 Apartment</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">PHONE</span>
+                                        <span class="text-base font-normal">+48 567 890 123</span>
+                                    </div>
+                                </div>
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">EMAIL</span>
+                                        <span class="text-base font-normal">kuropatwamaciej@gmail.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-12 gap-10 2xl:gap-[46px] mb-8 md:mb-10 lg:mb-[60px]">
+                                <div class="col-span-full sm:col-span-6 lg:col-span-4">
+                                    <div class="">
+                                        <span class="text-base mb-3 opacity-60">BOOKING NUMBER</span>
+                                        <span class="text-base font-normal">#54237982</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-4 px-3 md:p-6 lg:p-10 rounded-xl bg-[rgba(236,236,236,0.70)]">
+                                <span class="font-medium mb-3 text-center">Parking ticket</span>
+                                <p class="text-sm text-center mb-6 md:mb-8 lg:mb-10 font-normal">Entrance to parking area is possible only with parking ticket issued by parking <br class="max-3xl:hidden"> entrance machine.</p>
+                                <div class="flex items-center max-sm:flex-wrap justify-center gap-4 md:gap-6 lg:gap-8">
+                                    <div class="">
+                                        <img src="assets/images/download2.png" alt="Images">
+                                    </div>
+                                    <div class="text-center sm:text-start">
+                                            <span class="text-base mb-3 opacity-60">CART PARK</span>
+                                            <span class="font-medium mb-2">Car, 3 nights</span>
+                                            <span class="font-normal text-base mb-4 lg:mb-5">Place C-124 on 1st Floor</span>
+                                        <button class="px-4 lg:px-6 py-3 bg-primary text-base text-nc30 font-normal rounded-xl">Download parking Ticket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-full 3xl:col-span-4">
+                    <div class="border border-[rgba(34,34,34,0.20)] rounded-xl px-3 py-5 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+                        <h4 class="mb-4 lg:mb-6">Reservation summary</h4>
+                        <div
+                            class="border border-[rgba(34,34,34,0.20)] px-3 py-5 sm:p-6 md:p-8 lg:p-10 rounded-lg mb-6 md:mb-8 lg:mb-10">
+                            <div class="flex max-3xl:flex-wrap items-center gap-4 md:gap-6 lg:gap-10 mb-6 lg:mb-8">
+                                <div class="">
+                                    <span class="text-base mb-3 opacity-60">CHECK-IN</span>
+                                    <span class="font-medium mb-2">Sun, 22 May 2024</span>
+                                    <span class="font-normal text-base">From 16:00</span>
+                                </div>
+                                <div class="">
+                                    <span class="text-base mb-3 opacity-60">CHECK-OUT</span>
+                                    <span class="font-medium mb-2">Web,25 May 2024</span>
+                                    <span class="font-normal text-base">By 11:00</span>
+                                </div>
+                            </div>
+                            <span class="text-base mb-3">TOTAL LENGTH OF STAY:</span>
+                            <div class="flex items-center gap-2 mb-6 lg:mb-8">
+                                <span class="text-base">03</span>
+                                <i class="ph ph-calendar-blank opacity-50 cursor-pointer"></i>
+                            </div>
+                            <span class="mb-3 text-base opacity-60">YOU SELECTED:</span>
+                            <span class="mb-1 text-base font-semibold">king bed stylish apartment with loft style family
+                                room</span>
+                            <span class="text-base font-medium">Change your selection</span>
+                        </div>
+                        <h4 class="mb-6 md:mb-8 lg:mb-10">Your price summary</h4>
+                        <div class="mb-6 md:mb-8 lg:mb-10">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="text-base font-medium">Rooms and offer:</span>
+                                <span class="text-base font-medium">$625.45</span>
+                            </div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="text-base font-medium">9% VAT:</span>
+                                <span class="text-base font-medium">50</span>
+                            </div>
+                            <div class="flex items-center gap-3 mb-6 md:mb-8 lg:mb-10">
+                                <span class="text-base font-medium">tax</span>
+                                <span class="text-base font-medium">$15.44</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="lg:text-xl font-medium">Total Price</span>
+                                <span class="lg:text-xl font-medium">50</span>
+                            </div>
+                        </div>
+                        <div class="w-full rounded-xl text-center p-2 md:p-3 bg-primary  mb-4 md:mb-6">
+                            <a href="#" class="md:text-xl font-medium text-nc30 ">Download Invoice</a>
+                        </div>
+                        <div class="flex items-center justify-center gap-1 cursor-pointer">
+                            <span class="text-base font-normal">We run on</span>
+                            <span class="text-base font-medium">trawell inc.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Process Section Ends -->
+   <!-- Footer Section Starts -->
+     <!-- Footer Section Starts -->
+  <footer class="pb-4 md:pb-6 max-sm:px-3">
+    <div class="container px-6 py-8 sm:p-8 md:p-10 lg:p-[60px] bg-nc30 rounded-3xl">
+      <div class="grid grid-cols-12 gap-y-12 sm:gap-4 md:gap-6">
+        <div class="col-span-full md:col-span-6 xl:col-span-4 3xl:col-span-3">
+          <div class="">
+            <a href="../index.html" class="flex items-center gap-3 mb-4 md:mb-6">
+              <img class="w-[40px]" src="./assets/images/logo-footer.png" alt="logo">
+              <h3 class="font-bold max-md:hidden flex items-center gap-[2px] text-nc10">Hotel <span
+                  class="fs-three text-primary">X</span></h3>
+            </a>
+            <p class="fs-five font-normal text-nc10">"Home is where the heart is and where the memories are made"</p>
+          </div>
+        </div>
+        <div class="max-3xl:hidden 3xl:col-span-1"></div>
+        <div class="col-span-full md:col-span-6 xl:col-span-4 3xl:col-span-3">
+          <div class="grid grid-cols-6 gap-6 3xl:gap-20 justify-between">
+            <div class="col-span-3 sm:col-span-2">
+              <div class="">
+                <h3 class="mb-2 md:mb-8 text-nc20">Template</h3>
+                <div class="">
+                  <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a class="text-nc20" href="#">Company</a></li>
+                    <li><a class="text-nc20" href="#">Services</a></li>
+                    <li><a class="text-nc20" href="./properties.html">Properties</a></li>
+                    <li><a class="text-nc20" href="./blog.html">Blog</a></li>
+                    <li><a class="text-nc20 text-nowrap" href="./contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-3 sm:col-span-2">
+              <div class="">
+                <h3 class="mb-2 md:mb-8 text-nc20">Info</h3>
+                <div class="">
+                  <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a class="text-nc20 text-nowrap" href="#">Style Guide</a></li>
+                    <li><a class="text-nc20" href="#">License</a></li>
+                    <li><a class="text-nc20" href="#">Changelog</a></li>
+                    <li><a class="text-nc20" href="#">404</a></li>
+                    <li><a class="text-nc20" href="#">Protected</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-full sm:col-span-2">
+              <div class="">
+                <h3 class="mb-2 md:mb-8 text-nc20">Social</h3>
+                <div class="">
+                  <ul class="flex flex-col gap-3 md:gap-4">
+                    <li><a class="text-nc20" href="#">Instagram</a></li>
+                    <li><a class="text-nc20" href="#">Facebook</a></li>
+                    <li><a class="text-nc20" href="#">Twitter</a></li>
+                    <li><a class="text-nc20" href="#">Linkedin</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-3xl:hidden 3xl:col-span-1"></div>
+        <div class="col-span-full xl:col-span-4 3xl:col-span-3">
+          <div class="w-full">
+            <h3 class="mb-5 lg:mb-6 text-nc20">Newsletter</h3>
+            <form>
+              <div class="w-full flex items-center bg-nc50 rounded-full pr-[10px] py-[6px] pl-3">
+                <input type="text" placeholder="Email address" class="border-none text-nc20">
+                <button class="text-base py-1 sm:py-2 px-3 sm:px-6 rounded-full bg-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Ends -->
+   <!-- Footer Section Ends -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/plguins.js"></script>
+    <script src="./assets/js/plguins-custom.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

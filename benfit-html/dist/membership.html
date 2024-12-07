@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Benfit - HTML Tailwindcss Gym Fitness template">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>Benfit - HTML Tailwindcss Gym Fitness template</title>
+
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+
+  <section class="container">
+    <div class="grid grid-cols-12 gap-6">
+        <div class="col-span-full xl:col-span-1 mt-4 md:mt-6 -mb-2 sm:mb-0 relative">
+          
+    <div class="navheight flex xl:flex-col justify-between px-2 xxxl:px-7 py-3 xl:py-10 xl:h-[97vh] xl:fixed bg-nb40 border border-nb30 rounded-lg">
+        <div class="flex justify-center items-center">
+            <a class="flex xl:flex-col items-center gap-2 md:gap-3 xl:gap-0" href="index.html">
+                <img class="max-w-fit md:mb-3 w-10 sm:w-13 xl:w-full" src="../assets/images/logomain.png" alt="Logo">
+                <h4 class="font-manrope text-nw40">BenFit</h4>
+            </a>
+        </div>
+        <div class="relative hidden xl:block">
+            <ul class="flex flex-col justify-between gap-1 items-center">
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../index.html">Home</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../about.html">About</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../membership.html">Membership</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../classes.html">Classes</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="relative mt-1 xl:mt-0 xl:hidden z-[999]">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul class="flex flex-col justify-between gap-4 sm:gap-6 items-center">
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../index.html">Home</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../about.html">About</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../membership.html">Membership</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../classes.html">Classes</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class=" cursor-pointer border border-primary px-2.5 sm:px-2 md:px-3 py-1 md:py-1.5 rounded-3xl">
+                    <span class="text-2xl lg:text-3xl text-primary" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="col-span-full xl:col-span-11 xxl:col-span-5 mt-4 md:mt-6">
+          <div class="overflow-hidden">
+    <div class="xxxl:fixed max-w-[766px]">
+      <div class="swiper-areas relative">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper overflow-hidden">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class=" h-[400px] sm:h-[480px] lg:h-[640px] xl:h-[768] xxl:h-[800px] xxxl:h-[1033px] max-w-[766px]">
+              <video class="w-full  h-[400px] sm:h-[480px] lg:h-[640px] xl:h-[768] xxl:h-[800px] xxxl:h-[1033px] object-cover rounded-3xl" muted loop autoplay>
+                <source src="https://softivuspro.com/rest/workout%202.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="swiper-slide con2">
+            <div class="">
+              <img src="../assets/images/hero-slider-one.png" alt="Image">
+            </div>
+          </div>
+          <div class="swiper-slide con3">
+            <div class=" h-[400px] sm:h-[480px] lg:h-[640px] xl:h-[768] xxl:h-[800px] xxxl:h-[1033px] max-w-[766px]">
+              <video class="w-full  h-[400px] sm:h-[480px] lg:h-[640px] xl:h-[768] xxl:h-[800px] xxxl:h-[1033px] object-cover rounded-3xl" muted loop autoplay>
+                <source src="https://softivuspro.com/rest/workout%201.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="swiper-slide con4">
+            <div class="">
+              <img src="../assets/images/hero-slider-three.png" alt="Image">
+            </div>
+          </div>
+          <div class="swiper-slide con5">
+            <div class=" h-[400px] sm:h-[480px] lg:h-[640px] xl:h-[768] xxl:h-[800px] xxxl:h-[1033px] max-w-[766px]">
+              <video class="w-full  h-[400px] sm:h-[480px] lg:h-[640px] xl:h-[768] xxl:h-[800px] xxxl:h-[1033px] object-cover rounded-3xl" muted loop autoplay>
+                <source src="https://softivuspro.com/rest/workout%203.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination absolute top-[80%] left-0 z-50"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+  </div>
+        </div>
+        <div
+            class="col-span-full xl:col-span-11 xxl:col-span-6 p-3 sm:p-6 border border-nb30 rounded-3xl mt-4 md:mt-6 xl:ml-24 xxl:ml-0">
+            <div class="p-3 sm:p-6 border border-nb30 rounded-3xl mb-6 md:mb-8 lg:mb-10">
+    <div class="swiper brad-carousel">
+      <div class="swiper-wrapper flex">
+        <div class="swiper-slide">
+          <div class="items-wrapper">
+            <div class="flex items-center gap-3">
+              <img class="roundx-one" src="../assets/images/icon/shape53.png" alt="Icon">
+              <span class="flex gap-2 text-lg">Strength, <span class="text-primary text-lg">Stamina,</span> Success</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="items-wrapper">
+            <div class="flex items-center gap-3">
+              <img class="roundx-two" src="../assets/images/icon/shape54.png" alt="Icon">
+              <span class="flex gap-2 text-lg font-normal">Strength, <span class="text-secondary1 text-lg">Stamina,</span>
+                Success</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="items-wrapper">
+            <div class="flex items-center gap-3">
+              <img class="roundx-one" src="../assets/images/icon/shape53.png" alt="Icon">
+              <span class="flex gap-2 text-lg">Strength, <span class="text-primary text-lg">Stamina,</span> Success</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="items-wrapper">
+            <div class="flex items-center gap-3">
+              <img class="roundx-two" src="../assets/images/icon/shape54.png" alt="Icon">
+              <span class="flex gap-2 text-lg">Strength, <span class="text-secondary1 text-lg">Stamina,</span>
+                Success</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl p-3 md:p-6 mb-6 md:mb-8 lg:mb-10 bg-nb20">
+    <div class="col-span-full border border-nb30 rounded-xl py-4 md:py-6 px-4 md:px-6 lg:px-8 mb-2 sm:mb-3">
+        <div class="flex justify-center mb-4 md:mb-5">
+            <div
+                class="border border-nb30 py-3 md:py-4 px-4 md:px-6 flex items-center justify-center gap-3 rounded-3xl">
+                <img class="roundx-one" src="../assets/images/icon/shap4.png" alt="icon">
+                <h5 class="text-center">Our Membership</h5>
+                <img class="roundx-two" src="../assets/images/icon/shape5.png" alt="icon">
+            </div>
+        </div>
+        <h2 class="text-center font-manrope text-nw40 md:leading-[48px]">Elevate Your Fitness with BenFit Gym Memberships</h2>
+    </div>
+    <div class="col-span-full sm:col-span-3 border border-nb30 bg-nb20 rounded-xl px-3 py-6 md:p-6">
+        <div class="flex gap-3 justify-between items-center mb-3 md:mb-6">
+            <span class="p-2 sm:p-[14px] bg-nb30 rounded-xl">
+                <i class="ph ph-lightning flex sm:text-3xl text-secondary1"></i>
+            </span>
+            <span class="p-2 sm:p-[14px] bg-nb30 group hover:bg-primary rounded-xl duration-300 cursor-pointer">
+                <i class="ph ph-check flex sm:text-2xl text-nw10 group-hover:text-nb10"></i>
+            </span>
+        </div>
+        <span class="font-medium text-nw40 mb-2 md:mb-3 text-2xl">Basic Membership</span>
+        <div class="flex justify-start items-end mb-3 md:mb-5">
+            <span class="display-4 font-extrabold text-nw40">$59</span>
+            <span class="text-nw40 text-lg mb-1">/per month</span>
+        </div>
+        <p>Our Basic Membership is perfect for individuals seeking a cost-effective option.</p>
+    </div>
+    <div class="col-span-full sm:col-span-3 border border-nb30 bg-nb20 rounded-xl px-3 py-6 md:p-6">
+        <div class="flex gap-3 justify-between items-center mb-3 md:mb-6">
+            <span class="p-2 sm:p-[14px] bg-nb30 rounded-xl">
+                <i class="ph ph-lightning flex sm:text-3xl text-secondary1"></i>
+            </span>
+            <span class="p-2 sm:p-[14px] bg-nb30 group hover:bg-primary rounded-xl duration-300 cursor-pointer">
+                <i class="ph ph-check flex sm:text-2xl text-nw10 group-hover:text-nb10"></i>
+            </span>
+        </div>
+        <span class="font-medium text-nw40 mb-2 md:mb-3 text-2xl">Basic Membership</span>
+        <div class="flex justify-start items-end mb-3 md:mb-5">
+            <span class="display-4 font-extrabold text-nw40">$59</span>
+            <span class="text-nw40 text-lg mb-1">/per month</span>
+        </div>
+        <p>Our Basic Membership is perfect for individuals seeking a cost-effective option.</p>
+    </div>
+    <div class="col-span-full border border-nb30 bg-nb20 rounded-xl px-3 py-6 md:p-6 sm:my-3">
+        <div class="flex gap-3 justify-between items-center mb-3 md:mb-6">
+            <span class="p-2 sm:p-[14px] bg-nb30 rounded-xl">
+                <i class="ph ph-crown-simple flex sm:text-3xl text-secondary1"></i>
+            </span>
+            <span class="p-2 sm:p-3 bg-nb30 group hover:bg-primary rounded-xl duration-300 cursor-pointer">
+                <i class="ph ph-check flex sm:text-2xl text-nw10 group-hover:text-nb10"></i>
+            </span>
+        </div>
+        <span class="font-medium text-nw40 mb-2 md:mb-3 text-2xl">Basic Membership</span>
+        <div class="flex justify-start items-end mb-3 md:mb-5">
+            <span class="display-4 font-extrabold text-nw40">$145</span>
+            <span class="text-nw40 text-lg mb-1">/per month</span>
+        </div>
+        <p>Our Basic Membership is perfect for individuals seeking a cost-effective option.</p>
+    </div>
+    <div class="col-span-full border border-nb30 bg-nb20 rounded-xl px-3 py-6 md:p-6">
+        <h4 class="mb-5 text-nw40 font-medium">What this plan contains</h4>
+        <ul class="flex flex-col gap-2 sm:gap-3">
+            <li>
+                <p>1. access to gym facilities</p>
+            </li>
+            <li>
+                <p>2. Fitness Classes</p>
+            </li>
+            <li>
+                <p>3. Premium Workshops</p>
+            </li>
+            <li>
+                <p>4. Elite Training Programs</p>
+            </li>
+            <li>
+                <p>5. Nutrition Consultation</p>
+            </li>
+        </ul>
+        <div class="w-full py-3 sm:py-4 px-2 sm:px-6 bg-nb30 rounded-xl text-center mt-6 md:mt-10">
+            <a href="#" class="font-semibold w-full text-nw10" >Book A Slot</a>
+        </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl p-3 md:p-6 mb-6 md:mb-8 lg:mb-10 singletab bg-nb20">
+    <div class="col-span-full border border-nb30 rounded-xl py-4 md:py-6 px-4 md:px-6 lg:px-8 mb-2 sm:mb-3">
+        <div class="flex justify-center mb-6 md:mb-8">
+            <div
+                class="border border-nb30 py-3 md:py-4 px-4 md:px-6 flex items-center justify-center gap-3 rounded-3xl">
+                <img class="roundx-one" src="../assets/images/icon/shap4.png" alt="icon">
+                <h5 class="text-center">Our Membership</h5>
+                <img class="roundx-two" src="../assets/images/icon/shape5.png" alt="icon">
+            </div>
+        </div>
+        <div class="">
+            <ul class="tablinks flex items-center justify-between gap-3 md:gap-5 flex-wrap md:flex-nowrap xxl:flex-wrap xxxl:flex-nowrap">
+                <li class="nav-links border border-nb30 rounded-xl xxl:px-6 py-4 w-full text-center active">
+                    <button class="tablink text-lg font-semibold">Basic Plan</button>
+                </li>
+                <li class="nav-links border border-nb30 rounded-xl xxl:px-6 py-4 w-full text-center">
+                    <button class="tablink text-lg font-semibold">Premium Plan</button>
+                </li>
+                <li class="nav-links border border-nb30 rounded-xl xxl:px-6 py-4 w-full text-center">
+                    <button class="tablink text-lg font-semibold">Elite Plan</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-span-full">
+        <div class="border border-nb30 rounded-3xl p-3 md:p-6">
+            <div class="tabcontents">
+                <div class="tabitem active flex flex-col gap-3">
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Access to Gym Facilites</span>
+                            <span class="font-semibold text-lg">Unlimited</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Access to Workshops</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Health Consult</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Priority Booking for Classes</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Class Discounts</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Fitness Assessment</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Priority</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Price</span>
+                            <span class="font-semibold text-lg">$129 per month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabitem flex flex-col gap-3">
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Access to Gym Facilites</span>
+                            <span class="font-semibold text-lg">Unlimited</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Access to Workshops</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Health Consult</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Priority Booking for Classes</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Class Discounts</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Fitness Assessment</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Priority</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Price</span>
+                            <span class="font-semibold text-lg">$129 per month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabitem flex flex-col gap-3">
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Access to Gym Facilites</span>
+                            <span class="font-semibold text-lg">Unlimited</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Access to Workshops</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Health Consult</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Priority Booking for Classes</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Class Discounts</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Personal Fitness Assessment</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Priority</span>
+                            <span class="font-semibold text-lg">Yes</span>
+                        </div>
+                        <div class="px-3 sm:px-6 py-4 border border-nb30 rounded-xl w-full">
+                            <span class="mb-3">Price</span>
+                            <span class="font-semibold text-lg">$129 per month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl p-3 md:p-6 mb-6 md:mb-8 lg:mb-10 bg-nb20">
+    <div class="col-span-full border border-nb30 rounded-xl py-4 md:py-6 px-4 md:px-6 lg:px-8 mb-2 sm:mb-3">
+        <div class="flex justify-center mb-4 md:mb-5">
+            <div
+                class="border border-nb30 py-3 md:py-4 px-4 md:px-6 flex items-center justify-center gap-3 rounded-3xl">
+                <img class="roundx-one" src="../assets/images/icon/shap4.png" alt="icon">
+                <h5 class="text-center">Sign-up Process</h5>
+                <img class="roundx-two" src="../assets/images/icon/shape5.png" alt="icon">
+            </div>
+        </div>
+        <h2 class="text-center font-manrope text-nw40 md:leading-[48px]">Joining BenFit Gym is simple and hassle-free.</h2>
+    </div>
+    <div class="col-span-full">
+        <div class="value-area2 flex flex-col md:flex-row justify-center overflow-hidden">
+            <div class="boxx relative group rounded-xl" id="boxx1">
+                <div class="absolute opacity-0 group-hover:opacity-100 duration-300 h-full w-full lg:max-w-[380px] 4xl:w-[408px] delay-75 bg-primary p-3 sm:p-5 rounded-xl">
+                    <h5 class="text-start mb-6 text-nb10">01</h5>
+                    <h3 class="text-nb10 mb-3 font-bold">Schedule a Tour</h3>
+                    <p class="text-nb10 mb-6 md:mb-28 xxl:mb-14 xxxl:mb-20 4xl:mb-28 text-xl">Come and explore our gym! Schedule a tour to see our state-of-the-art facilities</p>
+                    <div class="flex justify-end">
+                        <a href=""><i class="ph ph-arrow-line-up-right text-nb10 text-5xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxx relative group rounded-xl" id="boxx2">
+                <div class="absolute opacity-0 group-hover:opacity-100 duration-300 h-full w-full lg:max-w-[380px] 4xl:w-[408px] delay-75 bg-primary p-3 sm:p-5 rounded-xl">
+                    <h5 class="text-start mb-6 text-nb10">02</h5>
+                    <h3 class="text-nb10 mb-3 font-bold">Fill Out the Form</h3>
+                    <p class="text-nb10 mb-6 md:mb-28 xxl:mb-14 xxxl:mb-20 4xl:mb-28 text-xl">Complete the membership sign-up form with your personal details and interests</p>
+                    <div class="flex justify-end">
+                        <a href=""><i class="ph ph-arrow-line-up-right text-nb10 text-5xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxx relative group rounded-xl" id="boxx3">
+                <div class="absolute opacity-0 group-hover:opacity-100 duration-300 h-full w-full lg:max-w-[380px] 4xl:w-[408px] delay-75 bg-primary p-3 sm:p-5 rounded-xl">
+                    <h5 class="text-start mb-6 text-nb10">03</h5>
+                    <h3 class="text-nb10 mb-3 font-bold">Start Your Fitness Journey</h3>
+                    <p class="text-nb10 mb-6 md:mb-28 xxl:mb-14 xxxl:mb-20 4xl:mb-28 text-xl">Once your membership is activated, you can start attending classes, facilities</p>
+                    <div class="flex justify-end">
+                        <a href=""><i class="ph ph-arrow-line-up-right text-nb10 text-5xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl p-3 md:p-6 mb-6 md:mb-8 lg:mb-10 bg-nb20">
+    <div class="col-span-full border border-nb30 rounded-xl py-4 md:py-6 px-4 md:px-6 lg:px-8 mb-2 sm:mb-3">
+        <div class="flex justify-center mb-4 md:mb-5">
+            <div
+                class="border border-nb30 py-3 md:py-4 px-4 md:px-6 flex items-center justify-center gap-3 rounded-3xl">
+                <img class="roundx-one" src="../assets/images/icon/shap4.png" alt="icon">
+                <h5 class="text-center">Testimonials</h5>
+                <img class="roundx-two" src="../assets/images/icon/shape5.png" alt="icon">
+            </div>
+        </div>
+        <h2 class="text-center font-manrope text-nw40 md:leading-[48px]">Hear From Our Happy <br
+                class="hidden 4xl:block"> Members</h2>
+    </div>
+    <div class="col-span-full">
+        <div class="grid grid-cols-12">
+            <div class="col-span-full 4xl:col-span-8">
+                <div class="py-4 sm:py-9 px-3 sm:px-6 border border-nb30 rounded-xl">
+                    <div class="swiper testimonial_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="items-wrapper">
+                                    <div class="text-center">
+                                        <div class="flex items-center justify-center gap-1 mb-4 md:mb-6">
+                                            <i class="ph-fill ph-star text-2xl text-secondary1"></i>
+                                            <i class="ph-fill ph-star text-2xl text-secondary1"></i>
+                                            <i class="ph-fill ph-star text-2xl text-secondary1"></i>
+                                            <i class="ph-fill ph-star text-2xl text-secondary1"></i>
+                                            <i class="ph-fill ph-star text-2xl text-secondary1"></i>
+                                        </div>
+                                        <p class="text-base md:text-lg font-normal">I had hit a plateau in my fitness
+                                            journey until I
+                                            discovered BenFit. The personal trainers helped me break through and achieve
+                                            results I never thought possible. I'm grateful for this knowledgeable. It's
+                                            not just about physical fitness; they genuinely care about your well-being.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-full 4xl:col-span-4">
+                <div class="">
+                    <div class="flex items-center justify-center mb-0 md:-mb-1">
+                        <div class="testimonial_slider_btn pb-4 pt-2">
+                            <div class="slider-btn flex justify-between mt-3">
+                                <button type="button" aria-label="Slide Prev" class="ara-prev w-full">
+                                    <i
+                                        class="ph ph-arrow-left text-6xl rounded-2xl font-medium border border-nb30 py-4 px-7 sm:px-[38px]"></i>
+                                </button>
+                                <button type="button" aria-label="Slide Next" class="ara-next w-full">
+                                    <i
+                                        class="ph ph-arrow-right text-6xl rounded-2xl font-medium border border-nb30 py-4 px-7 sm:px-[38px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-nb30 rounded-xl py-7 px-10">
+                        <div class="swiper testimonial_slidex">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="items-wrapper">
+                                        <div class="">
+                                            <div class="flex justify-center items-center mb-5">
+                                                <img class="rounded-full" src="../../assets/images/dianne-russell.png"
+                                                    alt="Image">
+                                            </div>
+                                            <span class="text-lg font-medium mb-1 text-nw40">Dianne Russell</span>
+                                            <span class="text-base font-normal">Founder</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl p-3 md:p-6 mb-6 md:mb-8 lg:mb-10 bg-nb20">
+    <div class="col-span-full border border-nb30 rounded-xl py-4 md:py-6 px-4 md:px-6 lg:px-8 mb-2 sm:mb-3">
+        <div class="flex justify-center mb-4 md:mb-5">
+            <div
+                class="border border-nb30 py-3 md:py-4 px-4 md:px-6 flex items-center justify-center gap-3 rounded-3xl">
+                <img class="roundx-one" src="../assets/images/icon/shap4.png" alt="icon">
+                <h5 class="text-center">FAQ’s</h5>
+                <img class="roundx-two" src="../assets/images/icon/shape5.png" alt="icon">
+            </div>
+        </div>
+        <h2 class="text-center font-manrope text-nw40 md:leading-[48px]">Frequently Asked Questions</h2>
+    </div>
+    <div class="col-span-full bg-at10 rounded-3xl rewards_faq">
+        <div class="accordion-section">
+            <div class="accordion-single accsingle mb-3 rounded-xl border border-nb30 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold md:text-xl text-nw40"
+                        type="button">
+                        What are your membership options?
+                    </button>
+                    <button class="arrowclickable">
+                        <i class="ph-bold ph-plus border-2 border-nw10 sm:p-1 rounded-full flex text-at10 text-lg"></i>
+                        <i class="ph-bold ph-minus border-2 border-nw10 sm:p-1 rounded-full text-at10 hidden text-lg"></i>
+                    </button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-normal md:text-lg w-[90%]">Our cancellation policy varies depending on the
+                            service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle mb-3 rounded-xl border border-nb30 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold md:text-xl text-nw40"
+                        type="button">
+                        Do you offer a free trial or guest pass?
+                    </button>
+                    <button class="arrowclickable">
+                        <i class="ph-bold ph-plus border-2 border-nw10 sm:p-1 rounded-full flex text-at10 text-lg"></i>
+                        <i class="ph-bold ph-minus border-2 border-nw10 sm:p-1 rounded-full text-at10 hidden text-lg"></i>
+                    </button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-normal md:text-lg w-[90%]">Our cancellation policy varies depending on the
+                            service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle mb-3 rounded-xl border border-nb30 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold md:text-xl text-nw40"
+                        type="button">
+                        What fitness classes do you offer?
+                    </button>
+                    <button class="arrowclickable">
+                        <i class="ph-bold ph-plus border-2 border-nw10 sm:p-1 rounded-full flex text-at10 text-lg"></i>
+                        <i class="ph-bold ph-minus border-2 border-nw10 sm:p-1 rounded-full text-at10 hidden text-lg"></i>
+                    </button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-normal md:text-lg w-[90%]">Our cancellation policy varies depending on the
+                            service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle mb-3 rounded-xl border border-nb30 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between  rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold md:text-xl text-nw40"
+                        type="button">
+                        What amenities do you have at the gym?
+                    </button>
+                    <button class="arrowclickable">
+                        <i class="ph-bold ph-plus border-2 border-nw10 sm:p-1 rounded-full flex text-at10 text-lg"></i>
+                        <i class="ph-bold ph-minus border-2 border-nw10 sm:p-1 rounded-full text-at10 hidden text-lg"></i>
+                    </button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-normal md:text-lg w-[90%]">Our cancellation policy varies depending on the
+                            service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-single accsingle rounded-xl border border-nb30 p-3 lg:p-5">
+                <h5 class="header-area flex items-center justify-between rounded-xl">
+                    <button
+                        class="accordion-btn flex items-start relative w-100 fw-bolder text-start font-semibold md:text-xl text-nw40"
+                        type="button">
+                        What safety measures do you have in place?
+                    </button>
+                    <button class="arrowclickable">
+                        <i class="ph-bold ph-plus border-2 border-nw10 sm:p-1 rounded-full flex text-at10 text-lg"></i>
+                        <i class="ph-bold ph-minus border-2 border-nw10 sm:p-1 rounded-full text-at10 hidden text-lg"></i>
+                    </button>
+                </h5>
+                <div class="content-area hidden">
+                    <div class="content-body">
+                        <p class="font-normal md:text-lg w-[90%]">Our cancellation policy varies depending on the
+                            service and service provider. Please check the terms before booking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl p-3 md:p-6 mb-6 md:mb-8 lg:mb-10 bg-nb20">
+    <div class="col-span-full rounded-xl mb-2 sm:mb-3">
+        <div class="flex justify-center">
+            <div
+                class="border border-nb30 py-3 md:py-4 px-4 md:px-6 flex items-center justify-center gap-3 rounded-3xl">
+                <img class="roundx-one" src="../assets/images/icon/shap4.png" alt="icon">
+                <h5 class="text-center">Stay Fit</h5>
+                <img class="roundx-two" src="../assets/images/icon/shape5.png" alt="icon">
+            </div>
+        </div>
+        <h2 class="text-center font-manrope text-nw40 md:leading-[48px] my-6 md:my-8">Ready to Take the First Step
+            Towards a Healthier You?</h2>
+        <div class="flex justify-center mb-5">
+            <img class="rounded-full border-4 border-nb10 max-w-full" src="../../assets/images/stay-one.png" alt="Image">
+            <img class="rounded-full border-4 border-nb10 -ml-5 max-w-full" src="../../assets/images/stay-two.png" alt="Image">
+            <img class="rounded-full border-4 border-nb10 -ml-5 max-w-full" src="../../assets/images/stay-three.png" alt="Image">
+            <img class="rounded-full border-4 border-nb10 -ml-5 hidden sm:block max-w-full" src="../../assets/images/stay-four.png" alt="Image">
+            <img class="rounded-full border-4 border-nb10 -ml-5 hidden sm:block max-w-full" src="../../assets/images/stay-five.png" alt="Image">
+            <img class="rounded-full border-4 border-nb10 -ml-5 hidden sm:block max-w-full" src="../../assets/images/stay-six.png" alt="Image">
+        </div>
+        <span class="text-xl font-medium text-center mb-6 md:mb-8">Join 10k+ Members</span>
+        <div class="text-center">
+            <div class="text-center bg-nb30 inline-block rounded-lg">
+                <a class="py-3 px-5 font-medium text-lg text-nw20 items-center flex gap-2" href="#"><i class="ph-bold ph-crown-simple text-secondary1"></i>Join Membership</a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="grid grid-cols-6 gap-3 border border-nb30 rounded-xl px-3 md:px-6 4xl:px-0 bg-nb20">
+    <div class="col-span-full mb-8">
+        <div class="relative inline-block sm:block left-[50%] translate-x-[-50%]">
+            <div class="trapezoid"></div>
+            <div class="flex items-center justify-center gap-0 sm:gap-1 md:gap-3 absolute top-[20%] left-[25%] sm:left-[35%] md:left-[40%]">
+                <div class="">
+                    <img class="w-[80%]" src="../../assets/images/logofooter.png" alt="logo">
+                </div>
+                <h3 class="font-manrope text-nw40">BenFit</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-full">
+        <div class="pb-8 border-b border-nb30">
+            <ul class="flex gap-1 justify-center items-center flex-wrap">
+                <li class="px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg border border-nb30 btnstyle hover:text-nb10">
+                    <a class="sm:text-lg font-medium" href="../../index.html">Home</a>
+                </li>
+                <li class="px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg border border-nb30 btnstyle hover:text-nb10">
+                    <a class="sm:text-lg font-medium" href="../../about.html">About</a>
+                </li>
+                <li class="px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg border border-nb30 btnstyle hover:text-nb10">
+                    <a class="sm:text-lg font-medium" href="../../membership.html">Membership</a>
+                </li>
+                <li class="px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg border border-nb30 btnstyle hover:text-nb10">
+                    <a class="sm:text-lg font-medium" href="../../classes.html">Classes</a>
+                </li>
+                <li class="px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg border border-nb30 btnstyle hover:text-nb10">
+                    <a class="sm:text-lg font-medium" href="../../contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-12 py-8 border-b border-nb30 gap-4 sm:gap-0">
+            <div class="col-span-full sm:col-span-6 4xl:col-span-7">
+                <div class="pl-6">
+                    <div class="flex gap-1 mb-3 sm:mb-4">
+                        <span class="font-medium text-nw40 text-lg">BenFit GYM</span>
+                        <span class="font-medium text-primary text-lg">Location:</span>
+                    </div>
+                    <p>Floor 2, 4 Naval St, Ancoats, Manchester <br class="hidden 4xl:block"> M4 6EW, United Kingdom</p>
+                </div>
+            </div>
+            <div class="col-span-full sm:col-span-6 4xl:col-span-5">
+                <div class="pl-6">
+                    <div class="flex gap-1 mb-3 sm:mb-4">
+                        <span class="font-medium text-nw40 text-lg">Contact</span>
+                        <span class="font-medium text-primary text-lg">Information:</span>
+                    </div>
+                    <a class="mb-1 sm:mb-2 block" href="tel:0000000">(+163)-2547-31290</a>
+                    <a class="block" href="mailto:xyz@abc.com">kenzi.lawson@example.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-12 p-4 items-center justify-center sm:justify-between">
+            <div class="col-span-full sm:col-span-6 4xl:col-span-4 order-last sm:order-none">
+                <div class="flex items-center gap-1 justify-center sm:justify-start">
+                    <span>Copyright @ 2024</span>
+                    <a class="hover:text-primary duration-300 ease-out" href="#">BenFit</a>
+                </div>
+            </div>
+            <div class="col-span-full 4xl:col-span-4 order-first 4xl:order-none mb-3 sm:mb-4 4xl:mb-0">
+                <div class="flex gap-3 items-center justify-center sm:justify-start 4xl:justify-center">
+                    <a href="#" class="rounded-xl px-2 pt-2 pb-1 border border-nb30 hover:bg-primary hover:text-nb10 duration-500">
+                        <i class="ph ph-twitter-logo text-2xl"></i>
+                    </a>
+                    <a href="#" class="rounded-xl px-2 pt-2 pb-1 border border-nb30 hover:bg-primary hover:text-nb10 duration-500">
+                        <i class="ph ph-instagram-logo text-2xl"></i>
+                    </a>
+                    <a href="#" class="rounded-xl px-2 pt-2 pb-1 border border-nb30 hover:bg-primary hover:text-nb10 duration-500">
+                        <i class="ph ph-facebook-logo text-2xl"></i>
+                    </a>
+                    <a href="#" class="rounded-xl px-2 pt-2 pb-1 border border-nb30 hover:bg-primary hover:text-nb10 duration-500">
+                        <i class="ph ph-linkedin-logo text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-span-full sm:col-span-6 4xl:col-span-4 mb-1 sm:mb-0">
+                <div class="flex gap-1 justify-center sm:justify-end">
+                    <span>Designed By</span>
+                    <a href="#" class="text-primary underline">Pixelaxis</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/plguins.js"></script>
+  <script src="./assets/js/plguins-custom.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

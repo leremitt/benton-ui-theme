@@ -1,0 +1,145 @@
+<header class="sticky top-0 z-50 mt-3 sm:mt-6 mx-3 sm:mx-0">
+  <div class="container p-5 sm:p-6 md:p-8 cmnhed border border-tcolor rounded-xl bg-nb20">
+    <nav class="rounded-3xl">
+      <div class="flex justify-between items-center relative">
+        <div class="hidden md:flex">
+          <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10 relative">
+            <li class="cmnhed">
+              <a href="/"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Home</a>
+            </li>
+            <li class="">
+              <a href="../about.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">About</a>
+            </li>
+            <li class="relative group mainmenu duration-500">
+              <div class="flex items-center gap-1">
+                <button
+                  class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Recipes</button>
+                <i class="ph-bold ph-caret-down text-lg group-hover:rotate-180 underout duration-300"></i>
+              </div>
+              <ul
+                class="absolute duration-500 min-w-[130px] invisible mainmenu-hover:visible group-hover:translate-y-0 translate-y-5 bg-secondary1 shadow-lg mt-0 opacity-0 group-hover:opacity-100 rounded-lg">
+                <li>
+                  <a href="../bread.html"
+                    class="block rounded-t-lg px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Bread</a>
+                </li>
+                <li>
+                  <a href="../instant-pot.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Instant
+                    Pot</a>
+                </li>
+                <li>
+                  <a href="../healty.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Healty</a>
+                </li>
+                <li>
+                  <a href="../breakfast.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Breakfast</a>
+                </li>
+                <li>
+                  <a href="../appetizer.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Appetizer</a>
+                </li>
+                <li>
+                  <a href="../dessert.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500 rounded-b-lg">Dessert</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <a href="/" class="flex items-center gap-3">
+          <!-- <img class="w-[40px] md:w-full" src="./assets/images/01_logo.png" alt="logo"> -->
+          <div class="flex items-center">
+            <h3 class="font-bold md:hidden lg:block">Flavourist</h3>
+            <h3 class="font-bold md:hidden lg:block text-primary">X</h3>
+          </div>
+        </a>
+
+        <!-- NAVIGATION - LARGE SCREENS -->
+        <div class="hidden md:flex">
+          <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10">
+            <li class=""><a href="../cookbooks.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Books</a>
+            </li>
+            <li class=""><a href="../blog.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Blog</a>
+            </li>
+            <li class=""><a href="../contact.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- MOBILE NAV ICON -->
+        <div class="md:hidden block absolute top-[0%] right-0">
+          <button aria-label="navigation" type="button"
+            class="md:hidden transition duration-300 focus:outline-none focus:text-nb10 hover:text-nb10"><i
+              class="ph-thin ph-list text-3xl" id="bars"></i></button>
+        </div>
+
+      </div>
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+        <ul class="flex flex-col justify-center items-center w-full gap-4">
+          <li>
+            <a href="../home.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Home</a>
+          </li>
+          <li>
+            <a href="../about.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">About</a>
+          </li>
+          <li class="relative">
+            <a href="javascript:void(0)"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 hover:text-nw40 textd"
+              onclick="toggleMenu('recipes-menu')">Recipes <i
+                class="ph-bold ph-caret-down text-sm group-hover:rotate-180 duration-300"></i></a>
+            <ul id="recipes-menu" class="submenu shadow-lg mt-2 bg-secondary1 rounded-lg ms-[140px]">
+              <li>
+                <a href="../bread.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Bread</a>
+              </li>
+              <li>
+                <a href="../instant-pot.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Instant
+                  Pot</a>
+              </li>
+              <li>
+                <a href="../healty.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Healty</a>
+              </li>
+              <li>
+                <a href="../breakfast.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Breakfast</a>
+              </li>
+              <li>
+                <a href="../appetizer.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Appetizer</a>
+              </li>
+              <li>
+                <a href="../dessert.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Dessert</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../books.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Books</a>
+          </li>
+          <li>
+            <a href="../blog.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Blog</a>
+          </li>
+          <li>
+            <a href="../contact.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

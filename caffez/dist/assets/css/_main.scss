@@ -1,0 +1,79 @@
+/* menu */
+.active-nav {
+  @apply text-primary;
+}
+
+// selector styles
+.show {
+  @apply visible scale-100 opacity-100;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hide {
+  @apply invisible scale-0 opacity-0;
+}
+
+// slider styles
+.smooth .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+/* swiper js */
+.swiper-custom-bullet {
+  height: 16px;
+  width: 16px;
+  border-radius: 30px;
+  background-color: #ffefd7;
+}
+
+.swiper-custom-bullet.swiper-custom-bullet-active {
+  height: 12px;
+  width: 32px;
+  transition: all 0.5s ease-in-out;
+  background-color: #ebc78f;
+}
+
+.home-one-hover-image-one {
+  background-image: url(../images/menu-hover-image-one.png);
+}
+.home-one-hover-image-one-small {
+  background-image: url(../images/menu-hover-image-one-small.png);
+}
+
+// .swiper-pagination {
+//   position:  relative;
+// }
+
+/* swiper js */
+.swiper-custom-bullet {
+  height: 12px;
+  width: 12px;
+  border-radius: 30px;
+  background-color: #294043;
+}
+
+.swiper-custom-bullet.swiper-custom-bullet-active {
+  height: 12px;
+  width: 12px;
+  background-color: #e5dbc9;
+}
+
+.about-banner {
+  background-image: url(../images/about-banner.png);
+}
+
+.menu-banner {
+  background-image: url(../images/menu-banner.png);
+}
+
+.menu-details-banner {
+  background-image: url(../images/menu-details-banner.png);
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+  font-family: "Syne", sans-serif;
+}

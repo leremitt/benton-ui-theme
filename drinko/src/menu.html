@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Menu - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <include-header />
+      <!-- Header Area End -->
+      <section class="grid grid-cols-12 gap-6">
+        <div
+          class="col-span-12 lg:col-span-5 xl:col-span-6 overflow-hidden relative flex justify-center items-center"
+        >
+          <div class="relative max-lg:h-[400px] lg:h-dvh w-full">
+            <!-- For use image -->
+            <video
+              class="w-full h-full object-cover rounded-3xl"
+              muted
+              loop
+              autoplay
+            >
+              <source
+                src="https://softivuspro.com/rest/bar.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div
+          class="col-span-12 lg:col-span-7 xl:col-span-6 grid grid-cols-12 gap-4 sm:gap-6 bg-secondaryBg rounded-[20px] p-6 sm:p-10 border border-borderColor"
+        >
+          <div
+            class="col-span-12 md:col-span-6"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+          >
+            <div class="rounded-xl overflow-hidden relative">
+              <img
+                src="./assets/images/menu-item-1.png"
+                class="w-full"
+                alt=""
+              />
+
+              <h4 class="heading-4 absolute bottom-8 left-[35%] z-10">
+                Drinks
+              </h4>
+
+              <h4
+                class="heading-4 absolute bottom-6 right-6 bg-n4 p-4 rounded-full text-black"
+              >
+                $9
+              </h4>
+            </div>
+            <div class="flex flex-col gap-3 text-center pt-5">
+              <h5 class="heading-5">Salted Caramel Iced Latte</h5>
+              <p class="text-n3">
+                Chilled espresso mixed with milk, infused with a rich salted
+                caramel syrup
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="700"
+          >
+            <div class="rounded-xl overflow-hidden relative">
+              <img
+                src="./assets/images/menu-item-2.png"
+                alt=""
+                class="w-full"
+              />
+
+              <h4 class="heading-4 absolute bottom-8 left-[35%] z-10">
+                Drinks
+              </h4>
+
+              <h4
+                class="heading-4 absolute bottom-6 right-6 bg-n4 p-4 rounded-full text-black"
+              >
+                $5
+              </h4>
+            </div>
+            <div class="flex flex-col gap-3 text-center pt-5">
+              <h5 class="heading-5">Sparkling Elderflower Lemonade</h5>
+              <p class="text-n3">
+                A refreshing blend of tart lemon juice, sweet and aromatic
+                elderflower syrup
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="700"
+          >
+            <div class="rounded-xl overflow-hidden relative">
+              <img
+                src="./assets/images/menu-item-3.png"
+                class="w-full"
+                alt=""
+              />
+
+              <h4 class="heading-4 absolute bottom-8 left-[35%] z-10">
+                Drinks
+              </h4>
+
+              <h4
+                class="heading-4 absolute bottom-6 right-6 bg-n4 p-4 rounded-full text-black"
+              >
+                $7
+              </h4>
+            </div>
+            <div class="flex flex-col gap-3 text-center pt-5">
+              <h5 class="heading-5">Berry Hibiscus Cooler</h5>
+              <p class="text-n3">
+                A cold infusion of hibiscus flowers, mixed berries, and a touch
+                of honey
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 md:col-span-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="700"
+          >
+            <div class="rounded-xl overflow-hidden relative">
+              <img
+                src="./assets/images/menu-item-4.png"
+                class="w-full"
+                alt=""
+              />
+
+              <h4 class="heading-4 absolute bottom-8 left-[35%] z-10">
+                Drinks
+              </h4>
+
+              <h4
+                class="heading-4 absolute bottom-6 right-6 bg-n4 p-4 rounded-full text-black"
+              >
+                $8
+              </h4>
+            </div>
+            <div class="flex flex-col gap-3 text-center pt-5">
+              <h5 class="heading-5">Salted Caramel Iced Latte</h5>
+              <p class="text-n3">
+                Chilled espresso mixed with milk, infused with a rich salted
+                caramel syrup
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

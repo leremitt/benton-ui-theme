@@ -1,0 +1,73 @@
+/* menu */
+.active-nav {
+  @apply relative text-primary before:absolute before:bottom-0 before:block before:h-px before:w-full before:bg-primary;
+}
+
+// selector styles
+.show {
+  @apply visible scale-100 opacity-100;
+}
+
+.hide {
+  @apply invisible scale-0 opacity-0;
+}
+
+.banner-bg {
+  background-image: url(../images/banner-shape.png);
+}
+
+// slider styles
+.smooth .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.trophy-card-bg {
+  background-image: url(../images/features-card-bg.png);
+}
+
+.lock-bg {
+  background-image: url(../images/lock.png);
+}
+
+.labels-wrap {
+  pointer-events: none;
+}
+
+.tags-container > canvas {
+  position: relative;
+  transform: scale(1.001);
+}
+
+.marquee-section .marquee-wrap {
+  animation: marquee 20s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+.marquee-section-alt .marquee-wrap {
+  animation: marquee-alt 20s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-alt {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+// ==============

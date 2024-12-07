@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Price-Beauty HTML5 Template</title>
+  </head>
+  <body class="bg-neutral-2 p-4 text-neutral-1 sm:p-6 font-body-font">
+    <main class="custom-container">
+      <!-- ============ header ============ -->
+      <include-header />
+      <!-- ============ pagination ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="sp100px rounded-3xl flex-col bg-neutral-7 border border-neutral-4/30 flex items-center justify-center"
+      >
+        <h2 class="h1 font-semibold text-center">Prices List</h2>
+        <div class="flex items-center justify-center gap-1 h6 font-semibold pt-5"><a href="/">Home</a> <span>/</span> <span class="text-primary underline underline-offset-2"> Prices List </span></div>
+      </section>
+      <!-- ============ pricing list ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="border max-xs:spy48px max-xs:px-3 xs:sp60px border-neutral-4/30 bg-neutral-7 rounded-3xl smt60px"
+      >
+        <div class="md:flex items-center max-md:grid grid-cols-1 xs:grid-cols-2 text-center justify-center font-semibold">
+          <button data-content-id="pricing-tab-one" class="border-neutral-4 bg-primary text-neutral-2 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">
+            Hair & Face
+          </button>
+          <button data-content-id="pricing-tab-two" class="border-neutral-4 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">Skin & Body</button>
+          <button data-content-id="pricing-tab-three" class="border-neutral-4 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">Nails</button>
+          <button data-content-id="pricing-tab-four" class="border-neutral-4 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">Botox & Fillers</button>
+        </div>
+
+        <div class="spt80px">
+          <!-- tab one -->
+          <div id="pricing-tab-one" class="flex-col gap-15 flex pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- tab two -->
+          <div id="pricing-tab-two" class="flex-col gap-15 hidden pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$300</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- tab three -->
+          <div id="pricing-tab-three" class="flex-col gap-15 hidden pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$300</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- tab four -->
+          <div id="pricing-tab-four" class="flex-col gap-15 hidden pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$50</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ footer ============ -->
+      <include-footer />
+    </main>
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ flatpickr css  ============ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  </head>
+
+  <body class="bg-white-1 p-4 text-black-1 sm:p-6">
+    <main class="relative overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ pagination start ============ -->
+      <section class="relative">
+        <img
+          src="./assets/images/our-dentist-pagination-image.png"
+          alt="A picture showing a person with a dental implant and a friendly message about dental implant care"
+          class="w-full rounded-xl object-cover max-sm:h-[350px] sm:max-lg:h-[400px]"
+        />
+        <p
+          class="h3 xs:d4 spx32px absolute whitespace-nowrap rounded-3xl bg-black-1/30 py-4 text-center font-extrabold text-white-1 max-md:left-1/2 max-md:top-10 max-md:-translate-x-1/2 xs:py-6 md:left-10 md:top-10"
+        >
+          Our Shop
+        </p>
+        <div
+          class="btn-area spx32px absolute bottom-10 z-20 rounded-3xl bg-secondary py-4 text-white-1 max-md:left-1/2 max-md:-translate-x-1/2 xs:py-6 md:bottom-10 md:right-10"
+        >
+          <a
+            href="#"
+            aria-label="Contact"
+            class="move-btn theme-transition-4 flex items-center text-center"
+          >
+            <span
+              class="one h3 xs:h2 theme-transition-4 px-2 font-bold uppercase sm:px-4"
+            >
+              Appointment
+            </span>
+            <span
+              class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-full border-2 border-dashed p-2 text-center md:p-3"
+            >
+              <i
+                class="ph ph-arrow-up-right text-[24px]"
+                data-icon-name="arrow-right"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- ============ pagination end ============ -->
+      <!-- ============ shop section start ============ -->
+      <section class="spy60px grid grid-cols-12 gap-6">
+        <div class="col-span-12 lg:col-span-7 xxl:col-span-9">
+          <!-- products -->
+          <div
+            class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xxl:grid-cols-3"
+          >
+            <!-- product one -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-1.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Whitening Toothpaste
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$250</p>
+              </div>
+            </div>
+            <!-- product two -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-2.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">DENTAL, MEDICAL,</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Electric Toothbrush
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$70</p>
+              </div>
+            </div>
+            <!-- product three -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-3.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Oral Hygiene Essentials Set
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$180</p>
+              </div>
+            </div>
+            <!-- product four -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-4.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Fresh Mouthwash
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$58</p>
+              </div>
+            </div>
+            <!-- product five -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-5.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Whitening Toothpaste
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$99</p>
+              </div>
+            </div>
+            <!-- product six -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-6.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div></div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Dental Floss
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$350</p>
+              </div>
+            </div>
+            <!-- product seven -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-7.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Electric Toothbrush
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$50</p>
+              </div>
+            </div>
+            <!-- product eight -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-8.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Individual Mouthguards
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$150</p>
+              </div>
+            </div>
+            <!-- product nine -->
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="group flex flex-col"
+            >
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-9.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Fresh Mouthwash
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$200</p>
+              </div>
+            </div>
+          </div>
+          <div class="smt60px mx-auto flex w-fit items-center gap-3">
+            <button
+              class="l-text flex size-10 items-center justify-center rounded-full bg-white-4 font-medium duration-500 hover:bg-primary hover:text-white-1 sm:size-15"
+            >
+              <i class="ph ph-caret-left text-[24px]"></i>
+            </button>
+            <button
+              class="l-text flex size-10 items-center justify-center rounded-full bg-white-4 font-medium duration-500 hover:bg-primary hover:text-white-1 sm:size-15"
+            >
+              1
+            </button>
+            <button
+              class="l-text flex size-10 items-center justify-center rounded-full bg-white-4 font-medium duration-500 hover:bg-primary hover:text-white-1 sm:size-15"
+            >
+              2
+            </button>
+            <button
+              class="l-text flex size-10 items-center justify-center rounded-full bg-white-4 font-medium duration-500 hover:bg-primary hover:text-white-1 sm:size-15"
+            >
+              3
+            </button>
+            <button
+              class="l-text flex size-10 items-center justify-center rounded-full bg-white-4 font-medium duration-500 hover:bg-primary hover:text-white-1 sm:size-15"
+            >
+              <i class="ph ph-caret-right text-[24px]"></i>
+            </button>
+          </div>
+        </div>
+        <!-- sidebar -->
+        <div
+          class="col-span-12 flex flex-col gap-6 lg:col-span-5 xxl:col-span-3"
+        >
+          <!--  search section  -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="rounded-xl bg-white-4 p-6"
+          >
+            <div
+              class="flex items-center justify-between rounded-xl bg-white-1 px-4 py-3"
+            >
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+              <button class="flex rounded-lg bg-primary p-1.5 text-white-1">
+                <i class="ph ph-magnifying-glass text-[20px]"></i>
+              </button>
+            </div>
+          </div>
+          <!-- category section -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="rounded-xl bg-white-4 p-6"
+          >
+            <h3 class="h4 font-bold text-black-1">Categories</h3>
+            <div class="flex flex-col gap-4 pt-5 text-black-2">
+              <a
+                href="#"
+                class="l-text border-b border-white-3 pb-3 hover:text-primary"
+              >
+                Toothbrush(05)
+              </a>
+              <a
+                href="#"
+                class="l-text border-b border-white-3 pb-3 hover:text-primary"
+              >
+                Dental(03)
+              </a>
+              <a
+                href="#"
+                class="l-text border-b border-white-3 pb-3 hover:text-primary"
+              >
+                Medical(02)
+              </a>
+              <a
+                href="#"
+                class="l-text border-b border-white-3 pb-3 hover:text-primary"
+              >
+                Mouthwash(01)
+              </a>
+              <a
+                href="#"
+                class="l-text border-b border-white-3 pb-3 hover:text-primary"
+              >
+                Toothpaste(07)
+              </a>
+            </div>
+          </div>
+          <!-- popular tag section -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="rounded-xl bg-white-4 p-6"
+          >
+            <h3 class="h4 font-bold text-black-1">Categories</h3>
+            <div class="flex gap-4 pt-5 text-black-2 max-4xl:flex-wrap">
+              <a
+                href="#"
+                class="l-text rounded bg-white-1 px-4 py-2 duration-500 hover:bg-primary hover:text-white-1"
+              >
+                Toothbrush
+              </a>
+              <a
+                href="#"
+                class="l-text rounded bg-white-1 px-4 py-2 duration-500 hover:bg-primary hover:text-white-1"
+              >
+                Dental
+              </a>
+              <a
+                href="#"
+                class="l-text rounded bg-white-1 px-4 py-2 duration-500 hover:bg-primary hover:text-white-1"
+              >
+                Toothpaste
+              </a>
+            </div>
+          </div>
+          <!-- contact info section -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="rounded-xl bg-white-4 p-6"
+          >
+            <h3 class="h4 font-bold text-black-1">Contact info</h3>
+            <div class="flex flex-col gap-6 pt-6 text-black-2">
+              <div
+                class="flex gap-5 max-xs:flex-col xxl:max-3xl:flex-col 3xl:items-center"
+              >
+                <div
+                  class="flex w-fit rounded-full bg-secondary p-3.5 text-white-1"
+                >
+                  <i class="ph ph-map-pin text-[32px]"></i>
+                </div>
+                <div>
+                  <p class="l-text text-black-2">Address</p>
+                  <p class="xl-text pt-2 font-medium text-black-2">
+                    775 Rolling Green Rd.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-5 max-xs:flex-col xxl:max-3xl:flex-col 3xl:items-center"
+              >
+                <div
+                  class="flex w-fit rounded-full bg-secondary p-3.5 text-white-1"
+                >
+                  <i class="ph ph-envelope text-[32px]"></i>
+                </div>
+                <div>
+                  <p class="l-text text-black-2">E-Mail</p>
+                  <p
+                    class="xl-text whitespace-nowrap pt-2 font-medium text-black-2"
+                  >
+                    bill.sanders@example.com
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-5 max-xs:flex-col xxl:max-3xl:flex-col 3xl:items-center"
+              >
+                <div
+                  class="flex w-fit rounded-full bg-secondary p-3.5 text-white-1"
+                >
+                  <i class="ph ph-phone-call text-[32px]"></i>
+                </div>
+                <div>
+                  <p class="l-text text-black-2">Phone</p>
+                  <p class="xl-text pt-2 font-medium text-black-2">
+                    (702) 555-0122
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ shop section end ============ -->
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

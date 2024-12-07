@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- required meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- #keywords -->
+  <meta name="keywords" content="boot, tailwindcss, Therapy & Counseling HTML template">
+  <!-- #description -->
+  <meta name="description" content="Find The Answers">
+  <!-- #title -->
+  <title>Therapy &amp Counseling HTML template</title>
+  <link rel="stylesheet" href="./scss/main.scss">
+</head>
+
+<body>
+    <section class="xxl:pt-6 pb-10 lg:pb-[60px] relative">
+        <div class="grid grid-cols-12 gap-6">
+            <div class="xxl:col-span-1">
+                <div class="fixed xxl:sticky top-0 z-[9999]">
+                    <include-navbar />
+                </div>
+            </div>
+            <div class="col-span-full xxl:col-span-10 mt-[78px] xxl:mt-0 p-3 md:p-6 lg:p-8 rounded-3xl bg-nw10">
+                <div class="mb-3 md:mb-6 lg:mb-10">
+                    <img class="rounded-3xl w-full h-full" src="./assets/images/portfolio-details.png" alt="thumbnail">
+                </div>
+                <div class="grid grid-cols-10 gap-6">
+                    <div class="col-span-full md:col-span-7">
+                        <h4 class="mb-3">admin</h4>
+                        <span class="display-4 font-extrabold leading-[22px] lg:leading-[67px] mb-3 lg:mb-5">Adolescent Therapy</span>
+                        <p>At our therapy practice, we are committed to providing personalized and effective solutions to support your mental health and well-being. Our portfolio showcases a range of therapeutic approaches tailored to address various challenges individuals may face in their lives.</p>
+                    </div>
+                    <div class="hidden 4xl:block 4xl:col-span-1"></div>
+                    <div class="col-span-full md:col-span-3 4xl:col-span-2">
+                        <div class="flex flex-col gap-0 md:gap-3 lg:gap-4">
+                            <div class="flex items-center gap-3">
+                                <h4>Author :</h4>
+                                <span>admin</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <h4>Category :</h4>
+                                <span>Addiction</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <h4>Tags :</h4>
+                                <span>Health | Help | Therapy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-full">
+                        <p>Cognitive Behavioral Therapy (CBT) is a widely recognized and evidence-based therapeutic approach aimed at identifying and modifying negative thought patterns and behaviors. Through collaborative sessions, our therapists work with clients to develop practical strategies for managing stress, anxiety, depression, and other psychological difficulties. By challenging unhelpful beliefs and replacing them with more adaptive ones, CBT empowers individuals to regain control over their emotions and behaviors, leading to lasting positive change.</p>
+                    </div>
+                    <div class="col-span-full sm:col-span-5">
+                        <div class="">
+                            <img class="rounded-xl w-full" src="./assets/images/portfolio-1.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-span-full sm:col-span-5">
+                        <div class="">
+                            <img class="rounded-xl w-full" src="./assets/images/portfolio-2.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-span-full">
+                        <p>Mindfulness-Based Stress Reduction (MBSR) is a therapeutic technique that emphasizes the cultivation of mindfulness through meditation and awareness exercises.  clients how to cultivate present-moment awareness and develop a non-judgmental attitude towards their thoughts and feelings.</p>
+                    </div>
+                    <div class="col-span-full">
+                        <div class="">
+                            <h5 class="mb-3 lg:mb-6">Leave A Comment</h5>
+                            <form action="">
+                                <div class="flex gap-4 lg:gap-6 mb-3 lg:mb-4">
+                                    <input class="w-full border border-[#26292f33] rounded-xl p-3 lg:p-4" placeholder="Name" type="text">
+                                    <input class="w-full border border-[#26292f33] rounded-xl p-3 lg:p-4" placeholder="Email" type="text">
+                                </div>
+                                <input class="border border-[#26292f33] rounded-xl w-full p-3 lg:p-4 mb-3 lg:mb-4" type="text">
+                                <textarea class="border border-[#26292f33] rounded-xl w-full p-3 lg:p-4 mb-3 lg:mb-4" name="" id="" cols="30" rows="10"></textarea>
+                                <div class="flex items-center gap-3 mb-4 lg:mb-6">
+                                    <input type="checkbox">
+                                    <p>Save my name, email, and website in this browser for the next time I comment.</p>
+                                </div>
+                                <div class="btn-area max-sm:hidden z-20 duration-300">
+                                    <a href="#" aria-label="Contact"
+                                        class="move-btn flex items-center text-center text-secondary duration-300 group">
+                                        <span
+                                            class="one m-text min-h-[45px] rounded-2xl bg-black-4 px-6 py-3 font-medium capitalize duration-300 bg-primary text-nw10">
+                                            Post Comment
+                                        </span>
+                                        <span
+                                            class="two d-center flex min-h-[45px] shrink-0 items-center justify-center rounded-full border border-black-4 bg-black-4 p-2.5 text-center duration-300 bg-primary">
+                                            <i class="ph ph-arrow-up-right text-[24px] text-nw10 group-hover:rotate-45"
+                                                data-icon-name="arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" xxl:col-span-1 hidden xxl:block">
+                <include-detailslider />
+            </div>
+        </div>
+    </section>
+    
+    <include-footer />
+
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

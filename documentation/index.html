@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title>BentoWeb &mdash; Documentation</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/prettify.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav style="background-color: #010606">
+        <div style="width: 250px; margin: 0 auto">
+          <a href=""><img style="padding: 10px 0" src="img/logo.png" alt="" /></a>
+        </div>
+      </nav>
+      <header>
+        <div class="container">
+          <h2 class="lone-header">Bento Web Documentation</h2>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <ul class="docs-nav">
+            <li><strong>Getting Started</strong></li>
+            <li><a href="#welcome" class="cc-active">Welcome</a></li>
+            <li>
+              <a href="#what-includes" class="cc-active">What Includes</a>
+            </li>
+            <li><a href="#features" class="cc-active">Features</a></li>
+            <li><a href="#folder" class="cc-active">Folder Arrange</a></li>
+            <li class="separator"></li>
+            <li><strong>Installation</strong></li>
+            <li><a href="#installation" class="cc-active">Installation</a></li>
+            <li>
+              <a href="#configuration" class="cc-active">Configuration</a>
+            </li>
+            <li>
+              <a href="#customization" class="cc-active">Customization</a>
+            </li>
+            <li><a href="#ftp-upload" class="cc-active">FTP Upload</a></li>
+          </ul>
+          <div class="docs-content">
+            <h2>Getting Started</h2>
+            <h3 id="welcome">Welcome</h3>
+            <p>Thanks for purchasing our template :)</p>
+
+            <p>
+              It is our great pleasure that you purchased our template. And we want to tell you that you don't need to write any codes for this template. Just follow some instructions for customizing
+              the template.
+            </p>
+            <p>
+              If you have any questions, feel free to contact us at
+              <a href="https://themeforest.net/user/pixelaxis"><b>Pixelaxis</b></a
+              >.
+            </p>
+            <h3 id="what-includes">What's Includeds</h3>
+            <ul>
+              <li>all-templates</li>
+              <li>documentation</li>
+            </ul>
+            <figure>
+              <a href="./img/what-includes.png"> <img class="w-100 img-thumbnail" src="./img/what-includes.png" alt="go to Appearance -> Import Demo Data" /></a>
+              <figcaption class="text-center">
+                <b>Includes Files</b>
+              </figcaption>
+            </figure>
+            <h3 id="features">Features</h3>
+            <ul>
+              <li>5 Templates</li>
+              <li>Fully responsive</li>
+              <li>Clear &amp; Neat design</li>
+              <li>Tailwind CSS Based</li>
+              <li>Phosphor Icons</li>
+              <li>AOS animation</li>
+              <li>Swiper Slide</li>
+              <li>Browser compatibility (IE10+, Chrome, Safari, Firefox, Opera)</li>
+              <li>Well documented</li>
+            </ul>
+            <h3 id="folder">Folder Arrange</h3>
+            <p>Unzip the archive and find out the folder "buyer-file". There are all the template files in this folder. You can open the following files for viewing in browser.</p>
+            <ol>
+              <li><b>dist</b> — folder with final build.</li>
+              <li><b>src/assets/style.css</b> — css file.</li>
+              <li><b>src/assets/images</b> — folder with image files.</li>
+              <li><b>src/assets/js/*</b> — js file.</li>
+              <li><b>src/partials/</b> — Partials.</li>
+              <li><b>index.html</b> Index file</li>
+              <li><b>**.html</b> Others Html files.</li>
+              <li><b>index.js</b> Webpack Project Entry file.</li>
+              <li><b>.gitignore</b> config for ignore git</li>
+              <li><b>webpack.config.js</b> Webpack configuration file.</li>
+              <li><b>tailwind.config.js</b> Tailwind configuration file.</li>
+              <li><b>package.json</b> Node.js project configuration.</li>
+            </ol>
+            <figure>
+              <a href="./img/project-folers.png"> <img class="w-100 img-thumbnail" src="./img/project-folers.png" alt="go to Appearance -> Import Demo Data" /></a>
+              <figcaption class="text-center">
+                <b>Project Folder Structure</b>
+              </figcaption>
+            </figure>
+            <hr />
+            <h3 id="installation">Installation</h3>
+            <ul>
+              <li>Open CMD / Terminal in and open any template from <b>all-templates</b> folder and run <code>npm install</code> for installing necessary dependencies</li>
+              <li>Make sure you have installed nodejs on your system</li>
+            </ul>
+            <h4 id="dev-server">Start Dev Server</h4>
+            <ul>
+              <li>Run <code>npm run dev</code> for running this project on your machine locally.</li>
+            </ul>
+            <h4 id="build">Build Project</h4>
+            <ul>
+              <li>Run <code>npm run build</code> for make a production build for this project. it will create a folder named /dist and final output will be there.</li>
+            </ul>
+            <h3 id="configuration">Configuration</h3>
+            <p>
+              If you want to include an additional HTML file in your project, you need to add it to the
+               <code>webpack.config.js</code> file. The code should look like this:
+            </p>
+            <figure>
+              <a href="./img/add-new-html-file.png"> <img class="w-100 img-thumbnail" src="./img/add-new-html-file.png" alt="go to Appearance -> Import Demo Data" /></a>
+              <figcaption class="text-center">
+                <b>Add New HTML File</b>
+              </figcaption>
+            </figure>
+            <h3 id="customization">Customization</h3>
+            <h4 id="dev-server">Change Theme Color</h4>
+            <ul>
+              <li>
+                To change the theme color, open the
+                <code>tailwind.config.js</code> file located in the root directory of your project.
+              </li>
+              <li>In the <code>tailwind.config.js</code> file, you will find a section titled "Colors".</li>
+              <li>Modify the values of the colors you wish to change to meet your desired theme.</li>
+            </ul>
+            <figure>
+              <a href="./img/change-default-colors.png"> <img class="w-100 img-thumbnail" src="./img/change-default-colors.png" alt="go to Appearance -> Import Demo Data" /></a>
+              <figcaption class="text-center">
+                <b>Change Theme Color</b>
+              </figcaption>
+            </figure>
+            <h4 id="dev-server">Change Font</h4>
+            <ul>
+              <li>Open the <code>style.css</code> file located in the root directory of your project.</li>
+              <li>In the <code>style.css</code> file, you can change the font of the site.</li>
+            </ul>
+            <figure>
+              <a href="./img/change-font.png"> <img class="w-100 img-thumbnail" src="./img/change-font.png" alt="go to Appearance -> Import Demo Data" /></a>
+              <figcaption class="text-center">
+                <b>Change Font</b>
+              </figcaption>
+            </figure>
+            <h3 id="logotype">Change Logo</h3>
+            <p>
+              To change logo in the navigation panel, find image
+              <b>public/images/home-one/logo.png</b> and replace it with your logo.
+            </p>
+            <h5>
+              <i>Note: Keep your logo inside the <b>public/images/home-one</b> folder. </i>
+            </h5>
+            <figure>
+              <a href="./img/logo-change.png"> <img class="w-100 img-thumbnail" src="./img/logo-change.png" alt="go to Appearance -> Import Demo Data" /></a>
+              <figcaption class="text-center">
+                <b>Change Logo</b>
+              </figcaption>
+            </figure>
+            <br />
+            <h3 id="ftp-upload">FTP Upload</h3>
+            <ul>
+              <li>Open Your FTP manager and connect to your hosting</li>
+              <li>Browse to required directory(Normally index.html)</li>
+              <li>Upload the files inside <b>dist</b> folder</li>
+            </ul>
+
+            <h3>Support</h3>
+            <p>
+              If you have any questions, feel free to contact us at
+              <a href="https://themeforest.net/user/pixelaxis"><b>Pixelaxis</b></a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="">
+          <p>
+            &copy; Copyright
+            <a href="https://themeforest.net/user/pixelaxis">Pixelaxis</a>, <span id="date"></span>. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/prettify/prettify.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <script src="./js/layout.js"></script>
+  </body>
+</html>

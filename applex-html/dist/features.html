@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- ============ swiper js css ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body>
+    <main class="bg-white-4 overflow-hidden">
+      <header>
+  <!-- desktop navbar -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="hidden bg-white-4 p-6 lg:block"
+  >
+    <div
+      class="desktop-nav container theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px hi container theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul class="menu flex items-center justify-between gap-10">
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="features.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <div class="btn-area right-0 z-20">
+            <a
+              href="#"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+              >
+                Let’s talk
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="bg-white-4 p-6 lg:hidden">
+    <div
+      class="desktop-nav container theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px container theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Home</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="featurs.html" class="single-menu">Features</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="pricing.html" class="single-menu">Pricing</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="blog.html" class="single-menu">Blog</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a
+                  href="#"
+                  aria-label="Contact"
+                  class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+                >
+                  <span
+                    class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                  >
+                    Let’s talk
+                  </span>
+                  <span
+                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                  >
+                    <i
+                      class="ph ph-arrow-up-right text-[24px]"
+                      data-icon-name="arrow-right"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <!-- features cards -->
+      <section class="spy120px">
+  <div class="container">
+    <div
+      class="mx-auto flex flex-col items-center justify-center gap-4 text-center"
+    >
+      <div
+        data-aos="zoom-out-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="flex items-center justify-center gap-3"
+      >
+        <i class="ph ph-fire text-[24px] text-primary"></i>
+        <h5 class="l-text font-medium text-primary">Features</h5>
+      </div>
+      <h3
+        data-aos="zoom-out-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="h2 font-bold text-black-1"
+      >
+        More than Just a Finance App
+      </h3>
+    </div>
+
+    <div class="spt60px">
+      <div class="flex flex-col gap-6">
+        <!-- first row -->
+        <div class="grid grid-cols-1 gap-6 xxl:grid-cols-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt60px flex flex-col rounded-xl border border-accent-2/40 bg-white-1"
+          >
+            <h3 class="h3 text-center font-bold text-black-1">
+              Creative Saving
+            </h3>
+            <p
+              class="l-text mx-auto max-w-[530px] pt-3 text-center text-black-4"
+            >
+              Stash money on your island with decorations and unleash your
+              creativity
+            </p>
+            <img
+              src="./assets/images/features-page-mobile-ui-.png"
+              alt="features page mobile ui"
+              class="spt60px mx-auto"
+            />
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt60px max-xxl:spb60px flex flex-col rounded-xl border border-accent-2/40 bg-white-1"
+          >
+            <h3 class="h3 text-center font-bold text-black-1">
+              Friendly Competition
+            </h3>
+            <p
+              class="l-text mx-auto max-w-[530px] pt-3 text-center text-black-4"
+            >
+              Stash money on your island with decorations and unleash your
+              creativity
+            </p>
+            <img
+              src="./assets/images/features-page-leaderboard-.png"
+              alt="features page mobile ui"
+              class="spt60px mx-auto max-xs:max-w-[300px] min-[450px]:max-sm:max-w-[400px] sm:max-4xl:max-w-[500px]"
+            />
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="grid grid-cols-1 gap-6 xxl:grid-cols-2">
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="trophy-card-bg spy80px relative flex flex-col rounded-xl border border-accent-2/40 bg-white-1 bg-center bg-no-repeat"
+          >
+            <img
+              src="./assets/images/trophy.png"
+              alt="trophy"
+              class="mx-auto"
+            />
+            <h3 class="h3 spt40px text-center font-bold text-black-1">
+              Rewarding Beauty
+            </h3>
+            <p class="l-text pt-3 text-center text-black-4">
+              Redeem rewards from streaks to beautify youe island
+            </p>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="max-xxl:spy120px flex flex-col rounded-xl border border-accent-2/40 bg-white-1 bg-center bg-no-repeat"
+          >
+            <div class="my-auto flex flex-col items-center justify-center">
+              <div class="flex items-center justify-center -space-x-4">
+                <img
+                  src="./assets/images/socializing-card-1.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-2.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-3.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-4.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-5.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-6.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-7.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+                <img
+                  src="./assets/images/socializing-card-8.png"
+                  alt="socializing card image"
+                  class="size-10 rounded-full border-2 border-white-1 bg-accent-2 md:size-20"
+                />
+              </div>
+              <h3 class="h3 spt60px text-center font-bold text-black-1">
+                Socializing wealth
+              </h3>
+              <p class="l-text pt-3 text-black-4">
+                Visit and send money to your friends
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- third row -->
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spy120px flex flex-col items-center justify-center rounded-xl border border-accent-2/40 bg-white-1"
+          >
+            <div class="mx-auto w-fit rounded-xl bg-primary px-5 py-3">
+              <img
+                src="./assets/images/save-card-image.png"
+                alt="save card image"
+              />
+            </div>
+            <h3 class="h3 spt32px font-bold text-black-1">Expand & Save</h3>
+            <p
+              class="l-text mx-auto max-w-[440px] pt-3 text-center text-black-4"
+            >
+              Collect bananas and expand your Island for more saving potential
+            </p>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spy120px lock-bg flex flex-col items-center justify-center rounded-xl border border-accent-2/40 bg-white-1 bg-center bg-no-repeat"
+          >
+            <h3 class="d3 spt32px font-bold text-primary">$250K</h3>
+            <p
+              class="l-text mx-auto max-w-[440px] pt-3 text-center text-black-4"
+            >
+              FDIC-Insured Savings
+            </p>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spy120px flex flex-col items-center justify-center rounded-xl border border-accent-2/40 bg-white-1"
+          >
+            <div class="mx-auto w-fit rounded-xl bg-primary px-5 py-3">
+              <i class="ph ph-star-four text-[50px] text-white-1"></i>
+            </div>
+            <h3 class="h3 spt32px font-bold text-black-1">Rare Finds</h3>
+            <p
+              class="l-text mx-auto max-w-[355px] pt-3 text-center text-black-4"
+            >
+              Discover rare decorations that you won't want to let go of
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- BANKING APP FINANCE section  -->
+      <section
+  class="relative flex flex-col gap-3 bg-white-4 pb-32 pt-30 sm:pb-40 xxl:pb-[240px]"
+>
+  <div class="marquee-section overflow-hidden">
+    <div class="marquee-wrap">
+      <span
+        class="whitespace-nowrap text-[100px] font-bold uppercase leading-none text-white-3 xl:text-[140px]"
+      >
+        BANKING APP FINANCE APP DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP
+        DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP DIGITAL THE ULTIMATE
+        APP
+      </span>
+    </div>
+  </div>
+  <div class="marquee-section-alt overflow-hidden">
+    <div class="marquee-wrap">
+      <span
+        class="whitespace-nowrap text-[100px] font-bold uppercase leading-none text-white-3 xl:text-[140px]"
+      >
+        BANKING APP FINANCE APP DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP
+        DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP DIGITAL THE ULTIMATE
+        APP
+      </span>
+    </div>
+  </div>
+  <div class="marquee-section overflow-hidden">
+    <div class="marquee-wrap">
+      <span
+        class="whitespace-nowrap text-[100px] font-bold uppercase leading-none text-white-3 xl:text-[140px]"
+      >
+        BANKING APP FINANCE APP DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP
+        DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP DIGITAL THE ULTIMATE
+        APP
+      </span>
+    </div>
+  </div>
+  <div class="marquee-section-alt overflow-hidden">
+    <div class="marquee-wrap">
+      <span
+        class="whitespace-nowrap text-[100px] font-bold uppercase leading-none text-white-3 xl:text-[140px]"
+      >
+        BANKING APP FINANCE APP DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP
+        DIGITAL THE ULTIMATE APP BANKING APP FINANCE APP DIGITAL THE ULTIMATE
+        APP
+      </span>
+    </div>
+  </div>
+
+  <div class="absolute top-0 w-full justify-center">
+    <div class="mobile-ui-slider overflow-hidden">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide flex items-center justify-center">
+          <img
+            src="./assets/images/mobiel-ui.png"
+            alt="Mobile UI Slider Image 1"
+            class="max-4xl:w-[400px] max-xl:w-[300px]"
+          />
+        </div>
+        <div class="swiper-slide flex items-center justify-center">
+          <img
+            src="./assets/images/mobiel-ui-2.png"
+            alt="Mobile UI Slider Image 2"
+            class="max-4xl:w-[400px] max-xl:w-[300px]"
+          />
+        </div>
+        <div class="swiper-slide flex items-center justify-center">
+          <img
+            src="./assets/images/mobiel-ui-3.png"
+            alt="Mobile UI Slider Image 3"
+            class="max-4xl:w-[400px] max-xl:w-[300px]"
+          />
+        </div>
+        <div class="swiper-slide flex items-center justify-center">
+          <img
+            src="./assets/images/mobiel-ui-4.png"
+            alt="Mobile UI Slider Image 4"
+            class="max-4xl:w-[400px] max-xl:w-[300px]"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- all features card section -->
+      <section class="spy120px bg-white-1">
+  <div class="container">
+    <div class="grid grid-cols-12 gap-6">
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="spl60px spt60px spl80px col-start-1 col-end-13 rounded-xl bg-white-5 lg:col-end-7"
+      >
+        <div
+          class="flex size-20 items-center justify-center rounded-xl bg-primary"
+        >
+          <i class="ph ph-bank text-[32px] text-white-1"></i>
+        </div>
+        <h3 class="h2 max-w-[615px] pt-6 font-bold text-black-1">
+          Empower yourself financially with our easy-to-use
+        </h3>
+        <p class="l-text pt-3 text-black-4">
+          Empower yourself financially with our user-friendly app. Manage your
+          finances effortlessly and focus on achieving your goals with ease
+        </p>
+        <img
+          src="./assets/images/empower-mobile-ui.png"
+          alt="Empower yourself financially mobile ui"
+          class="spt60px mx-auto block"
+        />
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="spl60px spt60px spl80px col-start-1 col-end-13 rounded-xl bg-white-5 lg:col-start-7"
+      >
+        <div
+          class="flex size-20 items-center justify-center rounded-xl bg-primary"
+        >
+          <i class="ph ph-barcode text-[32px] text-white-1"></i>
+        </div>
+
+        <h3 class="h2 max-w-[615px] pt-6 font-bold text-black-1">
+          Manage your finances effortlessly with our intuitive
+        </h3>
+        <p class="l-text max-w-[706px] pt-3 text-black-4">
+          Effortlessly manage your finances with our intuitive app. Take control
+          of your financial future with ease
+        </p>
+        <div class="spt60px">
+          <img
+            src="./assets/images/manage-card-image.png"
+            alt="manage your finances card image"
+          />
+        </div>
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="col-start-1 col-end-13 grid grid-cols-12 gap-6 rounded-xl bg-white-5"
+      >
+        <div
+          class="spl60px spt60px col-start-1 col-end-13 pb-10 lg:col-end-6 3xl:pb-[174px]"
+        >
+          <div
+            class="flex size-20 items-center justify-center rounded-xl bg-primary"
+          >
+            <i class="ph ph-export text-[32px] text-white-1"></i>
+          </div>
+          <h3 class="h2 max-w-[708px] pt-6 font-bold text-black-1">
+            Enjoy fee-free transfers to any destination worldwide.
+          </h3>
+          <p class="l-text pt-3 text-black-4">
+            Experience fee-free transfers to any destination worldwide. Send
+            money internationally without worrying about additional charges.
+          </p>
+        </div>
+        <div
+          class="col-start-1 col-end-13 flex h-[70vh] w-full items-end justify-end overflow-hidden rounded-br-xl bg-accent-2 max-3xl:rounded-bl-xl lg:h-[50vh] 3xl:col-start-6 3xl:h-full 3xl:rounded-tr-xl 3xl:[clip-path:polygon(27%_0,100%_1%,100%_100%,0%_100%);]"
+        >
+          <div
+            class="tags-container relative z-40 h-full w-full bg-transparent"
+          ></div>
+        </div>
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="sp40px col-start-1 col-end-13 rounded-xl bg-white-4 lg:col-end-5"
+      >
+        <div
+          class="flex size-20 items-center justify-center rounded-xl bg-primary"
+        >
+          <i class="ph ph-bank text-[32px] text-white-1"></i>
+        </div>
+        <h3 class="h3 max-w-[388px] pt-6 font-bold text-black-1">
+          Simplify banking tasks effortlessly
+        </h3>
+        <div class="spt60px flex items-center gap-4">
+          <div>
+            <img src="./assets/images/card-big.png" alt="bank card big" />
+          </div>
+          <div>
+            <img src="./assets/images/card-small.png" alt="bank card small" />
+          </div>
+        </div>
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="sp40px col-start-1 col-end-13 rounded-xl bg-white-4 lg:col-start-5 lg:col-end-9"
+      >
+        <div
+          class="flex size-20 items-center justify-center rounded-xl bg-primary"
+        >
+          <i class="ph ph-currency-circle-dollar text-[32px] text-white-1"></i>
+        </div>
+        <h3 class="h3 max-w-[388px] pt-6 font-bold text-black-1">
+          Simplify banking tasks effortlessly
+        </h3>
+        <div
+          class="smt60px flex w-full items-center justify-between gap-4 rounded-xl bg-white-1 p-4 shadow-custom3"
+        >
+          <div class="flex items-center gap-3">
+            <img src="./assets/images/usa-flag.png" alt="usa flag" />
+            <span class="l-text font-medium text-black-1">USA</span>
+          </div>
+          <i class="ph ph-arrow-up-right text-[32px]"></i>
+        </div>
+      </div>
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="sp40px spr80px spl40px relative col-start-1 col-end-13 flex items-center overflow-hidden rounded-xl bg-black-1 text-white-1 lg:col-start-9"
+      >
+        <div>
+          <h3
+            class="h3 relative z-10 max-w-[431px] pt-6 font-bold text-white-1"
+          >
+            Check out other product features
+          </h3>
+          <div class="btn-area relative z-20 mt-10">
+            <a
+              href="#"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+              >
+                View More
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <img
+          src="./assets/images/card-circle-bottom-left.png"
+          alt="card circle element bottom left"
+          class="absolute bottom-0 left-0 max-lg:w-32 lg:max-xxl:max-w-48"
+        />
+        <img
+          src="./assets/images/card-circle-top-right.png"
+          alt="card circle element top right"
+          class="absolute right-0 top-0 max-lg:w-28 lg:max-xxl:max-w-40"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- faqs -->
+      <section class="spy120px bg-white-4">
+  <div class="container">
+    <div
+      class="mx-auto flex max-w-[289px] flex-col items-center justify-center gap-4 text-center"
+    >
+      <div class="flex items-center justify-center gap-3">
+        <i class="ph ph-fire text-[24px] text-primary"></i>
+        <h5 class="l-text font-medium text-primary">AppleX in Action</h5>
+      </div>
+      <h3 class="h2 font-bold text-black-1">See AppleX in Action</h3>
+    </div>
+
+    <div
+      class="spt60px grid-cols-12 flex-col-reverse gap-6 max-xxl:items-center max-xl:flex xl:grid"
+    >
+      <div
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="col-start-1 col-end-8 flex flex-col gap-5"
+      >
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              How do I report fraudulent activity on my account?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              How secure is AppleX?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              Can AppleX be customized for our unique workflow?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              What support options are available with AppleX?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              How do I report fraudulent activity on my account?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              How secure is AppleX?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-16px appear-down rounded-xl bg-white-1 p-4 shadow-custom3 sm:p-5"
+        >
+          <div
+            class="rounded-16px faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6"
+          >
+            <h6 class="xl-text font-semibold text-black-2">
+              Can AppleX be customized for our unique workflow?
+            </h6>
+            <div
+              class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none"
+            >
+              <i class="ph ph-plus text-[24px]"> </i>
+            </div>
+          </div>
+          <div class="theme-transition-6 h-0 overflow-hidden">
+            <p class="l-text mt-4 text-black-4">
+              If you notice any suspicious or unauthorized activity on your
+              account, follow these steps: 1. Contact your bank or credit card
+              issuer immediately. 2. Report the fraudulent transactions and
+              provide details of the unauthorized activity. 3. Request to block
+              or deactivate the affected card or account. 4. Follow any
+              additional instructions provided by your bank to resolve the
+              issue.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="col-start-8 col-end-13"
+      >
+        <img src="./assets/images/faq-image.png" alt="faq image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- footer -->
+      <footer class="spt120px bg-white-1 pb-6">
+  <div class="container">
+    <h3
+      data-aos="zoom-out-down"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="h2 mx-auto max-w-[470px] text-center font-bold text-black-1"
+    >
+      AppleX is available for all Devices
+    </h3>
+  </div>
+  <div
+    class="spt60px grid-cols-12 items-center max-sm:container max-sm:pb-4 sm:grid"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-1 col-end-4 h-full rounded-br-xl rounded-tr-xl border-b-2 border-r-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="col-start-3 col-end-11 -ml-0.5 rounded-xl border-accent-2 text-center lg:col-start-4 lg:col-end-10 lg:border-2"
+    >
+      <a
+        href="/"
+        class="h2 block w-full rounded-full bg-primary py-6 font-bold text-white-1 sm:py-8 md:py-11"
+      >
+        Start for free
+      </a>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-10 col-end-13 -ml-0.5 h-full rounded-bl-xl rounded-tl-xl border-b-2 border-l-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+  </div>
+  <div
+    class="grid-cols-12 items-center max-sm:container max-lg:gap-6 sm:grid lg:-mt-0.5"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-1 col-end-4 h-full rounded-br-xl rounded-tr-xl border-b-2 border-r-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="col-start-3 col-end-11 -ml-0.5 gap-4 rounded-xl border-accent-2 max-sm:space-y-4 sm:grid sm:grid-cols-2 lg:col-start-4 lg:col-end-10 lg:gap-0 lg:border-2"
+    >
+      <div
+        class="rounded-full border border-accent-2 py-4 text-center sm:py-5 md:py-7"
+      >
+        <img
+          src="./assets/images/footer-google-play.png"
+          alt="footer apple play image"
+          class="mx-auto block max-3xl:w-40"
+        />
+      </div>
+      <div
+        class="rounded-full border border-accent-2 py-4 text-center sm:py-5 md:py-7"
+      >
+        <img
+          src="./assets/images/footer-apple-play.png"
+          alt="footer apple play image"
+          class="mx-auto block max-3xl:w-40"
+        />
+      </div>
+    </div>
+
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-10 col-end-13 -ml-0.5 h-full rounded-bl-xl rounded-tl-xl border-b-2 border-l-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+  </div>
+  <div
+    class="container flex items-center justify-between pt-6 max-md:flex-col max-md:gap-6"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="flex items-center gap-3 max-[480px]:flex-col"
+    >
+      <p class="xl-text font-medium text-black-1">Copyright @ 2024 AppleX</p>
+      <div class="h-5 w-0.5 bg-white-3 max-[480px]:hidden"></div>
+      <p class="xl-text font-medium text-black-1">
+        Designed By
+        <a href="/" class="text-primary underline">Pixelaxis</a>
+      </p>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="flex items-center gap-3"
+    >
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </main>
+
+    <!-- ============= swiper js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============= matter js ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <!-- ============= matter custom js ============ -->
+    <script src="./assets/js/matterjs.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

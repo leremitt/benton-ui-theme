@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Contact-Beauty HTML5 Template</title>
+  </head>
+  <body class="bg-neutral-2 p-4 text-neutral-1 sm:p-6 font-body-font">
+    <main class="custom-container">
+      <!-- ============ header ============ -->
+      <include-header />
+      <!-- ============ pagination ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="sp100px rounded-3xl flex-col bg-neutral-7 border border-neutral-4/30 flex items-center justify-center"
+      >
+        <h2 class="h1 font-semibold text-center">Contact</h2>
+        <div class="flex items-center justify-center gap-1 h6 font-semibold pt-5"><a href="/">Home</a> <span>/</span> <span class="text-primary underline underline-offset-2">Contact</span></div>
+      </section>
+      <section class="rounded-3xl sp60px bg-neutral-7 border border-neutral-4/30 smt60px">
+        <!-- ================= contact info section ================== -->
+        <div class="grid grid-cols-1 gap-4 text-center md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+          <!-- email card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="p-6 flex flex-col items-center justify-center gap-6 rounded-3xl border spx40px spy48px border-neutral-8"
+          >
+            <div class="flex items-center justify-center rounded-full bg-primary/5 p-5">
+              <i class="ph-fill ph-chats text-[40px] text-primary"></i>
+            </div>
+            <div>
+              <h3 class="h3 font-semibold">Chat to support</h3>
+              <p class="xl-text font-light pt-3 text-black-2 font-secondary-font">Speak to our friendly team.</p>
+            </div>
+            <a href="mailto:support@servibe.com font-secondary-font" class="underline font-light underline-offset-4 font-secondary-font">support@servibe.com</a>
+          </div>
+          <!-- visit us card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="p-6 flex flex-col items-center justify-center gap-6 rounded-3xl border border-neutral-8">
+            <div class="flex items-center justify-center rounded-full bg-primary/5 p-5">
+              <i class="ph-fill ph-map-pin text-[40px] text-primary"></i>
+            </div>
+            <div>
+              <h3 class="h3 font-semibold">Visit us</h3>
+              <p class="xl-text pt-3 font-light text-black-2 font-secondary-font">Visit our office HQ.</p>
+            </div>
+            <a href="https://maps.app.goo.gl/ZX73PFLRGvdwADmE6" class="font-light underline underline-offset-4 font-secondary-font"> View on Google Maps </a>
+          </div>
+          <!-- Contact Us card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="p-6 flex flex-col items-center justify-center gap-6 rounded-3xl border border-neutral-8 md:max-lg:col-span-2"
+          >
+            <div class="flex items-center justify-center rounded-full bg-primary/5 p-5">
+              <i class="ph-fill ph-phone-call text-[40px] text-primary"></i>
+            </div>
+            <div>
+              <h3 class="h3 font-semibold">Contact Us</h3>
+              <p class="xl-text pt-3 font-light text-black-2 font-secondary-font">Mon-Fri from 8am to 5pm.</p>
+            </div>
+            <a href="tel:+1 (239) 555-0108" class="font-light underline underline-offset-4 font-secondary-font">(239) 555-0108</a>
+          </div>
+        </div>
+        <!-- ================= contact form ================== -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp60px col-span-12 h-full rounded-3xl border smt60px border-neutral-8 md:col-span-8">
+          <h3 class="d4 font-bold text-center">Send us a Message</h3>
+          <form id="contact-form" class="spt40px flex flex-col gap-6">
+            <!-- name and email -->
+            <div class="max-sm:flex-col flex items-center gap-6">
+              <div class="w-full">
+                <input type="text" id="name" class="border rounded-lg w-full border-neutral-8 p-5 bg-transparent mt-3" placeholder="Name" />
+              </div>
+              <div class="w-full">
+                <input type="text" id="email" class="border rounded-lg w-full border-neutral-8 p-5 bg-transparent mt-3" placeholder="Email" />
+              </div>
+            </div>
+            <!-- phone and subject -->
+            <div class="max-sm:flex-col flex items-center gap-6">
+              <div class="w-full">
+                <input type="number" id="phone" class="border rounded-lg w-full border-neutral-8 p-5 bg-transparent mt-3" placeholder="Phone" />
+              </div>
+              <div class="w-full">
+                <input type="email" id="subject" class="border rounded-lg w-full border-neutral-8 p-5 bg-transparent mt-3" placeholder="Subject" />
+              </div>
+            </div>
+            <!-- message -->
+            <div class="w-full">
+              <textarea rows="4" id="message" class="border rounded-lg w-full border-neutral-8 p-5 bg-transparent mt-3" placeholder="Your Message"></textarea>
+            </div>
+            <button id="contact-submit-btn" class="h6 col-span-1 rounded-xl bg-primary p-3 font-bold text-neutral-2 lg:col-span-2">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <!-- ============ footer ============ -->
+      <include-footer />
+    </main>
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

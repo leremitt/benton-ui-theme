@@ -1,0 +1,211 @@
+// Header Starts
+.show {
+  @apply hidden duration-500;
+
+}
+
+#mobileMenu {
+  @apply md:hidden
+}
+
+.cmnhed {
+  .active {
+    
+    // color: #FEC92F;
+    text-decoration: underline;
+  }
+}
+
+
+.navbar-nav{
+  &.active, &:hover {
+    color: red;
+}
+}
+
+// Header Ends
+// brad-carousel Starts
+// brad-carousel Starts
+.brad-carousel,.brad-carousel-show {
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+}
+// brad-carousel Ends
+// brad-carousel Ends
+// Countdown Starts
+.counters {
+  span {
+    line-height: inherit;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+  }
+}
+// Countdown Ends
+
+.ball {
+    animation: spin-clockwise 12s infinite linear;
+}
+@keyframes spin-clockwise {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  };
+}
+
+.box-overly{
+  &::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+  }
+}
+
+// .image-style{
+
+//     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+//       filter: gray; /* IE5+ */
+//       -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+//       -webkit-transition: all .3s ease-in-out;  
+//       background: linear-gradient(180deg, rgba(56, 56, 56, 0.00)0%, rgba(0, 0, 0, 0.90)100%);
+
+//     &:hover {
+//     filter: none;
+//       -webkit-filter: grayscale(0);
+//       -webkit-transform: scale(1.1);
+//     }
+
+//   }
+
+  // .freedom{
+  //   background-image: url('../assets/images/chartss.png');
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   background-position: bottom;
+  // }
+
+  .rotated_animat {
+    animation: rotated_animat 6s linear infinite;
+  }
+  .rotated_animattwo{
+    animation: rotated-animattwo 40s linear infinite;
+  }
+  .rotated_two{
+    animation: rotated_two 6s linear infinite;
+  }
+  @keyframes rotated-animattwo {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  @keyframes rotated_animat {
+    0% {
+      transform: rotate(0deg) scale(1);
+      // opacity: 0.7;
+    }
+  
+    50%{
+        transform: scale(1)  scale(0.9);
+     opacity: 1;
+    }
+    // 100% {
+    //   transform: rotate(360deg) scale(1);
+    //   // opacity: 0.7;
+    // }
+  }
+  @keyframes rotated_two {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+  }
+
+  .hero-bg{
+    background-image: url("../assets/images/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .line-horizontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgb(34, 46, 72, 0.4) 50%
+  );
+    background-size: 10px 100%;
+}
+
+.book_park{
+  transition: 0.15s linear;
+  &.slow{
+    transition: 0.15s linear;
+  }
+}
+
+// Radio Section Starts
+
+.card {
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  &.active {
+    border: 1px solid #050505 !important;
+    // border-color: #f2f2f2 !important;
+    // background-color: #f2f2f2;
+    // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+// Radio Section Ends
+
+// Email validation Starts
+.error {
+  border-color: red;
+}
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}
+// Email validation Ends
+
+.radio-color{
+  [type="radio"]:checked+label:after {
+    background-color: red;
+    border: 2px solid red;
+  }
+}
+[type="radio"] {
+  font-size: inherit;
+  width: 0.75em;
+  height: 0.75em;
+}

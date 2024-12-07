@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto px-3 sm:max-w-[540px] sm:px-0 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[100%] xxl:max-w-[100%] xxxl:max-w-[100%];
+  }
+
+  .display-1 {
+    @apply text-4xl font-semibold leading-tight md:text-6xl lg:text-[72px] xl:text-[100px];
+  }
+
+  .display-3 {
+    @apply text-3xl font-semibold leading-tight md:text-5xl lg:text-[64px] xl:text-[72px];
+  }
+
+  .display-4 {
+    @apply text-3xl font-semibold leading-tight md:text-4xl lg:text-[48px] xl:text-[56px];
+  }
+
+}
+
+@layer base {
+  i {
+    font-size: 1.5rem;
+  }
+
+  a,
+  p,
+  span,
+  td {
+    @apply text-sm md:text-base;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold leading-tight md:text-4xl xl:text-[48px];
+  }
+
+  h2 {
+    @apply text-xl font-semibold leading-tight sm:text-2xl lg:text-3xl xxxl:text-[40px];
+  }
+
+  h3 {
+    @apply text-xl font-medium leading-tight sm:font-semibold lg:text-2xl xxxl:text-[32px];
+  }
+
+  h4 {
+    @apply text-lg font-medium md:text-xl md:font-semibold xxxl:text-2xl;
+  }
+
+  h5 {
+    @apply text-base font-medium md:text-xl md:font-semibold;
+  }
+
+  h6 {
+    @apply text-base font-medium shadow-none;
+  }
+
+  input:focus,
+  textarea:focus {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  table thead tr th:first-of-type {
+    @apply sm:rounded-tl-lg;
+  }
+
+  table thead tr th:last-of-type {
+    @apply sm:rounded-tr-lg;
+  }
+
+  table tbody tr:last-of-type td:first-of-type {
+    @apply sm:rounded-bl-lg;
+  }
+
+  table tbody tr:last-of-type td:last-of-type {
+    @apply sm:rounded-br-lg;
+  }
+
+  td {
+    vertical-align: middle !important;
+  }
+
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input:checked+div {
+    @apply border-primary;
+  }
+
+  input:checked+div svg {
+    @apply block;
+  }
+
+  body {
+    font-family: "Cormorant Garamond", serif;
+    color: #F8F8F8 !important;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  input.picker[type="date"] {
+    position: relative;
+  }
+
+  input.picker[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: transparent;
+    background: transparent;
+  }
+}

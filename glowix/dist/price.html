@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Price-Beauty HTML5 Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="bg-neutral-2 p-4 text-neutral-1 sm:p-6 font-body-font">
+    <main class="custom-container">
+      <!-- ============ header ============ -->
+      <header data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="mb-4 sm:mb-6 relative z-30">
+  <!-- desktop navbar -->
+  <div class="xxl:flex px-4 py-2.5 hidden rounded-full items-center border border-neutral-4 justify-between gap-6">
+    <div>
+      <a href="/">
+        <img src="./assets/images/logo.png" alt="Logo" />
+      </a>
+    </div>
+    <ul class="flex items-center gap-1">
+      <li>
+        <a href="/" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Home</a>
+      </li>
+      <li>
+        <a href="./about.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">About Us</a>
+      </li>
+      <li>
+        <a href="./services.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Services</a>
+      </li>
+      <li>
+        <a href="./blog.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Blog</a>
+      </li>
+      <li>
+        <a href="./price.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Prices</a>
+      </li>
+      <li>
+        <a href="./galleries.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Galleries</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Contact</a>
+      </li>
+    </ul>
+    <div class="btn-area group z-20">
+      <a href="./reservation.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+        <span class="one m-text theme-transition-4 min-h-[45px] rounded-full border border-neutral-4 group-hover:bg-primary group-hover:text-neutral-2 px-8 py-2.5 font-medium capitalize">
+          Reservation Now
+        </span>
+        <span
+          class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center border group-hover:text-neutral-2 rounded-full border-neutral-4 group-hover:bg-neutral-4 p-2.5 text-center"
+        >
+          <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- mobile nav -->
+  <div class="bg-white-4 xxl:hidden z-20 relative">
+    <div class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-full border border-neutral-4 bg-white-1 px-6">
+      <div class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between">
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <div class="m-text relative font-medium">
+          <button class="text-neutral-n900 flex items-center gap-2">
+            <i id="mobile-menu-btn" class="ph menu-icon ph-list text-4xl"></i>
+          </button>
+          <div id="mobile-menu" class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-neutral-7 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500">
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="/" class="single-menu-mobile">Home</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./about.html" class="single-menu-mobile">About</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./blog-details.html" class="single-menu-mobile">Pricing</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./blog.html" class="single-menu-mobile">Blog</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./contact.html" class="single-menu-mobile">Contact</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./galleries.html" class="single-menu-mobile">Galleries</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./price.html" class="single-menu-mobile">Prices</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./reservation.html" class="single-menu-mobile">Reservation</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./services.html" class="single-menu-mobile">Services</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./service-details.html" class="single-menu-mobile">Service Details</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a href="./contact.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                  <span class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"> Let’s talk </span>
+                  <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center">
+                    <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ pagination ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="sp100px rounded-3xl flex-col bg-neutral-7 border border-neutral-4/30 flex items-center justify-center"
+      >
+        <h2 class="h1 font-semibold text-center">Prices List</h2>
+        <div class="flex items-center justify-center gap-1 h6 font-semibold pt-5"><a href="/">Home</a> <span>/</span> <span class="text-primary underline underline-offset-2"> Prices List </span></div>
+      </section>
+      <!-- ============ pricing list ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="border max-xs:spy48px max-xs:px-3 xs:sp60px border-neutral-4/30 bg-neutral-7 rounded-3xl smt60px"
+      >
+        <div class="md:flex items-center max-md:grid grid-cols-1 xs:grid-cols-2 text-center justify-center font-semibold">
+          <button data-content-id="pricing-tab-one" class="border-neutral-4 bg-primary text-neutral-2 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">
+            Hair & Face
+          </button>
+          <button data-content-id="pricing-tab-two" class="border-neutral-4 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">Skin & Body</button>
+          <button data-content-id="pricing-tab-three" class="border-neutral-4 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">Nails</button>
+          <button data-content-id="pricing-tab-four" class="border-neutral-4 border pricing-tab-btn spx40px py-4 h4 hover:bg-primary duration-300 hover:text-neutral-2">Botox & Fillers</button>
+        </div>
+
+        <div class="spt80px">
+          <!-- tab one -->
+          <div id="pricing-tab-one" class="flex-col gap-15 flex pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- tab two -->
+          <div id="pricing-tab-two" class="flex-col gap-15 hidden pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$300</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- tab three -->
+          <div id="pricing-tab-three" class="flex-col gap-15 hidden pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$300</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- tab four -->
+          <div id="pricing-tab-four" class="flex-col gap-15 hidden pricing-tab-content">
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Eyebrow Design</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$50</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Lip Fillers</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$42</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Fillers application</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$30</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+            <div class="group/card relative">
+              <div class="flex items-center gap-8 justify-between">
+                <p class="h3 font-semibold shrink-0">Forehead Botox</p>
+                <div class="w-full border-b border-dashed border-primary/50 max-xs:hidden"></div>
+                <p class="h3 font-semibold text-primary">$100</p>
+              </div>
+              <p class="xl-text font-light text-neutral-3 pe-3 pt-8">
+                Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures. Fusce efficitur nulla vitae metus vehicula semper
+                Proin a mattis ligula quisque sed dapibus eros. Etiam ac neque sed risus sodales hendrerit vel ac diam.
+              </p>
+              <div
+                class="theme-transition-3 pointer-events-none absolute top-1/2 z-20 left-1/2 hidden -translate-x-1/2 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+              >
+                <img src="./assets/images/price-hover-image.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ footer ============ -->
+      <footer data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="max-md:spy60px max-xs:px-3 xs:max-md:spx48px md:sp80px bg-neutral-7 rounded-3xl smt60px">
+  <div class="max-md:flex flex-col md:grid grid-cols-12 gap-6 md:items-center">
+    <div class="col-span-2">
+      <img src="./assets/images/logo.png" alt="footer logo" />
+    </div>
+    <h2 class="col-start-4 d4 font-bold col-span-10 max-w-[884px]">Revitalize Your Haircut And Get A Fresh New Look</h2>
+  </div>
+  <div class="spt100px grid max-xl:gap-6 grid-cols-12">
+    <div class="col-span-12 lg:col-span-5 xl:col-span-4">
+      <h3 class="h3 font-semibold">Newsletter Signup</h3>
+      <div class="flex items-center justify-between spt40px pb-5 border-b border-neutral-8">
+        <div class="flex items-center w-[calc(100%-50px)] sm:w-[calc(100%-80px)] gap-2">
+          <i class="ph text-neutral-3 text-[24px] ph-envelope-simple"></i>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="bg-transparent min-w-full shrink-0 placeholder:text-[18px] placeholder:font-light placeholder:text-neutral-3 placeholder:leading-[0px]"
+          />
+        </div>
+        <button class="flex items-center justify-center">
+          <i class="ph text-[24px] text-neutral-3 ph-arrow-right"></i>
+        </button>
+      </div>
+      <div class="pt-5">
+        <label class="flex items-center font-secondary-font gap-2 text-neutral-3"
+          ><input type="checkbox" id="cbox1" value="first_checkbox" /> I agree to the <a href="#" class="text-neutral-1 hover:underline underline-offset-4 underline"> Privacy Policy. </a></label
+        >
+      </div>
+    </div>
+    <div class="col-span-6 xs:col-span-6 xl:col-start-6 md:col-span-4 lg:col-span-2 xl:col-span-3">
+      <h4 class="h3 font-semibold">Menu</h4>
+      <ul class="spt40px flex flex-col gap-4 l-text">
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Home</a></li>
+        <li class=""><a href="./about.html" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">About Us</a></li>
+        <li class=""><a href="./services.html" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Services</a></li>
+        <li class=""><a href="./contact.html" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col-span-6 xs:col-span-6 md:col-span-4 lg:col-span-2">
+      <h4 class="h3 font-semibold">Social</h4>
+      <ul class="spt40px flex flex-col gap-4 l-text">
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Facebook</a></li>
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Twitter</a></li>
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Dribble</a></li>
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="col-span-12 md:col-span-4 lg:col-span-2">
+      <h4 class="h3 font-semibold">Say Hello</h4>
+      <a href="mailto:bill.sanders@example.com" class="spt40px flex flex-col gap-4 l-text"> bill.sanders@example.com </a>
+    </div>
+  </div>
+</footer>
+
+    </main>
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

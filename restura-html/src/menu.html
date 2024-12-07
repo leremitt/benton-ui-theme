@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="boot, tailwindss, Restura - HTML Tailwindcss">
+    <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+    <title>Restura - HTML Tailwindcss</title>
+</head>
+
+<body class="bg-nb10">
+    <section class="container p-3 sm:p-6">
+        <div class="grid grid-cols-12 gap-6">
+            <div class="bg-[#1A1A1A] rounded-lg col-span-full xl:col-span-1">
+                <div class="navheight flex xl:flex-col justify-between px-3 py-3 xl:py-10 xl:min-h-svh">
+                    <div class="flex justify-center items-center">
+                        <a class="flex xl:flex-col items-center gap-2 md:gap-3 xl:gap-0" href="index.html">
+                            <img class="max-w-fit md:mb-3 w-10 sm:w-13 xl:w-full" src="./assets/images/logo-main.png" alt="Logo">
+                            <span class="xxxl:text-xl">RESTURA</span>
+                        </a>
+                    </div>
+                    <div class="relative order-first xl:order-none mt-1 xl:mt-0">
+                        <include-navbar />
+                        <div class="flex justify-center items-center">
+                            <div class=" cursor-pointer border border-primary px-2 md:px-3 py-1 md:py-1.5 rounded-3xl">
+                                <span class="text-2xl lg:text-3xl text-primary" onclick="openNav()">&#9776;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <a class="flex items-center justify-center" href="reservation.html">
+                            <img class="w-10 sm:w-13 xl:w-full" src="./assets/images/icon/regave.png" alt="Icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-12 xl:col-span-6 order-last xl:order-none">
+                <div
+                    class="border-extra10 border rounded-3xl px-4 md:px-8 xl:px-12 pb-10 md:pb-14 mb-4 md:mb-6 xl:max-h-[104vh] overflow-y-auto listest-news scrollcontrol">
+                    <div class="my-10 md:my-14 text-center">
+                        <h1 class="display-4 font-semibold text-primary pb-5 md:pb-6">OUR MENU</h1>
+                        <p class="text-xl">The heart of Restura allure lies in its meticulous attention to every detail,
+                            from the selection of <br class="none xxxl:block"> ingredients to the presentation of each
+                            dish.
+                        </p>
+                    </div>
+                    <div class="relative z-0 group">
+                        <h2 class="text-primary font-semibold mb-4 md:mb-6">Breakfast</h2>
+                        <div class="mb-10">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Delicious Pancakes</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <div class="mb-10">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Avocado Smash</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <div class="mb-10 md:mb-16">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Standard black coffee</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <img class="absolute top-[30%] right-[30%] sm:right-[30%] -z-10 opacity-0 group-hover:opacity-100 duration-500 sm:w-[35%] rounded-2xl" src="./assets/images/menu-hover1.png" alt="Image">
+                    </div>
+                    <div class="relative z-0 group">
+                        <h2 class="text-primary font-semibold mb-4 md:mb-6">Lunch</h2>
+                        <div class="mb-10">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Delicious Pancakes</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <div class="mb-10">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Avocado Smash</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <div class="mb-10 md:mb-16">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Standard black coffee</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <img class="absolute top-[30%] right-[30%] sm:right-[30%] -z-10 opacity-0 group-hover:opacity-100 duration-500 sm:w-[35%] rounded-2xl" src="./assets/images/menu-hover2.png" alt="Image">
+                    </div>
+                    <div class="relative z-0 group">
+                        <h2 class="text-primary font-semibold mb-4 md:mb-6">Dinner</h2>
+                        <div class="mb-10">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Tomato Soup</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$15</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <div class="mb-10">
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Noodle Soup</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$10</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <div  >
+                            <div class="flex items-center justify-between gap-5 md:gap-6 relative mb-3">
+                                <div  >
+                                    <h4 class="text-nowrap">Sweet Heaven</h4>
+                                </div>
+                                <span
+                                    class="menuitemdoted text-extra10 w-[550px] border border-dotted border-extra10"></span>
+                                <div  >
+                                    <h3 class="text-primary font-semibold">$12</h3>
+                                </div>
+                            </div>
+                            <p class="text-xl text-nw40 opacity-80">Tempura-fried shrimp, cucumber, and cream cheese
+                                embrace
+                                a center
+                                of fresh avocado, delivering a satisfying contrast of textures.</p>
+                        </div>
+                        <img class="absolute top-[30%] right-[30%] sm:right-[30%] -z-10 opacity-0 group-hover:opacity-100 duration-500 sm:w-[35%] rounded-2xl" src="./assets/images/menu-hover3.png" alt="Image">
+                    </div>
+                </div>
+                <include-footer />
+            </div>
+            <div class="col-span-12 xl:col-span-5">
+                <div class="relative h-full">
+                    <img class="w-full rounded-2xl h-full" src="./assets/images/our-menu.png" alt="Image">
+                    <span class="display-1 text-primary absolute bottom-5 left-5 md:bottom-20 md:left-20 uppercase">OUR MENU</span>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

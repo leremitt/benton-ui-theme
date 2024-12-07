@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ flatpickr css  ============ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  </head>
+
+  <body class="bg-white-1 p-4 text-black-1 sm:p-6">
+    <main class="relative overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ pagination start ============ -->
+      <section class="relative">
+        <img
+          src="./assets/images/our-dentist-pagination-image.png"
+          alt="A picture showing a person with a dental implant and a friendly message about dental implant care"
+          class="w-full rounded-xl object-cover max-sm:h-[350px] sm:max-lg:h-[400px]"
+        />
+        <p
+          class="h3 xs:d4 spx32px absolute whitespace-nowrap rounded-3xl bg-black-1/30 py-4 text-center font-extrabold text-white-1 max-md:left-1/2 max-md:top-10 max-md:-translate-x-1/2 xs:py-6 md:left-10 md:top-10"
+        >
+          Cart
+        </p>
+        <div
+          class="btn-area spx32px absolute bottom-10 z-20 rounded-3xl bg-secondary py-4 text-white-1 max-md:left-1/2 max-md:-translate-x-1/2 xs:py-6 md:bottom-10 md:right-10"
+        >
+          <a
+            href="#"
+            aria-label="Contact"
+            class="move-btn theme-transition-4 flex items-center text-center"
+          >
+            <span
+              class="one h3 xs:h2 theme-transition-4 px-2 font-bold uppercase sm:px-4"
+            >
+              Appointment
+            </span>
+            <span
+              class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-full border-2 border-dashed p-2 text-center md:p-3"
+            >
+              <i
+                class="ph ph-arrow-up-right text-[24px]"
+                data-icon-name="arrow-right"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- ============ pagination end ============ -->
+
+      <!-- cart start -->
+      <section class="spy60px">
+        <div class="overflow-x-auto">
+          <table class="min-w-full whitespace-nowrap">
+            <thead>
+              <tr
+                class="h5 border-b border-black-2/10 font-bold text-black-2/40"
+              >
+                <th class="spb32px min-w-[400px] text-center">Product</th>
+                <th class="spb32px min-w-[120px] text-center">Price</th>
+                <th class="spb32px min-w-[120px] text-center">Quantity</th>
+                <th class="spb32px min-w-[120px] text-center">Subtotal</th>
+                <th class="spb32px min-w-[120px] text-center"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-black-2/10 text-center">
+                <td class="spy32px">
+                  <div class="flex items-center gap-6">
+                    <div
+                      class="flex shrink-0 items-center justify-center rounded-xl bg-white-4 px-15 py-4"
+                    >
+                      <img
+                        src="./assets/images/cart-product-1.png"
+                        alt="Cart Product Image one"
+                      />
+                    </div>
+                    <p class="h5 font-bold text-black-1">Electric Toothbrush</p>
+                  </div>
+                </td>
+                <td class="h5 font-bold text-black-1">$180</td>
+                <td>
+                  <div
+                    class="mx-auto flex w-fit items-center rounded-xl border border-black-2/20"
+                  >
+                    <button
+                      class="flex h-full items-center justify-center px-5"
+                    >
+                      <i class="ph-bold ph-minus text-[24px]"></i></button
+                    ><span
+                      class="h5 border-l border-r border-black-2/20 px-5 py-3 font-bold text-black-1"
+                      >60</span
+                    >
+                    <button
+                      class="flex h-full items-center justify-center px-5"
+                    >
+                      <i class="ph-bold ph-plus text-[24px]"></i>
+                    </button>
+                  </div>
+                </td>
+                <td class="h5 font-bold text-black-1">$180</td>
+                <td>
+                  <div
+                    class="mx-auto flex w-fit items-center justify-center rounded-full border border-black-2 p-3.5 text-black-2"
+                  >
+                    <i class="ph-bold ph-x text-[20px]"></i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="smt60px flex items-center gap-6 max-md:flex-wrap justify-center sm:justify-between"
+        >
+          <div
+            class="flex items-center max-xs:flex-col overflow-hidden rounded-xl border border-black-2/10 bg-black-2/5"
+          >
+            <input
+              type="text"
+              class="bg-transparent py-4 ps-5"
+              placeholder="Coupon code"
+            />
+            <button class="l-text bg-secondary w-full px-8 py-4 font-medium">
+              Apply coupon
+            </button>
+          </div>
+          <div class="flex items-center justify-between gap-20 lg:gap-[169px]">
+            <span class="h5 font-bold text-black-1">Total</span>
+            <span class="h5 font-bold text-black-2">£224.40</span>
+          </div>
+        </div>
+        <div class="flex justify-center sm:justify-end">
+          <a
+            href="checkout.html"
+            class="smt40px l-text spx80px rounded-xl bg-primary py-3 text-center font-semibold text-white-1"
+          >
+            Proceed to Checkout
+          </a>
+        </div>
+      </section>
+      <!-- cart end -->
+
+      <!-- ============ footer start =<section>
+
+      </section>=========== -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

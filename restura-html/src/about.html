@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Restura - HTML Tailwindcss">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>Restura - HTML Tailwindcss</title>
+</head>
+
+<body>
+  <section class="container p-3 sm:p-6">
+    <div class="grid grid-cols-12 gap-6">
+      <div class="bg-[#1A1A1A] rounded-lg col-span-full xl:col-span-1">
+        <div class="navheight flex xl:flex-col justify-between px-3 py-3 xl:py-10 xl:min-h-svh">
+          <div class="flex justify-center items-center">
+            <a class="flex xl:flex-col items-center gap-2 md:gap-3 xl:gap-0" href="index.html">
+              <img class="max-w-fit md:mb-3 w-10 sm:w-13 xl:w-full" src="./assets/images/logo-main.png" alt="Logo">
+              <span class="xxxl:text-xl">RESTURA</span>
+            </a>
+          </div>
+          <div class="relative order-first xl:order-none mt-1 xl:mt-0">
+            <include-navbar />
+            <div class="flex justify-center items-center">
+              <div class=" cursor-pointer border border-primary px-2 md:px-3 py-1 md:py-1.5 rounded-3xl">
+                <span class="text-2xl lg:text-3xl text-primary" onclick="openNav()">&#9776;</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <a class="flex items-center justify-center" href="reservation.html">
+              <img class="w-10 sm:w-13 xl:w-full" src="./assets/images/icon/regave.png" alt="Icon">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-12 xl:col-span-6">
+        <div class="grid grid-cols-2 gap-6 mb-4 md:mb-6">
+          <div class="col-span-full md:col-span-1 xl:col-span-full xxl:col-span-full xxxl:col-span-1">
+            <img class="rounded-2xl w-full" src="./assets/images/sushi.png" alt="Image">
+          </div>
+          <div
+            class="col-span-full md:col-span-1 xl:col-span-full xxl:col-span-full xxxl:col-span-1 rounded-2xl p-5 md:p-8 xl:p-10 border border-extra10 duration-500">
+            <h2 class="text-primary md-6 xl:mb-8">Sushi Craftsmanship Elevated</h2>
+            <p class="text-xl">Experience culinary excellence in modern sophistication. Lorem ipsum dolor sit amet consectetur adipisicing elit. Indulge in expertly crafted
+              sushi for an elevated dining experience
+              like no other.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <div
+            class="col-span-full sm:col-span-1 px-5 md:px-8 xl:px-10 py-5 md:py-6 xl:py-8 rounded-2xl border border-extra10 duration-500 text-center">
+            <div class="text-center mb-4">
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+            </div>
+            <h5 class="text-primary text-center mb-1">START DINING</h5>
+            <span class="text-center">COOL VIBE</span>
+          </div>
+          <div
+            class="col-span-full sm:col-span-1 px-5 md:px-8 xl:px-10 py-5 md:py-6 xl:py-8 rounded-2xl border border-extra10 duration-500 text-center">
+            <div class="text-center mb-4">
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+            </div>
+            <h5 class="text-primary text-center mb-1">START DINING</h5>
+            <span class="text-center">COOL VIBE</span>
+          </div>
+          <div
+            class="col-span-2 px-5 md:px-8 xl:px-10 py-5 md:py-6 xl:py-8 rounded-2xl border border-extra10 duration-500 text-center">
+            <div class="text-center mb-4">
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+              <i class="ph-fill ph-star text-primary"></i>
+            </div>
+            <h5 class="text-primary text-center mb-1">MICHELIN GUIDE</h5>
+            <span class="text-center font-medium">QUALITY FOOD</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 ">
+          <div class="col-span-full md:col-span-1 xl:col-span-full xxl:col-span-full xxxl:col-span-1">
+            <img class="rounded-2xl w-full" src="./assets/images/sushi.png" alt="Image">
+          </div>
+          <div
+            class="col-span-full md:col-span-1 xl:col-span-full xxl:col-span-full xxxl:col-span-1 rounded-2xl p-5 md:p-8 xl:p-10 border border-extra10 duration-500">
+            <h2 class="text-primary md-6 xl:mb-8">Our Story</h2>
+            <p class="text-xl">Restura's story is rooted in a fervent pursuit of culinary greatness, blossoming from Prague's sanctuary for sushi aficionados, renowned for its exquisite craftsmanship and unwavering gastronomy.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-12 xl:col-span-5">
+        <div class="relative">
+          <img class="w-full rounded-2xl" src="./assets/images/shape.png" alt="Image">
+          <span class="display-1 text-primary absolute bottom-5 left-5 md:bottom-20 md:left-20 uppercase">About</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

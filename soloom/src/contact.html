@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ main style css  ============ -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Contact - Hair Salon Template</title>
+  </head>
+
+  <body class="bg-black-1 p-4 text-white-1 sm:p-6">
+    <main class="overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ contact form start ============ -->
+      <section class="spb120px mt-6">
+        <div class="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
+          <div class="overflow-hidden rounded-3xl">
+            <img src="./assets/images/contact.png" alt="contact image" class="theme-transition-3 rounded-3xl hover:scale-105" />
+          </div>
+          <div class="sp60px rounded-3xl bg-black-3">
+            <h5 class="h6 font-bold">CONTACT</h5>
+            <h3 class="d4 max-w-[342px] pt-6 font-extrabold">LET'S GET IN TOUCH</h3>
+            <form id="contact-form">
+              <div class="spt60px grid grid-cols-1 gap-6">
+                <div>
+                  <label for="name" class="xl-text block font-medium text-white-1"> Your Name* </label>
+                  <input type="text" id="name" class="mt-3 w-full rounded-xl border border-white-3/30 bg-transparent px-5 py-4" placeholder="David" />
+                </div>
+                <div>
+                  <label for="email" class="xl-text block font-medium text-white-1"> Your Email* </label>
+                  <input id="email" type="text" class="mt-3 w-full rounded-xl border border-white-3/30 bg-transparent px-5 py-4" placeholder="Email*" />
+                </div>
+                <div>
+                  <label for="text-area" class="xl-text block font-medium text-white-1"> Message* </label>
+                  <textarea id="text-area" placeholder="Type your keyboard" class="mt-3 w-full rounded-xl border border-white-3/30 bg-transparent px-5 py-4"></textarea>
+                </div>
+              </div>
+              <button id="contact-submit-btn" class="xl-text smt40px theme-transition-3 w-full rounded-xl bg-primary px-5 py-4 font-medium text-white-1 hover:bg-secondary hover:text-black-1">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- ============ contact form end ============ -->
+
+      <!-- ============ faq end ============ -->
+      <!-- ============ our stylists end ============ -->
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="boot, tailwindss, Benfit - HTML Tailwindcss Gym Fitness template">
+    <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+    <title>HotelX - </title>
+</head>
+
+<body>
+
+  <!-- Header Starts -->
+  <include-header />
+  <!-- Header Ends -->
+    <!-- Breadcrumb Section Starts -->
+    <div class="container mt-4 md:mt-6">
+        <div class=" p-10 sm:p-12 md:p-[60px] bg-nc30 rounded-xl">
+            <h2 class="text-center text-nc10 mb-3">Booking Process</h2>
+            <div class="flex items-center gap-2 justify-center">
+                <a href="#" class="text-nc10 font-medium md:text-lg">Home</a>
+                <i class="ph-bold ph-caret-double-right text-primary text-xl"></i>
+                <a href="#" class="text-primary md:text-lg">Booking Process</a>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends -->
+    <!-- Booking Process Section Starts -->
+    <section class="py-10 sm:py-14 md:py-20 lg:y-[120px]">
+        <div class="container">
+            <div
+                class="grid grid-cols-12 gap-6 bg-secondary1 border-1 border-nc20 rounded-xl px-3 sm:px-6 md:px-8 lg:px-12 py-6 md:py-10 lg:py-[60px] border border-[rgba(34,34,34,0.20)]">
+                <!-- <div class="col-span-full">
+                    <div
+                        class="flex max-xl:flex-wrap items-center justify-start md:justify-center gap-3 sm:gap-4 lg:gap-5 mb-10 md:mb-14 lg:mb-20">
+                        <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                            <a href="#" class="size-10 md:size-[60px] d-center bg-primary rounded-lg"><i
+                                    class="ph-bold ph-check"></i></a>
+                            <a href="#" class="font-medium">Dates & Rooms</a>
+                            <span class="w-[100px] h-[2px] border-[1.5px] border-[#222]"></span>
+                        </div>
+                        <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                            <a href="#" class="size-10 md:size-[60px] d-center bg-nc20 rounded-lg font-medium">2</a>
+                            <a href="#" class="font-medium opacity-60">Extras</a>
+                            <div class="relative w-[100px] h-[2px]">
+                                <div class="line-horizontal"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                            <a href="#" class="size-10 md:size-[60px] d-center bg-nc20 rounded-lg font-medium">3</a>
+                            <a href="#" class="font-medium opacity-60">Payment</a>
+                            <div class="relative w-[100px] h-[2px]">
+                                <div class="line-horizontal"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 sm:gap-4 lg:gap-5">
+                            <a href="#" class="size-10 md:size-[60px] d-center bg-nc20 rounded-lg font-medium">4</a>
+                            <a href="#" class="font-medium opacity-60">Confirmation</a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-span-full 3xl:col-span-7">
+                    <div class="">
+                        <h5 class="mb-3 md:mb-4">Chose Payment Method</h5>
+                        <form action="">
+                            <div class="flex items-center gap-4 md:gap-5 mb-4 md:mb-6">
+                                <div class="flex items-center gap-3">
+                                    <input id="location" name="radios" type="radio"
+                                        class="checked:bg-primary checked:text-primary checked:border-primary">
+                                    <label for="location">Cash at location</label>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <input id="credit" name="radios" type="radio"
+                                        class="checked:bg-primary checked:text-primary checked:border-primary">
+                                    <label for="credit">Credit</label>
+                                </div>
+                            </div>
+                            <div class="py-6 md:py-8 px-3 md:6 rounded-xl border border-[rgba(34,34,34,0.20)] mb-4 md:mb-6">
+                                <div class="mb-3 md:mb-4">
+                                    <label for="" class="mb-3 md:mb-4 block font-medium">Card Number</label>
+                                    <input type="text"
+                                        class="border border-[rgba(34,34,34,0.20)] rounded-xl p-3 md:p-5">
+                                </div>
+                                <div class="mb-3 md:mb-4">
+                                    <label for="" class="mb-3 md:mb-4 block font-medium">Name on Card</label>
+                                    <input type="text"
+                                        class="border border-[rgba(34,34,34,0.20)] rounded-xl p-3 md:p-5">
+                                </div>
+                                <div class="flex items-center gap-4 md:gap-6">
+                                    <div class="w-full">
+                                        <label for="" class="mb-3 md:mb-4 block font-medium">Expiry Date</label>
+                                        <input type="text" placeholder="MM/ YY"
+                                            class="border border-[rgba(34,34,34,0.20)] rounded-xl p-3 md:p-5 placeholder:text-nc50">
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="" class="mb-3 md:mb-4 block font-medium">CVC</label>
+                                        <input type="text"
+                                            class="border border-[rgba(34,34,34,0.20)] rounded-xl p-3 md:p-5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area max-sm:hidden z-20 hidden md:flex duration-500">
+                                <a href="./booking-three.html" aria-label="Contact"
+                                  class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+                                  <span
+                                    class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                                    Continue
+                                  </span>
+                                  <span
+                                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                                    <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                                  </span>
+                                </a>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-span-full 3xl:col-span-4">
+                    <div class="border border-[rgba(34,34,34,0.20)] rounded-xl px-3 py-5 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+                        <h4 class="mb-4 lg:mb-6">Reservation summary</h4>
+                        <div
+                            class="border border-[rgba(34,34,34,0.20)] px-3 py-5 sm:p-6 md:p-8 lg:p-10 rounded-lg mb-6 md:mb-8 lg:mb-10">
+                            <div class="flex max-3xl:flex-wrap items-center gap-4 md:gap-6 lg:gap-10 mb-6 lg:mb-8">
+                                <div class="">
+                                    <span class="text-base mb-3 opacity-60">CHECK-IN</span>
+                                    <span class="font-medium mb-2">Sun, 22 May 2024</span>
+                                    <span class="font-normal text-base">From 16:00</span>
+                                </div>
+                                <div class="">
+                                    <span class="text-base mb-3 opacity-60">CHECK-OUT</span>
+                                    <span class="font-medium mb-2">Web,25 May 2024</span>
+                                    <span class="font-normal text-base">By 11:00</span>
+                                </div>
+                            </div>
+                            <span class="text-base mb-3">TOTAL LENGTH OF STAY:</span>
+                            <div class="flex items-center gap-2 mb-6 lg:mb-8">
+                                <span class="text-base">03</span>
+                                <i class="ph ph-calendar-blank opacity-50 cursor-pointer"></i>
+                            </div>
+                            <span class="mb-3 text-base opacity-60">YOU SELECTED:</span>
+                            <span class="mb-1 text-base font-semibold">king bed stylish apartment with loft style family
+                                room</span>
+                            <span class="text-base font-medium">Change your selection</span>
+                        </div>
+                        <h4 class="mb-6 md:mb-8 lg:mb-10">Your price summary</h4>
+                        <div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="text-base font-medium">Rooms and offer:</span>
+                                <span class="text-base font-medium">$625.45</span>
+                            </div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="text-base font-medium">9% VAT:</span>
+                                <span class="text-base font-medium">50</span>
+                            </div>
+                            <div class="flex items-center gap-3 mb-6 md:mb-8 lg:mb-10">
+                                <span class="text-base font-medium">tax</span>
+                                <span class="text-base font-medium">$15.44</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="lg:text-xl font-medium">Total Price</span>
+                                <span class="lg:text-xl font-medium">50</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Process Section Ends -->
+   <!-- Footer Section Starts -->
+   <include-footer />
+   <!-- Footer Section Ends -->>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/plguins.js"></script>
+    <script src="./assets/js/plguins-custom.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

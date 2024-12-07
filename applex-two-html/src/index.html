@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Applex Two - HTML Tailwind css</title>
+  </head>
+  <body class="bg-[#EBECF0] p-6">
+    <!-- ============ preloader start ============ -->
+    <div
+      class="preloader-one fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-top h-full w-full bg-primary duration-500"></div>
+    </div>
+    <div
+      class="preloader-two fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-bottom relative h-full w-full bg-secondary"></div>
+    </div>
+    <!-- ============ preloader end ============ -->
+    <main class="overflow-hidden">
+      <div
+        class="flex-col gap-6 max-xl:flex xl:grid xl:grid-cols-12 4xl:grid-cols-12"
+      >
+        <!-- ============ column one start ============ -->
+        <div
+          class="flex flex-col gap-6 max-xl:order-2 xl:col-span-6 4xl:col-span-4"
+        >
+          <!-- ratting card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spl40px spy40px spr32px flex h-full justify-between rounded-3xl bg-white-1 md:gap-[117px]"
+          >
+            <div>
+              <p class="flex items-center gap-1">
+                <span class="h1 font-bold text-black-1">4.9 </span>
+                <span class="xl-text self-end font-medium text-black-4">
+                  /12k+
+                </span>
+              </p>
+              <div class="flex items-center gap-1 pt-1 text-[#FFCE32]">
+                <i class="ph-fill ph-star text-[24px]"></i>
+                <i class="ph-fill ph-star text-[24px]"></i>
+                <i class="ph-fill ph-star text-[24px]"></i>
+                <i class="ph-fill ph-star text-[24px]"></i>
+                <i class="ph-fill ph-star text-[24px]"></i>
+              </div>
+              <div class="flex items-center -space-x-4 pt-5">
+                <img
+                  src="./assets/images/user-1.png"
+                  alt="user one"
+                  class="rounded-full"
+                />
+                <img
+                  src="./assets/images/user-2.png"
+                  alt="user two"
+                  class="rounded-full"
+                />
+                <img
+                  src="./assets/images/user-3.png"
+                  alt="user three"
+                  class="rounded-full"
+                />
+              </div>
+              <h3 class="lead-text pt-6 font-medium text-black-1">
+                Explore Our Customer Review On Play Store
+              </h3>
+            </div>
+            <a
+              href="#"
+              class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary p-2"
+            >
+              <i class="ph ph-arrow-up-right text-[24px]"></i>
+            </a>
+          </div>
+          <!-- features card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spx40px spt40px h-full rounded-3xl bg-white-1"
+          >
+            <div class="flex justify-between gap-4 max-xs:flex-col xs:gap-6">
+              <div class="max-w-[359px]">
+                <div class="flex items-center gap-3 text-blue-n1">
+                  <i class="ph-fill ph-fire text-[24px]"></i>
+                  <span class="m-text">Features</span>
+                </div>
+                <h3 class="h2 font-bold text-black-1">
+                  More than Just a Finance App
+                </h3>
+              </div>
+              <a
+                href="#"
+                class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary p-2"
+              >
+                <i class="ph ph-arrow-up-right text-[24px]"></i>
+              </a>
+            </div>
+            <p class="h5 spt32px max-w-[389px] font-bold text-black-2">
+              Empower yourself financially with our easy-to-use
+            </p>
+            <p class="m-text text-black-4">
+              Empower yourself financially with our user-friendly app. Manage
+              your finances effortlessly and focus ease
+            </p>
+            <div class="smt32px mx-auto">
+              <img
+                src="./assets/images/features-card-mobile-ui.png"
+                alt="features card mobile ui"
+                class="mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- ============ column one end ============ -->
+        <!-- ============ column two start ============ -->
+        <div
+          class="flex flex-col gap-6 max-xl:order-1 xl:col-span-6 4xl:col-span-4"
+        >
+          <!-- navbar -->
+
+          <include-header />
+          <!-- mobile ui slider -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt60px spb60px h-full rounded-3xl bg-white-1"
+          >
+            <div class="mobile-ui-slider overflow-hidden">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative flex items-center justify-center max-4xl:pb-10"
+            >
+              <div
+                class="swiper-pagination !left-1/2 !top-10 !flex !w-fit -translate-x-1/2 !items-center justify-center !gap-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ column two end ============ -->
+        <!-- ============ column three start end ============ -->
+        <div
+          class="grid-cols-2 flex-col gap-6 max-4xl:col-span-3 max-xl:order-3 max-md:flex md:max-4xl:grid lg:grid-cols-3 xl:col-span-12 4xl:col-span-4 4xl:flex"
+        >
+          <div
+            class="grid gap-6 lg:grid-flow-col-dense lg:max-4xl:col-span-2 4xl:grid-cols-2"
+          >
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="sp40px flex flex-col items-center justify-center rounded-3xl bg-white-1"
+            >
+              <div
+                class="flex h-full w-full shrink-0 flex-col items-center justify-center rounded-xl bg-accent-5 py-18"
+              >
+                <p class="xl-text text-black-1">Stories</p>
+                <h3
+                  class="h1 flex items-center justify-center gap-1 font-bold text-black-1"
+                >
+                  <span class="odometer" data-counter-value="4"></span> K+
+                </h3>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="sp40px flex flex-col items-center justify-center rounded-3xl bg-white-1"
+            >
+              <div
+                class="flex h-full w-full shrink-0 flex-col items-center justify-center rounded-xl bg-primary px-8 py-18"
+              >
+                <p class="xl-text text-black-1">Active User</p>
+                <h3
+                  class="h1 flex items-center justify-center gap-1 font-bold text-black-1"
+                >
+                  <span class="odometer" data-counter-value="17">0</span> K+
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spb60px flex flex-col justify-between overflow-hidden rounded-3xl bg-white-1 lg:max-4xl:col-start-3 lg:max-4xl:col-end-4 4xl:h-full"
+          >
+            <div
+              class="spt60px spb60px relative flex flex-col gap-5 rounded-full text-center"
+            >
+              <div
+                class="absolute -top-1/2 left-1/2 size-[150%] -translate-x-1/2 rounded-bl-full rounded-br-full bg-secondary"
+              ></div>
+              <p class="h3 z-10 font-bold text-black-2">
+                Total <br />
+                Download
+              </p>
+              <p
+                class="d4 z-10 font-bold text-black-1 flex items-center justify-center gap-1"
+              >
+                <span class="odometer" data-counter-value="162">0</span> M
+              </p>
+            </div>
+            <div
+              class="spt60px flex items-center justify-center gap-6 max-4xl:flex-col"
+            >
+              <img src="./assets/images/google-play.png" alt="Google Play" />
+              <img src="./assets/images/apple-play.png" alt="Apple Play" />
+            </div>
+          </div>
+          <!-- brand slider -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt48px spb48px overflow-hidden rounded-3xl bg-white-1 max-4xl:col-start-1 max-4xl:col-end-4"
+          >
+            <div class="brand-slider smooth">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-1.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-2.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-3.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-4.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-5.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-6.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-7.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-1.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-2.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-3.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-4.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-5.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ column three end ============ -->
+      </div>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ matter js plugin ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ matter js ============ -->
+    <script src="./assets/js/matterjs.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

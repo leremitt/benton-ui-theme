@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Ticket Price-Event Booking Template</title>
+  </head>
+
+  <body class="bg-white-3 p-4 text-black-1 sm:p-6">
+    <main class="relative">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+
+      <div class="grid gap-4 lg:grid-cols-3 lg:gap-6">
+        <!-- ticket price one -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp40px rounded-xl bg-white-1">
+          <h3 class="h3 font-bold capitalize text-black-1">Regular Pass</h3>
+          <p class="flex gap-1 pt-6"><span class="d2 font-bold">$145</span><span class="lead-text self-end pb-2 font-semibold">USD</span></p>
+          <ul class="spt40px flex flex-col gap-4 lg:gap-6">
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">1 Comfortable seats</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Free lunch and coffee</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Extraordinary results</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-black-2"></i>
+              <span class="lead-text">Certificate</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-black-2"></i>
+              <span class="lead-text">Event solutions</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-black-2"></i>
+              <span class="lead-text">Easy access</span>
+            </li>
+          </ul>
+          <div class="smt40px smb40px">
+            <div class="h-[31px] w-full rounded-xl bg-black-2/70">
+              <div class="h-full w-[calc(434/700*100%)] rounded-xl bg-black-1"></div>
+            </div>
+            <p class="l-text pt-3 text-center">434 / 700</p>
+          </div>
+          <button id="buy-ticket-one" class="l-text w-full rounded-xl bg-black-1 py-5 text-center uppercase text-white-1">BUY TICKET</button>
+        </div>
+        <!-- ticket price two -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp40px rounded-xl bg-accent-4">
+          <h3 class="h3 font-bold capitalize text-black-1">Standard Pass</h3>
+          <p class="flex gap-1 pt-6"><span class="d2 font-bold">$195</span><span class="lead-text self-end pb-2 font-semibold">USD</span></p>
+          <ul class="spt40px flex flex-col gap-4 lg:gap-6">
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">1 Comfortable seats</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Free lunch and coffee</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Extraordinary results</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Certificate</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Event solutions</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-black-2"></i>
+              <span class="lead-text">Easy access</span>
+            </li>
+          </ul>
+          <div class="smt40px smb40px">
+            <div class="h-[31px] w-full rounded-xl bg-black-2/70">
+              <div class="h-full w-[calc(365/500*100%)] rounded-xl bg-black-1"></div>
+            </div>
+            <p class="l-text pt-3 text-center">365 / 500</p>
+          </div>
+          <button id="buy-ticket-two" class="l-text w-full rounded-xl bg-black-1 py-5 text-center uppercase text-white-1">BUY TICKET</button>
+        </div>
+        <!-- ticket price three -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp40px rounded-xl bg-white-1">
+          <h3 class="h3 font-bold capitalize text-black-1">Premium Pass</h3>
+          <p class="flex gap-1 pt-6"><span class="d2 font-bold">$250</span><span class="lead-text self-end pb-2 font-semibold">USD</span></p>
+          <ul class="spt40px flex flex-col gap-4 lg:gap-6">
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">1 Comfortable seats</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Free lunch and coffee</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Extraordinary results</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Certificate</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Event solutions</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="ph ph-check-circle text-[32px] text-primary"></i>
+              <span class="lead-text">Easy access</span>
+            </li>
+          </ul>
+          <div class="smt40px smb40px">
+            <div class="h-[31px] w-full rounded-xl bg-black-2/70">
+              <div class="h-full w-[calc(137/250*100%)] rounded-xl bg-black-1"></div>
+            </div>
+            <p class="l-text pt-3 text-center">137 / 250</p>
+          </div>
+          <button id="buy-ticket-three" class="l-text w-full rounded-xl bg-black-1 py-5 text-center uppercase text-white-1">BUY TICKET</button>
+        </div>
+      </div>
+
+      <!-- buy ticket modal one -->
+
+      <div
+        id="buy-ticket-2"
+        class="sp40px hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[558px]"
+      >
+        <div class="relative flex flex-col gap-5">
+          <h4 class="h4 font-bold uppercase text-black-1">Buy Ticket</h4>
+
+          <form class="flex flex-col gap-6">
+            <div class="flex flex-col gap-3">
+              <label for="fullname" class="m-text capitalize">Name</label>
+              <input
+                id="fullName"
+                type="text"
+                name="fullName"
+                class="placeholder:m-text m-text rounded-xl border border-white-2 bg-white-4 px-4 py-3 text-black-2 placeholder:text-black-2"
+                placeholder="Full name"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <label for="email" class="m-text capitalize">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="placeholder:m-text m-text rounded-xl border border-white-2 bg-white-4 px-4 py-3 text-black-2 placeholder:text-black-2"
+                placeholder="bill.sanders@example.com"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <p class="m-text capitalize">Choose Pass:</p>
+              <div class="l-text relative rounded text-black-2">
+                <div id="ticket-two-dropdown-btn" class="m-text flex w-full cursor-pointer items-center justify-between gap-2 rounded-xl border border-white-2 bg-white-4 px-4 py-3 text-black-2">
+                  <span>Choose Pass:</span>
+
+                  <i class="ph ph-caret-down"></i>
+                </div>
+                <div
+                  id="ticket-two-dropdown-content"
+                  class="hide absolute top-full z-20 w-full rounded-md bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-300 ltr:right-0 ltr:origin-top-right rtl:left-0 rtl:origin-top-left"
+                >
+                  <ul class="flex w-full flex-col rounded-md p-1">
+                    <li class="active block cursor-pointer rounded-md px-4 py-2 duration-300 hover:text-primary">Regular - $145</li>
+                    <li class="block cursor-pointer rounded-md px-4 py-2 duration-300 hover:text-primary">Standard - $195</li>
+                    <li class="block cursor-pointer rounded-md px-4 py-2 duration-300 hover:text-primary">Premium - $250</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="s-text text-black-1">You can spend money from your account on renewal of the connected packages, or on the purchase of goods on our website.</p>
+
+            <h5 class="h5 font-bold">Payment method:</h5>
+
+            <div class="form__group form__group--dark">
+              <ul class="form__radio flex flex-col gap-4">
+                <li>
+                  <input id="type1" type="radio" name="type" checked="" class="appearance-none" />
+                  <label
+                    for="type1"
+                    class="relative pl-8 before:absolute before:left-0 before:top-0 before:block before:h-5 before:w-5 before:rounded-full before:border-[6px] before:border-black-1/20 before:bg-white-1"
+                  >
+                    Visa
+                  </label>
+                </li>
+                <li>
+                  <input id="type2" type="radio" name="type" class="appearance-none" />
+                  <label
+                    for="type2"
+                    class="relative pl-8 before:absolute before:left-0 before:top-0 before:block before:h-5 before:w-5 before:rounded-full before:border-[6px] before:border-black-1/20 before:bg-white-1"
+                    >Mastercard</label
+                  >
+                </li>
+                <li>
+                  <input id="type3" type="radio" name="type" class="appearance-none" />
+                  <label
+                    for="type3"
+                    class="relative pl-8 before:absolute before:left-0 before:top-0 before:block before:h-5 before:w-5 before:rounded-full before:border-[6px] before:border-black-1/20 before:bg-white-1"
+                  >
+                    Paypal
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" class="m-text rounded-xl bg-primary p-3 text-center font-semibold uppercase">Proceed</button>
+          </form>
+          <button title="Close (Esc)" type="button" class="buy-ticket-close-btn-2 absolute right-0 top-0">
+            <i class="ph-bold ph-x text-[24px]"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        id="buy-ticket-3"
+        class="sp40px hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-xl bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 max-xl:h-[90vh] xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[558px]"
+      >
+        <div class="relative flex flex-col gap-5">
+          <h4 class="h4 font-bold uppercase text-black-1">Buy Ticket</h4>
+
+          <form class="flex flex-col gap-6">
+            <div class="flex flex-col gap-3">
+              <label for="fullname" class="m-text capitalize">Name</label>
+              <input
+                id="fullName"
+                type="text"
+                name="fullName"
+                class="placeholder:m-text m-text rounded-xl border border-white-2 bg-white-4 px-4 py-3 text-black-2 placeholder:text-black-2"
+                placeholder="Full name"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <label for="email" class="m-text capitalize">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="placeholder:m-text m-text rounded-xl border border-white-2 bg-white-4 px-4 py-3 text-black-2 placeholder:text-black-2"
+                placeholder="bill.sanders@example.com"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <p class="m-text capitalize">Choose Pass:</p>
+              <div class="l-text relative rounded text-black-2">
+                <div id="bathrooms-btn" class="m-text flex w-full cursor-pointer items-center justify-between gap-2 rounded-xl border border-white-2 bg-white-4 px-4 py-3 text-black-2">
+                  <span>Choose Pass:</span>
+
+                  <i class="ph ph-caret-down"></i>
+                </div>
+                <div
+                  id="bathrooms-content"
+                  class="hide absolute top-full z-20 w-full rounded-md bg-white-1 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-300 ltr:right-0 ltr:origin-top-right rtl:left-0 rtl:origin-top-left"
+                >
+                  <ul class="flex w-full flex-col rounded-md p-1">
+                    <li class="active block cursor-pointer rounded-md px-4 py-2 duration-300 hover:text-primary">Regular - $145</li>
+                    <li class="block cursor-pointer rounded-md px-4 py-2 duration-300 hover:text-primary">Standard - $195</li>
+                    <li class="block cursor-pointer rounded-md px-4 py-2 duration-300 hover:text-primary">Premium - $250</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <p class="s-text text-black-1">You can spend money from your account on renewal of the connected packages, or on the purchase of goods on our website.</p>
+
+            <h5 class="h5 font-bold">Payment method:</h5>
+
+            <div class="form__group form__group--dark">
+              <ul class="form__radio flex flex-col gap-4">
+                <li>
+                  <input id="type1" type="radio" name="type" checked="" class="appearance-none" />
+                  <label
+                    for="type1"
+                    class="relative pl-8 before:absolute before:left-0 before:top-0 before:block before:h-5 before:w-5 before:rounded-full before:border-[6px] before:border-black-1/20 before:bg-white-1"
+                  >
+                    Visa
+                  </label>
+                </li>
+                <li>
+                  <input id="type2" type="radio" name="type" class="appearance-none" />
+                  <label
+                    for="type2"
+                    class="relative pl-8 before:absolute before:left-0 before:top-0 before:block before:h-5 before:w-5 before:rounded-full before:border-[6px] before:border-black-1/20 before:bg-white-1"
+                    >Mastercard</label
+                  >
+                </li>
+                <li>
+                  <input id="type3" type="radio" name="type" class="appearance-none" />
+                  <label
+                    for="type3"
+                    class="relative pl-8 before:absolute before:left-0 before:top-0 before:block before:h-5 before:w-5 before:rounded-full before:border-[6px] before:border-black-1/20 before:bg-white-1"
+                  >
+                    Paypal
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" class="m-text rounded-xl bg-primary p-3 text-center font-semibold uppercase">Proceed</button>
+          </form>
+          <button title="Close (Esc)" type="button" class="buy-ticket-close-btn-3 absolute right-0 top-0">
+            <i class="ph-bold ph-x text-[24px]"></i>
+          </button>
+        </div>
+      </div>
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

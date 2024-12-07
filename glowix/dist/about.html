@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>About - Beauty HTML5 Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="bg-neutral-2 p-4 text-neutral-1 sm:p-6 font-body-font">
+    <main class="custom-container">
+      <!-- ============ header ============ -->
+      <header data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="mb-4 sm:mb-6 relative z-30">
+  <!-- desktop navbar -->
+  <div class="xxl:flex px-4 py-2.5 hidden rounded-full items-center border border-neutral-4 justify-between gap-6">
+    <div>
+      <a href="/">
+        <img src="./assets/images/logo.png" alt="Logo" />
+      </a>
+    </div>
+    <ul class="flex items-center gap-1">
+      <li>
+        <a href="/" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Home</a>
+      </li>
+      <li>
+        <a href="./about.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">About Us</a>
+      </li>
+      <li>
+        <a href="./services.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Services</a>
+      </li>
+      <li>
+        <a href="./blog.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Blog</a>
+      </li>
+      <li>
+        <a href="./price.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Prices</a>
+      </li>
+      <li>
+        <a href="./galleries.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Galleries</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="single-menu h6 text-center font-semibold px-8 py-2 rounded-full border hover:bg-primary hover:text-neutral-2 duration-300 border-neutral-4">Contact</a>
+      </li>
+    </ul>
+    <div class="btn-area group z-20">
+      <a href="./reservation.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+        <span class="one m-text theme-transition-4 min-h-[45px] rounded-full border border-neutral-4 group-hover:bg-primary group-hover:text-neutral-2 px-8 py-2.5 font-medium capitalize">
+          Reservation Now
+        </span>
+        <span
+          class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center border group-hover:text-neutral-2 rounded-full border-neutral-4 group-hover:bg-neutral-4 p-2.5 text-center"
+        >
+          <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- mobile nav -->
+  <div class="bg-white-4 xxl:hidden z-20 relative">
+    <div class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-full border border-neutral-4 bg-white-1 px-6">
+      <div class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between">
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <div class="m-text relative font-medium">
+          <button class="text-neutral-n900 flex items-center gap-2">
+            <i id="mobile-menu-btn" class="ph menu-icon ph-list text-4xl"></i>
+          </button>
+          <div id="mobile-menu" class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-neutral-7 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500">
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="/" class="single-menu-mobile">Home</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./about.html" class="single-menu-mobile">About</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./blog-details.html" class="single-menu-mobile">Pricing</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./blog.html" class="single-menu-mobile">Blog</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./contact.html" class="single-menu-mobile">Contact</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./galleries.html" class="single-menu-mobile">Galleries</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./price.html" class="single-menu-mobile">Prices</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./reservation.html" class="single-menu-mobile">Reservation</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./services.html" class="single-menu-mobile">Services</a>
+              </li>
+              <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+                <a href="./service-details.html" class="single-menu-mobile">Service Details</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a href="./contact.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                  <span class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"> Let’s talk </span>
+                  <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center">
+                    <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ pagination ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="sp100px smb60px rounded-3xl flex-col bg-neutral-7 border border-neutral-4/30 flex items-center justify-center"
+      >
+        <h2 class="h1 font-semibold text-center">About Us</h2>
+        <div class="flex items-center justify-center gap-1 h6 font-semibold pt-5"><a href="/">Home</a> <span>/</span> <span class="text-primary underline underline-offset-2">About Us</span></div>
+      </section>
+      <!-- ============ OUR STORY ============ -->
+      <section data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="spt100px spx48px spb48px bg-neutral-7 border border-neutral-4/30 rounded-3xl">
+        <div class="text-center">
+          <h6 class="h6 font-semibold">OUR STORY</h6>
+          <h3 class="font-bold d4 pt-6">How everything started</h3>
+          <p class="l-text pt-5 font-light text-neutral-1/80 max-w-[1054px] mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas viverra turpis habitant eu sociis fermentum felis. Posuere fermentum at fringilla pellentesque commodo. Posuere
+            quisque eget massa bibendum in ut vehicula et est. Nibh a donec felis mauris, ultricies nullam. Convallis elit leo consectetur quis orci.
+          </p>
+        </div>
+        <div class="rounded-xl smt60px overflow-hidden">
+          <img src="./assets/images/about-our-story-section-image.png" alt="about our story image" class="w-full object-cover hover:scale-105 duration-300" />
+        </div>
+      </section>
+      <!-- ============ about the salon ============ -->
+      <section
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1200"
+  class="grid smt60px max-lg:flex flex-col-reverse spr48px grid-cols-12 gap-6 bg-neutral-7 rounded-3xl items-center spy48px max-xl:spl48px xl:ps-25"
+>
+  <div class="lg:col-span-5">
+    <h6 class="h6 font-semibold uppercase">ABOUT THE SALON</h6>
+    <h4 class="d4 font-bold pt-6">Body treatments. Skin care beauty.</h4>
+    <p class="l-text font-light pt-5 font-secondary-font text-neutral-1/80">
+      With over 35 years of experience footprint of over 400+ salons in 125 cities across the length and breadth of the country. We have developed a deep understanding of the beauty industry.
+    </p>
+    <div class="spt40px flex items-center flex-wrap gap-10">
+      <div class="btn-area group">
+        <a href="./about.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+          <span class="one h5 font-semibold theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full bg-primary text-neutral-2 px-8 py-2.5 capitalize">About Story </span>
+          <span class="two d-center theme-transition-4 flex size-[45px] shrink-0 items-center justify-center text-neutral-2 rounded-full bg-primary p-2.5 text-center">
+            <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+          </span>
+        </a>
+      </div>
+      <a href="/" class="font-semibold underline underline-offset-4 hover:text-primary duration-300">Luxury Salon</a>
+    </div>
+  </div>
+  <div class="lg:col-span-7">
+    <img src="./assets/images/about-section-image.png" alt="About section image" class="rounded-xl" />
+  </div>
+</section>
+
+      <!-- ============ OUR VALUES ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="max-sm:spx48px max-sm:spy60px sm:sp100px smt60px bg-neutral-7 border border-neutral-4/30 rounded-3xl"
+      >
+        <div class="text-center">
+          <h6 class="h6 font-semibold">OUR VALUES</h6>
+          <h3 class="font-bold d4 pt-6">The work values we thrive for</h3>
+          <p class="l-text pt-5 font-light text-neutral-1/80 max-w-[1054px] mx-auto">
+            fermentum at fringilla pellentesque commodo. Posuere quisque eget massa bibendum in ut vehicula et est. Nibh a donec felis mauris, ultricies nullam. Convallis elit leo consectetur quis
+            orci.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 smt60px">
+          <div class="border-b lg:border-e spy60px border-neutral-4/30">
+            <div class="flex gap-4 lg:gap-6 xxl:gap-8 w-fit mx-auto px-3 max-sm:flex-col">
+              <div>
+                <img src="./assets/images/Icon-1.png" alt="Icon 1" />
+              </div>
+              <div class="max-w-[443px]">
+                <h4 class="h3 font-semibold">Care and quality</h4>
+                <p class="l-text pt-4 font-light text-neutral-1/80">
+                  With over 35 years of experience footprint of over 400+ salons in 125 cities across the length and breadth of the the beauty industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="border-b spy60px border-neutral-4/30">
+            <div class="flex gap-4 lg:gap-6 xxl:gap-8 w-fit mx-auto px-3 max-sm:flex-col">
+              <div>
+                <img src="./assets/images/Icon-2.png" alt="Icon 1" />
+              </div>
+              <div class="max-w-[443px]">
+                <h4 class="h3 font-semibold">Ecology and nature</h4>
+                <p class="l-text pt-4 font-light text-neutral-1/80">
+                  With over 35 years of experience footprint of over 400+ salons in 125 cities across the length and breadth of the the beauty industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="max-lg:border-b lg:border-e spy60px border-neutral-4/30">
+            <div class="flex gap-4 lg:gap-6 xxl:gap-8 w-fit mx-auto px-3 max-sm:flex-col">
+              <div>
+                <img src="./assets/images/Icon-3.png" alt="Icon 1" />
+              </div>
+              <div class="max-w-[443px]">
+                <h4 class="h3 font-semibold">Crueltry-free products</h4>
+                <p class="l-text pt-4 font-light text-neutral-1/80">
+                  With over 35 years of experience footprint of over 400+ salons in 125 cities across the length and breadth of the the beauty industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="spy60px">
+            <div class="flex gap-4 lg:gap-6 xxl:gap-8 w-fit mx-auto px-3 max-sm:flex-col">
+              <div>
+                <img src="./assets/images/Icon-4.png" alt="Icon 1" />
+              </div>
+              <div class="max-w-[443px]">
+                <h4 class="h3 font-semibold">Care and quality</h4>
+                <p class="l-text pt-4 font-light text-neutral-1/80">
+                  With over 35 years of experience footprint of over 400+ salons in 125 cities across the length and breadth of the the beauty industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spt80px flex items-center flex-wrap gap-10 mx-auto w-fit">
+          <div class="btn-area group">
+            <a href="./reservation.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+              <span class="one h5 font-semibold theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full bg-primary text-neutral-2 px-8 py-2.5 capitalize">Make a reservation</span>
+              <span class="two d-center theme-transition-4 flex size-[45px] shrink-0 items-center justify-center text-neutral-2 rounded-full bg-primary p-2.5 text-center">
+                <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+          <a href="/" class="font-semibold underline underline-offset-4 hover:text-primary duration-300">Luxury Salon</a>
+        </div>
+      </section>
+      <!-- ============ FAQ  ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="grid grid-cols-12 text-neutral-2 bg-primary rounded-[20px] smt60px max-xs:px-3 xs:max-lg:spx48px max-lg:spy60px lg:sp100px gap-6 items-center justify-between"
+      >
+        <div class="xxl:col-span-5 col-span-12 xl:col-span-6 h-full flex flex-col justify-center">
+          <h6 class="h6 font-semibold uppercase">QUESTIONS</h6>
+          <h4 class="d4 font-bold pt-6">Our Difference</h4>
+          <p class="l-text font-light pt-3 font-secondary-font text-neutral-5/80">With our advanced techniques we will provide you with what you need</p>
+          <p class="l-text font-light pt-3 font-secondary-font text-neutral-5/80">
+            Vivamus finibus lorem diam, sit amet lectus eget imperdiet Nulla faucibus turpis sit amet turpis matti Proin a mattis ligula quisque.
+          </p>
+          <div class="spt40px flex items-center flex-wrap gap-10">
+            <div class="btn-area group">
+              <a href="./price.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                <span class="one h5 font-semibold theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-primary bg-neutral-2 px-8 py-2.5 capitalize">Price List</span>
+                <span class="two d-center theme-transition-4 flex size-[45px] shrink-0 items-center justify-center bg-neutral-2 rounded-full text-primary p-2.5 text-center">
+                  <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="xl:col-start-7 col-span-12 xl:col-span-6 flex flex-col gap-5">
+          <!-- single faq -->
+          <div class="appear-downd py-4 border-b border-neutral-2 sm:py-5">
+            <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6">
+              <h6 class="h5 font-semibold text-neutral-2">How can I book an appointment at your salon?</h6>
+              <div class="theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                <i class="ph ph-plus text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 overflow-hidden">
+              <p class="l-text mt-4 text-neutral-2 font-secondary-font font-light">
+                Booking an appointment at our salon is easy! You can either call us directly at our contact number or use our online booking system available on our website. Simply select the service
+                you want, choose a date and time, and provide your contact details. We will confirm your appointment via email or phone.
+              </p>
+            </div>
+          </div>
+          <!-- single faq -->
+          <div class="appear-downd py-4 border-b border-neutral-2 sm:py-5">
+            <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6">
+              <h6 class="h5 font-semibold text-neutral-2">What is your cancellation policy?</h6>
+              <div class="theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                <i class="ph ph-plus text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 overflow-hidden">
+              <p class="l-text mt-4 text-neutral-2 font-secondary-font font-light">
+                We understand that plans can change. If you need to cancel or reschedule your appointment, please notify us at least 24 hours in advance. Cancellations made within less than 24 hours
+                may be subject to a cancellation fee. Thank you for your understanding and cooperation.
+              </p>
+            </div>
+          </div>
+          <!-- single faq -->
+          <div class="appear-downd py-4 border-b border-neutral-2 sm:py-5">
+            <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6">
+              <h6 class="h5 font-semibold text-neutral-2">What types of payment do you accept?</h6>
+              <div class="theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                <i class="ph ph-plus text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 overflow-hidden">
+              <p class="l-text mt-4 text-neutral-2 font-secondary-font font-light">
+                We accept various forms of payment for your convenience. This includes cash, major credit cards (Visa, MasterCard, American Express), and mobile payment options such as Apple Pay and
+                Google Pay. We do not accept checks at this time.
+              </p>
+            </div>
+          </div>
+          <!-- single faq -->
+          <div class="appear-downd py-4 border-b border-neutral-2 sm:py-5">
+            <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-6">
+              <h6 class="h5 font-semibold text-neutral-2">Do you offer gift certificates?</h6>
+              <div class="theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                <i class="ph ph-plus text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 overflow-hidden">
+              <p class="l-text mt-4 text-neutral-2 font-secondary-font font-light">
+                Yes, we offer gift certificates that make perfect gifts for any occasion. You can purchase them in various denominations directly from our salon or through our website. Gift
+                certificates can be used for any service or product at our salon and are valid for one year from the date of purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ our staff ============ -->
+      <section class="rounded-[20px] smt60px border border-neutral-4/30 bg-neutral-7 spy100px spx48px">
+  <div class="text-center">
+    <h6 class="h6 font-semibold">OUR STAFF</h6>
+    <h4 class="d4 font-bold">Meet our Team</h4>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-between spt60px">
+    <!-- single staff -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="">
+      <div class="bg-neutral-8 group rounded-lg border hover:bg-primary duration-300 border-neutral-4/30 px-3 pt-3 pb-8">
+        <div class="rounded-lg relative overflow-hidden">
+          <img src="./assets/images/staff-1.png" alt="Staff Image 1" class="w-full object-cover" />
+          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex opacity-0 group-hover:opacity-100 theme-transition-3 items-center gap-1 xxl:gap-3">
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-facebook-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-instagram-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-discord-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-twitch-logo"></i>
+            </a>
+          </div>
+        </div>
+        <div class="smt32px text-center">
+          <a href="./blog-details.html" class="h3 font-semibold group-hover:text-neutral-2 theme-transition-3">Johncy parker</a>
+          <p class="l-text theme-transition-3 font-light font-secondary-font group-hover:text-neutral-2 pt-2">Director</p>
+        </div>
+      </div>
+    </div>
+    <!-- single staff -->
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="bg-neutral-8 group rounded-lg border hover:bg-primary theme-transition-3 border-neutral-4/30 px-3 pt-3 pb-8"
+    >
+      <div class="rounded-lg relative overflow-hidden">
+        <img src="./assets/images/staff-2.png" alt="Staff Image 1" class="w-full object-cover" />
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex opacity-0 group-hover:opacity-100 theme-transition-3 items-center gap-1 xxl:gap-3">
+          <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+            <i class="ph text-[24px] ph-facebook-logo"></i>
+          </a>
+          <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+            <i class="ph text-[24px] ph-instagram-logo"></i>
+          </a>
+          <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+            <i class="ph text-[24px] ph-discord-logo"></i>
+          </a>
+          <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+            <i class="ph text-[24px] ph-twitch-logo"></i>
+          </a>
+        </div>
+      </div>
+      <div class="smt32px text-center">
+        <a href="./blog-details.html" class="h3 font-semibold group-hover:text-neutral-2 theme-transition-3">Matthew taylor</a>
+        <p class="l-text theme-transition-3 font-light font-secondary-font group-hover:text-neutral-2 pt-2">Consultant</p>
+      </div>
+    </div>
+    <!-- single staff -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+      <div class="bg-neutral-8 group rounded-lg border hover:bg-primary theme-transition-3 border-neutral-4/30 px-3 pt-3 pb-8">
+        <div class="rounded-lg relative overflow-hidden">
+          <img src="./assets/images/staff-3.png" alt="Staff Image 1" class="w-full object-cover" />
+          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex opacity-0 group-hover:opacity-100 theme-transition-3 items-center gap-1 xxl:gap-3">
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-facebook-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-instagram-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-discord-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-twitch-logo"></i>
+            </a>
+          </div>
+        </div>
+        <div class="smt32px text-center">
+          <a href="./blog-details.html" class="h3 font-semibold group-hover:text-neutral-2 theme-transition-3">Jeremy dupont</a>
+          <p class="l-text theme-transition-3 font-light font-secondary-font group-hover:text-neutral-2 pt-2">Makeup</p>
+        </div>
+      </div>
+    </div>
+    <!-- single staff -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+      <div class="bg-neutral-8 group rounded-lg border hover:bg-primary theme-transition-3 border-neutral-4/30 px-3 pt-3 pb-8">
+        <div class="rounded-lg relative overflow-hidden">
+          <img src="./assets/images/staff-4.png" alt="Staff Image 1" class="w-full object-cover" />
+          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex opacity-0 group-hover:opacity-100 theme-transition-3 items-center gap-1 xxl:gap-3">
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-facebook-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-instagram-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-discord-logo"></i>
+            </a>
+            <a href="/" class="rounded-full bg-neutral-2 duration-300 hover:text-primary text-neutral-1 flex p-2 xxl:p-3 items-center justify-center">
+              <i class="ph text-[24px] ph-twitch-logo"></i>
+            </a>
+          </div>
+        </div>
+        <div class="smt32px text-center">
+          <a href="./blog-details.html" class="h3 font-semibold group-hover:text-neutral-2 theme-transition-3">Herman miller</a>
+          <p class="l-text theme-transition-3 font-light font-secondary-font group-hover:text-neutral-2 pt-2">Therapist</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <footer data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="max-md:spy60px max-xs:px-3 xs:max-md:spx48px md:sp80px bg-neutral-7 rounded-3xl smt60px">
+  <div class="max-md:flex flex-col md:grid grid-cols-12 gap-6 md:items-center">
+    <div class="col-span-2">
+      <img src="./assets/images/logo.png" alt="footer logo" />
+    </div>
+    <h2 class="col-start-4 d4 font-bold col-span-10 max-w-[884px]">Revitalize Your Haircut And Get A Fresh New Look</h2>
+  </div>
+  <div class="spt100px grid max-xl:gap-6 grid-cols-12">
+    <div class="col-span-12 lg:col-span-5 xl:col-span-4">
+      <h3 class="h3 font-semibold">Newsletter Signup</h3>
+      <div class="flex items-center justify-between spt40px pb-5 border-b border-neutral-8">
+        <div class="flex items-center w-[calc(100%-50px)] sm:w-[calc(100%-80px)] gap-2">
+          <i class="ph text-neutral-3 text-[24px] ph-envelope-simple"></i>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="bg-transparent min-w-full shrink-0 placeholder:text-[18px] placeholder:font-light placeholder:text-neutral-3 placeholder:leading-[0px]"
+          />
+        </div>
+        <button class="flex items-center justify-center">
+          <i class="ph text-[24px] text-neutral-3 ph-arrow-right"></i>
+        </button>
+      </div>
+      <div class="pt-5">
+        <label class="flex items-center font-secondary-font gap-2 text-neutral-3"
+          ><input type="checkbox" id="cbox1" value="first_checkbox" /> I agree to the <a href="#" class="text-neutral-1 hover:underline underline-offset-4 underline"> Privacy Policy. </a></label
+        >
+      </div>
+    </div>
+    <div class="col-span-6 xs:col-span-6 xl:col-start-6 md:col-span-4 lg:col-span-2 xl:col-span-3">
+      <h4 class="h3 font-semibold">Menu</h4>
+      <ul class="spt40px flex flex-col gap-4 l-text">
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Home</a></li>
+        <li class=""><a href="./about.html" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">About Us</a></li>
+        <li class=""><a href="./services.html" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Services</a></li>
+        <li class=""><a href="./contact.html" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col-span-6 xs:col-span-6 md:col-span-4 lg:col-span-2">
+      <h4 class="h3 font-semibold">Social</h4>
+      <ul class="spt40px flex flex-col gap-4 l-text">
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Facebook</a></li>
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Twitter</a></li>
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Dribble</a></li>
+        <li class=""><a href="/" class="font-secondary-font duration-300 hover:underline underline-offset-2 font-light">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="col-span-12 md:col-span-4 lg:col-span-2">
+      <h4 class="h3 font-semibold">Say Hello</h4>
+      <a href="mailto:bill.sanders@example.com" class="spt40px flex flex-col gap-4 l-text"> bill.sanders@example.com </a>
+    </div>
+  </div>
+</footer>
+
+    </main>
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

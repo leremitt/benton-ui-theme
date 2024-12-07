@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body>
+    <main class="overflow-hidden bg-white-4">
+      <header>
+  <!-- desktop navbar -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="hidden bg-white-4 p-6 lg:block"
+  >
+    <div
+      class="desktop-nav container theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px hi container theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul class="menu flex items-center justify-between gap-10">
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="features.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <div class="btn-area right-0 z-20">
+            <a
+              href="#"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+              >
+                Let’s talk
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="bg-white-4 p-6 lg:hidden">
+    <div
+      class="desktop-nav container theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px container theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Home</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="featurs.html" class="single-menu">Features</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="pricing.html" class="single-menu">Pricing</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="blog.html" class="single-menu">Blog</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a
+                  href="#"
+                  aria-label="Contact"
+                  class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+                >
+                  <span
+                    class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                  >
+                    Let’s talk
+                  </span>
+                  <span
+                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                  >
+                    <i
+                      class="ph ph-arrow-up-right text-[24px]"
+                      data-icon-name="arrow-right"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <!-- pricing card -->
+      <section class="spy120px">
+  <div class="price-tab-container container">
+    <div
+      class="mx-auto flex flex-col items-center justify-center gap-4 text-center"
+    >
+      <div
+        data-aos="zoom-out-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="flex items-center justify-center gap-3"
+      >
+        <i class="ph ph-fire text-[24px] text-primary"></i>
+        <h5 class="l-text font-medium text-primary">Choose Your Plan</h5>
+      </div>
+      <h3
+        data-aos="zoom-out-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="h2 font-bold text-black-1"
+      >
+        Flexible Pricing Options
+      </h3>
+    </div>
+    <div
+      class="smt32px mx-auto flex max-w-[207px] rounded-full border border-accent-2 bg-white-1 px-3 py-2"
+    >
+      <button
+        class="m-text tab-links button-monthly rounded-full border border-white-3/40 bg-accent-2 px-4 py-2 capitalize text-black-1"
+      >
+        Monthly
+      </button>
+      <button
+        class="m-text tab-links button-yearly rounded-full border-white-3/40 px-4 py-2 capitalize text-black-1"
+      >
+        Yearly
+      </button>
+    </div>
+
+    <div class="spt60px">
+      <div class="grid grid-cols-12 gap-5 xxl:grid-rows-2 xxl:gap-6">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="pricing-card col-start-1 col-end-13 cursor-pointer rounded-3xl bg-primary p-6 sm:col-end-7 xxl:col-end-4 xxl:row-start-1 xxl:row-end-2"
+          data-content-id="content-one"
+        >
+          <div class="flex justify-between">
+            <div
+              class="flex size-15 items-center justify-center rounded-xl bg-white-1 p-2.5"
+            >
+              <i class="ph ph-rocket-launch text-[40px] text-primary"></i>
+            </div>
+            <div
+              class="checkbox flex size-12 items-center justify-center rounded-xl border border-white-1 bg-white-1 p-2.5"
+            >
+              <i class="ph ph-check text-[24px]"></i>
+            </div>
+          </div>
+          <h4 class="h4 spt40px font-bold text-white-1">AppleX Starter</h4>
+          <p class="flex pt-3 text-white-1">
+            <span class="d3 font-bold">$</span
+            ><span class="d3 price-one font-bold">150</span>
+            <span class="l-text place-self-end font-medium"> / Yearly </span>
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="pricing-card col-start-1 col-end-13 row-start-1 row-end-2 cursor-pointer rounded-3xl bg-[#0E0D39] p-6 sm:col-start-7 xxl:col-start-4 xxl:col-end-7"
+          data-content-id="content-two"
+        >
+          <div class="flex justify-between">
+            <div
+              class="flex size-15 items-center justify-center rounded-2xl bg-white-1 p-2.5"
+            >
+              <i class="ph ph-planet text-[40px] text-primary"></i>
+            </div>
+            <div
+              class="checkbox flex size-12 items-center justify-center rounded-2xl border border-white-1 bg-transparent p-2.5 text-primary"
+            >
+              <i class="ph ph-check text-[24px]"></i>
+            </div>
+          </div>
+          <h4 class="h4 spt40px font-bold capitalize text-white-1">
+            AppleX Plus
+          </h4>
+          <p class="flex pt-3 text-white-1">
+            <span class="d3 font-bold">$</span
+            ><span class="d3 price-two font-bold">300</span>
+            <span class="l-text place-self-end font-medium"> / Yearly </span>
+          </p>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="spr60px spb80px spt60px relative col-start-1 col-end-13 rounded-3xl bg-accent-2 p-6 xxl:col-start-7 xxl:col-end-13 xxl:row-start-1 xxl:row-end-3"
+        >
+          <div class="tab-content" id="content-one">
+            <h4 class="h3 font-bold text-black-1">Starter Features</h4>
+            <p class="m-text max-w-[590px] pt-3 text-black-4">
+              Perfect for small businesses and startups looking to establish a
+              strong foundation for communication and collaboration.
+            </p>
+            <ul class="spt48px flex flex-col gap-5">
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Real-Time Messaging
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Document Sharing
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Task Management
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Video Conferencing
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Basic Integrations
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Standard Security
+                </span>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/starter-features.png"
+              alt="Starter features section image"
+              class="absolute bottom-0 right-10 max-sm:hidden sm:max-3xl:size-52"
+            />
+          </div>
+          <div class="tab-content hidden" id="content-two">
+            <h4 class="h3 font-bold text-black-1">Plus Features</h4>
+            <p class="m-text max-w-[590px] pt-3 text-black-4">
+              Perfect for small businesses and startups looking to establish a
+              strong foundation for communication and collaboration.
+            </p>
+            <ul class="spt48px flex flex-col gap-5">
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Real-Time Messaging
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Document Sharing
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Task Management
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Video Conferencing
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Basic Integrations
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Standard Security
+                </span>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/starter-features.png"
+              alt="Starter features section image"
+              class="absolute bottom-0 right-10 max-sm:hidden sm:max-3xl:size-52"
+            />
+          </div>
+          <div class="tab-content hidden" id="content-three">
+            <h4 class="h3 font-bold text-black-1">Pro Features</h4>
+            <p class="m-text max-w-[590px] pt-3 text-black-4">
+              Perfect for small businesses and startups looking to establish a
+              strong foundation for communication and collaboration.
+            </p>
+            <ul class="spt48px flex flex-col gap-5">
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Real-Time Messaging
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Document Sharing
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Task Management
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Video Conferencing
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Basic Integrations
+                </span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="ph ph-check-circle text-[24px]"> </i>
+                <span class="l-text font-medium text-black-1">
+                  Standard Security
+                </span>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/starter-features.png"
+              alt="Starter features section image"
+              class="absolute bottom-0 right-10 max-sm:hidden sm:max-3xl:size-52"
+            />
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="pricing-card col-start-1 col-end-13 row-start-2 row-end-3 cursor-pointer rounded-3xl bg-secondary p-6 xxl:col-end-7"
+          data-content-id="content-three"
+        >
+          <div class="flex justify-between">
+            <div
+              class="flex size-15 items-center justify-center rounded-2xl bg-white-1 p-2.5"
+            >
+              <i class="ph ph-rocket-launch text-[40px] text-primary"></i>
+            </div>
+            <div
+              class="checkbox flex size-12 items-center justify-center rounded-2xl border border-black-4 bg-transparent p-2.5 text-primary"
+            >
+              <i class="ph ph-check text-[24px]"></i>
+            </div>
+          </div>
+          <h4 class="h4 spt40px font-bold capitalize text-black-1">
+            AppleX Plus
+          </h4>
+          <p class="flex pt-3 text-black-1">
+            <span class="d3 font-bold">$</span>
+            <span class="d3 price-three font-bold">475 </span>
+            <span class="l-text place-self-end font-medium"> / Yearly </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- brand slider -->
+      <div class="spy80px overflow-hidden bg-[#D4FFE9]">
+  <div class="brand-slider smooth">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-1.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-2.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-3.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-4.png" alt="band logo" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-5.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-6.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-7.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-1.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-2.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-3.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-4.png" alt="band logo " />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/band-logo-5.png" alt="band logo " />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- user say slider -->
+      <section class="spy120px bg-white-1">
+  <div class="container">
+    <div
+      class="mx-auto flex max-w-[301px] flex-col items-center justify-center gap-4 text-center"
+    >
+      <div
+        data-aos="zoom-out-down"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="flex items-center justify-center gap-3"
+      >
+        <i class="ph ph-fire text-[24px] text-primary"></i>
+        <h5 class="l-text font-medium text-primary">What Our Customers Say</h5>
+      </div>
+      <h3
+        data-aos="zoom-out-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="h2 font-bold text-black-1"
+      >
+        Hear from Our Users
+      </h3>
+    </div>
+    <div class="spt60px">
+      <div class="customer-slider smooth overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-1.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Wade Warren</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-1.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Wade Warren</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-2.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">
+                        Darlene Robertson
+                      </h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-3.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">
+                        Brooklyn Simmons
+                      </h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-4.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Jane Cooper</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-5.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Robert Fox</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-6.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Jenny Wilson</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-7.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Kathryn Murphy</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-8.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">
+                        Leslie Alexander
+                      </h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="customer-slider-reverse smooth mt-6 overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-1.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Wade Warren</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-1.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Wade Warren</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-2.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">
+                        Darlene Robertson
+                      </h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-3.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">
+                        Brooklyn Simmons
+                      </h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-4.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Jane Cooper</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-5.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Robert Fox</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-6.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Jenny Wilson</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-7.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">Kathryn Murphy</h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="rounded-3xl border border-accent-2 p-1">
+              <div
+                class="sp32px flex flex-col gap-6 rounded-3xl border border-accent-2"
+              >
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./assets/images/customer-8.png"
+                      alt="customer one"
+                      class="rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <h5 class="h5 font-bold text-black-2">
+                        Leslie Alexander
+                      </h5>
+                      <p class="m-text text-black-4">@iamsedaoi&wv</p>
+                    </div>
+                  </div>
+                  <a href="#"
+                    ><i
+                      class="ph-fill ph-twitter-logo text-[32px] text-primary"
+                    ></i
+                  ></a>
+                </div>
+                <p class="m-text text-black-4">
+                  I was amazed at the efficiency of the platform. The handyman
+                  arrived promptly and completed the task with skill and will
+                  definitely use this service again.
+                </p>
+                <p class="m-text font-medium text-black-4">
+                  10:01PM. April 07,2024
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- applex is available for all devices -->
+      <footer class="spt120px bg-white-1 pb-6">
+  <div class="container">
+    <h3
+      data-aos="zoom-out-down"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="h2 mx-auto max-w-[470px] text-center font-bold text-black-1"
+    >
+      AppleX is available for all Devices
+    </h3>
+  </div>
+  <div
+    class="spt60px grid-cols-12 items-center max-sm:container max-sm:pb-4 sm:grid"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-1 col-end-4 h-full rounded-br-xl rounded-tr-xl border-b-2 border-r-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="col-start-3 col-end-11 -ml-0.5 rounded-xl border-accent-2 text-center lg:col-start-4 lg:col-end-10 lg:border-2"
+    >
+      <a
+        href="/"
+        class="h2 block w-full rounded-full bg-primary py-6 font-bold text-white-1 sm:py-8 md:py-11"
+      >
+        Start for free
+      </a>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-10 col-end-13 -ml-0.5 h-full rounded-bl-xl rounded-tl-xl border-b-2 border-l-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+  </div>
+  <div
+    class="grid-cols-12 items-center max-sm:container max-lg:gap-6 sm:grid lg:-mt-0.5"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-1 col-end-4 h-full rounded-br-xl rounded-tr-xl border-b-2 border-r-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="col-start-3 col-end-11 -ml-0.5 gap-4 rounded-xl border-accent-2 max-sm:space-y-4 sm:grid sm:grid-cols-2 lg:col-start-4 lg:col-end-10 lg:gap-0 lg:border-2"
+    >
+      <div
+        class="rounded-full border border-accent-2 py-4 text-center sm:py-5 md:py-7"
+      >
+        <img
+          src="./assets/images/footer-google-play.png"
+          alt="footer apple play image"
+          class="mx-auto block max-3xl:w-40"
+        />
+      </div>
+      <div
+        class="rounded-full border border-accent-2 py-4 text-center sm:py-5 md:py-7"
+      >
+        <img
+          src="./assets/images/footer-apple-play.png"
+          alt="footer apple play image"
+          class="mx-auto block max-3xl:w-40"
+        />
+      </div>
+    </div>
+
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-10 col-end-13 -ml-0.5 h-full rounded-bl-xl rounded-tl-xl border-b-2 border-l-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+  </div>
+  <div
+    class="container flex items-center justify-between pt-6 max-md:flex-col max-md:gap-6"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="flex items-center gap-3 max-[480px]:flex-col"
+    >
+      <p class="xl-text font-medium text-black-1">Copyright @ 2024 AppleX</p>
+      <div class="h-5 w-0.5 bg-white-3 max-[480px]:hidden"></div>
+      <p class="xl-text font-medium text-black-1">
+        Designed By
+        <a href="/" class="text-primary underline">Pixelaxis</a>
+      </p>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="flex items-center gap-3"
+    >
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </main>
+
+    <!-- ============= swiper js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============= matter js ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <!-- ============= matter custom js ============ -->
+    <script src="./assets/js/matterjs.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

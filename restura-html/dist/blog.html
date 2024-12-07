@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Restura - HTML Tailwindcss">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>Restura - HTML Tailwindcss</title>
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+  <section class="container p-3 sm:p-6">
+    <div class="grid grid-cols-12 gap-6">
+      <div class="bg-[#1A1A1A] rounded-lg col-span-full xl:col-span-1">
+        <div class="navheight flex xl:flex-col justify-between px-3 py-3 xl:py-10 xl:min-h-svh">
+          <div class="flex justify-center items-center">
+            <a class="flex xl:flex-col items-center gap-2 md:gap-3 xl:gap-0" href="index.html">
+              <img class="max-w-fit md:mb-3 w-10 sm:w-13 xl:w-full" src="./assets/images/logo-main.png" alt="Logo">
+              <span class="xxxl:text-xl">RESTURA</span>
+            </a>
+          </div>
+          <div class="relative order-first xl:order-none mt-1 xl:mt-0">
+            <!-- <div class="navheight flex md:flex-col justify-between px-3 py-1 md:py-10 md:min-h-svh">
+    <div class="flex justify-center items-center">
+        <a class="flex md:flex-col items-center gap-3 md:gap-0" href="#">
+            <img class="max-w-fit md:mb-3" src="./assets/images/logo-main.png" alt="Logo">
+            <span class="text-xl">RESTURA</span>
+        </a>
+    </div>
+    <div class="relative order-first md:order-none">
+        <input type="checkbox" id="cb">
+        <div class="menu">
+            <label class="cross" for="cb">
+                <div class="btn">
+                    <i class="icon"></i>
+                </div>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Blgo</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Conatct</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+            <label class="hamburg" for="cb">
+                <div class="btn relative">
+                    <i class="icon"></i>
+                    <span class="bg-primary w-8 h-1 left-1.8 absolute top-5.3 rounded-full"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <a   href="#">
+            <img src="./assets/images/icon/regave.png" alt="Icon">
+        </a>
+    </div>
+</div> -->
+
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a class="display-1" href="../index.html">Home</a>
+      <a class="display-1" href="../about.html">About</a>
+      <a class="display-1" href="../menu.html">Menu</a>
+      <a class="display-1" href="../reservation.html">Reservation</a>
+      <a class="display-1" href="../blog.html">Blog</a>
+      <a class="display-1" href="../contact.html">Contact</a>
+    </div>
+  </div>
+            <div class="flex justify-center items-center">
+              <div class=" cursor-pointer border border-primary px-2 md:px-3 py-1 md:py-1.5 rounded-3xl">
+                <span class="text-2xl lg:text-3xl text-primary" onclick="openNav()">&#9776;</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <a class="flex items-center justify-center" href="reservation.html">
+              <img class="w-10 sm:w-13 xl:w-full" src="./assets/images/icon/regave.png" alt="Icon">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-12 xl:col-span-6 order-last xl:order-none">
+        <div
+          class="border-extra10 border rounded-3xl px-4 md:px-8 xl:px-12 pb-10 md:pb-14 mb-4 md:mb-6 xl:max-h-[104vh] overflow-y-auto listest-news scrollcontrol">
+          <div class="my-10 md:my-14 text-center">
+    <h1 class="display-4 font-semibold text-primary pb-5 md:pb-6">LATEST NEWS</h1>
+    <p class="text-xl">The heart of Restura allure lies in its meticulous attention to every detail,
+        from the selection of ingredients to the presentation of each dish.
+    </p>
+</div>
+<div
+    class="flex flex-col md:flex-row xl:flex-col xxl:flex-row gap-5 md:gap-6 md:items-center xl:items-start xxl:items-center mb-10">
+    <div  >
+        <img class="rounded-xl sm:max-w-fit" src="./assets/images/panthouse.png" alt="Image">
+    </div>
+    <div  >
+        <span class="pb-1 md:pb-2 block">October 19, 2024</span>
+        <h3 class="pb-2 md:pb-3 font-semibold text-nw10">Panthouse Tonic</h3>
+        <p class="pb-2 md:pb-6 text-lg text-nw40">In a world where dining experiences often blend
+            into ordinary,
+            stands as an emblem of culinary passion redefined.</p>
+        <a class="text-lg underline" href="blog-details.html">Blog Details</a>
+    </div>
+</div>
+<div
+    class="flex flex-col md:flex-row xl:flex-col xxl:flex-row gap-5 md:gap-6 md:items-center xl:items-start xxl:items-center mb-10">
+    <div  >
+        <img class="rounded-xl sm:max-w-fit" src="./assets/images/overall-menu.png" alt="Image">
+    </div>
+    <div  >
+        <span class="pb-1 md:pb-2 block">October 29, 2024</span>
+        <h3 class="pb-2 md:pb-3 font-semibold text-nw10">We have update our overall menu.</h3>
+        <p class="pb-2 md:pb-6 text-lg text-nw40">Qitchen invites you to witness passion personified
+            in every aspect of your dining journey.</p>
+        <a class="text-lg underline" href="blog-details.html">Blog Details</a>
+    </div>
+</div>
+<div
+    class="flex flex-col md:flex-row xl:flex-col xxl:flex-row gap-5 md:gap-6 md:items-center xl:items-start xxl:items-center mb-10">
+    <div  >
+        <img class="rounded-xl sm:max-w-fit" src="./assets/images/classic-dinner.png" alt="Image">
+    </div>
+    <div  >
+        <span class="pb-1 md:pb-2 block">October 05, 2024</span>
+        <h3 class="pb-2 md:pb-3 font-semibold text-nw10">Classic Dinner Night</h3>
+        <p class="pb-2 md:pb-6 text-lg text-nw40">While the gastronomic delights are undoubtedly the
+            centerpiece, Restura goes beyond being a culinary haven.</p>
+        <a class="text-lg underline" href="blog-details.html">Blog Details</a>
+    </div>
+</div>
+<div
+    class="flex flex-col md:flex-row xl:flex-col xxl:flex-row gap-5 md:gap-6 md:items-center xl:items-start xxl:items-center mb-10">
+    <div  >
+        <img class="rounded-xl sm:max-w-fit" src="./assets/images/dinner-night.png" alt="Image">
+    </div>
+    <div  >
+        <span class="pb-1 md:pb-2 block">October 29, 2024</span>
+        <h3 class="pb-2 md:pb-3 font-semibold text-nw10">Panthouse Tonic</h3>
+        <p class="pb-2 md:pb-6 text-lg text-nw40">While the gastronomic delights are undoubtedly the centerpiece, Restura goes beyond being a culinary haven.</p>
+        <a class="text-lg underline" href="blog-details.html">Blog Details</a>
+    </div>
+</div>
+<div
+    class="flex flex-col md:flex-row xl:flex-col xxl:flex-row gap-5 md:gap-6 md:items-center xl:items-start xxl:items-center">
+    <div  >
+        <img class="rounded-xl sm:max-w-fit" src="./assets/images/classic-dinner-night.png" alt="Image">
+    </div>
+    <div  >
+        <span class="pb-1 md:pb-2 block">October 29, 2024</span>
+        <h3 class="pb-2 md:pb-3 font-semibold text-nw10">Classic Dinner Night</h3>
+        <p class="pb-2 md:pb-6 text-lg text-nw40">While the gastronomic delights are undoubtedly the centerpiece, Restura goes beyond being a culinary haven.</p>
+        <a class="text-lg underline" href="blog-details.html">Blog Details</a>
+    </div>
+</div>
+        </div>
+        <div
+    class="border-extra10 border py-4 md:py-6 px-6 md:px-10 lg:px-14 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-3">
+    <div  >
+        <span class="text-lg">Designed By <a class="text-primary"
+                href="https://themeforest.net/user/pixelaxis">Pixelaxis</a></span>
+    </div>
+    <div  >
+        <span class="text-lg">Copyright @ 2024 Restura</span>
+    </div>
+</div>
+      </div>
+      <div class="col-span-12 xl:col-span-5">
+        <div class="relative h-full">
+          <img class="w-full rounded-2xl h-full" src="./assets/images/blog-conentimg.png" alt="Image">
+          <span class="display-1 text-primary absolute bottom-5 left-5 md:bottom-20 md:left-20 uppercase">Blog</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Team Details - Hair Salon Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-black-1 p-4 text-white-1 sm:p-6">
+    <main class="overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <header>
+  <!-- desktop navbar -->
+  <div class="hidden xl:block">
+    <div class="desktop-nav theme-transition-3 w-full">
+      <div
+        class="transition-primary theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul class="menu flex items-center justify-between gap-2">
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-md bg-black-2 px-4 py-2 font-medium text-white-1 xxl:rounded-2xl xxl:px-8 xxl:py-3"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="our-services.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-md bg-black-2 px-4 py-2 font-medium text-white-1 xxl:rounded-2xl xxl:px-8 xxl:py-3"
+            >
+              Our Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="price.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-md bg-black-2 px-4 py-2 font-medium text-white-1 xxl:rounded-2xl xxl:px-8 xxl:py-3"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="our-team.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-md bg-black-2 px-4 py-2 font-medium text-white-1 xxl:rounded-2xl xxl:px-8 xxl:py-3"
+            >
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a
+              href="book-appoinment.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-md bg-black-2 px-4 py-2 font-medium text-white-1 xxl:rounded-2xl xxl:px-8 xxl:py-3"
+            >
+              Book Appointment
+            </a>
+          </li>
+          <div class="btn-area right-0 z-20 inline-block">
+            <a
+              href="contact.html"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-8 py-3 font-medium uppercase"
+              >
+                GET IN TOUCH
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </ul>
+
+        <!-- Menu Items  end-->
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="xl:hidden">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl bg-black-2 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-black-4 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-black-2 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu rounded-md px-3 py-2"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a
+                  href="our-services.html"
+                  class="single-menu rounded-md px-3 py-2"
+                  >Our Services</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="price.html" class="single-menu rounded-md px-3 py-2"
+                  >Pricing</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="our-team.html" class="single-menu rounded-md px-3 py-2"
+                  >Our Team</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a
+                  href="book-appoinment.html"
+                  class="single-menu rounded-md px-3 py-2"
+                  >Book Appointment</a
+                >
+              </li>
+            </ul>
+            <div class="btn-area z-20 mt-4 inline-block">
+              <a
+                href="contact.html"
+                aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+              >
+                <span
+                  class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                >
+                  Let’s talk
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                >
+                  <i
+                    class="ph ph-arrow-up-right text-[24px]"
+                    data-icon-name="arrow-right"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ navbar end ============ -->
+      <section class="mt-6 grid grid-cols-12 items-center gap-6">
+        <div class="sp60px col-span-12 h-full rounded-3xl bg-black-3 md:col-span-7 3xl:col-span-8">
+          <h3 class="d4 font-extrabold uppercase">TEAM Details</h3>
+          <p class="lead-text mt-3 text-white-3">
+            At hairloom, our transparent pricing underscores our commitment to honesty and value. Our diverse services cater to your unique needs, ensuring exceptional quality and style without hidden
+            surprises. Rest assured, your satisfaction is our top priority, and every visit is designed for affordability and excellence.
+          </p>
+        </div>
+        <div class="col-span-12 overflow-hidden rounded-3xl md:col-span-5 3xl:col-span-4">
+          <img src="./assets/images/our-price.png" alt="our price section image" class="rounded-3xl duration-500 hover:scale-105 max-md:mx-auto" />
+        </div>
+      </section>
+
+      <!-- ============ team details start ============ -->
+      <section class="spy120px">
+        <div class="grid grid-cols-12 items-center gap-5 xl:gap-6">
+          <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="col-span-12 overflow-hidden rounded-3xl lg:col-span-6">
+            <img src="./assets/images/team-details-mamber.png" alt="team member" class="rounded-3xl" />
+          </div>
+          <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" class="sp60px col-span-12 flex h-full flex-col justify-center rounded-3xl bg-black-3 lg:col-span-6">
+            <h3 class="d4 font-extrabold capitalize">Brooklyn Simmons</h3>
+            <p class="lead-text pt-2 capitalize text-white-3">Fade Specialist</p>
+            <p class="h4 spt60px font-extrabold capitalize">About Firlo.</p>
+            <p class="lead-text text-white-3">
+              In the world of banking, teams are the backbone of success. Their collective efforts ensure that banks can provide financial services that recognizing the importance of teamwork and
+              culture of collaboration, the banking industry can continue to build strong financial foundations for a brighter future.
+            </p>
+            <div class="spt40px flex items-center gap-5">
+              <span class="h4 font-extrabold">Follow Us</span>
+              <div class="flex items-center gap-3">
+                <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+                  <i class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+                </a>
+                <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+                  <i class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+                </a>
+                <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+                  <i class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ team details end ============ -->
+
+      <!-- ============ footer start ============ -->
+      <footer class="grid grid-cols-12 gap-4 xl:gap-6">
+  <div
+    data-aos="zoom-out-down"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="sp32px col-span-12 flex justify-between gap-6 rounded-3xl bg-black-3 max-lg:flex-col md:col-span-8 lg:col-span-12 lg:items-center"
+  >
+    <div class="flex gap-4 max-sm:flex-col sm:items-center xxl:gap-8">
+      <div>
+        <img src="./assets/images/newsletter.png" alt="newsletter image" class="rounded-xl" />
+      </div>
+      <div>
+        <h6 class="h6 font-bold uppercase">NEWSLETTER</h6>
+        <h3 class="h3 pt-3 font-extrabold uppercase xxl:pt-6">GET INSIGHTS BEHIND THE SCENES</h3>
+      </div>
+    </div>
+    <div class="flex gap-3 max-sm:flex-col sm:items-center">
+      <input
+        type="text"
+        class="l-text placeholder:l-text rounded-[20px] border border-black-4 bg-black-4 px-5 py-3 font-medium placeholder:font-medium placeholder:uppercase"
+        placeholder="YOUR EMAIL"
+      />
+      <div class="btn-area right-0 z-20 inline-block self-end">
+        <a href="#" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+          <span class="one m-text theme-transition-4 rounded-2xl bg-primary px-6 py-3 font-medium uppercase sm:px-8"> SUBSCRIBE </span>
+          <span class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center">
+            <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    data-aos="fade-right"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="sp32px col-span-12 flex justify-between gap-10 rounded-3xl bg-black-3 max-xs:flex-col md:col-span-4 md:flex-col lg:col-span-3"
+  >
+    <div>
+      <img src="./assets/images/logo.png" alt="footer logo" />
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+        <i class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+      </a>
+      <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+        <i class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+      </a>
+      <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+        <i class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+      </a>
+    </div>
+  </div>
+  <div class="col-span-12 flex flex-col gap-4 lg:col-span-9 xl:gap-6">
+    <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="sp32px flex flex-grow justify-between gap-10 rounded-3xl bg-black-3 max-[712px]:flex-col">
+      <div>
+        <h3 class="h3 font-extrabold uppercase">PAGES</h3>
+        <ul class="m-text spt32px flex flex-col gap-[18px] font-medium capitalize">
+          <li>
+            <a href="/" class="theme-transition-3 hover:text-secondary"> Home </a>
+          </li>
+          <li>
+            <a href="our-services.html" class="theme-transition-3 hover:text-secondary"> Services </a>
+          </li>
+          <li>
+            <a href="our-team.html" class="theme-transition-3 hover:text-secondary"> Stylists </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="h3 font-extrabold uppercase">UTILITY PAGES</h3>
+        <ul class="m-text spt32px flex flex-col gap-[18px] font-medium capitalize">
+          <li>
+            <a href="price.html" class="theme-transition-3 hover:text-secondary"> Prices </a>
+          </li>
+          <li>
+            <a href="contact.html" class="theme-transition-3 hover:text-secondary"> Contact </a>
+          </li>
+          <li>
+            <a href="../book-appoinment.html" class="theme-transition-3 capitalize hover:text-secondary"> Book Appointment </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="h3 font-extrabold uppercase uppercase">OPENING HOURS</h3>
+        <ul class="m-text spt32px flex flex-col gap-[18px] font-medium capitalize">
+          <li>Mon to Fri: 7am - 6pm</li>
+          <li>Sat: 9am - 7pm</li>
+          <li>Sun: 9am - 6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="spx60px spy32px m-text flex items-center justify-between gap-3 rounded-xl bg-black-3 font-medium max-sm:flex-col sm:gap-10 xl:rounded-3xl"
+    >
+      <p class="flex items-center gap-1">
+        Designed By
+        <a href="/" class="text-primary duration-500 hover:text-secondary">Pixelaxis</a>
+      </p>
+      <p>Copyright @ 2024 Soloom</p>
+    </div>
+  </div>
+</footer>
+
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

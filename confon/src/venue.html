@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Venue-Event Booking Template</title>
+  </head>
+
+  <body class="bg-white-3 p-4 text-black-1 sm:p-6">
+    <main class="relative">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+
+      <div class="grid gap-4 lg:grid-cols-2 lg:gap-6 xxl:grid-cols-3">
+        <!-- address -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="spb60px spl48px spt40px rounded-xl bg-accent-4">
+          <ul class="flex list-outside list-disc flex-col gap-10">
+            <li class="text-black-1">
+              <span class="h-4 font-bold">Venu</span>
+              <span class="l-text block text-black-2"> Kames D.bradd ock Hall </span>
+            </li>
+            <li class="text-black-1">
+              <span class="h-4 font-bold">Address</span>
+              <span class="l-text block text-black-2">1356 Broadway, New York NY 10018, USA</span>
+            </li>
+            <li class="h-4 font-bold text-black-1 underline underline-offset-2">Get Directions...</li>
+          </ul>
+        </div>
+        <!-- gallery image -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative overflow-hidden rounded-xl">
+          <img
+            src="./assets/images/venue-image-1.png"
+            alt="A panoramic view of
+          Kames D.bradd ock Hall, with a large stage and seating areas visible
+          in the foreground"
+            class="relative z-0 w-full"
+            aria-label="A panoramic
+          view of Kames D.bradd ock Hall, with a large stage and seating areas
+          visible in the foreground"
+            title="A panoramic view of Kames D.bradd
+          ock Hall, with a large stage and seating areas visible in the
+          foreground"
+          />
+          <button id="gallery-btn-1" class="absolute left-1/2 top-1/2 z-40 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white-1 p-5 text-white-1">
+            <i class="ph-fill ph-images text-[24px]"></i>
+          </button>
+        </div>
+        <!-- gallery image -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative overflow-hidden rounded-xl">
+          <img
+            src="./assets/images/venue-image-2.png"
+            alt="A panoramic view of
+          Kames D.bradd ock Hall, interior with seating areas and stage"
+            class="w-full"
+            aria-label="A panoramic view of Kames D.bradd ock Hall,
+          interior with seating areas and stage"
+          />
+          <button id="gallery-btn-2" class="absolute left-1/2 top-1/2 z-40 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white-1 p-5 text-white-1">
+            <i class="ph-fill ph-images text-[24px]"></i>
+          </button>
+        </div>
+        <!-- map -->
+        <iframe
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="h-[400px] w-full rounded-xl lg:h-full xxl:col-span-3 xxl:h-[400px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.14448744699546!3d40.69763123333061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710913289649!5m2!1sen!2sbd"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <!-- gallery modal one -->
+      <div
+        id="gallery-content-1"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-md bg-black-2 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[800px]"
+      >
+        <div class="gallery-slider swiper relative mx-auto overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-1.png"
+                alt="A panoramic
+              view of Kames D.bradd ock Hall, exterior with a green grass field
+              and trees"
+                class="w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-2.png"
+                class="w-full"
+                alt="A panoramic view of Kames D.bradd ock Hall's exterior with a
+              lush green grass field and trees, providing a serene atmosphere"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-3.png"
+                class="w-full"
+                alt="A serene view of Kames D.bradd ock Hall's exterior with a
+              lush green grass field and trees, capturing the tranquility of the
+              venue"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-4.png"
+                class="w-full"
+                alt="A breathtaking view of Kames D.bradd ock Hall, showing a
+              tranquil landscape with lush green grass and towering trees,
+              capturing the serenity of the venue"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-1/2 top-1/2 z-20 flex w-full -translate-x-1/2 -translate-y-1/2 justify-between sm:w-[110%]">
+          <button class="customerSliderPrev theme-transition-3 flex items-center justify-center rounded-full border border-primary bg-primary p-2 text-white-1">
+            <i class="ph ph-caret-left text-[20px]"></i>
+          </button>
+          <button class="customerSliderNext theme-transition-3 flex items-center justify-center rounded-full border border-primary bg-primary p-2 text-white-1">
+            <i class="ph ph-caret-right text-[20px]"></i>
+          </button>
+        </div>
+        <button class="gallery-close-btn-1 group theme-transition-3 absolute right-1 top-0 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary max-sm:top-1 sm:-right-16 sm:p-3">
+          <i class="ph ph-x text-[20px] sm:text-[28px]"></i>
+        </button>
+      </div>
+      <!-- gallery modal two -->
+      <div
+        id="gallery-content-2"
+        class="hide fixed right-1/2 top-1/2 z-40 h-fit w-[300px] origin-center -translate-y-1/2 translate-x-1/2 rounded-md bg-black-2 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500 xs:w-[350px] sm:w-[430px] md:w-[600px] xl:w-[800px]"
+      >
+        <div class="gallery-slider swiper relative mx-auto overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-1.png"
+                alt="A panoramic
+              view of Kames D.bradd ock Hall, exterior with a green grass field
+              and trees"
+                class="w-full"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-2.png"
+                class="w-full"
+                alt="A panoramic view of Kames D.bradd ock Hall's exterior with a
+              lush green grass field and trees, providing a serene atmosphere"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-3.png"
+                class="w-full"
+                alt="A serene view of Kames D.bradd ock Hall's exterior with a
+              lush green grass field and trees, capturing the tranquility of the
+              venue"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/venue-image-4.png"
+                class="w-full"
+                alt="A breathtaking view of Kames D.bradd ock Hall, showing a
+              tranquil landscape with lush green grass and towering trees,
+              capturing the serenity of the venue"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="absolute left-1/2 top-1/2 z-20 flex w-full -translate-x-1/2 -translate-y-1/2 justify-between sm:w-[110%]">
+          <button class="customerSliderPrev theme-transition-3 flex items-center justify-center rounded-full border border-primary bg-primary p-2 text-white-1">
+            <i class="ph ph-caret-left text-[20px]"></i>
+          </button>
+          <button class="customerSliderNext theme-transition-3 flex items-center justify-center rounded-full border border-primary bg-primary p-2 text-white-1">
+            <i class="ph ph-caret-right text-[20px]"></i>
+          </button>
+        </div>
+        <button class="gallery-close-btn-2 group theme-transition-3 absolute right-1 top-0 z-40 block rounded-full bg-black-4 p-2 text-white-1 hover:bg-primary max-sm:top-1 sm:-right-16 sm:p-3">
+          <i class="ph ph-x text-[20px] sm:text-[28px]"></i>
+        </button>
+      </div>
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

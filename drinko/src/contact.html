@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Contact - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <include-header />
+      <!-- Header Area End -->
+      <section class="grid grid-cols-12 gap-6">
+        <div
+          class="col-span-12 lg:col-span-5 xl:col-span-6 overflow-hidden relative flex justify-center items-center"
+        >
+          <div class="relative max-lg:h-[400px] lg:h-dvh w-full">
+            <!-- For use image -->
+            <video
+              class="w-full h-full object-cover rounded-3xl"
+              muted
+              loop
+              autoplay
+            >
+              <source
+                src="https://softivuspro.com/rest/bar.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div
+          class="col-span-12 lg:col-span-7 xl:col-span-6 rounded-[20px] p-6 sm:p-10 border border-borderColor"
+        >
+          <div class="grid grid-cols-12 gap-3 pb-12">
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 xxxl:col-span-4 rounded-xl py-6 px-5 border border-borderColor flex flex-col justify-center items-center text-center"
+            >
+              <div
+                class="text-4xl !leading-none bg-secondaryBg rounded-full p-[14px] text-n4 flex justify-center items-center"
+              >
+                <i class="ph-fill ph-chats"></i>
+              </div>
+
+              <h5 class="heading-5 pt-5">Chat to support</h5>
+              <p class="text-n3 pb-5 pt-1">Speak to our friendly team.</p>
+              <a href="mailto:support@Drinko.com" class="text-lg"
+                >support@Drinko.com</a
+              >
+            </div>
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 xxxl:col-span-4 rounded-xl py-6 px-5 border border-borderColor flex flex-col justify-center items-center text-center"
+            >
+              <div
+                class="text-4xl !leading-none bg-secondaryBg rounded-full p-[14px] text-n4 flex justify-center items-center"
+              >
+                <i class="ph-fill ph-map-pin"></i>
+              </div>
+
+              <h5 class="heading-5 pt-5">Visit us</h5>
+              <p class="text-n3 pb-5 pt-1">Visit our office HQ.</p>
+              <a href="#" class="text-lg">View on Google Maps</a>
+            </div>
+            <div
+              class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-6 xxxl:col-span-4 rounded-xl py-6 px-5 border border-borderColor flex flex-col justify-center items-center text-center"
+            >
+              <div
+                class="text-4xl !leading-none bg-secondaryBg rounded-full p-[14px] text-n4 flex justify-center items-center"
+              >
+                <i class="ph-fill ph-phone-call"></i>
+              </div>
+
+              <h5 class="heading-5 pt-5">Contact Us</h5>
+              <p class="text-n3 pb-5 pt-1">Mon-Fri from 8am to 5pm.</p>
+              <a href="tel:(239)555-0108" class="text-lg">(239) 555-0108</a>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-[20px] border border-borderColor">
+            <h3 class="heading-3 text-center pb-10">Get in touch</h3>
+            <form class="grid grid-cols-12 gap-4 sm:gap-6">
+              <div class="col-span-12 sm:col-span-6">
+                <h6 class="heading-6 pb-3">first name*</h6>
+                <input
+                  type="text"
+                  class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col-span-12 sm:col-span-6">
+                <h6 class="heading-6 pb-3">last name*</h6>
+                <input
+                  type="text"
+                  class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="col-span-12 sm:col-span-6">
+                <h6 class="heading-6 pb-3">email*</h6>
+                <input
+                  type="text"
+                  class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="col-span-12 sm:col-span-6">
+                <h6 class="heading-6 pb-3">phone number*</h6>
+                <input
+                  type="text"
+                  class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                  placeholder="Phone"
+                />
+              </div>
+
+              <div class="col-span-12">
+                <h6 class="heading-6 pb-3">message*</h6>
+                <textarea
+                  type="time"
+                  class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl min-h-[100px]"
+                  placeholder="Enter Your Message"
+                ></textarea>
+              </div>
+              <div class="col-span-12 flex items-center">
+                <button
+                  class="text-center text-black heading-6 bg-n4 px-8 py-3 w-full rounded-xl"
+                >
+                  Book Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

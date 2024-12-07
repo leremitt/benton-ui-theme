@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Book A Table - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <include-header />
+      <!-- Header Area End -->
+      <section class="grid grid-cols-12 gap-6">
+        <div
+          class="col-span-12 lg:col-span-5 xl:col-span-6 overflow-hidden relative flex justify-center items-center"
+        >
+          <div class="relative max-lg:h-[400px] lg:h-dvh w-full">
+            <!-- For use image -->
+            <video
+              class="w-full h-full object-cover rounded-3xl"
+              muted
+              loop
+              autoplay
+            >
+              <source
+                src="https://softivuspro.com/rest/bar.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div
+          class="col-span-12 lg:col-span-7 xl:col-span-6 rounded-[20px] p-6 sm:px-10 sm:py-15 border border-borderColor"
+        >
+          <h1 class="display-4 text-center pb-3">Book A Table</h1>
+          <p class="text-xl text-n3 text-center">
+            Secure your spot at Rsetura for exceptional sushi and an
+            unforgettable dining journey. Reserve now for an unparalleled
+            culinary experience.
+          </p>
+          <form class="grid grid-cols-12 gap-4 sm:gap-6 stp-15">
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">first name*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">last name*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">email*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="Email"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">phone number*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="Phone"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">date*</h6>
+              <input
+                type="date"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">time*</h6>
+              <input
+                type="time"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+              />
+            </div>
+            <div class="col-span-12">
+              <h6 class="heading-6 uppercase pb-3">message*</h6>
+              <textarea
+                type="time"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl min-h-[150px]"
+                placeholder="Enter Your Message"
+              ></textarea>
+            </div>
+            <div class="col-span-12 flex items-center">
+              <button
+                class="text-center text-black heading-6 bg-n4 px-8 py-3 w-full rounded-xl"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

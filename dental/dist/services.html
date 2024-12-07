@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ flatpickr css  ============ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-white-1 p-4 text-black-1 sm:p-6">
+    <main class="relative overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <header
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1500"
+  class="relative z-50"
+>
+  <!-- desktop navbar -->
+  <div class="hidden pb-6 uppercase xxl:block">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-xl bg-accent-4 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul class="menu flex items-center justify-between gap-1">
+          <!-- navbarData -->
+          <li>
+            <a
+              href="about.html"
+              class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="our-dentist.html"
+              class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+            >
+              OUR DENTISTS
+            </a>
+          </li>
+          <li>
+            <a
+              href="services.html"
+              class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+            >
+              OUR SERVICES
+            </a>
+          </li>
+          <li>
+            <a
+              href="faq.html"
+              class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+            >
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a
+              href="our-shop.html"
+              class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+            >
+              Shop
+            </a>
+          </li>
+          <li>
+            <a
+              href="contact-us.html"
+              class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+        <div class="flex items-center gap-3">
+          <a
+            href="cart.html"
+            class="relative flex items-center justify-center rounded-full border border-black-1 p-3"
+          >
+            <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+            <p
+              class="xs-text absolute -right-2 -top-2 flex size-6 items-center justify-center rounded-full bg-secondary font-medium text-black-1"
+            >
+              02
+            </p>
+          </a>
+          <a
+            href="appointment.html"
+            class="m-text single-menu navbar-hover-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 rounded-full border border-black-2 px-3 py-2 3xl:py-3 font-medium text-black-2 duration-500 hover:border-primary hover:bg-primary hover:text-white-1 3xl:px-6"
+          >
+            BOOK AN APPOINTMENT
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="pb-4 xxl:hidden xxl:pb-6">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl bg-accent-4 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img
+              src="./assets/images/logo.png"
+              alt="mobile Logo"
+              class="max-sm:w-2/3"
+            />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+        <a
+          href="#"
+          class="relative flex items-center justify-center rounded-full border border-black-1 p-3"
+        >
+          <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+          <p
+            class="xs-text absolute -right-2 -top-2 flex size-6 items-center justify-center rounded-full bg-secondary font-medium text-black-1"
+          >
+            02
+          </p>
+        </a>
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-[200] w-72 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="about.html" class="single-menu rounded px-3 py-1.5"
+                  >About</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a
+                  href="our-dentist.html"
+                  class="single-menu rounded px-3 py-1.5"
+                  >Our Dentists</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="services.html" class="single-menu rounded px-3 py-1.5"
+                  >Services</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="faq.html" class="single-menu rounded px-3 py-1.5"
+                  >FAQ</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="our-shop.html" class="single-menu rounded px-3 py-1.5"
+                  >Shop</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a
+                  href="contact-us.html"
+                  class="single-menu rounded px-3 py-1.5"
+                  >Contact Us</a
+                >
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a
+                  href="appointment.html"
+                  class="single-menu rounded px-3 py-1.5"
+                  >Book An Appointment</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ navbar end ============ -->
+      <!-- ============ pagination start ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="relative"
+      >
+        <img
+          src="./assets/images/our-dentist-pagination-image.png"
+          alt="A picture showing a person with a dental implant and a friendly message about dental implant care"
+          class="w-full rounded-xl object-cover max-sm:h-[350px] sm:max-lg:h-[400px]"
+        />
+        <p
+          class="h3 xs:d4 spx32px absolute whitespace-nowrap rounded-3xl bg-black-1/30 py-4 text-center font-extrabold text-white-1 max-md:left-1/2 max-md:top-10 max-md:-translate-x-1/2 xs:py-6 md:left-10 md:top-10"
+        >
+          Service
+        </p>
+        <div
+          class="btn-area spx32px absolute bottom-10 z-20 rounded-3xl bg-secondary py-4 text-white-1 max-md:left-1/2 max-md:-translate-x-1/2 xs:py-6 md:bottom-10 md:right-10"
+        >
+          <a
+            href="#"
+            aria-label="Contact"
+            class="move-btn theme-transition-4 flex items-center text-center"
+          >
+            <span
+              class="one h3 xs:h2 theme-transition-4 px-2 font-bold uppercase sm:px-4"
+            >
+              Appointment
+            </span>
+            <span
+              class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-full border-2 border-dashed p-2 text-center md:p-3"
+            >
+              <i
+                class="ph ph-arrow-up-right text-[24px]"
+                data-icon-name="arrow-right"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- ============ pagination end ============ -->
+      <!-- =========== basic dental care section start ============ -->
+      <div class="spb60px"><section class="spt60px grid grid-cols-12 gap-6">
+  <div class="col-span-12 grid grid-cols-6 gap-6 xl:col-span-6">
+    <!-- basic dental care card -->
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="sp40px col-span-6 flex items-center justify-between rounded-xl bg-accent-1 max-md:flex-col max-md:gap-6"
+    >
+      <div class="max-md:order-2">
+        <h3 class="h2 font-bold">Basic Dental Care</h3>
+        <p class="l-text max-w-[338px] pt-4 text-black-1">
+          Discover How We Illuminate and Elevate Your Smiles.
+        </p>
+      </div>
+      <div class="overflow-hidden rounded-xl">
+        <img
+          src="./assets/images/basic-dental-card-image.png"
+          class="theme-transition-3 rounded-xl hover:scale-105"
+          alt="Image of a person with a healthy smile, showing their teeth and mouth, with a friendly message about basic dental care"
+        />
+      </div>
+    </div>
+    <!-- Dental Implant card -->
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="sp40px col-span-6 flex items-center justify-between rounded-xl bg-white-3 max-md:flex-col max-md:gap-6"
+    >
+      <div class="max-md:order-2">
+        <h3 class="h2 font-bold">Dental Implant</h3>
+        <p class="l-text max-w-[338px] pt-4 text-black-1">
+          Discover How We Illuminate and Elevate Your Smiles.
+        </p>
+      </div>
+      <div class="overflow-hidden rounded-xl">
+        <img
+          src="./assets/images/dental-implant-image.png"
+          class="theme-transition-3 rounded-xl hover:scale-105"
+          alt="Image of a person with a dental implant in their mouth, showing the implant and a friendly message about dental implant care"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Pedodonti child card -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="spt48px col-span-12 flex flex-col items-center rounded-xl bg-white-4 xl:col-span-6"
+  >
+    <h3 class="h2 text-center font-bold">Pedodonti</h3>
+    <p class="l-text mx-auto w-[336px] pt-4 text-center">
+      Discover How We Illuminate and Elevate Your Smiles.
+    </p>
+    <div class="spt48px">
+      <img
+        src="./assets/images/child.png"
+        alt="Child holding hands with a smiling face"
+      />
+    </div>
+  </div>
+  <!-- Prosthodonti card -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="spl40px spt24px col-span-12 flex items-center justify-between overflow-hidden rounded-xl bg-secondary lg:col-span-6 xl:col-span-4"
+  >
+    <div class="max-xs:pb-6">
+      <h3 class="h2 font-bold">Prosthodonti</h3>
+      <p class="l-text max-w-[338px] pt-4 text-black-1">
+        Discover How We Illuminate and Elevate Your Smiles.
+      </p>
+    </div>
+    <div class="max-xs:pb-6">
+      <img
+        src="./assets/images/prosthodonti-image.png"
+        alt="Image of a person with a friendly smile, showing their teeth and mouth, with two hands holding their palms together, indicating a friendly gesture, with a message about prosthodonti care"
+      />
+    </div>
+  </div>
+  <!-- Aesthetic Care card -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="spl40px spt24px col-span-12 flex items-center justify-between rounded-xl bg-accent-1 lg:col-span-6 xl:col-span-4"
+  >
+    <div class="max-xs:pb-6">
+      <h3 class="h2 font-bold">Aesthetic Care</h3>
+      <p class="l-text max-w-[338px] pt-4 text-black-1">
+        Discover How We Illuminate and Elevate Your Smiles.
+      </p>
+    </div>
+    <div>
+      <img
+        src="./assets/images/aesthetic-care-image.png"
+        alt="Image of a smiling person with a healthy, well-cared-for mouth, highlighting the importance of aesthetic care"
+      />
+    </div>
+  </div>
+  <!-- Aesthetic Care card -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="spl40px spt24px col-span-12 flex items-center justify-between rounded-xl bg-accent-2 lg:col-span-6 xl:col-span-4"
+  >
+    <div>
+      <h3 class="h2 font-bold">Gaga Dent</h3>
+      <p class="l-text max-w-[338px] pt-4 text-black-1">
+        Discover How We Illuminate and Elevate Your Smiles.
+      </p>
+    </div>
+    <div class="self-end pb-5 pr-5">
+      <img src="./assets/images/gaga-card-image.png" alt="" />
+    </div>
+  </div>
+</section>
+</div>
+      <!-- =========== basic dental care section end ============ -->
+      <!-- ============ footer start ============ -->
+      <footer
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1500"
+>
+  <div class="xs:sp60px rounded-3xl bg-black-1 p-6">
+    <h2
+      class="text-center text-[40px] font-extrabold leading-[120%] text-white-1 sm:text-[50px] lg:text-[80px] xl:text-[100px] 3xl:text-[150px] min-[1900px]:text-[180px]"
+    >
+      BOOKING ONLINE
+    </h2>
+    <div class="spt60px text-white-1">
+      <p class="xl-text font-semibold">Book Your Appointment Today!</p>
+      <form class="spt40px flex items-center gap-6 max-4xl:flex-wrap">
+        <input
+          type="text"
+          class="spx40px rounded-full border border-white-1 bg-black-1 py-4 placeholder:text-white-1 xl:py-6 4xl:w-full"
+          placeholder="Your Name"
+        />
+        <input
+          type="number"
+          class="spx40px rounded-full border border-white-1 bg-black-1 py-4 placeholder:text-white-1 xl:py-6 4xl:w-full"
+          placeholder="Your Number"
+        />
+        <div
+          class="spx40px flex w-[250px] items-center justify-between gap-6 rounded-full border border-white-1 bg-black-1 py-4 xs:w-fit xl:py-6"
+        >
+          <input
+            id="appointment-date"
+            type="date"
+            class="w-[170px] bg-black-1 placeholder:text-white-1 xs:w-fit"
+            placeholder="25 Oct"
+          />
+          <i class="ph ph-caret-down text-[24px]"></i>
+        </div>
+        <div
+          class="spx40px flex w-[250px] items-center justify-between gap-6 rounded-full border border-white-1 bg-black-1 py-4 xs:w-fit xl:py-6"
+        >
+          <input
+            id="appointment-time"
+            type="date"
+            class="w-[170px] bg-black-1 placeholder:text-white-1 xs:w-fit"
+            placeholder="15:30"
+          />
+          <i class="ph ph-caret-down text-[24px]"></i>
+        </div>
+        <button
+          class="spx40px l-text w-fit shrink-0 rounded-full bg-white-1 py-4 font-medium text-black-1 duration-300 hover:bg-accent-4 xl:py-6"
+        >
+          Book Now
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    class="flex items-center justify-between px-4 py-6 max-xl:flex-wrap max-xl:justify-center max-xl:gap-4"
+  >
+    <ul
+      class="xl-text flex items-center gap-4 font-semibold uppercase text-black-1 max-md:flex-wrap sm:gap-6 xxl:gap-15"
+    >
+      <li>
+        <a href="about.html">ABOUT US</a>
+      </li>
+      <li>
+        <a href="">OUR DENTISTS</a>
+      </li>
+      <li>
+        <a href="">OUR SERVICES</a>
+      </li>
+      <li>
+        <a href="">CONTACT US</a>
+      </li>
+      <li>
+        <a href=""></a>
+      </li>
+    </ul>
+    <div
+      class="flex items-center gap-3 text-black-2 max-sm:flex-wrap max-xs:justify-center"
+    >
+      <p>Copyright @ 2024 Dental</p>
+      <div class="h-5 w-px bg-black-2 max-[500px]:hidden"></div>
+      <p>
+        Designed By
+        <a
+          href="/"
+          class="theme-transition-3 text-black-1 underline underline-offset-4 hover:text-secondary"
+        >
+          Pixelaxis
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

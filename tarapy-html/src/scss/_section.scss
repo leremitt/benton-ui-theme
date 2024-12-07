@@ -1,0 +1,390 @@
+
+// Hero Section Starts
+.brad-carousel {
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+}
+
+.brad-carousel2, .brad-carousel3, .allcarosel, .brad-carouselmini {
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+}
+
+// play button animation effect starts
+.wrapper-animation {
+// display: inline-block;
+// position: absolute;
+// top: 50%;
+// left: 50%;
+transform: translate(-50%, -50%)
+}
+
+@keyframes waves {
+0% {
+  -webkit-transform: scale(0.2, 0.2);
+  transform: scale(0.2, 0.2);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+50% {
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+
+100% {
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+}
+
+
+.waves {
+position: absolute;
+width: 150px;
+height: 150px;
+// background: rgba(0, 0, 0, 0.3);
+border: 1px solid #fff;
+opacity: 0;
+// -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+border-radius: 100%;
+right: -50px;
+bottom: -50px;
+z-index: -1;
+-webkit-animation: waves 3s ease-in-out infinite;
+animation: waves 3s ease-in-out infinite;
+}
+
+.wave-1 {
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+.wave-2 {
+-webkit-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.wave-3 {
+-webkit-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+.wave-4 {
+-webkit-animation-delay: 3s;
+animation-delay: 3s;
+}
+
+// play button animation effect ends
+.helloused{
+@apply text-red-700;
+}
+// Card Starts
+.card {
+min-width: 250px;
+height: 200px;
+perspective: 1000px;
+}
+
+.card-inner {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.card-front {
+background-color: #6A2C70;
+color: #fff;
+display: flex;
+align-items: center;
+border: 10px solid #6A2C70;
+border-radius: 10px;
+justify-content: center;
+font-size: 24px;
+transform: rotateY(0deg);
+}
+
+.card-back {
+background-color: #F08A5D;
+color: #fff;
+display: flex;
+align-items: center;
+border: 10px solid #F08A5D;
+border-radius: 10px;
+justify-content: center;
+font-size: 24px;
+transform: rotateY(180deg);
+}
+
+// Card Ends
+// Hero Section Ends
+
+
+// #helper {
+//   // position: absolute;
+//   // top: 50vw;
+//   // left: 0;
+// }
+
+
+// #containermain {
+//   @apply xxl:fixed;
+//   max-height: 100vh;
+//   // position: fixed;
+//   top: 0;
+//   white-space: nowrap;
+//   z-index: -1;
+// }
+// #containermain > * {
+//   font-size: 1rem;
+// }
+
+// #intro {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   z-index: 10;
+//   width: 50%;
+//   height: 100%;
+//   background: #fff;
+// }
+
+
+// .gsap-marker-scroller-start{
+//   // display: none !important;
+//   opacity: 0 !important;
+// }
+// .gsap-marker-scroller-end{
+//   // display: none !important;
+//   opacity: 0 !important;
+// }
+// .gsap-marker-end{
+//   opacity: 0 !important;
+// }
+// .gsap-marker-start{
+//   opacity: 0 !important;
+// }
+// .module {
+//   height: 100vh;
+//   // overflow-y: scroll !important;
+//   width: 100vw;
+//   display: inline-flex;
+// }
+
+
+
+.about-banner{
+  background-image: url("../assets/images/about-banner-tharapy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.accordion-single {
+	transition: 0.5s linear;
+
+	&.active {
+
+		// background-color: #96F048;
+		// color: #191919;
+		.arrowclickable {
+			transform: rotate(180deg);
+			transition: 0.5s linear;
+
+			.ph-plus {
+				display: none;
+			}
+
+			.ph-minus {
+				display: block;
+			}
+		}
+	}
+
+	.arrowclickable {
+		transition: 0.5s linear;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.anchor-nav{
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+footer {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+}
+
+.scrollbar {
+  position: relative;
+  border-radius: 25px;
+  color: white;
+  background-color: #333;
+  width: 150px;
+  height: 10px;
+  top: calc(5vh + 5px);
+  left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.wrapper {  
+  // position: relative;
+  height: 920px !important;
+  width: calc( (100vh * 10.4) + ((100vw - 0px) * 3) + (10px * 10) );
+  
+  // border-top: 10vh white solid;
+  // border-bottom: 10vh white solid; 
+}
+
+.thumbnail {
+  display: inline-block;
+  height: 100vh;
+  width: calc(100vw - 0px);
+}
+
+// .thumbnail:nth-child(1) {
+//     background-color: red;
+// }
+
+// .thumbnail:nth-child(2) {
+//     background-color: navy;
+// }
+
+// .thumbnail:nth-child(3) {
+//     background-color: gray;
+// }
+
+// .thumbnail:nth-child(4) {
+//     background-color: orange;
+// }
+
+// .thumbnail:nth-child(5) {
+//     background-color: purple;
+// }
+
+// .thumbnail:nth-child(6) {
+//     background-color: black;
+// }
+
+// .thumbnail:nth-child(7) {
+//     background-color: green;
+// }
+
+// .thumbnail:nth-child(8) {
+//     background-color: darkred;
+// }
+
+// .thumbnail:nth-child(9) {
+//     background-color: teal;
+// }
+
+// .thumbnail:nth-child(10) {
+//     background-color: steelblue;
+// }
+
+// .thumbnail:nth-child(11) {
+//     background-color: salmon;
+// }
+
+.thumbnail:last-child {
+  margin-right: 0px;
+}
+
+.full {
+  width: calc(100vw - 20px - 20px);
+}
+.py-120{
+  @apply py-10 md:py-16 lg:py-[120px]
+}
+// cart page revew section tabs starts
+.tabcontents {
+  position: relative;
+  
+}
+.tabitem {
+  transform: translateY(100px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s all;
+  
+}
+.tabitem.active {
+  position: initial;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+}
+.tablinks{
+
+  .nav-links{
+    position: relative;
+    &.active{
+      color: #26292F;
+      &::after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #26292F;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+// cart page revew section tabs ends
+
+.extara-zindex{
+  z-index: -1 !important;
+}

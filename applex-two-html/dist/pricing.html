@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-[#EBECF0] p-6">
+    <!-- ============ preloader start ============ -->
+    <div
+      class="preloader-one fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-top h-full w-full bg-primary duration-500"></div>
+    </div>
+    <div
+      class="preloader-two fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-bottom relative h-full w-full bg-secondary"></div>
+    </div>
+    <!-- ============ preloader end ============ -->
+    <main class="overflow-hidden">
+      <div class="flex-col gap-6 max-xl:flex xl:grid xl:grid-cols-12">
+        <!-- ============ column one start ============ -->
+        <div
+          class="col-span-6 flex flex-col gap-6 max-xl:order-2 4xl:col-span-4"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="pricing-card col-start-1 col-end-13 flex h-full cursor-pointer flex-col justify-between rounded-3xl bg-secondary p-6 sm:col-end-7 xxl:col-end-4 xxl:row-start-1 xxl:row-end-2"
+            data-content-id="content-one"
+          >
+            <div class="flex justify-between">
+              <div
+                class="flex size-15 items-center justify-center rounded-xl bg-black-1 p-2.5"
+              >
+                <i class="ph ph-rocket-launch text-[40px] text-white-1"></i>
+              </div>
+              <div
+                class="checkbox flex size-12 items-center justify-center rounded-xl border border-black-1 bg-black-1 p-2.5 text-white-1"
+              >
+                <i class="ph ph-check text-[24px]"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="h4 spt40px font-bold text-black-1">AppleX Starter</h4>
+              <p class="flex pt-3 text-black-1">
+                <span class="d3 font-bold">$</span>
+                <span class="d3 price-one font-bold">150</span>
+                <span class="l-text place-self-end font-medium">
+                  / Yearly
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="pricing-card col-start-1 col-end-13 flex h-full cursor-pointer flex-col justify-between rounded-3xl bg-accent-5 p-6 sm:col-end-7 xxl:col-end-4 xxl:row-start-1 xxl:row-end-2"
+            data-content-id="content-two"
+          >
+            <div class="flex justify-between">
+              <div
+                class="flex size-15 items-center justify-center rounded-xl bg-black-1 p-2.5"
+              >
+                <i class="ph ph-planet text-[40px] text-white-1"></i>
+              </div>
+              <div
+                class="checkbox flex size-12 items-center justify-center rounded-xl border border-black-1 p-2.5"
+              >
+                <i class="ph ph-check text-[24px]"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="h4 spt40px font-bold text-black-1">AppleX Plus</h4>
+              <p class="flex pt-3 text-black-1">
+                <span class="d3 font-bold">$</span>
+                <span class="d3 price-one font-bold">300</span>
+                <span class="l-text place-self-end font-medium">
+                  / Yearly
+                </span>
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="pricing-card col-start-1 col-end-13 flex h-full cursor-pointer flex-col justify-between rounded-3xl bg-primary p-6 sm:col-end-7 xxl:col-end-4 xxl:row-start-1 xxl:row-end-2"
+            data-content-id="content-three"
+          >
+            <div class="flex justify-between">
+              <div
+                class="flex size-15 items-center justify-center rounded-xl bg-black-1 p-2.5"
+              >
+                <i class="ph ph-alien text-[40px] text-white-1"></i>
+              </div>
+              <div
+                class="checkbox flex size-12 items-center justify-center rounded-xl border border-black-1 p-2.5"
+              >
+                <i class="ph ph-check text-[24px]"></i>
+              </div>
+            </div>
+            <div>
+              <h4 class="h4 spt40px font-bold text-black-1">AppleX Pro</h4>
+              <p class="flex pt-3 text-black-1">
+                <span class="d3 font-bold">$</span>
+                <span class="d3 price-one font-bold">475</span>
+                <span class="l-text place-self-end font-medium">
+                  / Yearly
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ============ column one end ============ -->
+        <!-- ============ column two start ============ -->
+        <div
+          class="col-span-6 flex flex-col gap-6 max-xl:order-1 4xl:col-span-4"
+        >
+          <header>
+  <!-- desktop navbar -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="hidden lg:block"
+  >
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-primary px-6"
+    >
+      <div
+        class="transition-primary theme-transition-3 flex w-full items-center justify-between py-12"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul
+          class="menu flex items-center justify-between gap-5 3xl:gap-6 4xl:gap-10"
+        >
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 hover:underline"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="features.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <a
+            href="/"
+            class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-black-1 p-2 text-white-1"
+          >
+            <i class="ph ph-arrow-up-right text-[24px]"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="lg:hidden">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Home</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="features.html" class="single-menu">Features</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="pricing.html" class="single-menu">Pricing</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="blog.html" class="single-menu">Blog</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a
+                  href="#"
+                  aria-label="Contact"
+                  class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+                >
+                  <span
+                    class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                  >
+                    Let’s talk
+                  </span>
+                  <span
+                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                  >
+                    <i
+                      class="ph ph-arrow-up-right text-[24px]"
+                      data-icon-name="arrow-right"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt40px relative col-start-1 col-end-13 flex h-full flex-col justify-between rounded-3xl bg-white-1 px-6 max-sm:pb-6 xxl:col-start-7 xxl:col-end-13 xxl:row-start-1 xxl:row-end-3"
+          >
+            <div class="tab-content" id="content-one">
+              <div class="">
+                <h4 class="h3 font-bold text-black-1">Starter Features</h4>
+                <p class="m-text max-w-[590px] pt-3 text-black-4">
+                  Perfect for small businesses and startups looking to establish
+                  a strong foundation for communication and collaboration.
+                </p>
+                <div class="flex max-[550px]:flex-col sm:gap-6">
+                  <ul class="spt48px flex flex-col gap-5">
+                    <li class="flex items-center gap-2">
+                      <i class="ph ph-check-circle text-[24px]"> </i>
+                      <span class="l-text font-medium text-black-1">
+                        Real-Time Messaging
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <i class="ph ph-check-circle text-[24px]"> </i>
+                      <span class="l-text font-medium text-black-1">
+                        Document Sharing
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <i class="ph ph-check-circle text-[24px]"> </i>
+                      <span class="l-text font-medium text-black-1">
+                        Task Management
+                      </span>
+                    </li>
+                  </ul>
+                  <ul class="spt48px flex flex-col gap-5">
+                    <li class="flex items-center gap-2">
+                      <i class="ph ph-check-circle text-[24px]"> </i>
+                      <span class="l-text font-medium text-black-1">
+                        Video Conferencing
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <i class="ph ph-check-circle text-[24px]"> </i>
+                      <span class="l-text font-medium text-black-1">
+                        Basic Integrations
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <i class="ph ph-check-circle text-[24px]"> </i>
+                      <span class="l-text font-medium text-black-1">
+                        Standard Security
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content hidden" id="content-two">
+              <h4 class="h3 font-bold text-black-1">Plus Features</h4>
+              <p class="m-text max-w-[590px] pt-3 text-black-4">
+                Perfect for small businesses and startups looking to establish a
+                strong foundation for communication and collaboration.
+              </p>
+              <div class="flex max-[550px]:flex-col sm:gap-6">
+                <ul class="spt48px flex flex-col gap-5">
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Real-Time Messaging
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Document Sharing
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Task Management
+                    </span>
+                  </li>
+                </ul>
+                <ul class="spt48px flex flex-col gap-5">
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Video Conferencing
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Basic Integrations
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Standard Security
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content hidden" id="content-three">
+              <h4 class="h3 font-bold text-black-1">Pro Features</h4>
+              <p class="m-text max-w-[590px] pt-3 text-black-4">
+                Perfect for small businesses and startups looking to establish a
+                strong foundation for communication and collaboration.
+              </p>
+              <div class="flex max-[550px]:flex-col sm:gap-6">
+                <ul class="spt48px flex flex-col gap-5">
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Real-Time Messaging
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Document Sharing
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Task Management
+                    </span>
+                  </li>
+                </ul>
+                <ul class="spt48px flex flex-col gap-5">
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Video Conferencing
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Basic Integrations
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="ph ph-check-circle text-[24px]"> </i>
+                    <span class="l-text font-medium text-black-1">
+                      Standard Security
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="./assets/images/priching-details-illstration.png"
+              alt="Starter features section image"
+              class="spt60px max-sm:hidden sm:max-3xl:size-52"
+            />
+          </div>
+        </div>
+        <!-- ============ column two end ============ -->
+        <!-- ============ column three start ============ -->
+        <div
+          class="col-span-4 grid-cols-2 flex-col gap-6 max-4xl:col-span-12 max-xl:order-3 max-md:flex md:max-4xl:grid lg:grid-cols-3 4xl:flex"
+        >
+          <div
+            class="grid gap-6 max-lg:col-span-1 lg:grid-flow-col-dense lg:max-4xl:col-span-2 4xl:grid-cols-2"
+          >
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="sp40px flex flex-col items-center justify-center rounded-3xl bg-white-1"
+            >
+              <div
+                class="flex h-full w-full shrink-0 flex-col items-center justify-center rounded-xl bg-accent-5 py-18"
+              >
+                <p class="xl-text text-black-1">Stories</p>
+                <h3
+                  class="h1 flex items-center justify-center gap-1 font-bold text-black-1"
+                >
+                  <span class="odometer" data-counter-value="4"></span> K+
+                </h3>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="sp40px flex flex-col items-center justify-center rounded-3xl bg-white-1"
+            >
+              <div
+                class="flex h-full w-full shrink-0 flex-col items-center justify-center rounded-xl bg-primary px-8 py-18"
+              >
+                <p class="xl-text text-black-1">Active User</p>
+                <h3
+                  class="h1 flex items-center justify-center gap-1 font-bold text-black-1"
+                >
+                  <span class="odometer" data-counter-value="17">0</span> K+
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spb60px flex flex-col justify-between overflow-hidden rounded-3xl bg-white-1 max-lg:col-span-2 lg:max-4xl:col-start-3 lg:max-4xl:col-end-4 4xl:h-full"
+          >
+            <div
+              class="spt60px spb60px relative flex flex-col gap-5 rounded-full text-center"
+            >
+              <div
+                class="absolute -top-1/2 left-1/2 size-[150%] -translate-x-1/2 rounded-bl-full rounded-br-full bg-secondary"
+              ></div>
+              <p class="h3 z-10 font-bold text-black-2">
+                Total <br />
+                Download
+              </p>
+              <p
+                class="d4 z-10 font-bold text-black-1 flex items-center justify-center gap-1"
+              >
+                <span class="odometer" data-counter-value="162">0</span> M
+              </p>
+            </div>
+            <div
+              class="spt60px flex items-center justify-center gap-6 max-4xl:flex-col"
+            >
+              <img src="./assets/images/google-play.png" alt="Google Play" />
+              <img src="./assets/images/apple-play.png" alt="Apple Play" />
+            </div>
+          </div>
+          <!-- brand slider -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt48px spb48px overflow-hidden rounded-3xl bg-white-1 max-4xl:col-start-1 max-4xl:col-end-4"
+          >
+            <div class="brand-slider smooth">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-1.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-2.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-3.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-4.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-5.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-6.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-7.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-1.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-2.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-3.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-4.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./assets/images/band-logo-5.png"
+                    alt="band logo "
+                    class="max-w-[206px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ column three end ============ -->
+      </div>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ matter js plugin ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ matter js ============ -->
+    <script src="./assets/js/matterjs.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-[#EBECF0] p-6">
+    <!-- ============ preloader start ============ -->
+    <div class="preloader-one fixed inset-0 z-50 block w-full flex-col items-center justify-center">
+      <div class="preloader-top h-full w-full bg-primary duration-500"></div>
+    </div>
+    <div class="preloader-two fixed inset-0 z-50 block w-full flex-col items-center justify-center">
+      <div class="preloader-bottom relative h-full w-full bg-secondary"></div>
+    </div>
+    <!-- ============ preloader end ============ -->
+    <main>
+      <header>
+  <!-- desktop navbar -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="hidden lg:block"
+  >
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-primary px-6"
+    >
+      <div
+        class="transition-primary theme-transition-3 flex w-full items-center justify-between py-12"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul
+          class="menu flex items-center justify-between gap-5 3xl:gap-6 4xl:gap-10"
+        >
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 hover:underline"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="features.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <a
+            href="/"
+            class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-black-1 p-2 text-white-1"
+          >
+            <i class="ph ph-arrow-up-right text-[24px]"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="lg:hidden">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Home</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="features.html" class="single-menu">Features</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="pricing.html" class="single-menu">Pricing</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="blog.html" class="single-menu">Blog</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a
+                  href="#"
+                  aria-label="Contact"
+                  class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+                >
+                  <span
+                    class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                  >
+                    Let’s talk
+                  </span>
+                  <span
+                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                  >
+                    <i
+                      class="ph ph-arrow-up-right text-[24px]"
+                      data-icon-name="arrow-right"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ blog details ============ -->
+      <section class="pt-6">
+        <div>
+          <div class="sm:sp40px rounded-[32px] border-white-2 sm:border sm:bg-white-1">
+            <div class="overflow-hidden rounded-3xl">
+              <img src="./assets/images/blog-details-banner.png" alt="blog details banner image" class="rounded-3xl" />
+            </div>
+            <div class="spt40px grid grid-cols-12 gap-6">
+              <!-- ============ blog details right start ============ -->
+              <div class="col-start-1 col-end-13 xl:col-end-9">
+                <div class="sp40px rounded-3xl border border-white-2">
+                  <p class="l-text text-black-4">Latest News December 12, 2024</p>
+                  <h2 class="h2 pt-3 font-bold text-black-1">Make successful business with AppleX</h2>
+                  <p class="l-text pt-3 text-black-4">
+                    Start by defining your goals and objectives for using Applex. Whether it's managing tasks, organizing projects, or improving communication, having clear goals will guide your usage
+                    and ensure you get the most out of the app.Take the time to familiarize yourself with the key features of Applex.
+                  </p>
+                  <p class="sp40px smt32px lead-text rounded-3xl border border-white-2 text-center font-medium text-black-4">
+                    Tailor Applex suit your unique workflow and preferences. Customize create personalized workflows, and explore integrations with other tools to create a seamless and efficient work
+                    environment that works for you.
+                  </p>
+
+                  <p class="smt32px l-text text-black-4">
+                    Tailor Applex suit your unique workflow and preferences. Customize create personalized workflows, and explore integrations with other tools to create a seamless and efficient work
+                    environment that works for you.
+                  </p>
+                  <h3 class="h3 spt40px font-bold text-black-1">How to grow up your business</h3>
+                  <p class="l-text mt-3 text-black-4">
+                    Use Applex to stay organized and keep track of your tasks, deadlines, and priorities. Utilize labels, tags, and filters to categorize and prioritize your tasks, ensuring nothing
+                    falls through the cracks and you stay on top of your workload.
+                  </p>
+                  <div class="spt32px flex items-center gap-6 max-sm:flex-col">
+                    <div>
+                      <img src="./assets/images/blog-details-inner-1.png" alt="blog details inner image one" class="rounded-xl" />
+                    </div>
+                    <div>
+                      <img src="./assets/images/blog-details-inner-2.png" alt="blog details inner image two" class="rounded-xl" />
+                    </div>
+                  </div>
+                  <div class="spt40px">
+                    <h4 class="h4 font-bold text-black-1">Collaborate Effectively</h4>
+                    <p class="l-text pt-3 text-black-4">
+                      Leverage Applex collaboration features to work more effectively with your team or colleagues. Share tasks, assign responsibilities, and communicate seamlessly within the app to
+                      streamline together.
+                    </p>
+                    <ul class="flex list-inside list-decimal flex-col gap-3 pt-5">
+                      <li>How-to guides/tutorials for using your app</li>
+                      <li>Product updates and feature announcements</li>
+                      <li>Case studies showcasing real-world applications of your app</li>
+                      <li>User-generated content, such as user-generated reviews or stories</li>
+                      <li>Interviews with industry experts or influencers</li>
+                    </ul>
+                  </div>
+                  <!-- author start -->
+                  <div class="smt40px sp40px flex items-center gap-3 rounded-3xl border border-white-2 max-md:flex-col">
+                    <div>
+                      <img src="./assets/images/blog-details-author.png" alt="blog details author" class="rounded-xl" />
+                    </div>
+                    <div class="w-full">
+                      <div class="flex shrink-0 items-center justify-between gap-4 max-xs:flex-col">
+                        <div>
+                          <h5 class="h5 font-bold text-black-1">Sophie Moore</h5>
+                          <p class="m-text text-black-4">Training Coach</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                          <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+                            <i class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+                          </a>
+                          <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+                            <i class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+                          </a>
+                          <a href="/" class="group theme-transition-3 flex size-10 items-center justify-center rounded-full border border-primary hover:bg-primary sm:size-12">
+                            <i class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="l-text pt-4 text-black-4">
+                        Dive into the intricate techniques used to prepare and present sushi, from the precise art of slicing fish to meticulous rolling of sushi rolls. Gain insight into the skills
+                        and create sushi that is both visually stunning and delicious.
+                      </p>
+                    </div>
+                  </div>
+                  <!--/ author end -->
+                  <!-- comment section start -->
+                  <div class="smt40px">
+                    <h6 class="h6 font-bold text-black-1">Leave A Comment</h6>
+                    <form class="spt40px">
+                      <div class="grid grid-cols-2 gap-6">
+                        <input type="text" class="placeholder:m-text rounded-xl border border-white-2 p-3 placeholder:text-black-4 max-sm:col-span-2" placeholder="Name" />
+                        <input type="email" class="placeholder:m-text rounded-xl border border-white-2 p-3 placeholder:text-black-4 max-sm:col-span-2" placeholder="Email" />
+
+                        <textarea rows="5" class="placeholder:m-text col-span-2 rounded-xl border border-white-2 p-3 placeholder:text-black-4" placeholder="Message"></textarea>
+
+                        <button class="m-text col-span-2 rounded-xl bg-primary p-3 font-semibold text-black-1">Post Comment</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!--/ comment section end -->
+                </div>
+              </div>
+              <!-- ============/ blog details right end ============ -->
+              <!-- ============ blog details left start ============ -->
+              <div class="col-start-1 col-end-13 xl:col-start-9">
+                <div class="spt40px sm:spx32px spb40px flex flex-col gap-8 rounded-3xl border-white-2 sm:gap-10 sm:border">
+                  <!-- search box start -->
+                  <div class="rounded-xl border border-accent-2 p-5">
+                    <form class="flex items-center justify-between rounded-xl border border-accent-2 px-3 py-2">
+                      <input type="text" placeholder="Search" class="placeholder:m-text placeholder: bg-inherit text-black-4 placeholder:font-medium" />
+                      <button type="submit" class="size-8 rounded-lg bg-primary text-black-1">
+                        <i class="ph ph-magnifying-glass text-[20px]"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <!--/ search box end -->
+                  <!-- categories start -->
+                  <div class="sp32px rounded-xl border border-accent-2">
+                    <h4 class="h4 font-bold text-black-1">Categories:</h4>
+                    <div class="spt32px flex flex-col gap-5">
+                      <a href="blog.html" class="l-text theme-transition-3 flex justify-between hover:font-semibold"> <span>Web Design</span> <span>(12)</span></a>
+                      <a href="blog.html" class="l-text theme-transition-3 flex justify-between hover:font-semibold"> <span>Graphic Design</span> <span>(32)</span> </a>
+                      <a href="blog.html" class="l-text theme-transition-3 flex justify-between hover:font-semibold"> <span>E-commerce Solutions</span> <span>(22)</span> </a>
+                      <a href="blog.html" class="l-text theme-transition-3 flex justify-between hover:font-semibold"> <span>E-commerce Solutions</span> <span>(36)</span> </a>
+                      <a href="blog.html" class="l-text theme-transition-3 flex justify-between hover:font-semibold"> <span>Video Production</span> <span>(14)</span> </a>
+                      <a href="blog.html" class="l-text theme-transition-3 flex justify-between hover:font-semibold"> <span>Mobile App Development</span> <span>(91)</span> </a>
+                    </div>
+                  </div>
+                  <!--/ categories end -->
+                  <!-- recent posts start -->
+                  <div class="sp32px rounded-xl border border-accent-2">
+                    <h4 class="h4 font-bold text-black-1">Recent Posts</h4>
+                    <ul class="spt24px l-text flex flex-col gap-5">
+                      <li class="flex flex-col gap-1 border-b border-white-2/30 pb-3">
+                        <span class="m-text text-black-4">July 21, 2023</span>
+                        <a href="blog-details.html" class="l-text theme-transition-3 font-medium text-black-1 hover:text-primary"> Design Chronicles Aroha's Odyssey </a>
+                      </li>
+                      <li class="flex flex-col gap-1 border-b border-white-2/30 pb-3">
+                        <span class="m-text text-black-4">July 21, 2023</span>
+                        <a href="blog-details.html" class="l-text theme-transition-3 font-medium text-black-1 hover:text-primary"> E-Commerce Elevation Aroha's Triumphs </a>
+                      </li>
+                      <li class="flex flex-col gap-1">
+                        <span class="m-text text-black-4">July 21, 2023</span>
+                        <a href="blog-details.html" class="l-text theme-transition-3 font-medium text-black-1 hover:text-primary"> Data-Driven Insig Aroha's Analytics </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--/ recent posts end -->
+
+                  <!-- popular tag start -->
+                  <div class="sp32px rounded-xl border border-accent-2">
+                    <h4 class="h4 font-bold text-black-1">Popular Tag:</h4>
+                    <div class="spt24px l-text flex flex-wrap gap-5">
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Bootstrap </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Branding </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Landing Page </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Graphic Design </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Design System </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> IOS </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Framer </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Business </a>
+                      <a href="blog.html" class="m-text theme-transition-3 rounded-full border border-white-2 px-4 py-2 shadow-custom1 hover:bg-primary"> Android </a>
+                    </div>
+                  </div>
+                  <!--/ popular tag end -->
+                </div>
+              </div>
+              <!-- ============/ blog details left end ============ -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ matter js plugin ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ matter js ============ -->
+    <script src="./assets/js/matterjs.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

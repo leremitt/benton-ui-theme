@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --body-font: "Outfit", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  line-height: 0px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* odomeeter reset */
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+  font-family: inherit !important;
+  line-height: inherit !important;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  vertical-align: text-top !important;
+}
+
+@layer base {
+  body {
+    font-family: var(--body-font);
+    color: #000000;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  a {
+    line-height: 0px;
+  }
+}
+
+@layer utilities {
+  .custom-container {
+    @apply mx-auto 4xl:max-w-[1824px];
+  }
+  .container {
+    @apply mx-auto max-w-[540px] max-sm:px-2 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1296px];
+  }
+
+  /*================ typography classes start ================ */
+
+  .d1 {
+    @apply text-[44px] leading-[120%] xs:text-[50px] lg:text-[60px] xl:text-[80px] xxl:text-[90px];
+  }
+  .d2 {
+    @apply text-[40px] leading-[120%] md:text-[50px] lg:text-[55px] xl:text-[60px] xxl:text-[72px];
+  }
+  .d3 {
+    @apply text-[36px] leading-[120%] md:text-[44px] lg:text-[50px] xl:text-[55px] 3xl:text-[64px];
+  }
+  .d4 {
+    @apply text-[30px] leading-[120%] md:text-[36px] lg:text-[40px] xl:text-[44px] 3xl:text-[56px];
+  }
+  .h1 {
+    @apply text-[32px] leading-[120%] md:text-[36px] lg:text-[40px] xxl:text-[48px];
+  }
+  .h2 {
+    @apply text-[28px] leading-[120%] md:text-[32px] xl:text-[36px] xxl:text-[40px];
+  }
+  .h3 {
+    @apply text-[24px] leading-[120%] xl:text-[28px] xxl:text-[32px];
+  }
+  .h4 {
+    @apply text-[16px] leading-[130%] lg:text-[18px] xl:text-[20px] xxl:text-[24px];
+  }
+  .h5 {
+    @apply text-[16px] leading-[130%] xl:text-[18px] xxl:text-[20px];
+  }
+  .h6 {
+    @apply text-[14px] leading-[130%] xxl:text-[16px];
+  }
+  .lead-text {
+    @apply text-[16px] leading-[150%] lg:text-[18px] xl:text-[20px] xxl:text-[24px];
+  }
+  .xl-text {
+    @apply text-[16px] leading-[150%] lg:text-[18px] xxl:text-[20px];
+  }
+  .l-text {
+    @apply text-[16px] leading-[150%] xxl:text-[18px];
+  }
+  .m-text {
+    @apply text-[16px] leading-[150%];
+  }
+  .s-text {
+    @apply text-[14px] leading-[150%];
+  }
+  .xs-text {
+    @apply text-[12px] leading-[150%];
+  }
+
+  /*================ typography classes end ================ */
+
+  /*================ padding classes start ================ */
+  .spy120px {
+    @apply py-15 md:py-20 xl:py-24 xxl:py-30;
+  }
+  .spt120px {
+    @apply pt-15 md:pt-20 xl:pt-24 xxl:pt-30;
+  }
+  .spb120px {
+    @apply pb-15 md:pb-20 xl:pb-24 xxl:pb-30;
+  }
+  .sp100px {
+    @apply p-14 md:p-16 xl:p-20 xxl:p-25;
+  }
+  .spt100px {
+    @apply pt-14 md:pt-16 xl:pt-20 xxl:pt-25;
+  }
+  .spy100px {
+    @apply py-14 md:py-16 xl:py-20 xxl:py-25;
+  }
+  .spl100px {
+    @apply pl-14 md:pl-16 xl:pl-20 xxl:pl-25;
+  }
+  .spr100px {
+    @apply pr-14 md:pr-16 xl:pr-20 xxl:pr-25;
+  }
+  .sp80px {
+    @apply p-10 md:p-12 xl:p-16 xxl:p-20;
+  }
+  .spt80px {
+    @apply pt-10 md:pt-12 xl:pt-16 xxl:pt-20;
+  }
+  .spb80px {
+    @apply pb-10 md:pb-12 xl:pb-16 xxl:pb-20;
+  }
+  .spl80px {
+    @apply ps-10 md:ps-12 xl:ps-16 xxl:ps-20;
+  }
+  .spr80px {
+    @apply pe-10 md:pr-12 xl:pr-16 xxl:pr-20;
+  }
+  .spy80px {
+    @apply py-10 md:py-12 xl:py-16 xxl:py-20;
+  }
+  .sp60px {
+    @apply p-8 md:p-10 xl:p-12 xxl:p-15;
+  }
+  .spy60px {
+    @apply py-8 md:py-10 xl:py-12 xxl:py-15;
+  }
+  .spx60px {
+    @apply px-8 md:px-10 xl:px-12 xxl:px-15;
+  }
+  .spt60px {
+    @apply pt-8 md:pt-10 xl:pt-12 xxl:pt-15;
+  }
+  .spb60px {
+    @apply pb-8 md:pb-10 xl:pb-12 xxl:pb-15;
+  }
+  .spl60px {
+    @apply ps-8 md:ps-10 xl:ps-12 xxl:ps-15;
+  }
+  .spr60px {
+    @apply pr-8 md:pr-10 xl:pr-12 xxl:pr-15;
+  }
+  .sp48px {
+    @apply p-6 md:p-8 xl:p-10 xxl:p-12;
+  }
+  .spx48px {
+    @apply px-6 md:px-8 xl:px-10 xxl:px-12;
+  }
+  .spy48px {
+    @apply py-6 md:py-8 xl:py-10 xxl:py-12;
+  }
+  .spt48px {
+    @apply pt-6 md:pt-8 xl:pt-10 xxl:pt-12;
+  }
+  .spb48px {
+    @apply pb-6 md:pb-8 xl:pb-10 xxl:pb-12;
+  }
+  .spl48px {
+    @apply pl-6 md:pl-8 xl:pl-10 xxl:pl-12;
+  }
+  .spr48px {
+    @apply pr-6 md:pr-8 xl:pr-10 xxl:pr-12;
+  }
+  .sp40px {
+    @apply p-5 md:p-6 xl:p-8 xxl:p-10;
+  }
+  .spx40px {
+    @apply px-5 md:px-6 xl:px-8 xxl:px-10;
+  }
+  .spy40px {
+    @apply py-5 md:py-6 xl:py-8 xxl:py-10;
+  }
+  .spt40px {
+    @apply pt-5 md:pt-6 xl:pt-8 xxl:pt-10;
+  }
+  .spb40px {
+    @apply pb-5 md:pb-6 xl:pb-8 xxl:pb-10;
+  }
+  .spl40px {
+    @apply ps-5 md:ps-6 xl:ps-8 xxl:ps-10;
+  }
+  .spr40px {
+    @apply pr-5 md:pr-6 xl:pr-8 xxl:pr-10;
+  }
+  .spl36px {
+    @apply pl-4 md:pl-5 xl:pl-7 xxl:pl-9;
+  }
+  .spr36px {
+    @apply pr-4 md:pr-5 xl:pr-7 xxl:pr-9;
+  }
+  .spt36px {
+    @apply pt-4 md:pt-5 xl:pt-7 xxl:pt-9;
+  }
+  .spb36px {
+    @apply pb-4 md:pb-5 xl:pb-7 xxl:pb-9;
+  }
+  .spx36px {
+    @apply px-4 md:px-5 xl:px-7 xxl:px-9;
+  }
+  .spy36px {
+    @apply py-4 md:py-5 xl:py-7 xxl:py-9;
+  }
+  .sp32px {
+    @apply p-4 md:p-5 xl:p-6 xxl:p-8;
+  }
+  .spy32px {
+    @apply py-4 md:py-5 xl:py-6 xxl:py-8;
+  }
+  .spx32px {
+    @apply px-4 md:px-5 xl:px-6 xxl:px-8;
+  }
+  .spt32px {
+    @apply pt-4 md:pt-5 xl:pt-6 xxl:pt-8;
+  }
+  .spb32px {
+    @apply pb-4 md:pb-5 xl:pb-6 xxl:pb-8;
+  }
+  .spl32px {
+    @apply ps-4 md:ps-5 xl:ps-6 xxl:ps-8;
+  }
+  .spr32px {
+    @apply pr-4 md:pr-5 xl:pr-6 xxl:pr-8;
+  }
+  .sp24px {
+    @apply p-3 md:p-4 xl:p-5 xxl:p-6;
+  }
+  .spx24px {
+    @apply px-3 md:px-4 xl:px-5 xxl:px-6;
+  }
+  .spy24px {
+    @apply py-3 md:py-4 xl:py-5 xxl:py-6;
+  }
+  .spx24px {
+    @apply px-3 md:px-4 xl:px-5 xxl:px-6;
+  }
+  .spy24px {
+    @apply py-3 md:py-4 xl:py-5 xxl:py-6;
+  }
+  .spt24px {
+    @apply pt-3 md:pt-4 xl:pt-5 xxl:pt-6;
+  }
+  .spb24px {
+    @apply pb-3 md:pb-4 xl:pb-5 xxl:pb-6;
+  }
+  .spl24px {
+    @apply ps-3 md:ps-4 xl:ps-5 xxl:ps-6;
+  }
+  .spr24px {
+    @apply pr-3 md:pr-4 xl:pr-5 xxl:pr-6;
+  }
+  .sp12px {
+    @apply p-2 lg:p-2.5 xl:p-3;
+  }
+  .spx12px {
+    @apply px-2 lg:px-2.5 xl:px-3;
+  }
+  .spy12px {
+    @apply py-2 lg:py-2.5 xl:py-3;
+  }
+  .spt12px {
+    @apply pt-2 lg:pt-2.5 xl:pt-3;
+  }
+  .spb12px {
+    @apply pb-2 lg:pb-2.5 xl:pb-3;
+  }
+  .spl12px {
+    @apply ps-2 lg:ps-2.5 xl:ps-3;
+  }
+  .spr12px {
+    @apply pr-2 lg:pr-2.5 xl:pr-3;
+  }
+
+  /*================ padding classes end ================ */
+
+  /*================ margin classes start ================ */
+  .smt120px {
+    @apply mt-15 md:mt-20 xl:mt-24 xxl:mt-30;
+  }
+  .smb120px {
+    @apply mb-15 md:mb-20 xl:mb-24 xxl:mb-30;
+  }
+  .sm60px {
+    @apply m-8 md:m-10 xl:m-12 xxl:m-15;
+  }
+  .smy60px {
+    @apply my-8 md:my-10 xl:my-12 xxl:my-15;
+  }
+  .smt60px {
+    @apply mt-8 md:mt-10 xl:mt-12 xxl:mt-15;
+  }
+  .smb60px {
+    @apply mb-8 md:mb-10 xl:mb-12 xxl:mb-15;
+  }
+  .sml60px {
+    @apply ms-8 md:ms-10 xl:ms-12 xxl:ms-15;
+  }
+  .smr60px {
+    @apply mr-8 md:mr-10 xl:mr-12 xxl:mr-15;
+  }
+  .sm40px {
+    @apply m-5 md:m-6 xl:m-8 xxl:m-10;
+  }
+  .smt40px {
+    @apply mt-5 md:mt-6 xl:mt-8 xxl:mt-10;
+  }
+  .smb40px {
+    @apply mb-5 md:mb-6 xl:mb-8 xxl:mb-10;
+  }
+  .sml40px {
+    @apply ms-5 md:ms-6 xl:ms-8 xxl:ms-10;
+  }
+  .smr40px {
+    @apply mr-5 md:mr-6 xl:mr-8 xxl:mr-10;
+  }
+  .sm32px {
+    @apply m-4 md:m-5 xl:m-6 xxl:m-8;
+  }
+  .smx32px {
+    @apply mx-4 md:mx-5 xl:mx-6 xxl:mx-8;
+  }
+  .smt32px {
+    @apply mt-4 md:mt-5 xl:mt-6 xxl:mt-8;
+  }
+  .smb32px {
+    @apply mb-4 md:mb-5 xl:mb-6 xxl:mb-8;
+  }
+  .sml32px {
+    @apply ms-4 md:ms-5 xl:ms-6 xxl:ms-8;
+  }
+  .smr32px {
+    @apply mr-4 md:mr-5 xl:mr-6 xxl:mr-8;
+  }
+  .sm24px {
+    @apply m-3 md:m-4 xl:m-5 xxl:m-6;
+  }
+  .smt24px {
+    @apply mt-3 md:mt-4 xl:mt-5 xxl:mt-6;
+  }
+  .smb24px {
+    @apply mb-3 md:mb-4 xl:mb-5 xxl:mb-6;
+  }
+  .sml24px {
+    @apply ms-3 md:ms-4 xl:ms-5 xxl:ms-6;
+  }
+  .smr24px {
+    @apply mr-3 md:mr-4 xl:mr-5 xxl:mr-6;
+  }
+
+  .transition-primary {
+    @apply transition-all duration-300;
+  }
+
+  /*================ margin classes end ================ */
+}
+
+/*================ scroll bar style start ================ */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #343839;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #005655;
+}
+
+.cart-scrollbar::-webkit-scrollbar {
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #005655;
+  border-radius: 10px;
+  width: 2px;
+}

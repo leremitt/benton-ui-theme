@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Pricing-Car Repairing Service Template</title>
+  </head>
+
+  <body class="bg-neutral-3 text-neutral-1">
+    <main>
+      <!-- ============ header section ============ -->
+      <include-Header />
+      <!-- ============ Breadcrumb ============ -->
+      <div class="container">
+        <div class="bg-neutral-4 sp60px border rounded-xl border-neutral-2/15">
+          <p class="h2 font-bold text-center">Pricing Plan</p>
+          <div class="flex items-center justify-center pt-3 l-text gap-3">
+            <a href="/">Home</a>
+            <i class="ph ph-caret-double-right text-primary"></i>
+            <a href="./about.html" class="text-primary">Pricing Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- ============ Pricing Plan ============ -->
+      <div class="spt60px container spb120px">
+        <div class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:sp40px rounded-xl lg:grid grid-cols-12 gap-6">
+          <h2 class="h2 font-bold col-span-6">Choose from our range of services.</h2>
+          <div class="col-start-8 col-span-5 max-xl:smt40px">
+            <p class="l-text opacity-80">The experts at Crafter Complete Auto Care have years of experience in a range of auto repair services.</p>
+            <div class="spt32px flex items-center gap-6">
+              <button id="monthly" class="py-2 px-6 border border-neutral-2/40 l-text hover:bg-primary hover:text-neutral-3 duration-300 font-medium">Monthly</button>
+              <button id="yearly" class="py-2 px-6 border border-neutral-2/40 l-text hover:bg-primary hover:text-neutral-3 duration-300 font-medium">Yearly</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="spt60px grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- pricing card -->
+          <div class="border border-neutral-2/20 sp40px h-fit">
+            <h3 class="h4 font-bold">Basic Services</h3>
+            <p class="flex pt-4"><span class="h1 font-bold text-primary" id="basic-services">$11.99</span><span class="xl-text text-primary self-end mb-1">/ hour</span></p>
+            <p class="m-text opacity-80 pt-5">Our entry-level package includes a thorough exterior wash, wheel cleaning, and a fresh coat of wax to protect.</p>
+            <ul class="border-b border-t smt40px smb40px flex flex-col gap-4 list-decimal border-neutral-2/40 py-5">
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+            </ul>
+            <button class="spx32px py-3 border border-neutral-2/40 l-text w-full hover:bg-primary hover:text-neutral-3 duration-300">Add To Cart</button>
+          </div>
+          <!-- pricing card -->
+          <div class="border border-neutral-2/20 sp40px h-fit bg-[#141414B2]/70">
+            <h3 class="h4 font-bold">Standard Wash</h3>
+            <p class="flex pt-4"><span class="h1 font-bold text-primary" id="standard-wash">$15.99</span><span class="xl-text text-primary self-end mb-1">/ hour</span></p>
+            <p class="m-text opacity-80 pt-5">Our entry-level package includes a thorough exterior wash, wheel cleaning, and a fresh coat of wax to protect.</p>
+            <ul class="border-b border-t smt40px smb40px flex flex-col gap-4 list-decimal border-neutral-2/40 py-5">
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Deluxe Wash package</li>
+              <li class="list-inside l-text">Deep cleaning of interior surfaces</li>
+            </ul>
+            <button class="spx32px py-3 border border-neutral-2/40 l-text w-full hover:bg-primary hover:text-neutral-3 duration-300">Add To Cart</button>
+          </div>
+          <!-- pricing card -->
+          <div class="border border-neutral-2/20 sp40px">
+            <h3 class="h4 font-bold">Deluxe Wash</h3>
+            <p class="flex pt-4"><span class="h1 font-bold text-primary" id="deluxe-wash">$20.99</span><span class="xl-text text-primary self-end mb-1">/ hour</span></p>
+            <p class="m-text opacity-80 pt-5">Our entry-level package includes a thorough exterior wash, wheel cleaning, and a fresh coat of wax to protect.</p>
+            <ul class="border-b border-t smt40px smb40px flex flex-col gap-4 list-decimal border-neutral-2/40 py-5">
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Exterior hand wash and dry</li>
+              <li class="list-inside l-text">Deluxe Wash package</li>
+              <li class="list-inside l-text">Deep cleaning of interior surfaces</li>
+              <li class="list-inside l-text">Machine polishing for paint</li>
+            </ul>
+            <button class="spx32px py-3 border border-neutral-2/40 l-text w-full hover:bg-primary hover:text-neutral-3 duration-300">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========== footer section ============ -->
+      <include-Footer />
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

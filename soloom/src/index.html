@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Soloom - Hair Salon Template</title>
+  </head>
+
+  <body class="bg-black-1 p-4 text-white-1 sm:p-6">
+    <main class="overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+
+      <!-- ============ home hero start ============ -->
+      <section class="mt-6 grid grid-cols-12 items-center gap-6">
+        <div
+          data-aos="fade-up"
+          class="xs:sp80px col-span-12 flex h-full flex-col justify-center rounded-3xl bg-black-2 max-xs:py-10 max-xs:pr-2 max-xs:ps-6 lg:col-span-7"
+        >
+          <h1 class="d3 max-w-[890px] font-extrabold uppercase">
+            WELCOME TO SOLOOM
+          </h1>
+          <p class="lead-text max-w-[776px] pt-4 font-medium">
+            A premium and modern hair salon based in the heart of central
+            London's West End.
+          </p>
+          <div class="btn-area z-20 mt-10 inline-block">
+            <a
+              href="team-details.html"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-6 py-3 font-medium uppercase sm:px-8"
+              >
+                OUR SERVICES
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5">
+          <div class="single-card-slider relative overflow-hidden rounded-3xl">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                class="swiper-slide relative flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/home-slider-1.png"
+                  alt=""
+                  class="rounded-3xl"
+                />
+                <h3
+                  class="d4 absolute bottom-10 text-center font-extrabold xs:bottom-20 max-w-[441px] mx-auto"
+                >
+                  Cutting-edge creations
+                </h3>
+              </div>
+              <div
+                class="swiper-slide relative flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/home-slider-2.png"
+                  alt=""
+                  class="rounded-3xl"
+                />
+                <h3
+                  class="d4 absolute bottom-10 text-center font-extrabold xs:bottom-20 max-w-[441px] mx-auto"
+                >
+                  Cutting-edge creations
+                </h3>
+              </div>
+              <div
+                class="swiper-slide relative flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/home-slider-3.png"
+                  alt=""
+                  class="rounded-3xl"
+                />
+                <h3
+                  class="d4 absolute bottom-10 text-center font-extrabold xs:bottom-20 max-w-[441px] mx-auto"
+                >
+                  Cutting-edge creations
+                </h3>
+              </div>
+              <div
+                class="swiper-slide relative flex items-center justify-center"
+              >
+                <img
+                  src="./assets/images/home-slider-4.png"
+                  alt=""
+                  class="rounded-3xl"
+                />
+                <h3
+                  class="d4 absolute bottom-10 text-center font-extrabold xs:bottom-20 max-w-[441px] mx-auto"
+                >
+                  Cutting-edge creations
+                </h3>
+              </div>
+            </div>
+            <div
+              class="absolute bottom-16 left-1/2 flex items-center justify-center xs:bottom-20"
+            >
+              <div
+                class="swiper-pagination !left-1/2 !top-10 !flex !w-fit -translate-x-1/2 !items-center justify-center !gap-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ home hero end ============ -->
+
+      <!-- ============ our services start ============ -->
+      <section class="spy120px grid grid-cols-12 gap-5 lg:gap-6">
+        <div
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+          class="service-bg col-span-12 flex flex-col justify-center rounded-3xl bg-cover bg-no-repeat md:col-span-6"
+        >
+          <div class="spl40px spy80px">
+            <h3 class="h1 font-extrabold uppercase">OUR SERVICES</h3>
+            <p class="l-text l-text max-w-[555px] pt-6 font-medium">
+              Discover our hair salon's exquisite services, from precision cuts
+              stunning color transformations. Elevate your style with the
+              expertise of our skilled stylists.
+            </p>
+            <div class="btn-area spt40px right-0 z-20 inline-block">
+              <a
+                href="#"
+                aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+              >
+                <span
+                  class="one m-text theme-transition-4 rounded-2xl bg-primary px-6 py-3 font-medium uppercase sm:px-8"
+                >
+                  VIEW ALL SERVICES
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                >
+                  <i
+                    class="ph ph-arrow-up-right text-[24px]"
+                    data-icon-name="arrow-right"
+                  ></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 grid grid-cols-12 gap-5 md:col-span-6 lg:gap-6">
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="sp40px group theme-transition-3 col-span-12 flex flex-col justify-between gap-15 rounded-3xl bg-black-3 hover:bg-primary 3xl:col-span-6"
+          >
+            <div>
+              <h4 class="h3 font-extrabold">Straight Razor Shaver</h4>
+              <p class="spt24px l-text font-medium">
+                Experience precision and luxury with straight razor shaving
+                service, ensuring a smooth grooming experience every time.
+              </p>
+            </div>
+            <div class="flex justify-between gap-6">
+              <p class="l-text font-medium">View Details</p>
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-15 items-center justify-center rounded-2xl bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="sp40px group theme-transition-3 col-span-12 flex flex-col justify-between gap-15 rounded-3xl bg-black-3 hover:bg-primary 3xl:col-span-6"
+          >
+            <div>
+              <h4 class="h3 font-extrabold">Beard Trim Add-on</h4>
+              <p class="spt24px l-text font-medium">
+                Experience precision and luxury with straight razor shaving
+                service, ensuring a smooth grooming experience every time.
+              </p>
+            </div>
+            <div class="flex justify-between gap-6">
+              <p class="l-text font-medium">View Details</p>
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-15 items-center justify-center rounded-2xl bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="sp40px group theme-transition-3 col-span-12 flex flex-col justify-between gap-15 rounded-3xl bg-black-3 hover:bg-primary"
+          >
+            <div>
+              <h4 class="h3 font-extrabold">Haircut and Shave</h4>
+              <p class="spt24px l-text font-medium">
+                Experience precision and luxury with straight razor shaving
+                service, ensuring a smooth grooming experience every time.
+              </p>
+            </div>
+            <div class="flex justify-between gap-6">
+              <p class="l-text font-medium">View Details</p>
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-15 items-center justify-center rounded-2xl bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ our services end ============ -->
+      <!-- ============ moving text start ============ -->
+      <section class="relative">
+        <div class="marquee-section overflow-hidden">
+          <div
+            class="marquee-wrap flex w-full items-center justify-center gap-6"
+          >
+            <div class="marquee-content flex">
+              <a
+                class="display-ex-one d1 font flex items-center justify-center gap-6 font-extrabold"
+                href="#"
+              >
+                <span
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase"
+                  data-hover="HOW IT"
+                >
+                  HOW IT
+                </span>
+                <p
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase text-white-1/60"
+                >
+                  WORKS
+                </p>
+              </a>
+            </div>
+            <div class="marquee-content flex">
+              <a
+                class="display-ex-one d1 font flex items-center justify-center gap-6 font-extrabold"
+                href="#"
+              >
+                <span
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase"
+                  data-hover="HOW IT"
+                >
+                  HOW IT
+                </span>
+                <p
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase text-white-1/60"
+                >
+                  WORKS
+                </p>
+              </a>
+            </div>
+            <div class="marquee-content flex">
+              <a
+                class="display-ex-one d1 font flex items-center justify-center gap-6 font-extrabold"
+                href="#"
+              >
+                <span
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase"
+                  data-hover="HOW IT"
+                >
+                  HOW IT
+                </span>
+                <p
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase text-white-1/60"
+                >
+                  WORKS
+                </p>
+              </a>
+            </div>
+            <div class="marquee-content flex">
+              <a
+                class="display-ex-one d1 font flex items-center justify-center gap-6 font-extrabold"
+                href="#"
+              >
+                <span
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase"
+                  data-hover="HOW IT"
+                >
+                  HOW IT
+                </span>
+                <p
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase text-white-1/60"
+                >
+                  WORKS
+                </p>
+              </a>
+            </div>
+            <div class="marquee-content flex">
+              <a
+                class="display-ex-one d1 font flex items-center justify-center gap-6 font-extrabold"
+                href="#"
+              >
+                <span
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase"
+                  data-hover="HOW IT"
+                >
+                  HOW IT
+                </span>
+                <p
+                  class="display-ex-one d1 font relative whitespace-nowrap font-extrabold uppercase text-white-1/60"
+                >
+                  WORKS
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ moving text end ============ -->
+      <!-- ============ service card start ============ -->
+      <section class="spt60px">
+        <div class="flex flex-wrap justify-center gap-6">
+          <!-- card one -->
+          <div
+            class="group theme-transition-3 relative block h-80 overflow-hidden rounded-3xl bg-primary max-xxl:max-w-[436px] lg:h-[483px] xxl:w-[292px] xxl:bg-black-2 xxl:hover:w-[436px] xxl:hover:bg-primary"
+          >
+            <div
+              class="sp40px relative z-0 flex h-full flex-col justify-between duration-500 group-hover:z-20 group-hover:translate-x-0 group-hover:opacity-100 xxl:w-[436px] xxl:-translate-x-full xxl:opacity-0"
+            >
+              <div>
+                <p class="h6 font-bold">/01</p>
+                <h3 class="h2 mt-6 font-extrabold">Book Appointment</h3>
+                <p class="l-text spt40px font-medium">
+                  Easily schedule your salon visit online with just a few
+                  clicks.
+                </p>
+              </div>
+              <a href="our-services.html" class="place-self-end text-[40px]"
+                ><i class="ph ph-arrow-up-right"></i
+              ></a>
+            </div>
+            <div class="absolute inset-0 max-xxl:hidden">
+              <div
+                class="visible relative z-20 flex justify-between duration-500 group-hover:invisible group-hover:-z-10"
+              >
+                <h5
+                  class="font-primary h6 text-nowrap p-8 font-bold text-secondary"
+                >
+                  /0
+                </h5>
+                <h2
+                  class="-mr-25 text-[460px] font-extrabold uppercase leading-[120%] text-primary/10 duration-500"
+                >
+                  1
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- card two -->
+          <div
+            class="group theme-transition-3 relative block h-80 overflow-hidden rounded-3xl bg-primary max-xxl:max-w-[436px] lg:h-[483px] xxl:w-[292px] xxl:bg-black-2 xxl:hover:w-[436px] xxl:hover:bg-primary"
+          >
+            <div
+              class="sp40px relative z-0 flex h-full flex-col justify-between duration-500 group-hover:z-20 group-hover:translate-x-0 group-hover:opacity-100 xxl:w-[436px] xxl:-translate-x-full xxl:opacity-0"
+            >
+              <div>
+                <p class="h6 font-bold">/02</p>
+                <h3 class="h2 mt-6 font-extrabold">Meet Stylists</h3>
+                <p class="l-text spt40px font-medium">
+                  Get acquainted with our talented team of experienced
+                  hairstylists and beauty experts.
+                </p>
+              </div>
+              <a href="our-services.html" class="place-self-end text-[40px]"
+                ><i class="ph ph-arrow-up-right"></i
+              ></a>
+            </div>
+            <div class="absolute inset-0 max-xxl:hidden">
+              <div
+                class="visible relative z-20 flex justify-between duration-500 group-hover:invisible group-hover:-z-10"
+              >
+                <h5
+                  class="font-primary h6 text-nowrap p-8 font-bold text-secondary"
+                >
+                  /0
+                </h5>
+                <h2
+                  class="-mr-25 text-[460px] font-extrabold uppercase leading-[120%] text-primary/10 duration-500"
+                >
+                  2
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- card three -->
+          <div
+            class="group theme-transition-3 relative block h-80 overflow-hidden rounded-3xl bg-primary max-xxl:max-w-[436px] lg:h-[483px] xxl:w-[292px] xxl:bg-black-2 xxl:hover:w-[436px] xxl:hover:bg-primary"
+          >
+            <div
+              class="sp40px relative z-0 flex h-full flex-col justify-between duration-500 group-hover:z-20 group-hover:translate-x-0 group-hover:opacity-100 xxl:w-[436px] xxl:-translate-x-full xxl:opacity-0"
+            >
+              <div>
+                <p class="h6 font-bold">/03</p>
+                <h3 class="h2 mt-6 font-extrabold">Browse Services</h3>
+                <p class="l-text spt40px font-medium">
+                  Explore our range of hair, beauty, and wellness offerings
+                  tailored to your needs.
+                </p>
+              </div>
+              <a href="our-services.html" class="place-self-end text-[40px]"
+                ><i class="ph ph-arrow-up-right"></i
+              ></a>
+            </div>
+            <div class="absolute inset-0 max-xxl:hidden">
+              <div
+                class="visible relative z-20 flex justify-between duration-500 group-hover:invisible group-hover:-z-10"
+              >
+                <h5
+                  class="font-primary h6 text-nowrap p-8 font-bold text-secondary"
+                >
+                  /0
+                </h5>
+                <h2
+                  class="-mr-25 text-[460px] font-extrabold uppercase leading-[120%] text-primary/10 duration-500"
+                >
+                  3
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- card four -->
+          <div
+            class="group theme-transition-3 relative block h-80 overflow-hidden rounded-3xl bg-primary max-xxl:max-w-[436px] lg:h-[483px] xxl:w-[292px] xxl:bg-black-2 xxl:hover:w-[436px] xxl:hover:bg-primary"
+          >
+            <div
+              class="sp40px relative z-0 flex h-full flex-col justify-between duration-500 group-hover:z-20 group-hover:translate-x-0 group-hover:opacity-100 xxl:w-[436px] xxl:-translate-x-full xxl:opacity-0"
+            >
+              <div>
+                <p class="h6 font-bold">/04</p>
+                <h3 class="h2 mt-6 font-extrabold">Enjoy Results</h3>
+                <p class="l-text spt40px font-medium">
+                  Explore our range of hair, beauty, and wellness offerings
+                  tailored to your needs.
+                </p>
+              </div>
+              <a href="our-services.html" class="place-self-end text-[40px]"
+                ><i class="ph ph-arrow-up-right"></i
+              ></a>
+            </div>
+            <div class="absolute inset-0 max-xxl:hidden">
+              <div
+                class="visible relative z-20 flex justify-between duration-500 group-hover:invisible group-hover:-z-10"
+              >
+                <h5
+                  class="font-primary h6 text-nowrap p-8 font-bold text-secondary"
+                >
+                  /0
+                </h5>
+                <h2
+                  class="-mr-25 text-[460px] font-extrabold uppercase leading-[120%] text-primary/10 duration-500"
+                >
+                  4
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ service card end ============ -->
+      <!-- ============ our stylists start ============ -->
+      <section class="spt120px">
+        <div
+          class="flex items-center justify-between max-md:flex-wrap max-sm:gap-6"
+        >
+          <h3 class="d4 font-extrabold uppercase">OUR STYLISTS</h3>
+          <div class="btn-area z-20 inline-block">
+            <a
+              href="team-details.html"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-6 py-3 font-medium uppercase sm:px-8"
+              >
+                EXPLORE OUR STYLISTS
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="spt60px grid grid-cols-12 gap-5 lg:gap-6">
+          <!-- stylists card one -->
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            class="sp40px group col-span-12 rounded-3xl border border-black-2 md:col-span-6 xl:col-span-4 3xl:col-span-3"
+          >
+            <div
+              class="spb32px group relative flex flex-col gap-6 rounded-2xl bg-black-3"
+            >
+              <div
+                class="absolute inset-0 top-0 -z-10 rounded-2xl bg-secondary duration-500 group-hover:-translate-x-3 group-hover:translate-y-3"
+              ></div>
+              <div>
+                <img
+                  src="./assets/images/stylists-1.png"
+                  alt="stylist image one"
+                  class="w-full rounded-tl-2xl rounded-tr-2xl"
+                />
+              </div>
+              <div class="px-6">
+                <a href="team-details.html" class="h4 font-extrabold">
+                  Bessie Cooper
+                </a>
+                <p class="m-text pt-1 text-white-3">Fade Specialist</p>
+                <div class="spt32px flex justify-between gap-6">
+                  <div>
+                    <p class="h4 font-extrabold text-secondary">200+</p>
+                    <p class="m-text font-medium text-white-3">
+                      Customer Served
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <p class="h4 font-extrabold text-secondary">5+Yrs</p>
+                    <p class="m-text font-medium text-white-3">Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- stylists card two -->
+          <div
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            class="sp40px group col-span-12 rounded-3xl border border-black-2 md:col-span-6 xl:col-span-4 3xl:col-span-3"
+          >
+            <div
+              class="spb32px group relative flex flex-col gap-6 rounded-2xl bg-black-3"
+            >
+              <div
+                class="absolute inset-0 top-0 -z-10 rounded-2xl bg-secondary duration-500 group-hover:-translate-x-3 group-hover:translate-y-3"
+              ></div>
+              <div>
+                <img
+                  src="./assets/images/stylists-2.png"
+                  alt="stylist image one"
+                  class="w-full rounded-tl-2xl rounded-tr-2xl"
+                />
+              </div>
+              <div class="px-6">
+                <a href="team-details.html" class="h4 font-extrabold">
+                  Savannah Nguyen
+                </a>
+                <p class="m-text pt-1 text-white-3">Grooming Expert</p>
+                <div class="spt32px flex justify-between gap-6">
+                  <div>
+                    <p class="h4 font-extrabold text-secondary">200+</p>
+                    <p class="m-text font-medium text-white-3">
+                      Customer Served
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <p class="h4 font-extrabold text-secondary">5+Yrs</p>
+                    <p class="m-text font-medium text-white-3">Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- stylists card three -->
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            class="sp40px group col-span-12 rounded-3xl border border-black-2 md:col-span-6 xl:col-span-4 3xl:col-span-3"
+          >
+            <div
+              class="spb32px group relative flex flex-col gap-6 rounded-2xl bg-black-3"
+            >
+              <div
+                class="absolute inset-0 top-0 -z-10 rounded-2xl bg-secondary duration-500 group-hover:-translate-x-3 group-hover:translate-y-3"
+              ></div>
+              <div>
+                <img
+                  src="./assets/images/stylists-3.png"
+                  alt="stylist image one"
+                  class="w-full rounded-tl-2xl rounded-tr-2xl"
+                />
+              </div>
+              <div class="px-6">
+                <a href="team-details.html" class="h4 font-extrabold">
+                  Brooklyn Simmons
+                </a>
+                <p class="m-text pt-1 text-white-3">Fade Specialist</p>
+                <div class="spt32px flex justify-between gap-6">
+                  <div>
+                    <p class="h4 font-extrabold text-secondary">200+</p>
+                    <p class="m-text font-medium text-white-3">
+                      Customer Served
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <p class="h4 font-extrabold text-secondary">5+Yrs</p>
+                    <p class="m-text font-medium text-white-3">Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- stylists card four -->
+          <div
+            data-aos="fade-down"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1000"
+            class="sp40px group col-span-12 rounded-3xl border border-black-2 md:col-span-6 xl:col-span-4 3xl:col-span-3"
+          >
+            <div
+              class="spb32px group relative flex flex-col gap-6 rounded-2xl bg-black-3"
+            >
+              <div
+                class="absolute inset-0 top-0 -z-10 rounded-2xl bg-secondary duration-500 group-hover:-translate-x-3 group-hover:translate-y-3"
+              ></div>
+              <div>
+                <img
+                  src="./assets/images/stylists-4.png"
+                  alt="stylist image one"
+                  class="w-full rounded-tl-2xl rounded-tr-2xl"
+                />
+              </div>
+              <div class="px-6">
+                <a href="team-details.html" class="h4 font-extrabold">
+                  Dianne Russell
+                </a>
+                <p class="m-text pt-1 text-white-3">Fade Specialist</p>
+                <div class="spt32px flex justify-between gap-6">
+                  <div>
+                    <p class="h4 font-extrabold text-secondary">200+</p>
+                    <p class="m-text font-medium text-white-3">
+                      Customer Served
+                    </p>
+                  </div>
+                  <div class="text-right">
+                    <p class="h4 font-extrabold text-secondary">5+Yrs</p>
+                    <p class="m-text font-medium text-white-3">Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ our stylists end ============ -->
+      <!-- ============ testimonials start ============ -->
+      <section class="spy120px">
+        <div
+          class="xs:sp40px grid grid-cols-12 gap-4 rounded-3xl border-black-2 xs:border"
+        >
+          <div
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1200"
+            class="spl60px spy80px col-span-12 flex flex-col justify-center rounded-3xl bg-black-3 xl:col-span-5 4xl:col-span-4"
+          >
+            <h6 class="h6 font-bold uppercase">TESTIMONIALS</h6>
+            <h3 class="d4 mt-6 font-extrabold uppercase">
+              HEAR FROM CUSTOMERS
+            </h3>
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1200"
+            class="xs:sp60px relative col-span-12 rounded-3xl bg-black-3 max-xs:px-4 max-xs:py-8 xl:col-span-7 4xl:col-span-8"
+          >
+            <div class="single-card-slider relative overflow-hidden">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-1 text-secondary">
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                  </div>
+                  <p class="lead-text spt40px text-white-3">
+                    I can't say enough about my wonderful experience at
+                    Hairloom.
+                  </p>
+                  <p class="lead-text spt40px text-white-3">
+                    From the moment I walked in, the welcoming atmosphere set
+                    the tone for a truly enjoyable visit. The skilled staff
+                    provided expert advice and personalized service, ensuring I
+                    left with a stunning haircut that surpassed my expectations.
+                    Hairloom is the epitome of excellence in hair care.
+                    “Recommended”
+                  </p>
+                  <div
+                    class="spt60px flex w-full justify-between max-sm:flex-col sm:items-center"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <img
+                          src="./assets/images/testimonial-1.png"
+                          alt="slider testimonial image"
+                          class="rounded-full"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="h4 font-extrabold">Savannah Nguyen</h4>
+                        <p class="m-text pt-1 text-white-3">Grooming Expert</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-1 text-secondary">
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                  </div>
+                  <p class="lead-text spt40px text-white-3">
+                    I can't say enough about my wonderful experience at
+                    Hairloom.
+                  </p>
+                  <p class="lead-text spt40px text-white-3">
+                    From the moment I walked in, the welcoming atmosphere set
+                    the tone for a truly enjoyable visit. The skilled staff
+                    provided expert advice and personalized service, ensuring I
+                    left with a stunning haircut that surpassed my expectations.
+                    Hairloom is the epitome of excellence in hair care.
+                    “Recommended”
+                  </p>
+                  <div
+                    class="spt60px flex w-full justify-between max-sm:flex-col sm:items-center"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <img
+                          src="./assets/images/testimonial-1.png"
+                          alt="slider testimonial image"
+                          class="rounded-full"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="h4 font-extrabold">Savannah Nguyen</h4>
+                        <p class="m-text pt-1 text-white-3">Grooming Expert</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-1 text-secondary">
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                  </div>
+                  <p class="lead-text spt40px text-white-3">
+                    I can't say enough about my wonderful experience at
+                    Hairloom.
+                  </p>
+                  <p class="lead-text spt40px text-white-3">
+                    From the moment I walked in, the welcoming atmosphere set
+                    the tone for a truly enjoyable visit. The skilled staff
+                    provided expert advice and personalized service, ensuring I
+                    left with a stunning haircut that surpassed my expectations.
+                    Hairloom is the epitome of excellence in hair care.
+                    “Recommended”
+                  </p>
+                  <div
+                    class="spt60px flex w-full justify-between max-sm:flex-col sm:items-center"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <img
+                          src="./assets/images/testimonial-1.png"
+                          alt="slider testimonial image"
+                          class="rounded-full"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="h4 font-extrabold">Savannah Nguyen</h4>
+                        <p class="m-text pt-1 text-white-3">Grooming Expert</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="flex items-center gap-1 text-secondary">
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                    <i class="ph-fill ph-star text-[24px]"></i>
+                  </div>
+                  <p class="lead-text spt40px text-white-3">
+                    I can't say enough about my wonderful experience at
+                    Hairloom.
+                  </p>
+                  <p class="lead-text spt40px text-white-3">
+                    From the moment I walked in, the welcoming atmosphere set
+                    the tone for a truly enjoyable visit. The skilled staff
+                    provided expert advice and personalized service, ensuring I
+                    left with a stunning haircut that surpassed my expectations.
+                    Hairloom is the epitome of excellence in hair care.
+                    “Recommended”
+                  </p>
+                  <div
+                    class="spt60px flex w-full justify-between max-sm:flex-col sm:items-center"
+                  >
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <img
+                          src="./assets/images/testimonial-1.png"
+                          alt="slider testimonial image"
+                          class="rounded-full"
+                        />
+                      </div>
+                      <div>
+                        <h4 class="h4 font-extrabold">Savannah Nguyen</h4>
+                        <p class="m-text pt-1 text-white-3">Grooming Expert</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============ testimonials end ============ -->
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

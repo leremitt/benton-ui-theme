@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="boot, tailwindss, Eventto HTML Template">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  
+    <title>Eventto - HTML Tailwindcss Online Development Boot Camp</title>
+</head>
+
+<body>
+    <header class="container my-6 cmnhed">
+      <include-headnav />
+    </header>
+    <section class="my-6">
+        <div class="container">
+            <div class="grid grid-cols-6 gap-6 p-4 bg-at20 sm:p-6 md:p-10 xxl:p-[60px] rounded-3xl">
+                <div class="col-span-full sm:col-span-3 lg:col-span-2">
+                    <div
+                        class="rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 border border-[#B3B6B9] border-opacity-[0.3] text-center">
+                        <span class="px-5 py-4 border border-primary rounded-full inline-block mb-4 lg:mb-6">
+                            <i class="ph-fill ph-phone-call text-[40px] text-primary"></i>
+                        </span>
+                        <h4 class="mb-3">Contact Us</h4>
+                        <span class="text-base mb-5 md:mb-6 text-nw20">Mon-Fri from 8am to 5pm.</span>
+                        <span class="text-nw20">(239) 555-0108</span>
+                    </div>
+                </div>
+                <div class="col-span-full sm:col-span-3 lg:col-span-2">
+                    <div
+                        class="rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 border border-[#B3B6B9] border-opacity-[0.3] text-center">
+                        <span class="px-5 py-4 border border-primary rounded-full inline-block mb-4 lg:mb-6">
+                            <i class="ph-fill ph-map-pin text-[40px] text-primary"></i>
+                        </span>
+                        <h4 class="mb-3">Visit us</h4>
+                        <span class="text-base mb-5 md:mb-6 text-nw20">Visit our office friendly HQ.</span>
+                        <span class="text-nw20">View on Google Maps</span>
+                    </div>
+                </div>
+                <div class="col-span-full sm:col-span-3 lg:col-span-2">
+                    <div
+                        class="rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 border border-[#B3B6B9] border-opacity-[0.3] text-center">
+                        <span class="px-5 py-4 border border-primary rounded-full inline-block mb-4 lg:mb-6">
+                            <i class="ph-fill ph-chats text-[40px] text-primary"></i>
+                        </span>
+                        <h4 class="mb-3">Chat to support</h4>
+                        <span class="text-base mb-5 md:mb-6 text-nw20">Speak to our friendly team.</span>
+                        <span class="text-nw20">support@servibe.com</span>
+                    </div>
+                </div>
+                <div
+                    class="col-span-full p-4 sm:p-6 md:p-10 xxl:p-[60px] rounded-3xl border border-[#B3B6B9] border-opacity-[0.3]">
+                    <h3 class="mb-6 md:mb-8 lg:mb-10 xl:mb-[60px] text-center">Get in touch</h3>
+                    <div class="">
+                        <form action="/submit" method="post">
+                            <div class="flex items-center gap-6 lg:mb-6 flex-col lg:flex-row mb-6">
+                                <input class="border border-[#B3B6B9] border-opacity-[0.3]" placeholder="Name" type="text" id="name" name="name">
+                                <input class="border border-[#B3B6B9] border-opacity-[0.3]" placeholder="Email" type="email" id="email" name="email">
+                            </div>
+                            <textarea class="mb-6 border border-[#B3B6B9] border-opacity-[0.3]" placeholder="Message" id="message" name="message" rows="4" cols="50"></textarea><br>
+                            <input class="border-none bg-primary text-base font-bold text-nb10" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-6">
+      <div class="container">
+        <include-footer />
+      </div>
+    </section>
+
+  
+    <script src="./assets/js/plguins.js"></script>
+    <script src="./assets/js/plugin-custom.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

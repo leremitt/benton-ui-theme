@@ -1,0 +1,66 @@
+<section>
+  <!-- Desktop Menu -->
+  <div
+    class="fixed bottom-10 right-0 left-0 flex justify-center items-center w-full max-lg:hidden z-20"
+  >
+    <div
+      class="text-black bg-n4 rounded-xl uppercase flex justify-between items-center max-w-[900px] px-3 py-4 gap-10"
+    >
+      <a href="./index.html" class="flex justify-center items-center gap-2">
+        <img src="./assets/images/fav.png" class="size-8" alt="" />
+        <h4 class="heading-4">drinko</h4>
+      </a>
+
+      <nav>
+        <ul class="flex justify-center items-center gap-8 heading-6">
+          <li><a href="./about-us.html">about</a></li>
+          <li><a href="./menu.html">menu</a></li>
+          <li><a href="./blog.html">blog</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="heading-6">
+        <a
+          href="./book-table.html"
+          class="uppercase border border-black py-3 px-4 rounded-xl"
+        >
+          book a table
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="relative lg:hidden z-20">
+    <button
+      id="mobileModalButton"
+      class="text-3xl text-n4 border border-n4 !leading-none flex justify-center items-center rounded-md p-1 fixed top-10 left-10"
+    >
+      <i class="ph ph-list"></i>
+    </button>
+
+    <div
+      class="modalClose fixed left-8 top-20 w-[200px] origin-top-left rounded-2xl border border-borderColor text-black bg-n4 py-4 duration-500"
+      id="mobileMenuModal"
+    >
+      <ul class="flex flex-col gap-3 pl-4">
+        <li class="">
+          <a href="./about-us.html">About</a>
+        </li>
+        <li class="">
+          <a href="./menu.html">Menu</a>
+        </li>
+        <li class="">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="">
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li class="">
+          <a href="./book-table.html">Book A Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Book A Table - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <section>
+  <!-- Desktop Menu -->
+  <div
+    class="fixed bottom-10 right-0 left-0 flex justify-center items-center w-full max-lg:hidden z-20"
+  >
+    <div
+      class="text-black bg-n4 rounded-xl uppercase flex justify-between items-center max-w-[900px] px-3 py-4 gap-10"
+    >
+      <a href="./index.html" class="flex justify-center items-center gap-2">
+        <img src="./assets/images/fav.png" class="size-8" alt="" />
+        <h4 class="heading-4">drinko</h4>
+      </a>
+
+      <nav>
+        <ul class="flex justify-center items-center gap-8 heading-6">
+          <li><a href="./about-us.html">about</a></li>
+          <li><a href="./menu.html">menu</a></li>
+          <li><a href="./blog.html">blog</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="heading-6">
+        <a
+          href="./book-table.html"
+          class="uppercase border border-black py-3 px-4 rounded-xl"
+        >
+          book a table
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="relative lg:hidden z-20">
+    <button
+      id="mobileModalButton"
+      class="text-3xl text-n4 border border-n4 !leading-none flex justify-center items-center rounded-md p-1 fixed top-10 left-10"
+    >
+      <i class="ph ph-list"></i>
+    </button>
+
+    <div
+      class="modalClose fixed left-8 top-20 w-[200px] origin-top-left rounded-2xl border border-borderColor text-black bg-n4 py-4 duration-500"
+      id="mobileMenuModal"
+    >
+      <ul class="flex flex-col gap-3 pl-4">
+        <li class="">
+          <a href="./about-us.html">About</a>
+        </li>
+        <li class="">
+          <a href="./menu.html">Menu</a>
+        </li>
+        <li class="">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="">
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li class="">
+          <a href="./book-table.html">Book A Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Header Area End -->
+      <section class="grid grid-cols-12 gap-6">
+        <div
+          class="col-span-12 lg:col-span-5 xl:col-span-6 overflow-hidden relative flex justify-center items-center"
+        >
+          <div class="relative max-lg:h-[400px] lg:h-dvh w-full">
+            <!-- For use image -->
+            <video
+              class="w-full h-full object-cover rounded-3xl"
+              muted
+              loop
+              autoplay
+            >
+              <source
+                src="https://softivuspro.com/rest/bar.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div
+          class="col-span-12 lg:col-span-7 xl:col-span-6 rounded-[20px] p-6 sm:px-10 sm:py-15 border border-borderColor"
+        >
+          <h1 class="display-4 text-center pb-3">Book A Table</h1>
+          <p class="text-xl text-n3 text-center">
+            Secure your spot at Rsetura for exceptional sushi and an
+            unforgettable dining journey. Reserve now for an unparalleled
+            culinary experience.
+          </p>
+          <form class="grid grid-cols-12 gap-4 sm:gap-6 stp-15">
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">first name*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">last name*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">email*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="Email"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">phone number*</h6>
+              <input
+                type="text"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+                placeholder="Phone"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">date*</h6>
+              <input
+                type="date"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+              />
+            </div>
+            <div class="col-span-12 sm:col-span-6">
+              <h6 class="heading-6 uppercase pb-3">time*</h6>
+              <input
+                type="time"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl"
+              />
+            </div>
+            <div class="col-span-12">
+              <h6 class="heading-6 uppercase pb-3">message*</h6>
+              <textarea
+                type="time"
+                class="outline-none placeholder:text-n3 w-full px-5 py-4 bg-secondaryBg rounded-xl min-h-[150px]"
+                placeholder="Enter Your Message"
+              ></textarea>
+            </div>
+            <div class="col-span-12 flex items-center">
+              <button
+                class="text-center text-black heading-6 bg-n4 px-8 py-3 w-full rounded-xl"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- ============ swiper js css  ============ -->
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+ />
+ <!-- ============ odometer css  ============ -->
+ <link
+   href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+   rel="stylesheet"
+ />
+ <!-- ============ aos css  ============ -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+ <!-- ============ phosphor icons  ============ -->
+ <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-[#EBECF0] p-6">
+    <!-- ============ preloader start ============ -->
+    <div
+      class="preloader-one fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-top h-full w-full bg-primary duration-500"></div>
+    </div>
+    <div
+      class="preloader-two fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-bottom relative h-full w-full bg-secondary"></div>
+    </div>
+    <!-- ============ preloader end ============ -->
+    <main class="overflow-hidden">
+      <div class="flex-col gap-6 max-xl:flex xl:grid xl:grid-cols-12">
+        <!-- column one -->
+        <!-- ============ column one start ============ -->
+        <div
+          class="col-span-6 flex flex-col gap-6 max-xl:order-2 4xl:col-span-4"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spr32px spt32px spl32px bg-white-5 col-start-1 col-end-13 h-full rounded-xl bg-white-1 lg:col-end-7"
+          >
+            <div
+              class="flex size-15 items-center justify-center rounded-xl bg-primary"
+            >
+              <i class="ph ph-bank text-[32px] text-black-1"></i>
+            </div>
+            <h3 class="h4 max-w-[372px] pt-3 font-bold text-black-1">
+              Empower yourself financially with our easy-to-use
+            </h3>
+            <p class="l-text pt-3 text-black-4">
+              Empower yourself financially with our user-friendly app. Manage
+              your finances effortlessly and focus on achieving your goals with
+              ease
+            </p>
+            <img
+              src="./assets/images/empower-card-image.png"
+              alt="Empower yourself financially mobile ui"
+              class="mx-auto block pt-6"
+            />
+          </div>
+          <!-- features card -->
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spl32px spt32px spr32px h-full rounded-3xl bg-white-1"
+          >
+            <div
+              class="flex size-15 items-center justify-center rounded-xl bg-primary"
+            >
+              <i class="ph ph-barcode text-[32px] text-black-1"></i>
+            </div>
+
+            <h3 class="h4 max-w-[615px] pt-3 font-bold text-black-1">
+              Manage your finances effortlessly with our intuitive
+            </h3>
+            <p class="l-text max-w-[706px] pt-3 text-black-4">
+              Effortlessly manage your finances with our intuitive app. Take
+              control of your financial future with ease
+            </p>
+            <div class="pt-6">
+              <img
+                src="./assets/images/manage-finance-card.png"
+                alt="manage your finances card image"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- ============ column one end ============ -->
+        <!-- ============ column two start ============ -->
+        <div
+          class="col-span-6 flex flex-col gap-6 max-xl:order-1 4xl:col-span-4"
+        >
+        <header>
+  <!-- desktop navbar -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="hidden lg:block"
+  >
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-primary px-6"
+    >
+      <div
+        class="transition-primary theme-transition-3 flex w-full items-center justify-between py-12"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul
+          class="menu flex items-center justify-between gap-5 3xl:gap-6 4xl:gap-10"
+        >
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 hover:underline"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="features.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="l-text single-menu font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 underline-offset-4 before:theme-transition-3 hover:underline"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <a
+            href="/"
+            class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-black-1 p-2 text-white-1"
+          >
+            <i class="ph ph-arrow-up-right text-[24px]"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="lg:hidden">
+    <div
+      class="desktop-nav theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Home</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="features.html" class="single-menu">Features</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="pricing.html" class="single-menu">Pricing</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="blog.html" class="single-menu">Blog</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a
+                  href="#"
+                  aria-label="Contact"
+                  class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+                >
+                  <span
+                    class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                  >
+                    Let’s talk
+                  </span>
+                  <span
+                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                  >
+                    <i
+                      class="ph ph-arrow-up-right text-[24px]"
+                      data-icon-name="arrow-right"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="spt60px spb48px h-full rounded-3xl bg-white-1"
+          >
+            <div class="mobile-ui-slider overflow-hidden">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+                <div class="swiper-slide flex items-center justify-center">
+                  <img src="./assets/images/slider-mobile-ui.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative flex items-center justify-center max-4xl:pb-10"
+            >
+              <div
+                class="swiper-pagination !left-1/2 !top-10 !flex !w-fit -translate-x-1/2 !items-center justify-center !gap-2"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ column two end ============ -->
+        <!-- ============ column three start ============ -->
+        <div
+          class="col-span-12 grid-cols-3 gap-6 max-xl:order-3 max-xl:flex-col max-lg:flex lg:max-4xl:grid 4xl:col-span-4 4xl:flex 4xl:flex-col"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="h-full overflow-hidden rounded-3xl bg-white-1 max-4xl:col-span-2 max-4xl:grid-cols-2 lg:max-4xl:grid"
+          >
+            <div class="spl32px spt32px spr32px">
+              <div
+                class="flex size-15 items-center justify-center rounded-xl bg-primary"
+              >
+                <i class="ph ph-export text-[32px] text-black-1"></i>
+              </div>
+
+              <h3 class="h4 max-w-[387px] pt-6 font-bold text-black-1">
+                Manage your finances effortlessly with our intuitive
+              </h3>
+              <p class="m-text max-w-[706px] pt-3 text-black-4">
+                Experience fee-free transfers to any destination worldwide. Send
+                money internationally without worrying about additional charges.
+              </p>
+            </div>
+            <div class="flex h-[50vh] w-full items-end justify-end">
+              <div
+                class="tags-container relative z-40 h-full w-full bg-transparent"
+              ></div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="sp32px rounded-3xl bg-white-1"
+          >
+            <div class="spt48px flex items-center gap-4 lg:max-4xl:flex-col">
+              <div>
+                <img src="./assets/images/card-big.png" alt="bank card big" />
+              </div>
+              <div>
+                <img
+                  src="./assets/images/card-small.png"
+                  alt="bank card small"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ column three end ============ -->
+      </div>
+    </main>
+
+       <!-- ============ swiper plugin js ============ -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <!-- ============ matter js plugin ============ -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+       <!-- ============ odometer plugin js ============ -->
+       <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+       <!-- ============ aos js ============ -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!-- ============ matter js ============ -->
+       <script src="./assets/js/matterjs.js"></script>
+       <!-- ============= main js ============ -->
+       <script src="./assets/js/main.js"></script>
+       <!-- ============= index js ============ -->
+       <script src="./index.js"></script>
+  </body>
+</html>

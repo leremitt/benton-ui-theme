@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  </head>
+
+  <body class="bg-[#EBECF0] p-6">
+    <!-- ============ preloader start ============ -->
+    <div
+      class="preloader-one fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-top h-full w-full bg-primary duration-500"></div>
+    </div>
+    <div
+      class="preloader-two fixed inset-0 z-50 block w-full flex-col items-center justify-center"
+    >
+      <div class="preloader-bottom relative h-full w-full bg-secondary"></div>
+    </div>
+    <!-- ============ preloader end ============ -->
+    <main class="overflow-hidden">
+      <div
+        class="grid-cols-12 flex-col gap-5 max-3xl:grid-rows-12 max-lg:flex lg:grid 3xl:gap-6"
+      >
+        <!-- ============ blog card with text one start ============ -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="group col-span-6 row-span-4 flex flex-col max-lg:order-2 3xl:col-span-4"
+        >
+          <!-- blog single card -->
+          <div class="flex-grow rounded-3xl border border-white-2 bg-white-1">
+            <div class="h-full overflow-hidden rounded-xl p-3">
+              <img
+                src="./assets/images/blog-1.png"
+                alt="blog thumb"
+                class="mx-auto h-full rounded-xl"
+              />
+            </div>
+          </div>
+          <div
+            class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary"
+          >
+            <a
+              href="blog-details.html"
+              class="h4 theme-transition-3 font-bold text-black-1"
+            >
+              Boosting Team Efficiency
+            </a>
+            <p class="l-text theme-transition-3 text-black-4">
+              Discover practical strategies for enhancing team efficiency with
+              AppleX
+            </p>
+            <div class="flex items-center justify-between gap-6">
+              <p class="m-text theme-transition-3 text-black-4">
+                Latest News December 12, 2024
+              </p>
+
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ============ blog card with text one end ============ -->
+        <!-- ============ blog card with navbar start ============ -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="col-span-6 row-span-4 flex flex-col gap-5 3xl:col-span-4 3xl:gap-6"
+        >
+        <include-header />
+          <!-- blog single card -->
+          <div class="group flex-grow">
+            <div class="rounded-3xl border border-white-2 bg-white-1">
+              <div class="overflow-hidden rounded-xl p-3">
+                <img
+                  src="./assets/images/blog-3.png"
+                  alt="blog thumb"
+                  class="mx-auto rounded-xl"
+                />
+              </div>
+            </div>
+            <div
+              class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary"
+            >
+              <a
+                href="blog-details.html"
+                class="h4 theme-transition-3 font-bold text-black-1"
+              >
+                How to grow up your business
+              </a>
+
+              <div class="flex items-center justify-between gap-6">
+                <p class="m-text theme-transition-3 text-black-4">
+                  Latest News December 12, 2024
+                </p>
+
+                <a
+                  href="blog-details.html"
+                  class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                >
+                  <i
+                    class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-black-1"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ blog card with navbar end ============ -->
+        <!-- ============ blog card with text two start ============ -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="group col-span-6 row-span-4 flex flex-col 3xl:col-span-4"
+        >
+          <div class="flex-grow rounded-3xl border border-white-2 bg-white-1">
+            <div class="h-full overflow-hidden rounded-xl p-3">
+              <img
+                src="./assets/images/blog-2.png"
+                alt="blog thumb"
+                class="mx-auto h-full rounded-xl"
+              />
+            </div>
+          </div>
+          <div
+            class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary"
+          >
+            <a
+              href="blog-details.html"
+              class="h4 theme-transition-3 font-bold text-black-1"
+            >
+              How to grow up your business
+            </a>
+            <p class="l-text theme-transition-3 text-black-4">
+              Discover practical strategies for enhancing team efficiency with
+              AppleX
+            </p>
+            <div class="flex items-center justify-between gap-6">
+              <p class="m-text theme-transition-3 text-black-4">
+                Latest News December 12, 2024
+              </p>
+
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ============ blog card with text two end ============ -->
+        <!-- ============ blog card with text three start ============ -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="group col-span-6 row-span-4 flex flex-col 3xl:col-span-4"
+        >
+          <!-- blog single card -->
+
+          <div class="flex-grow rounded-3xl border border-white-2 bg-white-1">
+            <div class="h-full overflow-hidden rounded-xl p-3">
+              <img
+                src="./assets/images/blog-5.png"
+                alt="blog thumb"
+                class="mx-auto h-full rounded-xl"
+              />
+            </div>
+          </div>
+          <div
+            class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary"
+          >
+            <a
+              href="blog-details.html"
+              class="h4 theme-transition-3 font-bold text-black-1"
+            >
+              Meet the business magnet of the year
+            </a>
+            <p class="l-text theme-transition-3 text-black-4">
+              Discover practical strategies for enhancing team efficiency with
+              AppleX
+            </p>
+            <div class="flex items-center justify-between gap-6">
+              <p class="m-text theme-transition-3 text-black-4">
+                Latest News December 12, 2024
+              </p>
+
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ============ blog card with text three end ============ -->
+        <!-- ============ blog card with pagination start ============ -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="col-span-6 row-span-4 flex flex-col gap-5 max-lg:order-6 3xl:col-span-4 3xl:gap-6"
+        >
+          <!-- blog single card -->
+          <div class="group flex flex-grow flex-col">
+            <div class="flex-grow rounded-3xl border border-white-2 bg-white-1">
+              <div class="h-full overflow-hidden rounded-xl p-3">
+                <img
+                  src="./assets/images/blog-4.png"
+                  alt="blog thumb"
+                  class="mx-auto h-full rounded-xl"
+                />
+              </div>
+            </div>
+            <div
+              class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary"
+            >
+              <a
+                href="blog-details.html"
+                class="h4 theme-transition-3 font-bold text-black-1"
+              >
+                How to grow up your business
+              </a>
+
+              <div class="flex items-center justify-between gap-6">
+                <p class="m-text theme-transition-3 text-black-4">
+                  Latest News December 12, 2024
+                </p>
+
+                <a
+                  href="blog-details.html"
+                  class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                >
+                  <i
+                    class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-black-1"
+                  >
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div
+            class="spt48px spb48px flex items-center justify-center rounded-3xl bg-white-1"
+          >
+            <div class="flex items-center gap-8">
+              <button class="group flex items-center">
+                <span
+                  class="theme-transition-3 flex w-fit items-center justify-center rounded-full border border-black-1 p-3 group-hover:border-primary group-hover:bg-primary"
+                >
+                  <i class="ph ph-caret-left text-[20px]"> </i>
+                </span>
+                <span
+                  class="m-text theme-transition-3 rounded-full border border-black-1 px-6 py-3 font-medium capitalize group-hover:border-primary group-hover:bg-primary max-sm:hidden"
+                >
+                  Previous
+                </span>
+              </button>
+              <p class="m-text font-medium text-black-1">1/2</p>
+              <button class="group flex items-center">
+                <span
+                  class="m-text theme-transition-3 rounded-full border border-black-1 px-6 py-3 font-medium capitalize group-hover:border-primary group-hover:bg-primary max-sm:hidden"
+                >
+                  Next
+                </span>
+                <span
+                  class="theme-transition-3 flex w-fit items-center justify-center rounded-full border border-black-1 p-3 group-hover:border-primary group-hover:bg-primary"
+                >
+                  <i class="ph ph-caret-right text-[20px]"> </i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ============ blog card with pagination end ============ -->
+
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="group col-span-6 row-span-4 flex flex-col 3xl:col-span-4"
+        >
+          <!-- blog single card -->
+
+          <div class="flex-grow rounded-3xl border border-white-2 bg-white-1">
+            <div class="h-full overflow-hidden rounded-xl p-3">
+              <img
+                src="./assets/images/blog-6.png"
+                alt="blog thumb"
+                class="mx-auto h-full rounded-xl"
+              />
+            </div>
+          </div>
+          <div
+            class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary"
+          >
+            <a
+              href="blog-details.html"
+              class="h4 theme-transition-3 font-bold text-black-1"
+            >
+              Make successful business with AppleX
+            </a>
+            <p class="l-text theme-transition-3 text-black-4">
+              Discover practical strategies for enhancing team efficiency with
+              AppleX
+            </p>
+            <div class="flex items-center justify-between gap-6">
+              <p class="m-text theme-transition-3 text-black-4">
+                Latest News December 12, 2024
+              </p>
+
+              <a
+                href="blog-details.html"
+                class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+              >
+                <i
+                  class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-black-1"
+                >
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ============ blog card with text four end ============ -->
+      </div>
+    </main>
+
+       <!-- ============ swiper plugin js ============ -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <!-- ============ matter js plugin ============ -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+       <!-- ============ odometer plugin js ============ -->
+       <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+       <!-- ============ aos js ============ -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!-- ============ matter js ============ -->
+       <script src="./assets/js/matterjs.js"></script>
+       <!-- ============= main js ============ -->
+       <script src="./assets/js/main.js"></script>
+       <!-- ============= index js ============ -->
+       <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Benfit - HTML Tailwindcss Gym Fitness template">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>Investo - Advance Investo Investment Template </title>
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+  <!-- Header Starts -->
+  <header class="sticky top-0 z-50 bg-nc20">
+  <div class="container py-5 cmnhed rounded-3xl">
+    <nav class="text-nw10 rounded-3xl">
+      <div class="flex justify-between items-center relative">
+        <a href="../index.html" class="flex items-center gap-3">
+          <img class="w-[40px] md:w-full" src="./assets/images/logo.png" alt="logo">
+          <h3 class="font-bold md:hidden lg:block font-OpenSans">Investo</h3>
+        </a>
+
+        <!-- MOBILE NAV ICON -->
+        <div class="md:hidden block absolute top-[15%] right-0">
+          <button aria-label="navigation" type="button"
+            class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+              class="ph-thin ph-list text-3xl" id="bars"></i></button>
+        </div>
+
+        <!-- NAVIGATION - LARGE SCREENS -->
+        <div class="hidden md:flex">
+          <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10">
+            <li class="cmnhed"><a href="../index.html"
+                class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Home</a>
+            </li>
+            <li class="cmnhed"><a href="../about.html"
+                class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">About</a>
+            </li>
+            <li class=""><a href="../features.html"
+                class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Features</a>
+            </li>
+            <li class=""><a href="../pricing.html"
+                class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Pricing</a>
+            </li>
+            <li class=""><a href="../blog.html"
+                class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">Blog</a>
+            </li>
+            <li class=""><a href="../faqs.html"
+                class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary menu-link">FAQs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden md:flex border-[2px] border-primary hover:border-nc10 duration-500 p-1">
+          <a href="../contact-us.html" class="flex items-center group duration-700">
+            <span
+              class="py-2 px-4 lg:px-6 text-base bg-primary hover:bg-transparent text-nb10 duration-500 font-normal">Contact
+              Us</span>
+          </a>
+        </div>
+      </div>
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+        <div class="flex flex-col justify-center items-center w-full gap-4">
+          <a href="../index.html"
+            class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Home</a>
+          <a href="../about.html"
+            class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">About</a>
+          <a href="../features.html"
+            class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Features</a>
+          <a href="../pricing.html"
+            class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Pricing</a>
+          <a href="../blog.html"
+            class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Blog</a>
+          <a href="../faqs.html"
+            class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">FAQs</a>
+          <div class="md:flex border-[2px] border-primary hover:border-nc10 p-1">
+            <a href="../contact-us.html" class="flex items-center group duration-700">
+              <span
+                class="py-2 px-4 lg:px-6 text-base bg-primary hover:bg-transparent text-nb10 duration-500 font-normal">Contact
+                Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+  <!-- Header Ends -->
+  <!-- faq section Starts -->
+  <section id="faqs" class="py-14 sm:py-16 md:py-20 lg:py-[120px] bg-nc20">
+    <div class="container">
+      <div class="grid grid-cols-12 sm:gap-6">
+        <div class="col-span-full">
+          <div class="text-center mb-8 md:mb-10 lg:mb-[60px]">
+            <h5 class="mb-4 md:mb-5 text-primary">FAQ</h5>
+            <span class="display-4">Frequently Asked Questions</span>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6">
+          <div class="accordion-section">
+            <div class="accordion-single accsingle mb-5 rounded-xl border border-secondary1 opacity-60 p-3 md:px-4 md:py-3"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-xl font-medium"
+                  type="button">
+                  Can I personalize the cards ?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10">
+                  <i class="ph ph-plus-circle ph-plus sm:text-3xl"></i>
+                  <i class="ph ph-minus-circle ph-minus sm:text-3xl hidden"></i>
+                </button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="text-lg font-normal w-[90%] opacity-80">Our cancellation policy varies depending on the
+                    service and
+                    service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle mb-5 rounded-xl border border-secondary1 opacity-60 p-3 md:px-4 md:py-3"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-xl font-medium"
+                  type="button">
+                  Do you offer bulk discounts ?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10">
+                  <i class="ph ph-plus-circle ph-plus sm:text-3xl"></i>
+                  <i class="ph ph-minus-circle ph-minus sm:text-3xl hidden"></i>
+                </button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="text-lg font-normal w-[90%] opacity-80">Our cancellation policy varies depending on the
+                    service and
+                    service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle mb-5 rounded-xl border border-secondary1 opacity-60 p-3 md:px-4 md:py-3"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-xl font-medium"
+                  type="button">
+                  Can I save my favorite designs ?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10">
+                  <i class="ph ph-plus-circle ph-plus sm:text-3xl"></i>
+                  <i class="ph ph-minus-circle ph-minus sm:text-3xl hidden"></i>
+                </button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="text-lg font-normal w-[90%] opacity-80">Our cancellation policy varies depending on the
+                    service and
+                    service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6">
+          <div class="accordion-section">
+            <div class="accordion-single accsingle mb-5 rounded-xl border border-secondary1 opacity-60 p-3 md:px-4 md:py-3"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-xl font-medium"
+                  type="button">
+                  How can I track my card order ?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10">
+                  <i class="ph ph-plus-circle ph-plus sm:text-3xl"></i>
+                  <i class="ph ph-minus-circle ph-minus sm:text-3xl hidden"></i>
+                </button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="text-lg font-normal w-[90%] opacity-80">Our cancellation policy varies depending on the
+                    service and
+                    service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle mb-5 rounded-xl border border-secondary1 opacity-60 p-3 md:px-4 md:py-3"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-xl font-medium"
+                  type="button">
+                  Are your cards eco-friendly ? 
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10">
+                  <i class="ph ph-plus-circle ph-plus sm:text-3xl"></i>
+                  <i class="ph ph-minus-circle ph-minus sm:text-3xl hidden"></i>
+                </button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="text-lg font-normal w-[90%] opacity-80">Our cancellation policy varies depending on the
+                    service and
+                    service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-single accsingle mb-5 rounded-xl border border-secondary1 opacity-60 p-3 md:px-4 md:py-3"
+              data-aos="fade-up" data-aos-duration="1200">
+              <h5 class="header-area flex items-center justify-between  rounded-xl">
+                <button
+                  class="accordion-btn flex items-start relative w-100 fw-bolder text-start md:text-xl font-medium"
+                  type="button">
+                  Need assistance with an orde ?
+                </button>
+                <button class="arrowclickable p-1 md:p-2 lg:p-3 rounded-full flex text-at10">
+                  <i class="ph ph-plus-circle ph-plus sm:text-3xl"></i>
+                  <i class="ph ph-minus-circle ph-minus sm:text-3xl hidden"></i>
+                </button>
+              </h5>
+              <div class="content-area hidden">
+                <div class="content-body">
+                  <p class="text-lg font-normal w-[90%] opacity-80">Our cancellation policy varies depending on the
+                    service and
+                    service
+                    provider. Please check the terms before booking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- faq section ends -->
+  <!-- Footer Section Starts -->
+  <footer class="pt-14 sm:pt-16 md:pt-20 lg:pt-[120px] bg-nc20">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-6 md:gap-10 pb-5 md:pb-6 lg:pb-8 border-b border-[#20242C]">
+        <div class="col-span-full lg:col-span-5">
+          <div data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          data-aos-duration="1000" class="">
+            <a href="./index.html" class="flex items-center gap-3 mb-6 md:mb-8 lg:mb-10">
+              <img src="assets/images/logo.png" alt="Logo">
+              <h2 class="">Inverto</h2>
+            </a>
+            <span class="display-4 mb-6 md:mb-8 lg:mb-10">Subscribe to the newsletter</span>
+            <form class="mb-6 md:mb-8 lg:mb-10">
+              <div class="flex items-center border border-secondary1 rounded-full p-2">
+                <input type="text" placeholder="Enter your email address" class="w-full border-0 placeholder:opacity-60">
+                <button type="submit"
+                  class="px-5 lg:px-6 py-[10px] rounded-full bg-primary font-medium text-nowrap max-sm:text-sm">Start Free
+                  Trial</button>
+              </div>
+            </form>
+            <ul class="flex items-center gap-2 md:gap-3">
+              <li>
+                <a href="#" class="size-12 rounded-full p-2 md:p-3 border border-secondary1 d-center hover:bg-primary duration-500">
+                  <i class="ph ph-facebook-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="size-12 rounded-full p-2 md:p-3 border border-secondary1 d-center hover:bg-primary duration-500">
+                  <i class="ph ph-youtube-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="size-12 rounded-full p-2 md:p-3 border border-secondary1 d-center hover:bg-primary duration-500">
+                  <i class="ph ph-instagram-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="size-12 rounded-full p-2 md:p-3 border border-secondary1 d-center hover:bg-primary duration-500">
+                  <i class="ph ph-pinterest-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="size-12 rounded-full p-2 md:p-3 border border-secondary1 d-center hover:bg-primary duration-500">
+                  <i class="ph ph-twitch-logo"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden xl:block xl:col-span-1"></div>
+        <div class="col-span-full lg:col-span-7 xl:col-span-6">
+          <div class="grid grid-cols-6 gap-6 justify-between">
+            <div class="col-span-3 sm:col-span-2">
+              <div data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="1200" class="">
+                <h3 class="mb-6 md:mb-8 lg:mb-10">Product</h3>
+                <ul class="flex flex-col gap-3 lg:gap-4">
+                  <li><a href="./home.html" class="sm:text-lg opacity-80">Home</a></li>
+                  <li><a href="./about.html" class="sm:text-lg opacity-80">About</a></li>
+                  <li><a href="./blog.html" class="sm:text-lg opacity-80">Blog</a></li>
+                  <li><a href="./features.html" class="sm:text-lg opacity-80">Features</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-3 sm:col-span-2">
+              <div data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="1600" class="">
+                <h3 class="mb-6 md:mb-8 lg:mb-10">Important</h3>
+                <ul class="flex flex-col gap-3 lg:gap-4">
+                  <li><a href="./faqs.html" class="sm:text-lg opacity-80">FAQs</a></li>
+                  <li><a href="./contact-us.html" class="sm:text-lg opacity-80">Contact</a></li>
+                  <li><a href="#" class="sm:text-lg opacity-80">Pricing</a></li>
+                  <li><a href="#" class="sm:text-lg opacity-80">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-span-3 sm:col-span-2">
+              <div data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+              data-aos-duration="1800" class="">
+                <h3 class="mb-6 md:mb-8 lg:mb-10">Utility</h3>
+                <ul class="flex flex-col gap-3 lg:gap-6">
+                  <li><a href="#" class="sm:text-lg opacity-80">Style Guide</a></li>
+                  <li><a href="#" class="sm:text-lg opacity-80">Change Log</a></li>
+                  <li><a href="#" class="sm:text-lg opacity-80">Licensing</a></li>
+                  <li><a href="#" class="sm:text-lg opacity-80">Instructions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center sm:justify-between gap-1 sm:gap-4 py-6 md:py-8 max-sm:flex-wrap">
+        <div class="">
+          <span class="sm:text-lg">Copyright @ 2024 Investo</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <span class="sm:text-lg">Designed By</span>
+          <a href="#" class="sm:text-lg text-primary underline">Pixelaxis</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Ends -->
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/plguins.js"></script>
+  <script src="./assets/js/plguins-custom.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

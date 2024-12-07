@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ flatpickr css  ============ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  </head>
+
+  <body class="bg-white-1 p-4 text-black-1 sm:p-6">
+    <main class="relative overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ pagination start ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="relative"
+      >
+        <img
+          src="./assets/images/our-dentist-pagination-image.png"
+          alt="A picture showing a person with a dental implant and a friendly message about dental implant care"
+          class="w-full rounded-xl object-cover max-sm:h-[350px] sm:max-lg:h-[400px]"
+        />
+        <p
+          class="h3 xs:d4 spx32px absolute whitespace-nowrap rounded-3xl bg-black-1/30 py-4 text-center font-extrabold text-white-1 max-md:left-1/2 max-md:top-10 max-md:-translate-x-1/2 xs:py-6 md:left-10 md:top-10"
+        >
+          Service
+        </p>
+        <div
+          class="btn-area spx32px absolute bottom-10 z-20 rounded-3xl bg-secondary py-4 text-white-1 max-md:left-1/2 max-md:-translate-x-1/2 xs:py-6 md:bottom-10 md:right-10"
+        >
+          <a
+            href="#"
+            aria-label="Contact"
+            class="move-btn theme-transition-4 flex items-center text-center"
+          >
+            <span
+              class="one h3 xs:h2 theme-transition-4 px-2 font-bold uppercase sm:px-4"
+            >
+              Appointment
+            </span>
+            <span
+              class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-full border-2 border-dashed p-2 text-center md:p-3"
+            >
+              <i
+                class="ph ph-arrow-up-right text-[24px]"
+                data-icon-name="arrow-right"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- ============ pagination end ============ -->
+      <!-- =========== basic dental care section start ============ -->
+      <div class="spb60px"><include-servicesAllCard /></div>
+      <!-- =========== basic dental care section end ============ -->
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+    <title>Reservation-Beauty HTML5 Template</title>
+  </head>
+  <body class="bg-neutral-2 p-4 text-neutral-1 sm:p-6 font-body-font">
+    <main class="custom-container">
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var calendarEl = document.getElementById("calendar");
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: "dayGridMonth",
+            selectable: true,
+            headerToolbar: {
+              left: "prev title next",
+              center: "",
+              right: "",
+            },
+          });
+          calendar.render();
+        });
+      </script>
+      <!-- ============ header ============ -->
+      <include-header />
+      <!-- ============ pagination ============ -->
+      <section
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="sp100px rounded-3xl flex-col bg-neutral-7 border border-neutral-4/30 flex items-center justify-center"
+      >
+        <h2 class="h1 font-semibold text-center">Reservation</h2>
+        <div class="flex items-center justify-center gap-1 h6 font-semibold pt-5"><a href="/">Home</a> <span>/</span> <span class="text-primary underline underline-offset-2"> Reservation </span></div>
+      </section>
+      <!-- ============ reservation ============ -->
+      <form
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1200"
+        class="grid-cols-12 grid gap-6 smt60px bg-neutral-7 max-sm:px-3 sm:max-lg:spx40px rounded-3xl border border-neutral-4/30 spy60px"
+      >
+        <div class="col-span-12 lg:col-start-2 lg:col-span-7 xxl:col-start-3 xxl:col-span-5 flex flex-col gap-10">
+          <!-- Chose a Plan -->
+          <div class="appear-downd">
+            <div class="reservation-accordion theme-transition-3 flex cursor-pointer bg-neutral-8 p-4 rounded-[20px] items-center justify-between gap-2 sm:gap-6">
+              <div class="flex items-center gap-4">
+                <p class="h4 font-semibold p-4 bg-neutral-1 rounded-full !leading-none text-neutral-2">01</p>
+                <h3 class="h3 font-semibold">Chose a Plan</h3>
+              </div>
+              <div class="bg-bgColorOne text-primary theme-transition-4 flex size-8 shrink-0 items-center justify-center leading-none">
+                <i class="ph ph-caret-down text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 flex flex-col gap-6 overflow-hidden">
+              <div class="px-3 sm:px-6 spy32px rounded-[20px] border border-neutral-8 smt32px max-sm:flex-col-reverse max-sm:gap-4 flex justify-between items-center">
+                <div>
+                  <h3 class="h3 font-semibold">Swedish massage</h3>
+                  <p class="l-text font-light text-neutral-3 pt-4">Focused attention on the essentials: your back, neck and shoulders, where you need it most! Addresses tension headaches & office.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                  <p class="flex"><span>$</span><span class="d4 font-bold !leading-none">110</span></p>
+                  <div class="border-2 shrink-0 border-primary p-1 rounded-full">
+                    <div class="bg-primary size-5 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="px-3 sm:px-6 spy32px rounded-[20px] border border-neutral-8 smt32px max-sm:flex-col-reverse max-sm:gap-4 flex justify-between items-center">
+                <div>
+                  <h3 class="h3 font-semibold">Example service</h3>
+                  <p class="l-text font-light text-neutral-3 pt-4">Focused attention on the essentials: your back, neck and shoulders, where you need it most! Addresses tension headaches & office.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                  <p class="flex"><span>$</span><span class="d4 font-bold !leading-none">290</span></p>
+                  <div class="border-2 shrink-0 border-primary p-1 rounded-full">
+                    <div class="border-2 border-primary hover:bg-primary size-5 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Date and time -->
+          <div class="appear-downd">
+            <div class="reservation-accordion theme-transition-3 flex cursor-pointer bg-neutral-8 p-4 rounded-[20px] items-center justify-between gap-2 sm:gap-6">
+              <div class="flex items-center gap-4">
+                <p class="h4 font-semibold p-4 bg-neutral-1 rounded-full !leading-none text-neutral-2">02</p>
+                <h3 class="h3 font-semibold">Date and time</h3>
+              </div>
+              <div class="text-primary theme-transition-4 flex size-8 shrink-0 items-center justify-center leading-none">
+                <i class="ph ph-caret-down text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 flex flex-col gap-6 overflow-hidden">
+              <div class="mb-1 smt32px">
+                <div id="calendar" class="!w-[100%] inline-block"></div>
+                <div class="grid grid-cols-1 xs:grid-cols-3 spt32px gap-6 justify-between">
+                  <div class="flex flex-col gap-6">
+                    <div class="l-text font-light font-secondary-font">Morning</div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot font-light hover:text-neutral-2 cursor-pointer border border-neutral-3 p-5 l-text" data-input="#time-slot-1">
+                      <label for="time-slot-1">9:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-1" value="1" />
+                    </div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-2">
+                      <label for="time-slot-2">11:30 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-2" value="2" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-6">
+                    <div class="l-text font-light font-secondary-font">Afternoon</div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-3">
+                      <label for="time-slot-3">11:30 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-3" value="3" />
+                    </div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-4">
+                      <label for="time-slot-4">15:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-4" value="4" />
+                    </div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-5">
+                      <label for="time-slot-5">16:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-5" value="5" />
+                    </div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-6">
+                      <label for="time-slot-6">17:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-6" value="6" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-6">
+                    <div class="l-text font-light font-secondary-font">Evening</div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-7">
+                      <label for="time-slot-7">18:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-7" value="7" />
+                    </div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-8">
+                      <label for="time-slot-8">19:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-8" value="8" />
+                    </div>
+                    <div class="text-center duration-300 hover:bg-neutral-3 time-slot hover:text-neutral-2 cursor-pointer border border-neutral-3 font-light p-5 l-text" data-input="#time-slot-9">
+                      <label for="time-slot-9">20:00 am</label> <input class="sr-only" type="radio" name="time" id="time-slot-9" value="9" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add your Information -->
+          <div class="appear-downd">
+            <div class="reservation-accordion theme-transition-3 flex cursor-pointer bg-neutral-8 p-4 rounded-[20px] items-center justify-between gap-2 sm:gap-6">
+              <div class="flex items-center gap-4">
+                <p class="h4 font-semibold p-4 bg-neutral-1 rounded-full !leading-none text-neutral-2">03</p>
+                <h3 class="h3 font-semibold">Add your Information</h3>
+              </div>
+              <div class="bg-bgColorOne text-primary theme-transition-4 flex size-8 shrink-0 items-center justify-center leading-none">
+                <i class="ph ph-caret-down text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 flex flex-col gap-6 overflow-hidden">
+              <div class="spt32px">
+                <p class="h5 font-semibold">Location</p>
+                <div class="flex mt-4 items-center gap-5">
+                  <div class="flex items-center gap-2">
+                    <div class="border-2 shrink-0 border-primary p-1 rounded-full">
+                      <div class="bg-primary size-5 rounded-full"></div>
+                    </div>
+                    <p class="l-text font-light">My Location</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="border-2 shrink-0 border-primary p-1 rounded-full">
+                      <div class="border-2 border-primary hover:bg-primary size-5 rounded-full"></div>
+                    </div>
+                    <p class="l-text font-light">My Location</p>
+                  </div>
+                </div>
+                <div class="flex flex-col mt-6 gap-6">
+                  <div class="flex flex-col">
+                    <label for="fullNmae" class="l-text font-secondary-font">Full Name</label>
+                    <input type="text" id="fullNmae" placeholder="Write Your Name..." class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-between">
+                    <div class="flex flex-col">
+                      <label for="email" class="l-text font-secondary-font">Email</label>
+                      <input type="email" id="email" placeholder="Enter Email address..." class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                    </div>
+                    <div class="flex flex-col">
+                      <label for="phone" class="l-text font-secondary-font">Phone</label>
+                      <input type="text" id="phone" placeholder="Write Phone Number" class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <label for="location" class="l-text font-secondary-font">Location</label>
+                    <input type="text" id="location" placeholder="Write Your Address...." class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                  </div>
+                  <div class="flex flex-col">
+                    <label for="massage" class="l-text font-secondary-font">Massage</label>
+                    <input type="text" id="massage" placeholder="Write Your Massage...." class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- payment -->
+          <div class="appear-downd">
+            <div class="reservation-accordion theme-transition-3 flex cursor-pointer bg-neutral-8 p-4 rounded-[20px] items-center justify-between gap-2 sm:gap-6">
+              <div class="flex items-center gap-4">
+                <p class="h4 font-semibold p-4 bg-neutral-1 rounded-full !leading-none text-neutral-2">04</p>
+                <h3 class="h3 font-semibold">Payment</h3>
+              </div>
+              <div class="bg-bgColorOne text-primary theme-transition-4 flex size-8 shrink-0 items-center justify-center leading-none">
+                <i class="ph ph-caret-down text-[24px]"> </i>
+              </div>
+            </div>
+            <div class="theme-transition-6 h-0 flex flex-col gap-6 overflow-hidden">
+              <div class="spt32px">
+                <p class="h5 font-semibold">Chose Payment Method</p>
+                <div class="flex mt-4 items-center gap-5">
+                  <div class="flex items-center gap-2">
+                    <div class="border-2 shrink-0 border-primary p-1 rounded-full">
+                      <div class="bg-primary size-5 rounded-full"></div>
+                    </div>
+                    <p class="l-text font-light">Cash at location</p>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <div class="border-2 shrink-0 border-primary p-1 rounded-full">
+                      <div class="border-2 border-primary hover:bg-primary size-5 rounded-full"></div>
+                    </div>
+                    <p class="l-text font-light">Credit card</p>
+                  </div>
+                </div>
+                <div class="py-8 mt-6 px-6 border-[0.5px] border-neutral-3 flex max-4xl:flex-col gap-10">
+                  <div class="flex flex-col gap-4 w-full">
+                    <div class="flex flex-col w-full">
+                      <label for="cardNumber" class="l-text font-secondary-font">Card Number</label>
+                      <input type="number" id="cardNumber" placeholder="" class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                    </div>
+                    <div class="flex flex-col w-full">
+                      <label for="cardName" class="l-text font-secondary-font">Name on Card</label>
+                      <input type="text" id="cardName" placeholder="" class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                    </div>
+                    <div class="flex max-sm:flex-col gap-6">
+                      <div class="flex flex-col w-full">
+                        <label for="expiryDate" class="l-text font-secondary-font">Expiry Date</label>
+                        <input type="text" id="expiryDate" placeholder="MM/ YY" class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                      </div>
+                      <div class="flex flex-col w-full">
+                        <label for="cvc" class="l-text font-secondary-font">CVC</label>
+                        <input type="number" id="cvc" placeholder="" class="mt-4 border-[0.5px] border-neutral-3 p-5 bg-transparent" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="flex gap-2 shrink-0"><i class="ph text-primary text-[24px] ph-lock"></i> <span class="l-text font-light">Secured Payment</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- submit button -->
+        <div class="col-span-12 md:col-span-4 lg:col-span-3 col-start-1 md:col-start-8 lg:col-start-9">
+          <div class="sp32px flex items-center flex-col justify-center text-neutral-2 bg-primary">
+            <p class="lead-text font-bold font-secondary-font">One time Checkup</p>
+            <p class="flex spy32px"><span>$</span><span class="d4 font-bold !leading-none">110</span></p>
+            <button type="submit" class="rounded-full bg-neutral-2 p-4 text-center l-text font-secondary-font text-neutral-1 w-full">Book Now</button>
+          </div>
+        </div>
+      </form>
+      <!-- =========== footer ============ -->
+      <include-footer />
+    </main>
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

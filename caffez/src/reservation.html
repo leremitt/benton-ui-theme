@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Reservation - Coffee Shop Website Template</title>
+  </head>
+
+  <body class="bg-white-1 text-secondary text-base p-4 sm:p-6">
+    <main class="custom-container grid grid-cols-12 gap-6">
+      <!-- ================= side video ================= -->
+      <include-sidebarVideo />
+      <div class="col-span-12 xl:col-span-8 overflow-hidden 3xl:col-span-6 flex flex-col gap-10 bg-white-4 rounded-20px p-4 md:p-6">
+        <!-- ================= header ================= -->
+        <include-header />
+        <!-- ================= Table Reservation section ================== -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-20px border relative border-black-4 sp32px">
+          <h2 class="h2 font-bold text-center">Table Reservation</h2>
+          <form data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="spt40px flex flex-col gap-6">
+            <!-- first and last name -->
+            <div class="max-sm:flex-col flex items-center gap-6">
+              <div class="w-full">
+                <label for="first-name" class="h6 font-bold">First Name*</label>
+                <input type="text" id="first-name" class="border rounded-lg w-full border-black-4 p-3 bg-transparent mt-3" placeholder="Enter Your First Name" />
+              </div>
+              <div class="w-full">
+                <label for="first-name" class="h6 font-bold">Last Name*</label>
+                <input type="text" id="first-name" class="border rounded-lg w-full border-black-4 p-3 bg-transparent mt-3" placeholder="Enter Your Last Name" />
+              </div>
+            </div>
+            <!-- phone and email -->
+            <div class="max-sm:flex-col flex items-center gap-6">
+              <div class="w-full">
+                <label for="phone-number" class="h6 font-bold">Phone Number*</label>
+                <input type="number" id="phone-number" class="border rounded-lg w-full border-black-4 p-3 bg-transparent mt-3" placeholder="(239) 555-0108" />
+              </div>
+              <div class="w-full">
+                <label for="email" class="h6 font-bold">Email*</label>
+                <input type="email" id="email" class="border rounded-lg w-full border-black-4 p-3 bg-transparent mt-3" placeholder="Enter Your Email" />
+              </div>
+            </div>
+            <!-- time and date  -->
+            <div class="max-sm:flex-col flex items-center gap-6">
+              <div class="w-full">
+                <label for="time-date" class="h6 font-bold">Time & Date*</label>
+
+                <input id="appointment-date" type="date" class="mt-3 w-full rounded-xl border border-white-3/30 bg-transparent px-5 py-4" placeholder="mm/dd/yyyy : 00:00" date-input />
+              </div>
+              <div class="w-full">
+                <label for="for-table" class="h6 font-bold">For Table*</label>
+                <input type="number" id="for-table" class="border rounded-lg w-full border-black-4 p-3 bg-transparent mt-3" placeholder="02 People" />
+              </div>
+            </div>
+            <div class="w-full">
+              <label for="message" class="h6 font-bold">Message*</label>
+              <textarea rows="4" id="message" class="border rounded-lg w-full border-black-4 p-3 bg-transparent mt-3" placeholder="Enter Your Message"></textarea>
+            </div>
+
+            <button class="h6 font-bold bg-primary rounded-xl p-3 text-white-1 text-center">Reserve A Table</button>
+          </form>
+        </div>
+        <!-- ================= footer section ================= -->
+        <include-footer />
+      </div>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

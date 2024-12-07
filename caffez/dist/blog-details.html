@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Blog Details - Coffee Shop Website Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-white-1 text-secondary text-base p-4 sm:p-6">
+    <main class="custom-container grid grid-cols-12 gap-6">
+      <!-- ================= side video ================= -->
+      <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="col-span-12 xl:col-span-4 3xl:col-span-6">
+  <div class="sticky top-4 sm:top-6">
+    <div class="md:max-h-[90vh] max-lg:h-[450px] mb-6 lg:h-dvh">
+      <!-- For use image -->
+      <!-- <img class="imagemain" src="images/panthouse-tonic.png" alt="icon"> -->
+      <video class="w-full h-full object-cover rounded-3xl" muted loop autoplay>
+        <source src="https://softivuspro.com/rest/Coffee%20Shop.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+      <div class="col-span-12 xl:col-span-8 overflow-hidden 3xl:col-span-6 flex flex-col gap-10 bg-white-4 rounded-20px p-4 md:p-6">
+        <!-- ================= header ================= -->
+        <div
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1500"
+  class="border border-white-3 rounded-20px theme-transition-3 z-50 relative flex w-full items-center justify-between px-5 py-4"
+>
+  <div class="m-text relative font-medium">
+    <button id="mobile-menu-btn" class="text-secondary flex items-center gap-2">
+      <i class="ph ph-list text-4xl"></i>
+    </button>
+    <!--  menu items  -->
+    <div
+      id="mobile-menu"
+      class="hide absolute left-0 top-full z-50 w-64 origin-top-left rounded-md bg-black-4 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+    >
+      <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+        <li
+          class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="index.html" class="single-menu">Home</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="about.html" class="single-menu">About</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="menu.html" class="single-menu">Menu</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="menu-details.html" class="single-menu">Menu Details</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="blog.html" class="single-menu">Blog</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="blog-details.html" class="single-menu">Blog Details</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="reservation.html" class="single-menu">Reservation</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="contact.html" class="single-menu">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- logo -->
+  <div>
+    <a href="/">
+      <img
+        src="./assets/images/logo.png"
+        alt="Desktop Logo"
+        class="max-xs:w-25"
+      />
+    </a>
+  </div>
+  <!-- button -->
+  <div class="btn-area max-sm:hidden z-20">
+    <a
+      href="./reservation.html"
+      aria-label="Contact"
+      class="move-btn theme-transition-4 flex items-center text-center text-secondary"
+    >
+      <span
+        class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-black-4 px-8 py-3 font-medium capitalize"
+      >
+        Reservation
+      </span>
+      <span
+        class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-black-4 bg-black-4 p-2.5 text-center"
+      >
+        <i
+          class="ph ph-arrow-up-right text-[24px]"
+          data-icon-name="arrow-right"
+        >
+        </i>
+      </span>
+    </a>
+  </div>
+</div>
+
+        <!-- ================= blog details ================== -->
+        <div class="rounded-20px border relative border-black-4 sp32px">
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+            <img src="./assets/images/blog-detils-main-image.png" alt="A delicious image of a freshly baked coffee pie, ready to be enjoyed." class="object-cover w-full rounded-xl" />
+          </div>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="flex items-center pt-6">
+            <span class="l-text text-primary">News </span><span class="m-text text-primary/60">. 0 Comments</span>
+          </p>
+          <h2 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="h2 font-bold pt-3">Trust your barista and pastry chef</h2>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="m-text pt-4">
+            Coffee transcends being just a beverage—it’s a blend of culture, flavor, and global connection. Its crafting combines art and precision, with evolving trends always introducing fresh ways
+            to savor it. From bean origin tales to the artistry in brewing and emerging coffee trends, there's a vast world within every cup.
+          </p>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="m-text pt-6">
+            Coffee is more than just a morning ritual; it's a journey of flavor, culture, and connection. From the remote farms on misty hillsides to the fragrant brew in your cup, there's magic in
+            every bean.
+          </p>
+          <h3 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="h3 font-bold spt40px">The Magic Behind Every Coffee Bean</h3>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="m-text pt-4">
+            The crafting of coffee is both an art and a science. It demands precision, but also intuition, bridging the gap between strict measurements and personal taste.
+          </p>
+          <div class="flex items-center max-md:flex-wrap gap-6 pt-6 justify-center">
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+              <img src="./assets/images/blog-details-1png.png" alt="blog details image one" class="rounded-xl" />
+            </div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+              <img src="./assets/images/blog-details-2.png" alt="blog details image two" class="rounded-xl" />
+            </div>
+          </div>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="m-text pt-6">
+            booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat
+            kogi. Et leggings fanny pack.
+          </p>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="m-text pt-6">
+            Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes, geeza arse it’s your round grub sloshed burke, my good sir chancer he legged it he lost his bottle
+            pear shaped bugger all mate.
+          </p>
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="spt40px border-l-4 spx40px spy32px smt40px border-primary spt32px bg-white-3/30">
+            <i class="ph-fill ph-quotes text-[32px]"></i>
+            <h5 class="h5 font-bold pt-3">
+              From cold brews in summer to warm spiced lattes in winter, coffee trends are ever-evolving, introducing us to innovative and delightful ways to savor our favorite beverage.
+            </h5>
+          </div>
+          <p data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="m-text spt32px">
+            Cras chinwag brown bread Eaton cracking goal so I said a load of old tosh baking cakes, geeza arse it’s your round grub sloshed burke, my good sir chancer he legged it he lost his bottle
+            pear shaped bugger all mate. The creators of the theme are happy with the response and have vowed to create.
+          </p>
+          <div class="spt32px flex items-center flex-wrap gap-2">
+            <a href="#" class="border border-white-3 bg-black-4 py-2 px-4 l-text text-center uppercase">BEANS</a>
+            <a href="#" class="border border-white-3 bg-black-4 py-2 px-4 l-text text-center uppercase">COFFEE</a>
+            <a href="#" class="border border-white-3 bg-black-4 py-2 px-4 l-text text-center uppercase">DRINK</a>
+            <a href="#" class="border border-white-3 bg-black-4 py-2 px-4 l-text text-center uppercase"> TEA </a>
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            class="flex justify-between flex-wrap py-5 items-center gap-6 smt40px border-b border-t border-black-4"
+          >
+            <div class="flex items-center gap-3">
+              <button class="size-[34px] rounded-full border border-black-4">
+                <i class="ph ph-heart"></i>
+              </button>
+              <p class="l-text">02</p>
+            </div>
+            <!-- social icons -->
+            <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" class="flex items-center flex-wrap w-fit gap-3 aos-init aos-animate">
+              <a href="/" class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary">
+                <i class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"></i>
+              </a>
+              <a href="/" class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary">
+                <i class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"></i>
+              </a>
+              <a href="/" class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary">
+                <i class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"></i>
+              </a>
+              <a href="/" class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary">
+                <i class="ph ph-linkedin-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"></i>
+              </a>
+            </div>
+          </div>
+          <!-- comment section -->
+          <div class="spt40px">
+            <h4 class="h4 font-bold">Leave a comment</h4>
+            <form class="spt40px">
+              <div class="flex items-center max-sm:flex-wrap gap-6">
+                <input type="text" name="name" id="name" placeholder="Your Name*" class="border-b border-black-4 placeholder:m-text m-text placeholder:text-secondary w-full bg-transparent pb-3" />
+                <input type="text" name="email" id="email" placeholder="Your E-mail*" class="border-b border-black-4 placeholder:m-text m-text placeholder:text-secondary w-full bg-transparent pb-3" />
+              </div>
+              <div class="flex items-center gap-3 pt-6">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox">Save my name, email, and website in this browser for the next time I comment.</label>
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message*"
+                class="border-b border-black-4 placeholder:m-text m-text spt40px placeholder:text-secondary w-full bg-transparent pb-3"
+              ></textarea>
+              <div class="flex items-center gap-3 pt-6">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox">I agree that my submitted data is being <a href="#" class="text-primary underline underline-offset-4">collected and stored.</a></label>
+              </div>
+              <button class="bg-primary px-6 hover:border-white-1 hover:text-primary hover:bg-transparent hover:bg-white-2 theme-transition-3 border-primary border smt40px py-3 l-text text-white-1">
+                Leave a comment
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- =============== related articles section ================= -->
+        <div>
+          <h2 class="h2 font-bold">Related Articles</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 spt40px">
+            <!-- blog card one -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-xl overflow-hidden bg-white-1">
+              <div>
+                <img src="./assets/images/blog-image-2.png" alt="blog image tow" class="object-cover w-full" />
+              </div>
+              <div class="relative p-6 max-xs:pt-10">
+                <p class="flex items-center"><span class="l-text text-primary">News </span><span class="m-text text-primary/60">. 0 Comments</span></p>
+                <h4 class="h4 font-bold pt-3">Must-try exotic coffee drinks in 2024</h4>
+                <a href="./blog-details.html" class="pt-6 flex justify-between items-center">
+                  <span class="text-primary m-text font-bold"> View Details </span>
+                  <span
+                    class="text-primary before:absolute group hover:before:h-0 before:h-5 theme-transition-3 before:theme-transition-3 xs:before:w-2 before:bg-white-1 before:-left-1 relative border size-10 flex items-center justify-center rounded-full border-primary"
+                  >
+                    <i
+                      class="ph ph-arrow-right group-hover:ml-0 xs:-ml-4 text-2xl group-hover:after:scale-0 after:theme-transition-3 after:h-px relative theme-transition-6 xs:after:w-12 after:origin-right after:right-5 after:top-1/2 after:absolute after:-mt-px after:bg-primary"
+                    ></i>
+                  </span>
+                </a>
+                <div class="px-4 py-2.5 bg-primary text-white-1 text-center absolute top-0 -translate-y-1/2 right-6">
+                  <p class="h3 font-bold">04</p>
+                  <p class="m-text">JUN</p>
+                </div>
+              </div>
+            </div>
+            <!-- blog card two -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-xl overflow-hidden bg-white-1">
+              <div>
+                <img src="./assets/images/blog-image-3.png" alt="blog image tow" class="object-cover w-full" />
+              </div>
+              <div class="relative p-6 max-xs:pt-10">
+                <p class="flex items-center"><span class="l-text text-primary">News </span><span class="m-text text-primary/60">. 0 Comments</span></p>
+                <h4 class="h4 font-bold pt-3">We know how to attract customers to your cafe</h4>
+                <a href="./blog-details.html" class="pt-6 flex justify-between items-center">
+                  <span class="text-primary m-text font-bold"> View Details </span>
+                  <span
+                    class="text-primary before:absolute group hover:before:h-0 before:h-5 theme-transition-3 before:theme-transition-3 xs:before:w-2 before:bg-white-1 before:-left-1 relative border size-10 flex items-center justify-center rounded-full border-primary"
+                  >
+                    <i
+                      class="ph ph-arrow-right group-hover:ml-0 xs:-ml-4 text-2xl group-hover:after:scale-0 after:theme-transition-3 after:h-px relative theme-transition-6 xs:after:w-12 after:origin-right after:right-5 after:top-1/2 after:absolute after:-mt-px after:bg-primary"
+                    ></i>
+                  </span>
+                </a>
+                <div class="px-4 py-2.5 bg-primary text-white-1 text-center absolute top-0 -translate-y-1/2 right-6">
+                  <p class="h3 font-bold">07</p>
+                  <p class="m-text">JUN</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= footer section ================= -->
+        <footer class="bg-white-1 rounded-20px sp32px">
+  <div class="flex items-center gap-2 text-primary mx-auto w-fit">
+    <i class="ph ph-instagram-logo text-2xl"></i>
+    <span class="h5 font-bold">Instagram</span>
+  </div>
+  <div
+    class="flex items-center justify-center gap-4 max-lg:flex-wrap lg:gap-6 spt32px"
+  >
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-1.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-2.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-3.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-4.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-5.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+  </div>
+  <div class="flex items-center gap-3 mx-auto w-fit spt60px">
+    <div>
+      <img src="./assets/images/coffe-cup.png" alt="coffee cup" />
+    </div>
+    <div>
+      <img src="./assets/images/logo.png" alt="Logo" />
+    </div>
+  </div>
+  <!-- footer menu -->
+  <div
+    data-aos="fade-right"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="spt40px flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-11"
+  >
+    <a
+      href="/index.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Home
+    </a>
+    <a
+      href="/about.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      About
+    </a>
+    <a
+      href="/menu.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Menu
+    </a>
+    <a
+      href="/blog.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Blog
+    </a>
+    <a
+      href="/contact.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Contact
+    </a>
+  </div>
+  <!-- social icons -->
+  <div
+    data-aos="fade-left"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1200"
+    class="flex items-center spb48px mx-auto spt48px w-fit gap-3 aos-init aos-animate"
+  >
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-linkedin-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+  </div>
+  <!-- copyright -->
+  <div
+    data-aos="fade-right"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1200"
+    class="border-t mx-auto spt48px border-black-4"
+  >
+    <div class="flex items-center gap-3 max-[480px]:flex-col w-fit mx-auto">
+      <p class="l-text font-medium">Copyright @ 2024 Caffez</p>
+      <div class="h-5 w-0.5 bg-secondary max-[480px]:hidden"></div>
+      <p class="xl-text font-medium text-secondary">
+        Designed By
+        <a href="/" class="text-primary underline">Pixelaxis</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+      </div>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

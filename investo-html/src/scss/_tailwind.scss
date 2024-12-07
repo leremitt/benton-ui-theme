@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto px-3 sm:max-w-[540px] sm:px-0 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1296px];
+  }
+
+  .display-1 {
+    @apply text-[36px] leading-[120%] font-bold md:text-[60px] lg:text-[72px] xl:text-[90px];
+  }
+
+  .display-2 {
+    @apply text-30px font-bold leading-[120%] md:text-[48px] lg:text-[64px] xl:text-[72px];
+  }
+
+  .display-3 {
+    @apply text-[30px] font-bold leading-[120%] md:text-[36px] lg:text-[56px] xl:text-[64px];
+  }
+
+  .display-4 {
+    @apply text-[30px] font-bold leading-[120%] md:text-[36px] lg:text-[48px] xl:text-[56px];
+  }
+
+  .fs-one{
+    @apply text-[30px] font-bold leading-[120%] md:text-[36px] xl:text-[48px];
+  }
+
+  .fs-two{
+    @apply text-[20px] font-bold leading-[120%] sm:text-[24px] lg:text-[30px] xxxl:text-[40px];
+  }
+
+  .fs-three{
+    @apply text-[20px] font-bold leading-[120%] sm:font-bold lg:text-[24px] xxxl:text-[32px];
+  }
+
+  .fs-four{
+    @apply text-[18px] font-bold leading-[120%] md:text-[20px] md:font-bold xxxl:text-[24px];
+  }
+
+  .fs-five{
+    @apply text-[16px] font-medium leading-[150%] md:text-[20px] md:font-bold;
+  }
+
+  .fs-six{
+    @apply text-[16px] font-medium leading-[150%] shadow-none;
+  }
+
+  .fs-seven{
+    @apply text-[12px] lg:text-[14px] font-medium leading-[150%] shadow-none;
+  }
+
+  .fs-eight{
+    @apply text-[12px] font-medium shadow-none;
+  }
+  
+  .btn-outline {
+    @apply btn bg-transparent text-primary hover:bg-primary hover:text-n0;
+  }
+
+  .btn-white {
+    @apply btn border-white bg-white text-primary hover:bg-white dark:border-bg3 dark:bg-bg3;
+  }
+
+  .event-unset {
+    pointer-events: unset;
+  }
+
+}
+@layer base {
+  i {
+    font-size: 1.5rem;
+  }
+  a,
+  p,
+  span,
+  td {
+    @apply text-sm md:text-lg font-light;
+  }
+  span{
+    @apply block;
+  }
+  h1 {
+    @apply text-[30px] font-bold leading-[120%] md:text-[36px] xl:text-[48px];
+  }
+  h2 {
+    @apply text-[20px] font-bold leading-[120%] sm:text-[24px] lg:text-[30px] xxxl:text-[40px];
+  }
+  h3 {
+    @apply text-[20px] font-bold leading-[120%] sm:font-bold lg:text-[24px] xxxl:text-[32px];
+  }
+  h4 {
+    @apply text-[18px] font-bold leading-[120%] md:text-[20px] md:font-bold xxxl:text-[24px];
+  }
+  h5 {
+    @apply text-[16px] font-medium leading-[150%] md:text-[20px] md:font-bold;
+  }
+  h6 {
+    @apply text-[16px] font-medium leading-[150%] shadow-none;
+  }
+
+  input:focus,
+  textarea:focus {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  table thead tr th:first-of-type {
+    @apply sm:rounded-tl-lg;
+  }
+
+  table thead tr th:last-of-type {
+    @apply sm:rounded-tr-lg;
+  }
+
+  table tbody tr:last-of-type td:first-of-type {
+    @apply sm:rounded-bl-lg;
+  }
+
+  table tbody tr:last-of-type td:last-of-type {
+    @apply sm:rounded-br-lg;
+  }
+
+  td {
+    vertical-align: middle !important;
+  }
+  
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input:checked + div {
+    @apply border-primary;
+  }
+
+  input:checked + div svg {
+    @apply block;
+  }
+
+  body {
+    font-family: "Rubik", sans-serif;
+    background: #000;
+    color: #FFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    font-size: 18px;
+    overflow-y: scroll;
+  }
+
+  input.picker[type="date"] {
+    position: relative;
+  }
+
+  input.picker[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: transparent;
+    background: transparent;
+  }
+}
+
+

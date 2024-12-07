@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Crafterx-Car Repairing Service Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-neutral-3 text-neutral-1">
+    <main>
+      <header data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="container mt-4 sm:mt-6 relative z-20">
+  <!-- desktop navbar -->
+  <div class="rounded-xl border bg-neutral-4 spx40px py-5 border-neutral-2/10 flex items-center justify-between mb-6">
+    <ul class="flex items-center gap-6 lg:gap-10 max-md:hidden">
+      <li>
+        <a href="/" class="l-text hover:text-primary duration-300">Home</a>
+      </li>
+      <li>
+        <a href="/about.html" class="l-text hover:text-primary duration-300">About</a>
+      </li>
+      <li>
+        <a href="/services.html" class="l-text hover:text-primary duration-300">Service</a>
+      </li>
+    </ul>
+    <a href="/">
+      <img src="./assets/images/logo.png" alt="Logo" />
+    </a>
+    <ul class="flex items-center gap-6 lg:gap-10 max-md:hidden">
+      <li>
+        <a href="/blog.html" class="l-text hover:text-primary duration-300">Blog</a>
+      </li>
+      <li>
+        <a href="/pricing.html" class="l-text hover:text-primary duration-300">Pricing</a>
+      </li>
+      <li>
+        <a href="/contact.html" class="l-text hover:text-primary duration-300">Contact</a>
+      </li>
+    </ul>
+    <div class="m-text relative md:hidden z-20">
+      <button class="text-neutral-n900 flex items-center gap-2">
+        <i id="mobile-menu-btn" class="ph menu-icon ph-list text-4xl"></i>
+      </button>
+      <div id="mobile-menu" class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-neutral-4 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500">
+        <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+          <li class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="/" class="single-menu-mobile">Home</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./about.html" class="single-menu-mobile">About</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./service.html" class="single-menu-mobile">Service</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./pricing.html" class="single-menu-mobile">Pricing</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./blog.html" class="single-menu-mobile">Blog</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./contact.html" class="single-menu-mobile">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ Welcome Section ============ -->
+      <div
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+        class="bg-neutral-4 container border border-neutral-2/20 max-xs:py-6 max-xs:px-3 xs:sp40px rounded-xl xl:grid grid-cols-12 gap-6"
+      >
+        <div class="col-span-6">
+          <p class="l-text">Welcome to CrafterX</p>
+          <h1 class="d4 pt-3 font-bold">Expert Car Repair Services <span class="text-primary underline underline-offset-4">You Can Trust</span></h1>
+        </div>
+        <div class="col-start-8 col-span-5 max-xl:smt40px">
+          <p class="l-text opacity-80">The experts at Crafter Complete Auto Care have years of experience in a range of auto repair services.</p>
+          <div class="btn-area group mt-6 w-fit">
+            <a href="./price.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+              <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">
+                Make A Appointment
+              </span>
+              <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+                <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+          <div class="flex gap-5 smt40px flex-wrap items-center">
+            <div class="flex -space-x-3 overflow-hidden p-0.5">
+              <img src="/assets/images/review-client-1.png" class="inline-block h-12 w-12 rounded-full ring-2 ring-neutral-1" />
+              <img src="/assets/images/review-client-2.png" class="inline-block h-12 w-12 rounded-full ring-2 ring-neutral-1" />
+              <img src="/assets/images/review-client-3.png" class="inline-block h-12 w-12 rounded-full ring-2 ring-neutral-1" />
+              <div class="flex size-12 items-center justify-center rounded-full border-2 border-neutral-n0 bg-secondary text-neutral-n0">
+                <i class="ph ph-plus text-neutral-4 font-bold"></i>
+              </div>
+            </div>
+            <p class="l-text font-bold h4 text-primary">150+ <span class="font-normal text-neutral-1 l-text">Popular Customer</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- ============ slider ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="smt32px container relative">
+        <div class="single-service-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded-xl overflow-hidden">
+              <img src="./assets/images/single-service-slider-1.png" alt="Slider Image" class="rounded-xl w-full object-cover" />
+            </div>
+            <div class="swiper-slide rounded-xl overflow-hidden">
+              <img src="./assets/images/single-service-slider-2.png" alt="Slider Image" class="rounded-xl w-full object-cover" />
+            </div>
+            <div class="swiper-slide rounded-xl overflow-hidden">
+              <img src="./assets/images/single-service-slider-3.png" alt="Slider Image" class="rounded-xl w-full object-cover" />
+            </div>
+            <div class="swiper-slide rounded-xl overflow-hidden">
+              <img src="./assets/images/single-service-slider-4.png" alt="Slider Image" class="rounded-xl w-full object-cover" />
+            </div>
+          </div>
+        </div>
+        <div class="spb32px progress bottom-0 z-50 w-fit shrink-0 absolute -translate-x-1/2 left-1/2">
+          <div class="swiper-pagination-progress z-50"></div>
+        </div>
+      </div>
+      <!-- ============ Services We Provide ============ -->
+      <div class="spt120px container">
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:sp40px rounded-xl lg:grid grid-cols-12 gap-6"
+  >
+    <h2 class="h2 font-bold col-span-6">Uncover the array of services we provide.</h2>
+    <div class="col-start-8 col-span-5 max-xl:smt40px">
+      <p class="l-text opacity-80">The experts at Crafter Complete Auto Care have years of experience in a range of auto repair services.</p>
+      <div class="btn-area group mt-6">
+        <a href="./services.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+          <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+          <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+            <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <!-- single card -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+      <img src="./assets/images/service-1.png" alt="Service Image" class="w-full rounded-xl" />
+      <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[200px]">
+        <h3 class="h2 font-bold">Car Repair</h3>
+        <div class="btn-area group w-fit mt-[22px]">
+          <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+            <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+            <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+              <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+    </div>
+    <!-- single card -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+      <img src="./assets/images/service-2.png" alt="Service Image" class="w-full rounded-xl" />
+      <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[200px]">
+        <h3 class="h2 font-bold">Car Repair</h3>
+        <div class="btn-area group w-fit mt-[22px]">
+          <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+            <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+            <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+              <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+    </div>
+    <!-- single card -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+      <img src="./assets/images/service-3.png" alt="Service Image" class="w-full rounded-xl" />
+      <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[200px]">
+        <h3 class="h2 font-bold">Car Repair</h3>
+        <div class="btn-area group w-fit mt-[22px]">
+          <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+            <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+            <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+              <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+    </div>
+    <!-- single card -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+      <img src="./assets/images/service-4.png" alt="Service Image" class="w-full rounded-xl" />
+      <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[200px]">
+        <h3 class="h2 font-bold">Car Repair</h3>
+        <div class="btn-area group w-fit mt-[22px]">
+          <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+            <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+            <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+              <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+    </div>
+    <!-- single card -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+      <img src="./assets/images/service-5.png" alt="Service Image" class="w-full rounded-xl" />
+      <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[200px]">
+        <h3 class="h2 font-bold">Car Repair</h3>
+        <div class="btn-area group w-fit mt-[22px]">
+          <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+            <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+            <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+              <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+    </div>
+    <!-- single card -->
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+      <img src="./assets/images/service-6.png" alt="Service Image" class="w-full rounded-xl" />
+      <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[200px]">
+        <h3 class="h2 font-bold">Car Repair</h3>
+        <div class="btn-area group w-fit mt-[22px]">
+          <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+            <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">Explore More</span>
+            <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+              <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+    </div>
+  </div>
+</div>
+
+      <!-- ============ About Us ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="container">
+  <div class="bg-primary spy40px max-xs:px-3 xs:spx60px text-neutral-3 rounded-xl smt120px">
+    <h2 class="h2 font-bold text-center">About us</h2>
+    <p class="l-text text-center pt-4">
+      Our commitment to quality is evident in every detail. The state-of-the-art technology seamlessly weaves with our thoughtful design, ensuring that your visit transcends the ordinary. We
+      understand that your vehicle deserves more than a routine wash – it deserves an immersive encounter with excellence. Creating an environment unlike any other.
+    </p>
+    <div class="flex items-center justify-center gap-10 sm:gap-15 smt60px flex-wrap">
+      <div class="flex items-center flex-col">
+        <p class="d1 font-bold flex items-center"><span data-counter-value="12" class="odometer font-body-font"></span>+</p>
+        <p class="xl-text">Years of experience</p>
+      </div>
+      <div class="h-20 w-px max-xs:hidden bg-[#6C7275]"></div>
+      <div class="flex items-center flex-col">
+        <p class="d1 font-bold flex items-center"><span data-counter-value="63" class="odometer"></span><span>K</span></p>
+        <p class="xl-text">Happy clients</p>
+      </div>
+      <div class="h-20 w-px bg-[#6C7275] max-md:hidden"></div>
+      <div class="flex items-center flex-col">
+        <p class="d1 font-bold flex items-center"><span data-counter-value="99" class="odometer font-body-font"></span>%</p>
+        <p class="xl-text">Customer satisfaction</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- ============ latest remarkable project ============ -->
+      <div class="spt120px container">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:sp40px rounded-xl lg:grid grid-cols-12 gap-6"
+        >
+          <h2 class="h2 font-bold col-span-6">The unveiling of our latest remarkable project.</h2>
+          <div class="col-start-8 col-span-5 max-xl:smt40px">
+            <p class="l-text opacity-80">The experts at Crafter Complete Auto Care have years of experience in a range of auto repair services.</p>
+            <div class="btn-area group mt-6">
+              <a href="./price.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">
+                  Explore More
+                </span>
+                <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+                  <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-6 mt-6">
+          <!-- single card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+            <img src="./assets/images/project-1.png" alt="Service Image" class="w-full rounded-xl max-md:h-[350px] object-cover" />
+            <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[250px]">
+              <div class="btn-area group mt-[22px] spb40px mx-auto w-fit">
+                <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                  <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">
+                    View Details
+                  </span>
+                  <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+                    <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="flex justify-center max-xs:text-center xs:justify-between items-center gap-2 max-xs:flex-col">
+                <div>
+                  <h3 class="h2 font-bold">Fiat Bravo</h3>
+                  <p class="xl-text pt-2">Car wash</p>
+                </div>
+                <p class="h1 font-bold">$120.00</p>
+              </div>
+            </div>
+            <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+          </div>
+          <!-- single card -->
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="relative group overflow-hidden">
+            <img src="./assets/images/project-2.png" alt="Service Image" class="w-full rounded-xl max-md:h-[350px] object-cover" />
+            <div class="absolute bottom-0 left-0 right-0 sp40px z-10 group-hover:translate-y-0 duration-500 translate-y-[250px]">
+              <div class="btn-area group mt-[22px] spb40px mx-auto w-fit">
+                <a href="./service-details.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                  <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">
+                    View Details
+                  </span>
+                  <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+                    <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="flex justify-center max-xs:text-center xs:justify-between items-center gap-2 max-xs:flex-col">
+                <div>
+                  <h3 class="h2 font-bold">Fiat Bravo</h3>
+                  <p class="xl-text pt-2">Car wash</p>
+                </div>
+                <p class="h1 font-bold">$120.00</p>
+              </div>
+            </div>
+            <div class="theme-card rounded-16px theme-transition-4 absolute bottom-0 left-0 flex h-0 w-full opacity-0 group-hover:visible group-hover:h-full group-hover:opacity-100"></div>
+          </div>
+        </div>
+      </div>
+      <!-- ============ testimonial slider ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="smt120px container">
+  <div class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:spx60px xs:spy40px rounded-xl">
+    <h2 class="h2 font-bold max-w-[500px] text-center mx-auto">Our finest client testimonials.</h2>
+
+    <div class="spt40px relative">
+      <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          <!-- single slide -->
+          <div class="swiper-slide">
+            <div class="rounded-xl sp32px border border-neutral-2/30">
+              <h4 class="h4 font-bold">Smooth Car Transport</h4>
+              <div class="flex items-center gap-1 pt-3">
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+              </div>
+              <p class="xl-text spt32px opacity-80">
+                Overall, I highly recommend the Ford to anyone in the market for a reliable, stylish, and high-performing car. It's a fantastic investment that brings together form and function
+                seamlessly.
+              </p>
+              <div class="flex items-center gap-5 spt32px">
+                <div>
+                  <img src="./assets/images/review-slider-client-1.png" alt="reviewer" class="rounded-full object-cover" />
+                </div>
+                <div>
+                  <p class="h5 font-bold">Jiyeon Jisoo</p>
+                  <p class="m-text opacity-80">New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single slide -->
+          <div class="swiper-slide">
+            <div class="rounded-xl sp32px border border-neutral-2/30">
+              <h4 class="h4 font-bold">Smooth Car Transport</h4>
+              <div class="flex items-center gap-1 pt-3">
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+              </div>
+              <p class="xl-text spt32px opacity-80">
+                Overall, I highly recommend the Ford to anyone in the market for a reliable, stylish, and high-performing car. It's a fantastic investment that brings together form and function
+                seamlessly.
+              </p>
+              <div class="flex items-center gap-5 spt32px">
+                <div>
+                  <img src="./assets/images/review-slider-client-2.png" alt="reviewer" class="rounded-full object-cover" />
+                </div>
+                <div>
+                  <p class="h5 font-bold">Jiyeon Jisoo</p>
+                  <p class="m-text opacity-80">New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single slide -->
+          <div class="swiper-slide">
+            <div class="rounded-xl sp32px border border-neutral-2/30">
+              <h4 class="h4 font-bold">Smooth Car Transport</h4>
+              <div class="flex items-center gap-1 pt-3">
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+              </div>
+              <p class="xl-text spt32px opacity-80">
+                Overall, I highly recommend the Ford to anyone in the market for a reliable, stylish, and high-performing car. It's a fantastic investment that brings together form and function
+                seamlessly.
+              </p>
+              <div class="flex items-center gap-5 spt32px">
+                <div>
+                  <img src="./assets/images/review-slider-client-1.png" alt="reviewer" class="rounded-full object-cover" />
+                </div>
+                <div>
+                  <p class="h5 font-bold">Jiyeon Jisoo</p>
+                  <p class="m-text opacity-80">New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single slide -->
+          <div class="swiper-slide">
+            <div class="rounded-xl sp32px border border-neutral-2/30">
+              <h4 class="h4 font-bold">Smooth Car Transport</h4>
+              <div class="flex items-center gap-1 pt-3">
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+                <i class="ph-fill ph-star text-primary"></i>
+              </div>
+              <p class="xl-text spt32px opacity-80">
+                Overall, I highly recommend the Ford to anyone in the market for a reliable, stylish, and high-performing car. It's a fantastic investment that brings together form and function
+                seamlessly.
+              </p>
+              <div class="flex items-center gap-5 spt32px">
+                <div>
+                  <img src="./assets/images/review-slider-client-2.png" alt="reviewer" class="rounded-full object-cover" />
+                </div>
+                <div>
+                  <p class="h5 font-bold">Jiyeon Jisoo</p>
+                  <p class="m-text opacity-80">New York</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="progress smt40px bottom-0 z-50 w-fit mx-auto shrink-0">
+        <div class="testimonial-pagination-progress z-50"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- =========== brand slider ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="smt120px container">
+  <div class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:spx60px xs:spy80px rounded-xl">
+    <h2 class="h2 font-bold text-center">Our finest client testimonials.</h2>
+    <div class="spt60px brand-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/brand-slider-2.png" alt="brand" class="mx-auto" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/brand-slider-2.png" alt="brand" class="mx-auto" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/brand-slider-3.png" alt="brand" class="mx-auto" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/brand-slider-4.png" alt="brand" class="mx-auto" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/brand-slider-5.png" alt="brand" class="mx-auto" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/brand-slider-6.png" alt="brand" class="mx-auto" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- =========== blog section ============ -->
+      <div class="spy120px container">
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="bg-neutral-4 border border-neutral-2/20 max-xs:py-6 items-center max-xs:px-3 xs:sp40px rounded-xl lg:grid grid-cols-12 gap-6"
+        >
+          <h2 class="h2 font-bold col-span-6">Join the conversation in our latest blog series.</h2>
+          <div class="col-start-8 col-span-5 max-xl:smt40px">
+            <p class="l-text opacity-80">The experts at Crafter Complete Auto Care have years of experience in a range of auto repair services.</p>
+            <div class="btn-area group mt-6">
+              <a href="./blog.html" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-white-1">
+                <span class="one h5 font-medium theme-transition-4 min-h-[45px] flex items-center justify-center rounded-full text-neutral-3 bg-primary px-4 xs:px-8 py-2.5 capitalize">
+                  See All blog
+                </span>
+                <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center bg-primary rounded-full text-neutral-3 p-2.5 text-center">
+                  <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="pt-6 grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-6">
+            <!-- blog card -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+              <div class="rounded-xl overflow-hidden">
+                <img src="./assets/images/blog-1.png" alt="Blog image" class="rounded-xl w-fit duration-300 hover:scale-105 object-cover" />
+              </div>
+              <div class="spt32px">
+                <p class="m-text opacity-80">July 9, 2024</p>
+                <a href="/blog-details.html" class="h3 block mt-3 font-bold hover:underline underline-offset-4">Join the conversation in our latest blog series.</a>
+                <p class="l-text mt-3 opacity-80">Dive into our innovative water-saving techniques, -friendly cleaning solutions, and learn how you can contribute to a greener,</p>
+                <a
+                  href="/blog-details.html"
+                  class="btn-area w-fit uppercase before:w-full hover:before:bg-primary before:bg-neutral-1 before:absolute before:-bottom-0.5 before:h-0.5 xl-text flex items-center mt-6 relative hover:text-primary duration-300"
+                >
+                  <span>VIEW DETAILS</span> <span> <i class="ph ph-arrow-up-right text-[24px]"> </i> </span>
+                </a>
+              </div>
+            </div>
+            <!-- blog card -->
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+              <div class="rounded-xl overflow-hidden">
+                <img src="./assets/images/blog-2.png" alt="Blog image" class="rounded-xl w-fit duration-300 hover:scale-105 object-cover" />
+              </div>
+              <div class="spt32px">
+                <p class="m-text opacity-80">October 9, 2024</p>
+                <a href="/blog-details.html" class="h3 block mt-3 font-bold hover:underline underline-offset-4">Membership perks: The insider's guide to car wash 128 rewards.</a>
+                <p class="l-text mt-3 opacity-80">Dive into our innovative water-saving techniques, -friendly cleaning solutions, and learn how you can contribute to a greener,</p>
+                <a
+                  href="/blog-details.html"
+                  class="btn-area w-fit uppercase before:w-full hover:before:bg-primary before:bg-neutral-1 before:absolute before:-bottom-0.5 before:h-0.5 xl-text flex items-center mt-6 relative hover:text-primary duration-300"
+                >
+                  <span>VIEW DETAILS</span> <span> <i class="ph ph-arrow-up-right text-[24px]"> </i> </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =========== footer section ============ -->
+      <div class="bg-neutral-4 spt60px">
+  <div class="container">
+    <div class="flex flex-wrap justify-between gap-6">
+      <div class="max-lg:order-2">
+        <div class="flex items-center gap-5 pb-6 border-b border-neutral-2/30">
+          <a href="#" class="flex gap-1 items-center l-text"><span>Facebook</span><i class="ph ph-arrow-up-right text-[24px]"></i></a>
+          <a href="#" class="flex gap-1 items-center l-text"><span>Twitter</span><i class="ph ph-arrow-up-right text-[24px]"></i></a>
+          <a href="#" class="flex gap-1 items-center l-text"><span>Instagram</span><i class="ph ph-arrow-up-right text-[24px]"></i></a>
+        </div>
+        <p class="l-text spt32px">Think of your vehicle's maintenance.</p>
+      </div>
+      <!-- logo -->
+      <a href="/" class="max-lg:order-1">
+        <img src="./assets/images/logo.png" alt="Logo" />
+      </a>
+      <div class="max-w-[340px] max-lg:order-2">
+        <div class="flex items-center gap-3">
+          <i class="ph-fill ph-map-pin text-secondary text-[32px]"></i>
+          <p class="l-text opacity-80">House 178/196, Avenue 01, Uttara Dohs, Dhaka Bangladesh</p>
+        </div>
+        <div class="flex items-center gap-3 pt-6">
+          <i class="ph-fill ph-phone-call text-secondary text-[32px]"></i>
+          <a href="tel:+8801234567890" class="l-text opacity-80">+880 123 456 7890</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-px bg-neutral-2/30 smy60px"></div>
+    <div class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-5 justify-between gap-6">
+      <div class="flex flex-col gap-6">
+        <a href="./about.html" class="l-text">About</a>
+        <a href="./services.html" class="l-text">Services</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./portfolio.html" class="l-text">Portfolio</a>
+        <a href="./blog.html" class="l-text">Blog</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./our-team.html" class="l-text">Our Team</a>
+        <a href="./pricing.html" class="l-text">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./contact.html" class="l-text">Contact</a>
+        <a href="./faq.html" class="l-text">Faq</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./service-details.html" class="l-text">Service Details</a>
+        <a href="./portfolio-details.html" class="l-text">Portfolio Details</a>
+      </div>
+    </div>
+    <div class="w-full h-px bg-neutral-2/30 smt60px mb-6"></div>
+    <div class="flex items-center justify-between gap-6 pb-6 max-xs:flex-col text-center">
+      <p class="l-text">Copyright @ 2024 Crafter<span class="text-secondary">X</span></p>
+      <p class="l-text">Designed By <a href="#" class="hover:underline hover:text-primary duration-300">Pixelaxis</a></p>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

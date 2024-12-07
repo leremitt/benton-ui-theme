@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Applex - HTML Tailwind css</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body>
+    <main class="overflow-hidden bg-white-4">
+      <header>
+  <!-- desktop navbar -->
+  <div
+    data-aos="zoom-in"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="hidden bg-white-4 p-6 lg:block"
+  >
+    <div
+      class="desktop-nav container theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px hi container theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <ul class="menu flex items-center justify-between gap-10">
+          <!-- navbarData -->
+          <li>
+            <a
+              href="index.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="features.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="l-text single-menu navbar-hover-text font-l-text theme-transition-3 relative z-10 flex cursor-pointer items-center justify-between gap-1 font-medium text-black-4 before:theme-transition-3 before:absolute before:bottom-0 before:block before:h-px before:bg-primary hover:text-primary hover:before:w-full"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Items  end-->
+
+        <div class="relative">
+          <div class="btn-area right-0 z-20">
+            <a
+              href="#"
+              aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+            >
+              <span
+                class="one m-text theme-transition-4 rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+              >
+                Let’s talk
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+              >
+                <i
+                  class="ph ph-arrow-up-right text-[24px]"
+                  data-icon-name="arrow-right"
+                ></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="bg-white-4 p-6 lg:hidden">
+    <div
+      class="desktop-nav container theme-transition-3 top-0 z-50 w-full rounded-3xl border border-white-2 bg-white-1 px-6"
+    >
+      <div
+        class="transition-primary spy24px container theme-transition-3 flex w-full items-center justify-between"
+      >
+        <div>
+          <a href="/">
+            <img src="./assets/images/logo.png" alt="Desktop Logo" />
+          </a>
+        </div>
+        <!-- Menu Items  start-->
+
+        <!-- Menu Items  end-->
+
+        <div class="m-text relative font-medium">
+          <button
+            id="mobile-menu-btn"
+            class="text-neutral-n900 flex items-center gap-2"
+          >
+            <i class="ph ph-list text-4xl"></i>
+          </button>
+
+          <div
+            id="mobile-menu"
+            class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-white-1 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+          >
+            <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+              <li
+                class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="index.html" class="single-menu">Home</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="featurs.html" class="single-menu">Features</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="pricing.html" class="single-menu">Pricing</a>
+              </li>
+              <li
+                class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+              >
+                <a href="blog.html" class="single-menu">Blog</a>
+              </li>
+            </ul>
+            <div class="relative">
+              <div class="btn-area z-20">
+                <a
+                  href="#"
+                  aria-label="Contact"
+                  class="move-btn theme-transition-4 flex items-center text-center text-white-1"
+                >
+                  <span
+                    class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-primary px-8 py-3 font-medium capitalize"
+                  >
+                    Let’s talk
+                  </span>
+                  <span
+                    class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-primary bg-primary p-2.5 text-center"
+                  >
+                    <i
+                      class="ph ph-arrow-up-right text-[24px]"
+                      data-icon-name="arrow-right"
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <section class="spy120px">
+        <div class="container">
+          <div
+            class="mx-auto flex flex-col items-center justify-center gap-4 text-center"
+          >
+            <div
+              data-aos="zoom-out-down"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="flex items-center justify-center gap-3"
+            >
+              <i class="ph ph-fire text-[24px] text-primary"></i>
+              <h5 class="l-text font-medium text-primary">
+                Explore Our Insights
+              </h5>
+            </div>
+            <h3
+              data-aos="zoom-out-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500"
+              class="h2 font-bold text-black-1"
+            >
+              AppleX Blog
+            </h3>
+          </div>
+
+          <div class="spt60px">
+            <div
+              class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-6 xl:grid-cols-3"
+            >
+              <!-- blog single card -->
+              <div
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500"
+                class="group"
+              >
+                <div class="rounded-3xl border border-white-2 bg-white-1">
+                  <div class="overflow-hidden rounded-xl p-3">
+                    <img
+                      src="./assets/images/blog-1.png"
+                      alt="blog thumb"
+                      class="rounded-xl"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary group-hover:text-white-1"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="h4 theme-transition-3 font-bold text-black-1 group-hover:text-white-1"
+                  >
+                    Boosting Team Efficiency
+                  </a>
+                  <p
+                    class="l-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                  >
+                    Discover practical strategies for enhancing team efficiency
+                    with AppleX
+                  </p>
+                  <div class="flex items-center justify-between gap-6">
+                    <p
+                      class="m-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                    >
+                      Latest News December 12, 2024
+                    </p>
+
+                    <a
+                      href="blog-details.html"
+                      class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                    >
+                      <i
+                        class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                      >
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- blog single card -->
+              <div
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500"
+                class="group"
+              >
+                <div class="rounded-3xl border border-white-2 bg-white-1">
+                  <div class="overflow-hidden rounded-xl p-3">
+                    <img
+                      src="./assets/images/blog-2.png"
+                      alt="blog thumb"
+                      class="rounded-xl"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary group-hover:text-white-1"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="h4 theme-transition-3 font-bold text-black-1 group-hover:text-white-1"
+                  >
+                    How to grow up your business
+                  </a>
+                  <p
+                    class="l-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                  >
+                    Discover practical strategies for enhancing team efficiency
+                    with AppleX
+                  </p>
+                  <div class="flex items-center justify-between gap-6">
+                    <p
+                      class="m-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                    >
+                      Latest News December 12, 2024
+                    </p>
+
+                    <a
+                      href="blog-details.html"
+                      class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                    >
+                      <i
+                        class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                      >
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- blog single card -->
+              <div
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500"
+                class="group"
+              >
+                <div class="rounded-3xl border border-white-2 bg-white-1">
+                  <div class="overflow-hidden rounded-xl p-3">
+                    <img
+                      src="./assets/images/blog-3.png"
+                      alt="blog thumb"
+                      class="rounded-xl"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary group-hover:text-white-1"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="h4 theme-transition-3 font-bold text-black-1 group-hover:text-white-1"
+                  >
+                    Planing to manage your clients?
+                  </a>
+                  <p
+                    class="l-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                  >
+                    Discover practical strategies for enhancing team efficiency
+                    with AppleX
+                  </p>
+                  <div class="flex items-center justify-between gap-6">
+                    <p
+                      class="m-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                    >
+                      Latest News December 12, 2024
+                    </p>
+
+                    <a
+                      href="blog-details.html"
+                      class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                    >
+                      <i
+                        class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                      >
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- blog single card -->
+              <div
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500"
+                class="group"
+              >
+                <div class="rounded-3xl border border-white-2 bg-white-1">
+                  <div class="overflow-hidden rounded-xl p-3">
+                    <img
+                      src="./assets/images/blog-4.png"
+                      alt="blog thumb"
+                      class="rounded-xl"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary group-hover:text-white-1"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="h4 theme-transition-3 font-bold text-black-1 group-hover:text-white-1"
+                  >
+                    Grow up your business successfully
+                  </a>
+                  <p
+                    class="l-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                  >
+                    Discover practical strategies for enhancing team efficiency
+                    with AppleX
+                  </p>
+                  <div class="flex items-center justify-between gap-6">
+                    <p
+                      class="m-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                    >
+                      Latest News December 12, 2024
+                    </p>
+
+                    <a
+                      href="blog-details.html"
+                      class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                    >
+                      <i
+                        class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                      >
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- blog single card -->
+              <div
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500"
+                class="group"
+              >
+                <div class="rounded-3xl border border-white-2 bg-white-1">
+                  <div class="overflow-hidden rounded-xl p-3">
+                    <img
+                      src="./assets/images/blog-5.png"
+                      alt="blog thumb"
+                      class="rounded-xl"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary group-hover:text-white-1"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="h4 theme-transition-3 font-bold text-black-1 group-hover:text-white-1"
+                  >
+                    Meet the business magnet of the year
+                  </a>
+                  <p
+                    class="l-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                  >
+                    Discover practical strategies for enhancing team efficiency
+                    with AppleX
+                  </p>
+                  <div class="flex items-center justify-between gap-6">
+                    <p
+                      class="m-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                    >
+                      Latest News December 12, 2024
+                    </p>
+
+                    <a
+                      href="blog-details.html"
+                      class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                    >
+                      <i
+                        class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                      >
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- blog single card -->
+              <div
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-duration="1500"
+                class="group"
+              >
+                <div class="rounded-3xl border border-white-2 bg-white-1">
+                  <div class="overflow-hidden rounded-xl p-3">
+                    <img
+                      src="./assets/images/blog-6.png"
+                      alt="blog thumb"
+                      class="rounded-xl"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="theme-transition-3 flex flex-col gap-3 rounded-3xl border border-white-2 bg-white-1 p-6 group-hover:bg-primary group-hover:text-white-1"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="h4 theme-transition-3 font-bold text-black-1 group-hover:text-white-1"
+                  >
+                    Make successful business with AppleX
+                  </a>
+                  <p
+                    class="l-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                  >
+                    Discover practical strategies for enhancing team efficiency
+                    with AppleX
+                  </p>
+                  <div class="flex items-center justify-between gap-6">
+                    <p
+                      class="m-text theme-transition-3 text-black-4 group-hover:text-white-1"
+                    >
+                      Latest News December 12, 2024
+                    </p>
+
+                    <a
+                      href="blog-details.html"
+                      class="theme-transition-3 flex size-10 items-center justify-center rounded-full bg-primary group-hover:bg-white-1"
+                    >
+                      <i
+                        class="ph ph-arrow-up-right theme-transition-3 text-[24px] text-white-1 group-hover:text-black-1"
+                      >
+                      </i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="spt60px flex items-center justify-center gap-2 sm:gap-3"
+            >
+              <button
+                class="theme-transition-3 flex min-h-14 min-w-14 items-center justify-center rounded-full bg-black-5 p-3.5 text-white-1 hover:bg-primary sm:min-h-15 sm:min-w-15"
+              >
+                <i class="ph ph-caret-left text-[20px]"></i>
+              </button>
+              <button
+                class="m-text theme-transition-3 flex min-h-14 min-w-14 items-center justify-center rounded-full bg-black-5 p-3.5 text-white-1 hover:bg-primary sm:min-h-15 sm:min-w-15"
+              >
+                1
+              </button>
+              <button
+                class="m-text theme-transition-3 flex min-h-14 min-w-14 items-center justify-center rounded-full bg-black-5 p-3.5 text-white-1 hover:bg-primary sm:min-h-15 sm:min-w-15"
+              >
+                2
+              </button>
+              <button
+                class="m-text theme-transition-3 flex min-h-14 min-w-14 items-center justify-center rounded-full bg-black-5 p-3.5 text-white-1 hover:bg-primary sm:min-h-15 sm:min-w-15"
+              >
+                3
+              </button>
+              <button
+                class="theme-transition-3 flex min-h-14 min-w-14 items-center justify-center rounded-full bg-black-5 p-3.5 text-white-1 hover:bg-primary sm:min-h-15 sm:min-w-15"
+              >
+                <i class="ph ph-caret-right text-[20px]"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="spt120px bg-white-1 pb-6">
+  <div class="container">
+    <h3
+      data-aos="zoom-out-down"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="h2 mx-auto max-w-[470px] text-center font-bold text-black-1"
+    >
+      AppleX is available for all Devices
+    </h3>
+  </div>
+  <div
+    class="spt60px grid-cols-12 items-center max-sm:container max-sm:pb-4 sm:grid"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-1 col-end-4 h-full rounded-br-xl rounded-tr-xl border-b-2 border-r-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="col-start-3 col-end-11 -ml-0.5 rounded-xl border-accent-2 text-center lg:col-start-4 lg:col-end-10 lg:border-2"
+    >
+      <a
+        href="/"
+        class="h2 block w-full rounded-full bg-primary py-6 font-bold text-white-1 sm:py-8 md:py-11"
+      >
+        Start for free
+      </a>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-10 col-end-13 -ml-0.5 h-full rounded-bl-xl rounded-tl-xl border-b-2 border-l-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+  </div>
+  <div
+    class="grid-cols-12 items-center max-sm:container max-lg:gap-6 sm:grid lg:-mt-0.5"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-1 col-end-4 h-full rounded-br-xl rounded-tr-xl border-b-2 border-r-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+      class="col-start-3 col-end-11 -ml-0.5 gap-4 rounded-xl border-accent-2 max-sm:space-y-4 sm:grid sm:grid-cols-2 lg:col-start-4 lg:col-end-10 lg:gap-0 lg:border-2"
+    >
+      <div
+        class="rounded-full border border-accent-2 py-4 text-center sm:py-5 md:py-7"
+      >
+        <img
+          src="./assets/images/footer-google-play.png"
+          alt="footer apple play image"
+          class="mx-auto block max-3xl:w-40"
+        />
+      </div>
+      <div
+        class="rounded-full border border-accent-2 py-4 text-center sm:py-5 md:py-7"
+      >
+        <img
+          src="./assets/images/footer-apple-play.png"
+          alt="footer apple play image"
+          class="mx-auto block max-3xl:w-40"
+        />
+      </div>
+    </div>
+
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="col-start-10 col-end-13 -ml-0.5 h-full rounded-bl-xl rounded-tl-xl border-b-2 border-l-2 border-t-2 border-accent-2 max-lg:hidden"
+    ></div>
+  </div>
+  <div
+    class="container flex items-center justify-between pt-6 max-md:flex-col max-md:gap-6"
+  >
+    <div
+      data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="flex items-center gap-3 max-[480px]:flex-col"
+    >
+      <p class="xl-text font-medium text-black-1">Copyright @ 2024 AppleX</p>
+      <div class="h-5 w-0.5 bg-white-3 max-[480px]:hidden"></div>
+      <p class="xl-text font-medium text-black-1">
+        Designed By
+        <a href="/" class="text-primary underline">Pixelaxis</a>
+      </p>
+    </div>
+    <div
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1200"
+      class="flex items-center gap-3"
+    >
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+      <a
+        href="/"
+        class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-primary hover:bg-primary"
+      >
+        <i
+          class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-primary group-hover:text-white-1"
+        ></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </main>
+
+    <!-- ============= swiper js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============= matter js ============ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <!-- ============= matter custom js ============ -->
+    <script src="./assets/js/matterjs.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

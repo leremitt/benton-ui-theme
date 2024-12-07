@@ -1,0 +1,231 @@
+// Lodaer starts
+.loader {
+  width: 50px;
+  aspect-ratio: 1.154;
+  position: relative;
+  background: conic-gradient(
+    from 120deg at 50% 64%,
+    #0000,
+    #99C306 1deg 120deg,
+    #0000 121deg
+  );
+  animation: l27-0 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transform-origin: 50% 66%;
+  animation: l27-1 1.5s infinite;
+}
+
+.loader:after {
+  --s: -1;
+}
+
+@keyframes l27-0 {
+  0%,
+  30% {
+    transform: rotate(0);
+  }
+
+  70% {
+    transform: rotate(120deg);
+  }
+
+  70.01%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes l27-1 {
+  0% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+  }
+
+  30%,
+  70% {
+    transform: rotate(calc(var(--s, 1) * 120deg))
+      translate(calc(var(--s, 1) * -5px), 10px);
+  }
+
+  100% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+  }
+}
+
+
+// Preloader Starts
+.pre-item {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+	background: #1C1C1C;
+	height: 100%;
+	width: 100%;
+}
+// Lodaer ends
+
+// Header Starts
+.show {
+  @apply hidden duration-500;
+
+}
+
+#mobileMenu {
+  @apply md:hidden
+}
+
+.cmnhed {
+  .active {
+    color: #99C306;
+    text-decoration: underline;
+  }
+}
+
+
+// .navbar-nav{
+//   &.active, &:hover {
+//     color: red;
+// }
+// }
+
+// Header Ends
+// brad-carousel Starts
+.brad-carousel {
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+}
+
+// brad-carousel Ends
+// Countdown Starts
+.counters {
+  span {
+    line-height: inherit;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+  }
+}
+// Countdown Ends
+// Text Shadow Starts
+.text-styleb {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(17, 17, 17, 0.60);
+}
+// Text Shadow Ends
+.socaillink{
+  transition: 0.5s linear;
+  transform: translateX(80px);
+  &.active{
+    transform: translateX(0);
+    transition: 0.5s linear;
+  }
+}
+.socaillink2{
+  &.active2{
+    display: none ;
+  }
+}
+.socaillink3{
+  display: none;
+  &.active3{
+    display: block ;
+  }
+}
+.socaillink4{
+  transition: 0.5s linear;
+  &.active4{
+    background-color: $secondary1;
+  }
+}
+
+.socaillink-2{
+  transition: 0.5s linear;
+  transform: translateX(80px);
+  &.active-2{
+    transform: translateX(0);
+    transition: 0.5s linear;
+  }
+}
+.socaillink2-2{
+  &.active2-2{
+    display: none ;
+  }
+}
+.socaillink3-2{
+  display: none;
+  &.active3-2{
+    display: block ;
+  }
+}
+.socaillink4-2{
+  transition: 0.5s linear;
+  &.active4-2{
+    background-color: $secondary1;
+  }
+}
+
+.socaillink-3{
+  transition: 0.5s linear;
+  transform: translateX(80px);
+  &.active-3{
+    transform: translateX(0);
+    transition: 0.5s linear;
+  }
+}
+.socaillink2-3{
+  &.active2-3{
+    display: none ;
+  }
+}
+.socaillink3-3{
+  display: none;
+  &.active3-3{
+    display: block ;
+  }
+}
+.socaillink4-3{
+  transition: 0.5s linear;
+  &.active4-3{
+    background-color: $secondary1;
+  }
+}
+
+
+.socaillink-4{
+  transition: 0.5s linear;
+  transform: translateX(80px);
+  &.active-4{
+    transform: translateX(0);
+    transition: 0.5s linear;
+  }
+}
+.socaillink2-4{
+  &.active2-4{
+    display: none ;
+  }
+}
+.socaillink3-4{
+  display: none;
+  &.active3-4{
+    display: block ;
+  }
+}
+.socaillink4-4{
+  transition: 0.5s linear;
+  &.active4-4{
+    background-color: $secondary1;
+  }
+}
+.details-section{
+	overflow: initial;
+}

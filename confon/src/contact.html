@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+
+    <title>Contact-Event Booking Template</title>
+  </head>
+
+  <body class="bg-white-3 p-4 text-black-1 sm:p-6">
+    <main class="relative">
+      <!-- ============ navbar start ============ -->
+
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ contact start ============ -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- Contact page title  -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp60px col-span-12 flex justify-between gap-6 rounded-xl bg-primary max-xl:flex-col">
+          <h2 class="h2 max-w-[750px] font-bold text-black-1 xxl:max-w-[900px] 3xl:max-w-[1043px]">
+            Get in Touch Reach Out to Us for Inquiries, Support, and Assistance with Your Event Booking Needs
+          </h2>
+          <div class="flex items-center gap-3">
+            <div class="btn-area z-20">
+              <a href="#" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-black-1">
+                <span class="one l-text theme-transition-4 min-h-[45px] rounded-2xl border border-black-1 px-6 py-3 font-medium capitalize"> Learn More </span>
+                <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-black-1 bg-primary p-3.5 text-center">
+                  <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- contact form -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp32px col-span-12 rounded-xl bg-accent-4 xxl:col-span-6">
+          <h3 class="h3 max-w-[418px] font-bold">We’re just minutes away from meeting</h3>
+          <form class="spt40px">
+            <div class="grid grid-cols-2 gap-6">
+              <input type="text" class="placeholder:m-text rounded-xl border border-black-2/10 bg-accent-4 p-3 placeholder:text-black-4 max-sm:col-span-2" placeholder="First Name" />
+              <input type="text" class="placeholder:m-text rounded-xl border border-black-2/10 bg-accent-4 p-3 placeholder:text-black-4 max-sm:col-span-2" placeholder="Last Name" />
+              <input type="email" class="placeholder:m-text col-span-2 rounded-xl border border-black-2/10 bg-accent-4 p-3 placeholder:text-black-4 max-sm:col-span-2" placeholder="Email" />
+
+              <textarea rows="5" class="placeholder:m-text col-span-2 rounded-xl border border-black-2/10 bg-accent-4 p-3 placeholder:text-black-4" placeholder="Message"></textarea>
+
+              <button class="m-text col-span-2 rounded-xl bg-black-1 p-3 font-semibold text-white-1">Submit</button>
+            </div>
+          </form>
+        </div>
+        <!-- contact page image -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="bg-accent col-span-12 overflow-hidden rounded-xl sm:col-span-6 xxl:col-span-4">
+          <img
+            src="./assets/images/contact-page-image.png"
+            alt="A man sitting
+          on a couch with a pen and paper, looking interested and focused"
+            class="h-full w-full rounded-xl object-cover"
+          />
+        </div>
+        <!-- contact page contact info -->
+        <div class="col-span-12 flex flex-col gap-6 sm:col-span-6 xxl:col-span-2">
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp32px flex h-full flex-col items-center justify-center gap-6 rounded-xl bg-white-1">
+            <div class="flex items-center justify-center rounded-full border border-black-1 p-5">
+              <i class="ph-fill ph-phone-call text-[40px]"></i>
+            </div>
+            <h3 class="h4 font-bold capitalize">Contact Us</h3>
+            <p class="l-text">(239) 555-0108</p>
+          </div>
+          <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="sp32px flex h-full flex-col items-center justify-center gap-6 rounded-xl bg-white-1">
+            <div class="flex items-center justify-center rounded-full border border-black-1 p-5">
+              <i class="ph-fill ph-envelope text-[40px]"></i>
+            </div>
+            <h3 class="h4 font-bold capitalize">Email</h3>
+            <p class="l-text">ckctm12@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <!-- ============ contact end ============ -->
+      <!-- ============ footer start ============ -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Blog - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <section>
+  <!-- Desktop Menu -->
+  <div
+    class="fixed bottom-10 right-0 left-0 flex justify-center items-center w-full max-lg:hidden z-20"
+  >
+    <div
+      class="text-black bg-n4 rounded-xl uppercase flex justify-between items-center max-w-[900px] px-3 py-4 gap-10"
+    >
+      <a href="./index.html" class="flex justify-center items-center gap-2">
+        <img src="./assets/images/fav.png" class="size-8" alt="" />
+        <h4 class="heading-4">drinko</h4>
+      </a>
+
+      <nav>
+        <ul class="flex justify-center items-center gap-8 heading-6">
+          <li><a href="./about-us.html">about</a></li>
+          <li><a href="./menu.html">menu</a></li>
+          <li><a href="./blog.html">blog</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="heading-6">
+        <a
+          href="./book-table.html"
+          class="uppercase border border-black py-3 px-4 rounded-xl"
+        >
+          book a table
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="relative lg:hidden z-20">
+    <button
+      id="mobileModalButton"
+      class="text-3xl text-n4 border border-n4 !leading-none flex justify-center items-center rounded-md p-1 fixed top-10 left-10"
+    >
+      <i class="ph ph-list"></i>
+    </button>
+
+    <div
+      class="modalClose fixed left-8 top-20 w-[200px] origin-top-left rounded-2xl border border-borderColor text-black bg-n4 py-4 duration-500"
+      id="mobileMenuModal"
+    >
+      <ul class="flex flex-col gap-3 pl-4">
+        <li class="">
+          <a href="./about-us.html">About</a>
+        </li>
+        <li class="">
+          <a href="./menu.html">Menu</a>
+        </li>
+        <li class="">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="">
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li class="">
+          <a href="./book-table.html">Book A Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Header Area End -->
+
+      <section class="grid grid-cols-12 gap-6">
+        <div
+          class="rounded-[20px] overflow-hidden col-span-12 md:col-span-4 lg:col-span-6 xl:col-span-7 4xl:col-span-8"
+        >
+          <div class="relative max-lg:h-[400px] lg:h-dvh w-full">
+            <!-- For use image -->
+            <video
+              class="w-full h-full object-cover rounded-3xl"
+              muted
+              loop
+              autoplay
+            >
+              <source
+                src="https://softivuspro.com/rest/bar.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+        <div
+          class="col-span-12 md:col-span-8 lg:col-span-6 xl:col-span-5 4xl:col-span-4 flex flex-col gap-6"
+        >
+          <div
+            class="bg-secondaryBg border-borderColor py-8 md:py-12 px-4 md:px-10 rounded-[20px]"
+          >
+            <h3 class="heading-3 text-center">Latest posts</h3>
+
+            <div class="flex flex-col gap-8 pt-10">
+              <div
+                class="w-full flex justify-start items-center gap-5 pb-5 border-b border-borderColor max-[430px]:flex-col"
+              >
+                <div class="rounded-[20px] overflow-hidden">
+                  <img src="./assets/images/blog-img-1.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-start items-start">
+                  <p class="text-n3">April 20, 2024</p>
+                  <h4 class="heading-4 pt-2 pb-6">
+                    The Art of Cocktail Innovation
+                  </h4>
+                  <a
+                    href="./blog-details.html"
+                    class="text-lg text-n2 hover:text-n4 duration-500 hover:underline"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-start items-center gap-5 pb-5 border-b border-borderColor max-[430px]:flex-col"
+              >
+                <div class="rounded-[20px] overflow-hidden">
+                  <img src="./assets/images/blog-img-2.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-start items-start">
+                  <p class="text-n3">April 20, 2024</p>
+                  <h4 class="heading-4 pt-2 pb-6">
+                    Crafting Cocktails with Character
+                  </h4>
+                  <a
+                    href="./blog-details.html"
+                    class="text-lg text-n2 hover:text-n4 duration-500 hover:underline"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-start items-center gap-5 pb-5 border-b border-borderColor max-[430px]:flex-col"
+              >
+                <div class="rounded-[20px] overflow-hidden">
+                  <img src="./assets/images/blog-img-3.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-start items-start">
+                  <p class="text-n3">April 20, 2024</p>
+                  <h4 class="heading-4 pt-2 pb-6">
+                    The Art of Cocktail Innovation
+                  </h4>
+                  <a
+                    href="./blog-details.html"
+                    class="text-lg text-n2 hover:text-n4 duration-500 hover:underline"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-start items-center gap-5 pb-5 border-b border-borderColor max-[430px]:flex-col"
+              >
+                <div class="rounded-[20px] overflow-hidden">
+                  <img src="./assets/images/blog-img-4.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-start items-start">
+                  <p class="text-n3">April 20, 2024</p>
+                  <h4 class="heading-4 pt-2 pb-6">
+                    The Art of Cocktail Innovation
+                  </h4>
+                  <a
+                    href="./blog-details.html"
+                    class="text-lg text-n2 hover:text-n4 duration-500 hover:underline"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

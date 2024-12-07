@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Faq-Car Repairing Service Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-neutral-3 text-neutral-1">
+    <main>
+      <!-- ============ header section ============ -->
+      <header data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="container mt-4 sm:mt-6 relative z-20">
+  <!-- desktop navbar -->
+  <div class="rounded-xl border bg-neutral-4 spx40px py-5 border-neutral-2/10 flex items-center justify-between mb-6">
+    <ul class="flex items-center gap-6 lg:gap-10 max-md:hidden">
+      <li>
+        <a href="/" class="l-text hover:text-primary duration-300">Home</a>
+      </li>
+      <li>
+        <a href="/about.html" class="l-text hover:text-primary duration-300">About</a>
+      </li>
+      <li>
+        <a href="/services.html" class="l-text hover:text-primary duration-300">Service</a>
+      </li>
+    </ul>
+    <a href="/">
+      <img src="./assets/images/logo.png" alt="Logo" />
+    </a>
+    <ul class="flex items-center gap-6 lg:gap-10 max-md:hidden">
+      <li>
+        <a href="/blog.html" class="l-text hover:text-primary duration-300">Blog</a>
+      </li>
+      <li>
+        <a href="/pricing.html" class="l-text hover:text-primary duration-300">Pricing</a>
+      </li>
+      <li>
+        <a href="/contact.html" class="l-text hover:text-primary duration-300">Contact</a>
+      </li>
+    </ul>
+    <div class="m-text relative md:hidden z-20">
+      <button class="text-neutral-n900 flex items-center gap-2">
+        <i id="mobile-menu-btn" class="ph menu-icon ph-list text-4xl"></i>
+      </button>
+      <div id="mobile-menu" class="hide absolute right-0 top-full z-20 w-64 origin-top-right rounded-md bg-neutral-4 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500">
+        <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+          <li class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="/" class="single-menu-mobile">Home</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./about.html" class="single-menu-mobile">About</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./service.html" class="single-menu-mobile">Service</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./pricing.html" class="single-menu-mobile">Pricing</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./blog.html" class="single-menu-mobile">Blog</a>
+          </li>
+          <li class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary">
+            <a href="./contact.html" class="single-menu-mobile">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <!-- ============ Breadcrumb ============ -->
+      <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="container">
+        <div class="bg-neutral-4 sp60px border rounded-xl border-neutral-2/15">
+          <p class="h2 font-bold text-center">FAQ</p>
+          <div class="flex items-center justify-center pt-3 l-text gap-3">
+            <a href="/">Home</a>
+            <i class="ph ph-caret-double-right text-primary"></i>
+            <a href="./about.html" class="text-primary">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <!-- ============ faq ============ -->
+      <div class="container spt60px spb120px">
+        <div class="grid lg:grid-cols-2 gap-6">
+          <div class="flex flex-col gap-6">
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Can I bring my convertible through the car wash?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Do you offer hand washing services?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Can I stay in my car during the car wash process?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Can I bring my convertible through the car wash?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Can I bring my convertible through the car wash?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Do you offer hand washing services?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Can I stay in my car during the car wash process?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+            <!-- single faq -->
+            <div class="appear-downd py-4 border-b border-neutral-2/20 sm:py-5">
+              <div class="faq-accordion theme-transition-3 flex cursor-pointer items-center justify-between gap-2 sm:gap-6">
+                <h6 class="h5 font-semibold">Can I bring my convertible through the car wash?</h6>
+                <div class="bg-bgColorOne text-primaryColor theme-transition-4 flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-black-4 leading-none">
+                  <i class="ph ph-plus text-[24px]"></i>
+                </div>
+              </div>
+              <div class="theme-transition-6 h-0 overflow-hidden">
+                <p class="l-text mt-4 opacity-80">
+                  We understand the importance of preserving our natural resources, and that is why we have invested in that minimize water consumption without compromising the quality of the wash.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =========== footer section ============ -->
+      <div class="bg-neutral-4 spt60px">
+  <div class="container">
+    <div class="flex flex-wrap justify-between gap-6">
+      <div class="max-lg:order-2">
+        <div class="flex items-center gap-5 pb-6 border-b border-neutral-2/30">
+          <a href="#" class="flex gap-1 items-center l-text"><span>Facebook</span><i class="ph ph-arrow-up-right text-[24px]"></i></a>
+          <a href="#" class="flex gap-1 items-center l-text"><span>Twitter</span><i class="ph ph-arrow-up-right text-[24px]"></i></a>
+          <a href="#" class="flex gap-1 items-center l-text"><span>Instagram</span><i class="ph ph-arrow-up-right text-[24px]"></i></a>
+        </div>
+        <p class="l-text spt32px">Think of your vehicle's maintenance.</p>
+      </div>
+      <!-- logo -->
+      <a href="/" class="max-lg:order-1">
+        <img src="./assets/images/logo.png" alt="Logo" />
+      </a>
+      <div class="max-w-[340px] max-lg:order-2">
+        <div class="flex items-center gap-3">
+          <i class="ph-fill ph-map-pin text-secondary text-[32px]"></i>
+          <p class="l-text opacity-80">House 178/196, Avenue 01, Uttara Dohs, Dhaka Bangladesh</p>
+        </div>
+        <div class="flex items-center gap-3 pt-6">
+          <i class="ph-fill ph-phone-call text-secondary text-[32px]"></i>
+          <a href="tel:+8801234567890" class="l-text opacity-80">+880 123 456 7890</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-px bg-neutral-2/30 smy60px"></div>
+    <div class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-5 justify-between gap-6">
+      <div class="flex flex-col gap-6">
+        <a href="./about.html" class="l-text">About</a>
+        <a href="./services.html" class="l-text">Services</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./portfolio.html" class="l-text">Portfolio</a>
+        <a href="./blog.html" class="l-text">Blog</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./our-team.html" class="l-text">Our Team</a>
+        <a href="./pricing.html" class="l-text">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./contact.html" class="l-text">Contact</a>
+        <a href="./faq.html" class="l-text">Faq</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="./service-details.html" class="l-text">Service Details</a>
+        <a href="./portfolio-details.html" class="l-text">Portfolio Details</a>
+      </div>
+    </div>
+    <div class="w-full h-px bg-neutral-2/30 smt60px mb-6"></div>
+    <div class="flex items-center justify-between gap-6 pb-6 max-xs:flex-col text-center">
+      <p class="l-text">Copyright @ 2024 Crafter<span class="text-secondary">X</span></p>
+      <p class="l-text">Designed By <a href="#" class="hover:underline hover:text-primary duration-300">Pixelaxis</a></p>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

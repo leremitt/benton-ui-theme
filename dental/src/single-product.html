@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============ swiper js css  ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- ============ flatpickr css  ============ -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://npmcdn.com/flatpickr/dist/themes/dark.css"
+    />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ odometer css  ============ -->
+    <link
+      href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css"
+      rel="stylesheet"
+    />
+    <!-- ============ site favicon  ============ -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Applex - HTML Tailwind css</title>
+  </head>
+
+  <body class="bg-white-1 p-4 text-black-1 sm:p-6">
+    <main class="relative overflow-hidden">
+      <!-- ============ navbar start ============ -->
+      <include-header />
+      <!-- ============ navbar end ============ -->
+      <!-- ============ pagination start ============ -->
+      <section class="relative">
+        <img
+          src="./assets/images/our-dentist-pagination-image.png"
+          alt="A picture showing a person with a dental implant and a friendly message about dental implant care"
+          class="w-full rounded-xl object-cover max-sm:h-[350px] sm:max-lg:h-[400px]"
+        />
+        <p
+          class="h3 xs:d4 spx32px absolute whitespace-nowrap rounded-3xl bg-black-1/30 py-4 text-center font-extrabold text-white-1 max-md:left-1/2 max-md:top-10 max-md:-translate-x-1/2 xs:py-6 md:left-10 md:top-10"
+        >
+          Single Product
+        </p>
+        <div
+          class="btn-area spx32px absolute bottom-10 z-20 rounded-3xl bg-secondary py-4 text-white-1 max-md:left-1/2 max-md:-translate-x-1/2 xs:py-6 md:bottom-10 md:right-10"
+        >
+          <a
+            href="#"
+            aria-label="Contact"
+            class="move-btn theme-transition-4 flex items-center text-center"
+          >
+            <span
+              class="one h3 xs:h2 theme-transition-4 px-2 font-bold uppercase sm:px-4"
+            >
+              Appointment
+            </span>
+            <span
+              class="two d-center theme-transition-4 flex shrink-0 items-center justify-center rounded-full border-2 border-dashed p-2 text-center md:p-3"
+            >
+              <i
+                class="ph ph-arrow-up-right text-[24px]"
+                data-icon-name="arrow-right"
+              ></i>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- ============ pagination end ============ -->
+      <!-- ============ single product start ============ -->
+      <section class="spy60px">
+        <div class="grid grid-cols-12 items-center gap-6">
+          <div class="col-span-12 lg:col-span-6">
+            <div class="swiper main-image-slider h-full">
+              <div class="swiper-wrapper h-full">
+                <div
+                  class="spy120px swiper-slide flex h-full items-center justify-center rounded-xl bg-white-4"
+                >
+                  <img
+                    src="./assets/images/single-product-1.png"
+                    alt="Product image"
+                  />
+                </div>
+                <div
+                  class="spy120px swiper-slide flex h-full items-center justify-center rounded-xl bg-white-4"
+                >
+                  <img
+                    src="./assets/images/single-product-2.png"
+                    alt="Product image"
+                  />
+                </div>
+                <div
+                  class="spy120px swiper-slide flex h-full items-center justify-center rounded-xl bg-white-4"
+                >
+                  <img
+                    src="./assets/images/single-product-3.png"
+                    alt="Product image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper thumb-image mt-6">
+              <div class="swiper-wrapper">
+                <!-- slider one -->
+                <div
+                  class="sp40px swiper-slide flex items-center justify-center rounded-xl bg-white-4"
+                >
+                  <img
+                    src="./assets/images/single-image-thumb-1.png"
+                    class="h-[150px]"
+                    alt="Single image thumb 1"
+                  />
+                </div>
+                <!-- slider two -->
+                <div
+                  class="sp40px swiper-slide flex items-center justify-center rounded-xl bg-white-4"
+                >
+                  <img
+                    src="./assets/images/single-image-thumb-2.png"
+                    class="h-[150px]"
+                    alt="Single image thumb 2"
+                  />
+                </div>
+                <!-- slider three -->
+                <div
+                  class="sp40px swiper-slide flex h-full shrink-0 items-center justify-center rounded-xl bg-white-4"
+                >
+                  <img
+                    src="./assets/images/single-image-thumb-3.png"
+                    class="h-[150px]"
+                    alt="Single image thumb 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-start-8">
+            <span class="l-text font-medium uppercase text-black-2">
+              TOOTHBRUSH
+            </span>
+            <p class="h2 pt-3 font-bold text-black-1">
+              Oral Hygiene Essentials Set
+            </p>
+            <div class="flex items-center gap-6">
+              <div class="spy32px flex items-center gap-1 text-secondary">
+                <i class="ph-fill ph-star text-[32px]"></i>
+                <i class="ph-fill ph-star text-[32px]"></i>
+                <i class="ph-fill ph-star text-[32px]"></i>
+                <i class="ph-fill ph-star text-[32px]"></i>
+                <i class="ph-fill ph-star text-[32px]"></i>
+              </div>
+              <span class="l-text text-black-2">8k+ reviews</span>
+            </div>
+            <p class="d4 font-extrabold text-black-2">$210</p>
+            <div class="smt32px flex items-center gap-8 max-xs:flex-wrap">
+              <div
+                class="flex items-center gap-4 rounded-full bg-white-4 px-6 py-3"
+              >
+                <i class="ph ph-minus cursor-pointer"></i
+                ><span class="l-text">1</span
+                ><i class="ph ph-plus cursor-pointer"></i>
+              </div>
+              <button
+                class="l-text flex items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 duration-500"
+              >
+                <span>Add To Cart</span>
+                <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+              </button>
+            </div>
+            <div class="spt32px flex flex-col gap-3">
+              <p class="l-text text-black-2">SKU: 2435-233</p>
+              <p class="l-text text-black-2">Category: Toothbrush</p>
+              <p class="l-text text-black-2">Tags: Dental,Toothpaste</p>
+            </div>
+          </div>
+        </div>
+        <!-- product info tab -->
+        <div class="spt60px">
+          <div
+            class="h4 flex items-center gap-6 border-white-3 font-medium max-sm:flex-wrap sm:border-b"
+          >
+            <button
+              data-content-id="content-one"
+              class="single-product-tab spx60px theme-transition-3 relative border-b-2 border-primary pb-5 hover:border-primary hover:text-primary max-sm:mb-2 max-sm:after:absolute"
+            >
+              <span class="xl-text font-medium">Description</span>
+            </button>
+            <button
+              data-content-id="content-two"
+              class="single-product-tab spx60px theme-transition-3 relative border-primary pb-5 hover:border-primary hover:text-primary max-sm:mb-2 max-sm:after:absolute"
+            >
+              <span class="xl-text font-medium">Additional information</span>
+            </button>
+            <button
+              data-content-id="content-three"
+              class="single-product-tab spx60px theme-transition-3 relative pb-5 hover:border-primary hover:text-primary max-sm:mb-2 max-sm:after:absolute"
+            >
+              <span class="xl-text font-medium">Reviews (0)</span>
+            </button>
+          </div>
+        </div>
+        <!-- tab one content -->
+        <div id="content-one" class="spt32px tab-content">
+          <p class="xl-text text-black-2">
+            Introducing our cutting-edge dental innovation, the “PearlBright
+            Pro-Whitening System” – your key to a radiant, confident smile!
+            Unleash the power of professional-grade teeth whitening in the
+            comfort of your own home. Our advanced formula is designed to
+            effectively remove stubborn stains, discoloration, and yellowing,
+            revealing a noticeably brighter and whiter smile in just a few
+            applications.
+          </p>
+        </div>
+        <div id="content-two" class="spt32px tab-content hidden">
+          <div class="flex flex-col gap-5">
+            <div class="grid grid-cols-2">
+              <div class="flex justify-between">
+                <span class="xl-text">Weight</span>
+                <span class="xl-text"> 1kg </span>
+              </div>
+            </div>
+            <div class="h-px w-full bg-white-3"></div>
+            <div class="grid grid-cols-2">
+              <div class="flex justify-between">
+                <span class="xl-text">Dimensions</span>
+                <span class="xl-text"> 10 × 20 × 30 cm </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="content-three" class="spt32px tab-content hidden">
+          <div class="smt32px flex gap-5 max-sm:flex-col">
+            <div class="shrink-0">
+              <img
+                alt="comment profile image"
+                class="rounded-full max-sm:size-15"
+                src="images/comment-user.png"
+              />
+            </div>
+            <div>
+              <div class="flex flex-col gap-1">
+                <p class="h5 pt-1 font-bold text-black-1">Robert Fox</p>
+                <p class="m-text font-medium text-black-2">October 02,2024</p>
+              </div>
+              <p class="l-text smt24px text-black-2">
+                I recently used Servibe for a home cleaning service, and I
+                couldn't be happier with the results! The cleaner was
+                professional, thorough, and paid attention to every detail. My
+                house has never looked better! I highly recommend their services
+                to anyone looking for reliable and high-quality cleaning.
+              </p>
+              <button
+                class="l-text relative mt-5 flex items-center gap-2 font-medium"
+              >
+                <i class="ph-fill ph-share-fat text-[24px]"></i>
+                <span>Reply</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ============ related products start ============ -->
+        <div class="spt60px">
+          <h2 class="h3 font-bold text-black-1">Related products</h2>
+          <div
+            class="spy60px grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4"
+          >
+            <!-- product one -->
+            <div class="group flex flex-col">
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-1.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Whitening Toothpaste
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$250</p>
+              </div>
+            </div>
+            <!-- product two -->
+            <div class="group flex flex-col">
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-2.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Whitening Toothpaste
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$250</p>
+              </div>
+            </div>
+            <!-- product three -->
+            <div class="group flex flex-col">
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-3.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Whitening Toothpaste
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$250</p>
+              </div>
+            </div>
+            <!-- product four -->
+            <div class="group flex flex-col">
+              <div
+                class="sp40px relative flex flex-grow items-center justify-center rounded-xl bg-white-4"
+              >
+                <img
+                  src="./assets/images/product-4.png"
+                  alt="Picture of a dental product"
+                  class="w-full"
+                />
+                <div
+                  class="absolute left-5 top-5 flex w-[calc(100%-40px)] items-center justify-between xl:left-10 xl:top-10 xl:w-[calc(100%-80px)]"
+                >
+                  <div
+                    class="s-text rounded-xl bg-primary px-3 py-2 font-medium text-white-1"
+                  >
+                    Featured
+                  </div>
+                  <div
+                    class="s-text rounded-xl bg-secondary px-3 py-2 font-medium text-white-1"
+                  >
+                    Sale
+                  </div>
+                </div>
+                <button
+                  class="l-text absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/4 items-center gap-2.5 rounded-full bg-primary px-6 py-3 font-medium text-white-1 opacity-0 duration-500 group-hover:-translate-y-1/2 group-hover:opacity-100"
+                >
+                  <span>Add To Cart</span>
+                  <i class="ph ph-shopping-cart-simple text-[24px]"></i>
+                </button>
+              </div>
+              <div class="flex justify-between pt-5">
+                <div>
+                  <p class="m-text uppercase text-black-2">TOOTHPASTE</p>
+                  <a
+                    href="single-product.html"
+                    class="lead-text pt-1 font-semibold capitalize text-black-2"
+                  >
+                    Whitening Toothpaste
+                  </a>
+                </div>
+                <p class="h4 self-end font-bold text-black-2">$250</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============ related products end ============ -->
+      </section>
+      <!-- ============ single product end ============ -->
+
+      <!-- ============ footer start =<section>
+
+      </section>=========== -->
+      <include-footer />
+      <!-- ============ footer end ============ -->
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>

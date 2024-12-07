@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, FlavouristX - Food Recipes html Template">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <title>FlavouristX - Food Recipes html Template</title>
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+    <!-- Buy Now Starts -->
+    <!-- <include-buy-now /> -->
+    <!-- Buy Now Ends -->
+
+    <!-- Back to demo Starts -->
+    <!-- <include-back-demo /> -->
+    <!-- Back to demo Ends -->
+
+    <!-- Preloaders starts -->
+    <div id="preloader" class="pre-item d-center">
+        <div id="cooking" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloaders Ends -->
+    <!-- Header Starts -->
+    <header class="sticky top-0 z-50 mt-3 sm:mt-6 mx-3 sm:mx-0">
+  <div class="container p-5 sm:p-6 md:p-8 cmnhed border border-tcolor rounded-xl bg-nb20">
+    <nav class="rounded-3xl">
+      <div class="flex justify-between items-center relative">
+        <div class="hidden md:flex">
+          <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10 relative">
+            <li class="cmnhed">
+              <a href="/"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Home</a>
+            </li>
+            <li class="">
+              <a href="../about.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">About</a>
+            </li>
+            <li class="relative group mainmenu duration-500">
+              <div class="flex items-center gap-1">
+                <button
+                  class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Recipes</button>
+                <i class="ph-bold ph-caret-down text-lg group-hover:rotate-180 underout duration-300"></i>
+              </div>
+              <ul
+                class="absolute duration-500 min-w-[130px] invisible mainmenu-hover:visible group-hover:translate-y-0 translate-y-5 bg-secondary1 shadow-lg mt-0 opacity-0 group-hover:opacity-100 rounded-lg">
+                <li>
+                  <a href="../bread.html"
+                    class="block rounded-t-lg px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Bread</a>
+                </li>
+                <li>
+                  <a href="../instant-pot.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Instant
+                    Pot</a>
+                </li>
+                <li>
+                  <a href="../healty.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Healty</a>
+                </li>
+                <li>
+                  <a href="../breakfast.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Breakfast</a>
+                </li>
+                <li>
+                  <a href="../appetizer.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500">Appetizer</a>
+                </li>
+                <li>
+                  <a href="../dessert.html"
+                    class="block px-4 py-2 text-gray-800 hover:bg-primary hover:text-nw40 customunder lg:text-xl duration-500 rounded-b-lg">Dessert</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <a href="/" class="flex items-center gap-3">
+          <!-- <img class="w-[40px] md:w-full" src="./assets/images/01_logo.png" alt="logo"> -->
+          <div class="flex items-center">
+            <h3 class="font-bold md:hidden lg:block">Flavourist</h3>
+            <h3 class="font-bold md:hidden lg:block text-primary">X</h3>
+          </div>
+        </a>
+
+        <!-- NAVIGATION - LARGE SCREENS -->
+        <div class="hidden md:flex">
+          <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10">
+            <li class=""><a href="../cookbooks.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Books</a>
+            </li>
+            <li class=""><a href="../blog.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Blog</a>
+            </li>
+            <li class=""><a href="../contact.html"
+                class="transition duration-300 focus:outline-none focus:text-nw40 lg:text-xl focus:underline hover:underline hover:text-nw40">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- MOBILE NAV ICON -->
+        <div class="md:hidden block absolute top-[0%] right-0">
+          <button aria-label="navigation" type="button"
+            class="md:hidden transition duration-300 focus:outline-none focus:text-nb10 hover:text-nb10"><i
+              class="ph-thin ph-list text-3xl" id="bars"></i></button>
+        </div>
+
+      </div>
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+        <ul class="flex flex-col justify-center items-center w-full gap-4">
+          <li>
+            <a href="../home.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Home</a>
+          </li>
+          <li>
+            <a href="../about.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">About</a>
+          </li>
+          <li class="relative">
+            <a href="javascript:void(0)"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 hover:text-nw40 textd"
+              onclick="toggleMenu('recipes-menu')">Recipes <i
+                class="ph-bold ph-caret-down text-sm group-hover:rotate-180 duration-300"></i></a>
+            <ul id="recipes-menu" class="submenu shadow-lg mt-2 bg-secondary1 rounded-lg ms-[140px]">
+              <li>
+                <a href="../bread.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Bread</a>
+              </li>
+              <li>
+                <a href="../instant-pot.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Instant
+                  Pot</a>
+              </li>
+              <li>
+                <a href="../healty.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Healty</a>
+              </li>
+              <li>
+                <a href="../breakfast.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Breakfast</a>
+              </li>
+              <li>
+                <a href="../appetizer.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Appetizer</a>
+              </li>
+              <li>
+                <a href="../dessert.html"
+                  class="block px-4 py-2 hover:bg-primary text-nw40 customunder lg:text-xl duration-500">Dessert</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="../books.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Books</a>
+          </li>
+          <li>
+            <a href="../blog.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Blog</a>
+          </li>
+          <li>
+            <a href="../contact.html"
+              class="block transition duration-300 focus:outline-none focus:text-nw40 focus:underline hover:underline hover:text-nw40">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+    <!-- Header Ends -->
+    <!-- breadcrumb Section Starts -->
+    <section class="mt-4 sm:mt-6 pb-8 md:pb-10 lg:pb-[60px] max-sm:px-3">
+        <div class="container overflow-hidden rounded-xl bg-nb30 ">
+            <div class="grid grid-cols-12 items-center gap-4 sm:gap-6">
+                <div class="col-span-full sm:col-span-6 md:col-span-8">
+                    <div data-aos-duration="1700" data-aos="zoom-in"
+                        class="ps-3 sm:ps-6 md:ps-8 lg:ps-[60px] max-sm:pt-6">
+                        <h2 class="mb-3">Recipes Details</h2>
+                        <div class="flex items-center gap-2">
+                            <a class="text-lg" href="index.html">Home</a>
+                            <i class="ph-bold ph-caret-double-right text-xl text-primary"></i>
+                            <span class="text-lg text-primary font-normal">Dessert Details</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-full sm:col-span-6 md:col-span-4">
+                    <div class="sm:pt-14 overflow-hidden max-sm:flex max-sm:justify-end">
+                        <img data-aos-duration="1700" data-aos="fade-left" class=""
+                            src="assets/images/about-banner2.png" alt="Hero Images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb Section Ends -->
+
+    <!-- All recipes Section Starts -->
+    <section class="overflow-visible">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-4 sm:gap-6">
+                <div class="col-span-full lg:col-span-8 relative">
+                    <div class="rounded-xl bg-nb30 px-3 py-5 sm:p-6 md:p-8 lg:p-10 sticky top-0">
+                        <div class="mb-4 md:mb-6">
+                            <span class="lg:text-xl mb-3">Instant Pot</span>
+                            <h1 class="mb-3">Delicious Instant Pot Meals in Minutes</h1>
+                            <p class="lg:text-lg">Of was of in as offer, switching a brief Their be to puzzles behave At
+                                the smaller very heard sported many study, see their...</p>
+                        </div>
+                        <div class="mb-4 md:mb-6">
+                            <img class="rounded-xl" src="assets/images/recipes-thumb.png" alt="Image">
+                        </div>
+                        <div class="flex items-center justify-center gap-4 sm:gap-6 mb-4 md:mb-6">
+                            <div class="flex items-center gap-1 cursor-pointer">
+                                <i class="ph-bold ph-fork-knife lg:text-[32px] text-primary"></i>
+                                <span class="lg:text-xl">Supereasy</span>
+                            </div>
+                            <div class="flex items-center gap-1 cursor-pointer">
+                                <i class="ph-bold ph-clock-afternoon lg:text-[32px] text-primary"></i>
+                                <span class="lg:text-xl">30min</span>
+                            </div>
+                            <div class="flex items-center gap-1 cursor-pointer">
+                                <i class="ph-bold ph-thumbs-up lg:text-[32px] text-primary"></i>
+                                <span class="lg:text-xl">Easy</span>
+                            </div>
+                        </div>
+                        <p class="mb-6 md:mb-8 lg:mb-10">Even so, many believe there are less problematic and more
+                            effective ways to approach outdoors recommends structural reforms for the USA, such as
+                            pushing for the promotion of state parks (which are typically less crowded than national
+                            parks) and more broadly backing initiatives that educate the public about environmental
+                            stewardship.</p>
+                        <div class="flex max-sm:flex-wrap items-center gap-4 sm:gap-6 mb-6 md:mb-8 lg:mb-10">
+                            <div class="">
+                                <img class="rounded-lg" src="assets/images/recipes-details-one.png" alt="Image">
+                            </div>
+                            <div class="">
+                                <img class="rounded-lg" src="assets/images/recipes-details-two.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="mb-7 md:mb-10 lg:mb-12">
+                            <h4 class="mb-4 md:mb-6">Ingredients:</h4>
+                            <ul>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1 cup cornmeal</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1 cup all-purpose flour</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1 tablespoon baking powder</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1/2 teaspoon salt</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1 cup buttermilk</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1/4 cup melted butter</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1 slice whole-grain bread</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>1 cup shredded cheddar cheese</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="ph-bold ph-dot lg:text-3xl"></i>
+                                    <span>Fresh herbs for garnish (cilantro, chives, or parsley)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h4 class="mb-4 md:mb-6">Ingredients:</h4>
+                            <ul>
+                                <li class="flex items-center mb-1">
+                                    <span>1. Mix cornmeal, flour, baking powder, and salt.</span>
+                                </li>
+                                <li class="flex items-center mb-1">
+                                    <span>2. Add buttermilk, melted butter, and egg. Fold in cheese and
+                                        jalapeños.</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span>3. While the bread is toasting, mash the ripe avocado in a bowl and season
+                                        with salt and pepper.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-full lg:col-span-4 relative">
+                    <div class="sticky top-0">
+                        <div class="grid grid-cols-4 gap-y-6 md:gap-x-6 lg:gap-x-0">
+                            <div class="col-span-full md:col-span-2 lg:col-span-full">
+                                <div data-aos="fade-up" data-aos-duration="1500" class="">
+                                    <div
+                                        class="rounded-xl bg-nb30 py-5 sm:py-6 md:py-8 lg:py-10 px-3 sm:px-5 md:px-6 lg:px-8">
+                                        <div class="mb-3 text-center">
+                                            <img class="mx-auto" src="assets/images/id-photo.png" alt="Image">
+                                        </div>
+                                        <div class="text-center">
+                                            <h4 class="mb-1">Kathryn Murphy</h4>
+                                            <span class="lg:text-lg mb-3">UI/UX Designer</span>
+                                            <p class="lg:text-lg mb-3 sm:mb-5 md:mb-6 lg:mb-8 opacity-80">Let’s find a new way to
+                                                think about the entire
+                                                taxonomy of solar system objects, and not clutch to this concept</p>
+                                            <ul class="flex items-center justify-center gap-4 md:gap-5">
+                                                <li>
+                                                    <a href="#"
+                                                        class="size-12 p-1 sm:p-2 border border-nw10 hover:border-primary group rounded-full d-center duration-300">
+                                                        <i
+                                                            class="ph ph-facebook-logo text-nw10 group-hover:text-primary duration-300"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="size-12 p-1 sm:p-2 border border-nw10 hover:border-primary group rounded-full d-center duration-300">
+                                                        <i
+                                                            class="ph ph-instagram-logo text-nw10 group-hover:text-primary duration-300"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="size-12 p-1 sm:p-2 border border-nw10 hover:border-primary group rounded-full d-center duration-300">
+                                                        <i
+                                                            class="ph ph-linkedin-logo text-nw10 group-hover:text-primary duration-300"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-full md:col-span-2 lg:col-span-full">
+                                <div data-aos="fade-up" data-aos-duration="1500" class="">
+                                    <div class="rounded-xl bg-nb30 py-5 md:py-6 lg:py-8 px-3 sm:px-5 md:px-6 lg:px-8">
+                                        <h4 class="mb-6 md:mb-8">Popular Posts</h4>
+                                        <div class="flex lg:flex-wrap xl:flex-nowrap items-center gap-3 mb-4 md:mb-6">
+                                            <div class="shrink-0 overflow-hidden rounded-xl">
+                        <img class="rounded-xl hover:scale-[1.1] duration-500" src="assets/images/poppost-one.png" alt="Image">
+                                            </div>
+                                            <div class="">
+                                                <span class="opacity-80 mb-2 text-base">June 7, 2021</span>
+                                                <a href="./blog-details.html" class="font-bold text-base">Spicy Serrano Pineapple
+                                                    Margarita.</a>
+                                            </div>
+                                        </div>
+                                        <div class="flex lg:flex-wrap xl:flex-nowrap items-center gap-3 mb-4 md:mb-6">
+                                            <div class="shrink-0 overflow-hidden rounded-xl">
+                        <img class="rounded-xl hover:scale-[1.1] duration-500" src="assets/images/poppost-two.png" alt="Image">
+                                            </div>
+                                            <div class="">
+                                                <span class="opacity-80 mb-2 text-base">June 7, 2021</span>
+                                                <a href="./blog-details.html" class="font-bold text-base">Spicy Serrano Pineapple
+                                                    Margarita.</a>
+                                            </div>
+                                        </div>
+                                        <div class="flex lg:flex-wrap xl:flex-nowrap items-center gap-3">
+                                            <div class="shrink-0 overflow-hidden rounded-xl">
+                        <img class="rounded-xl hover:scale-[1.1] duration-500" src="assets/images/poppost-three.png"
+                                                    alt="Image">
+                                            </div>
+                                            <div class="">
+                                                <span class="opacity-80 mb-2 text-base">June 7, 2021</span>
+                                                <a href="./blog-details.html" class="font-bold text-base">Spicy Serrano Pineapple
+                                                    Margarita.</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-full md:col-span-2 lg:col-span-full">
+                                <div data-aos="fade-up" data-aos-duration="1500" class="">
+                                    <div class="rounded-xl bg-nb30 py-5 md:py-6 lg:py-8 px-3 sm:px-5 md:px-6 lg:px-8">
+                                        <h4 class="mb-6 md:mb-8">Cookbooks</h4>
+                                        <div class="flex lg:flex-wrap xl:flex-nowrap items-center gap-3 mb-4 md:mb-6">
+                                            <div class="shrink-0 overflow-hidden rounded-xl">
+                        <img class="rounded-xl hover:scale-[1.1] duration-500" src="assets/images/cookbooks-one.png"
+                                                    alt="Image">
+                                            </div>
+                                            <div class="">
+                                                <a href="./cookbooks.html" class="font-bold mb-2 text-base">Healthy Living
+                                                    Cookbooks</a>
+                                                <span class="opacity-80 text-base">Embark on a culinary journey with
+                                                    Home Cooking.</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex lg:flex-wrap xl:flex-nowrap items-center gap-3 mb-4 md:mb-6">
+                                            <div class="shrink-0 overflow-hidden rounded-xl">
+                        <img class="rounded-xl hover:scale-[1.1] duration-500" src="assets/images/cookbooks-two.png"
+                                                    alt="Image">
+                                            </div>
+                                            <div class="">
+                                                <a href="./cookbooks.html" class="font-bold mb-2 text-base">Sweets & Treats
+                                                    Delights</a>
+                                                <span class="opacity-80 text-base">Embark on a culinary journey with
+                                                    Home Cooking.</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex lg:flex-wrap xl:flex-nowrap items-center gap-3">
+                                            <div class="shrink-0 overflow-hidden rounded-xl">
+                        <img class="rounded-xl hover:scale-[1.1] duration-500" src="assets/images/cookbooks-three.png"
+                                                    alt="Image">
+                                            </div>
+                                            <div class="">
+                                                <a href="./cookbooks.html" class="font-bold mb-2 text-base">Exploring Flavors
+                                                    Cooking</a>
+                                                <span class="opacity-80 text-base">Embark on a culinary journey with
+                                                    Home Cooking.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-full md:col-span-2 lg:col-span-full">
+                                <div data-aos="fade-up" data-aos-duration="1500" class="">
+                                    <div class="rounded-xl bg-nb30 py-5 md:py-6 lg:py-8 px-3 sm:px-5 md:px-6 lg:px-8">
+                                        <h4 class="mb-3 text-center">Newsletter</h4>
+                                        <p class="text-base opacity-80 text-center mb-6 md:mb-10 lg:mb-[60px]">Enter
+                                            your email address
+                                            below to subscribe to my newsletter</p>
+                                        <div class="">
+                                            <form>
+                                                <input
+                                                    class="mb-4 md:mb-6 rounded-full border-tcolor bg-nb20 placeholder:text-nw20 placeholder:text-opacity-60"
+                                                    type="text" placeholder="Please enter your e-mail">
+                                                <button
+                                                    class="py-3 px-4 bg-primary rounded-full text-base font-semibold w-full"
+                                                    type="submit">Subscribe Now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-full md:col-span-2 lg:col-span-full">
+                                <div data-aos="fade-up" data-aos-duration="1500" class="">
+                                    <div class="rounded-xl bg-nb30 py-5 md:py-6 lg:py-8 px-3 sm:px-5 md:px-6 lg:px-8">
+                                        <h4 class="mb-6 lg:mb-8">Categories</h4>
+                                        <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Bread</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Appetizer</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Breakfast</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Main
+                                                Dishes</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Healthy</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Vegetarian</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Instant
+                                                Pot</span>
+                                            <span
+                                                class="px-3 py-2 border border-tcolor rounded-full cursor-pointer text-base hover:bg-primary duration-500">Dessert</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- All recipes Section Ends -->
+    <!-- Boked Goods Section Starts -->
+    <section class="py-8 md:py-10 lg:py-[60px] max-sm:px-3">
+    <div class="container bg-primary rounded-xl">
+      <div class="grid grid-cols-12 md:items-center gap-4 sm:gap-6">
+        <div class="col-span-full md:col-span-6">
+          <div data-aos-duration="1700" data-aos="zoom-in" class="ps-3 sm:ps-6 md:ps-10 lg:ps-[60px] pt-5">
+            <span class="lg:text-xl font-medium md:mb-3">Baked Goods</span>
+            <h1 class="mb-4 md:mb-6 lg:mb-8">Our Best Chicken Recipes for Dinner</h1>
+            <div class="">
+              <div class="inline-block border-[2px] border-nw40 hover:border-nc10 p-1 ">
+                <a href="../cookbooks.html" class="flex items-center group duration-700">
+                  <span
+                    class="py-2 px-4 lg:px-6 md:text-lg bg-nw40 hover:bg-transparent text-nb30 hover:text-nw40 duration-500 font-medium">Explore
+                    All</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-md:hidden md:col-span-1"></div>
+        <div class="col-span-full md:col-span-5">
+          <div class="overflow-hidden">
+            <img data-aos-duration="1700" data-aos="fade-left" src="assets/images/kok-kok-kokok.png" alt="Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Boked Goods Section Ends -->
+    <!-- Instagram Posts Section Starts -->
+    <section class="max-sm:px-3 pb-8 md:pb-10 lg:pb-[60px]">
+        <div class="container py-5 px-3 sm:p-6 md:p-10 lg:p-[60] rounded-xl bg-nb30">
+            <div class="max-sm:ps-3 mb-8 md:mb-10 lg:mb-[60px] text-center">
+                <h2>Instagram Posts</h2>
+            </div>
+            <div class="grid grid-cols-12 gap-4 sm:gap-6">
+                <div class="col-span-full md:col-span-3">
+                    <div data-aos-duration="1700" data-aos="zoom-in" class="relative group overflow-hidden rounded-xl">
+                        <img class="w-full group-hover:scale-[1.1] duration-700" src="assets/images/insta-two.png"
+                            alt="Image">
+                        <a href="#"
+                            class="gless-one p-3 lg:p-[22px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 d-center z-10 size-[60px] lg:size-[100px] opacity-0 group-hover:opacity-100 duration-700">
+                            <i class="ph ph-instagram-logo text-nw10 text-3xl lg:text-5xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-6">
+                    <div data-aos-duration="1700" data-aos="zoom-in" class="relative group overflow-hidden rounded-xl">
+                        <img class="w-full group-hover:scale-[1.1] duration-700" src="assets/images/insta-one.png"
+                            alt="Image">
+                        <a href="#"
+                            class="gless-one p-3 lg:p-[22px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 d-center z-10 size-[60px] lg:size-[100px] opacity-0 group-hover:opacity-100 duration-700">
+                            <i class="ph ph-instagram-logo text-nw10 text-3xl lg:text-5xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-3">
+                    <div data-aos-duration="1700" data-aos="zoom-in" class="relative group overflow-hidden rounded-xl">
+                        <img class="w-full group-hover:scale-[1.1] duration-700" src="assets/images/insta-three.png"
+                            alt="Image">
+                        <a href="#"
+                            class="gless-one p-3 lg:p-[22px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 d-center z-10 size-[60px] lg:size-[100px] opacity-0 group-hover:opacity-100 duration-700">
+                            <i class="ph ph-instagram-logo text-nw10 text-3xl lg:text-5xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-3">
+                    <div data-aos-duration="1700" data-aos="zoom-in" class="relative group overflow-hidden rounded-xl">
+                        <img class="w-full group-hover:scale-[1.1] duration-700" src="assets/images/insta-four.png"
+                            alt="Image">
+                        <a href="#"
+                            class="gless-one p-3 lg:p-[22px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 d-center z-10 size-[60px] lg:size-[100px] opacity-0 group-hover:opacity-100 duration-700">
+                            <i class="ph ph-instagram-logo text-nw10 text-3xl lg:text-5xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-3">
+                    <div data-aos-duration="1700" data-aos="zoom-in" class="relative group overflow-hidden rounded-xl">
+                        <img class="w-full group-hover:scale-[1.1] duration-700" src="assets/images/insta-five.png"
+                            alt="Image">
+                        <a href="#"
+                            class="gless-one p-3 lg:p-[22px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 d-center z-10 size-[60px] lg:size-[100px] opacity-0 group-hover:opacity-100 duration-700">
+                            <i class="ph ph-instagram-logo text-nw10 text-3xl lg:text-5xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-full md:col-span-6">
+                    <div data-aos-duration="1700" data-aos="zoom-in" class="relative group overflow-hidden rounded-xl">
+                        <img class="w-full group-hover:scale-[1.1] duration-700" src="assets/images/insta-six.png"
+                            alt="Image">
+                        <a href="#"
+                            class="gless-one p-3 lg:p-[22px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 d-center z-10 size-[60px] lg:size-[100px] opacity-0 group-hover:opacity-100 duration-700">
+                            <i class="ph ph-instagram-logo text-nw10 text-3xl lg:text-5xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Instagram Posts Section Ends -->
+    <!-- newsletter Section Starts -->
+    <section data-aos-duration="1700" data-aos="fade-up" class="mb-8 md:mb-[-55px] lg:mb-[-100px]">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-4 sm:gap-6">
+        <div class="col-span-full md:col-span-10 xl:col-span-8 md:col-start-2 xl:col-start-3">
+          <div
+            class="flex max-sm:flex-wrap items-center justify-center gap-5 sm:gap-10 md:gap-12 lg:gap-[67px] bg-primary rounded-xl p-3 py-5 sm:p-6 md:p-8 lg:p-10">
+            <div class="max-sm:text-center">
+              <h2 class="mb-2">Never miss a recipe!</h2>
+              <span class="lg:text-lg">Sign up and receive the latest tips via email.</span>
+            </div>
+            <div class="">
+              <form class="flex items-center max-sm:justify-center border p-[6px] rounded-lg">
+                <input class="border-none" type="text" placeholder="Enter Your Email">
+                <button class="px-4 md:px-5 py-3 rounded bg-nw40 text-base text-nb10 font-medium">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- newsletter Section Ends -->
+    <!-- Footer Section Starts -->
+    <section class="max-sm:px-3 mb-4 sm:mb-6">
+    <div
+      class="container bg-nb10 rounded-xl px-3 sm:px-6 md:px-8 lg:px-[60px] pt-10 sm:pt-14 md:pt-20 lg:pt-[160px] pb-4 sm:pb-6">
+      <div class="grid grid-cols-12 gap-4 sm:gap-6 pb-6 lg:pb-10 border-b border-[#4D4737] mb-4 md:mb-6">
+        <div class="col-span-full sm:col-span-3 lg:col-span-2">
+          <div data-aos-duration="1700" data-aos="zoom-in" class="">
+            <h3 class="mb-1 sm:mb-4 lg:mb-6">Pages</h3>
+            <div class="flex flex-wrap items-center gap-x-4 md:gap-x-6 lg:gap-x-8 gap-y-3">
+              <a href="./index.html" class="lg:text-lg">Home</a>
+              <a href="./about.html" class="lg:text-lg">About</a>
+              <a href="./appetizer.html" class="lg:text-lg">Recipes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 sm:col-start-4 max-sm:order-last">
+          <div data-aos-duration="1700" data-aos="zoom-in" class="">
+            <div class="flex items-center sm:justify-center mb-3">
+              <h2 class="font-bold md:hidden lg:block">Flavourist</h2>
+              <h2 class="font-bold md:hidden lg:block text-primary">X</h2>
+            </div>
+            <span class="lg:text-lg text-nw20 mb-4 md:mb-6 sm:text-center">I am always sharing fresh, flavorful, healthy
+              recipes that I love to make and eat in my real life</span>
+            <ul class="flex items-center sm:justify-center gap-3">
+              <li>
+                <a href="#"
+                  class="size-10 d-center border border-nw10 group hover:border-primary duration-500 rounded-full">
+                  <i class="ph-bold ph-twitch-logo text-xl group-hover:text-primary duration-500"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="size-10 d-center border border-nw10 group hover:border-primary duration-500 rounded-full">
+                  <i class="ph-bold ph-facebook-logo text-xl group-hover:text-primary duration-500"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="size-10 d-center border border-nw10 group hover:border-primary duration-500 rounded-full">
+                  <i class="ph-bold ph-linkedin-logo text-xl group-hover:text-primary duration-500"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-3 lg:col-span-2 lg:col-start-11">
+          <div data-aos-duration="1700" data-aos="zoom-in" class="">
+            <h3 class="mb-1 sm:mb-4 lg:mb-6 text-nowrap">Utility pages</h3>
+            <div class="flex flex-wrap items-center gap-x-4 md:gap-x-6 lg:gap-x-8 gap-y-3">
+              <a href="./cookbooks.html" class="lg:text-lg">Books</a>
+              <a href="./blog.html" class="lg:text-lg">Blog</a>
+              <a href="./contact.html" class="lg:text-lg">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex max-sm:flex-wrap items-center justify-center sm:justify-between gap-3 sm:gap-4 md:gap-6">
+        <span class="text-base">Copyright @ 2024 FlavouristX</span>
+        <div class="flex items-center gap-1">
+          <span class="text-base font-medium">Designed By</span>
+          <a href="#" class="text-base font-medium underline text-primary">Pixelaxis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Footer Section Ends -->
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/plguins.js"></script>
+    <script src="./assets/js/plguins-custom.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>About Us - Drinko HTML Template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body class="p-2">
+    <main
+      class="bg-secondaryBg p-2 md:p-5 rounded-[20px] custom-container border border-borderColor"
+    >
+      <!-- Header Area Start -->
+      <section>
+  <!-- Desktop Menu -->
+  <div
+    class="fixed bottom-10 right-0 left-0 flex justify-center items-center w-full max-lg:hidden z-20"
+  >
+    <div
+      class="text-black bg-n4 rounded-xl uppercase flex justify-between items-center max-w-[900px] px-3 py-4 gap-10"
+    >
+      <a href="./index.html" class="flex justify-center items-center gap-2">
+        <img src="./assets/images/fav.png" class="size-8" alt="" />
+        <h4 class="heading-4">drinko</h4>
+      </a>
+
+      <nav>
+        <ul class="flex justify-center items-center gap-8 heading-6">
+          <li><a href="./about-us.html">about</a></li>
+          <li><a href="./menu.html">menu</a></li>
+          <li><a href="./blog.html">blog</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="heading-6">
+        <a
+          href="./book-table.html"
+          class="uppercase border border-black py-3 px-4 rounded-xl"
+        >
+          book a table
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="relative lg:hidden z-20">
+    <button
+      id="mobileModalButton"
+      class="text-3xl text-n4 border border-n4 !leading-none flex justify-center items-center rounded-md p-1 fixed top-10 left-10"
+    >
+      <i class="ph ph-list"></i>
+    </button>
+
+    <div
+      class="modalClose fixed left-8 top-20 w-[200px] origin-top-left rounded-2xl border border-borderColor text-black bg-n4 py-4 duration-500"
+      id="mobileMenuModal"
+    >
+      <ul class="flex flex-col gap-3 pl-4">
+        <li class="">
+          <a href="./about-us.html">About</a>
+        </li>
+        <li class="">
+          <a href="./menu.html">Menu</a>
+        </li>
+        <li class="">
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li class="">
+          <a href="./contact.html">Contact</a>
+        </li>
+        <li class="">
+          <a href="./book-table.html">Book A Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <!-- Header Area End -->
+
+      <!-- About Us Section Start -->
+      <section class="grid grid-cols-12 gap-5">
+        <div
+          class="col-span-12 lg:col-span-6 xxxl:col-span-4 grid grid-cols-12 gap-6"
+        >
+          <div
+            class="bg-secondaryBg border-borderColor py-20 sm:py-8 md:py-15 px-4 md:px-6 flex flex-col justify-center items-start rounded-[20px] col-span-12 sm:col-span-6 lg:col-span-12"
+            data-aos="flip-right"
+            data-aos-duration="700"
+          >
+            <h6
+              class="heading-6 text-n2 rounded-full border border-borderColor py-3 px-4 uppercase"
+            >
+              ABOUT US
+            </h6>
+            <h1 class="heading-2 font-extrabold pt-6">
+              We Invite You to Visit Our Pub
+            </h1>
+            <p class="text-n3 pt-3">
+              Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+              Wiusmod tempor incididunt.
+            </p>
+            <div class="z-20 pt-8">
+              <a
+                href="./book-table.html"
+                aria-label="Contact"
+                class="all 0.4s ease-in-out duration-700 flex items-center text-center move-btn text-black heading-6"
+              >
+                <span
+                  class="one all 0.4s ease-in-out duration-700 min-h-[45px] rounded-full bg-black-4 px-8 py-3 capitalize bg-n4"
+                >
+                  Explore Now
+                </span>
+                <span
+                  class="two all 0.4s ease-in-out duration-700 flex min-h-[45px] shrink-0 items-center justify-center rounded-full p-2.5 text-center bg-n4"
+                >
+                  <i class="ph ph-arrow-up-right text-[24px]"> </i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondaryBg border-borderColor p-4 md:px-10 py-15 rounded-[20px] col-span-12 sm:col-span-6 lg:col-span-12 flex justify-center items-center"
+            data-aos="flip-left"
+            data-aos-delay="300"
+            data-aos-duration="700"
+          >
+            <div class="swiper testimonial-slider-carousel">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center"
+                >
+                  <div
+                    class="text-n4 text-2xl flex justify-center items-center gap-1"
+                  >
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                  </div>
+                  <p class="text-n3 text-center pb-10 pt-5">
+                    I had hit a plateau in my fitness journey until I discovered
+                    The knowledgeable. It's not just about physical fitness;
+                    they genuinely personal trainers helped me break through and
+                    achieve care about your well-being.Rolorem, beatae dolorum,
+                    praesentium itaque et quam quaerat. Dolor sit amet, 
+                  </p>
+                  <div class="rounded-full overflow-hidden">
+                    <img src="./assets/images/testimonial-img.png" alt="" />
+                  </div>
+                  <h5 class="heading-5 pt-3">Dianne Russel</h5>
+                  <p class="text-lg text-n3">Founder</p>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center"
+                >
+                  <div
+                    class="text-n4 text-2xl flex justify-center items-center gap-1"
+                  >
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                  </div>
+                  <p class="text-n3 text-center pb-10 pt-5">
+                    I had hit a plateau in my fitness journey until I discovered
+                    The knowledgeable. It's not just about physical fitness;
+                    they genuinely personal trainers helped me break through and
+                    achieve care about your well-being.Rolorem, beatae dolorum,
+                    praesentium itaque et quam quaerat. Dolor sit amet, 
+                  </p>
+                  <div class="rounded-full overflow-hidden">
+                    <img src="./assets/images/testimonial-img.png" alt="" />
+                  </div>
+                  <h5 class="heading-5 pt-3">Dianne Russel</h5>
+                  <p class="text-lg text-n3">Founder</p>
+                </div>
+                <div
+                  class="swiper-slide flex flex-col justify-center items-center"
+                >
+                  <div
+                    class="text-n4 text-2xl flex justify-center items-center gap-1"
+                  >
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                  </div>
+                  <p class="text-n3 text-center pb-10 pt-5">
+                    I had hit a plateau in my fitness journey until I discovered
+                    The knowledgeable. It's not just about physical fitness;
+                    they genuinely personal trainers helped me break through and
+                    achieve care about your well-being.Rolorem, beatae dolorum,
+                    praesentium itaque et quam quaerat. Dolor sit amet, 
+                  </p>
+                  <div class="rounded-full overflow-hidden">
+                    <img src="./assets/images/testimonial-img.png" alt="" />
+                  </div>
+                  <h5 class="heading-5 pt-3">Dianne Russel</h5>
+                  <p class="text-lg text-n3">Founder</p>
+                </div>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <div
+                  class="swiper-pagination relative mt-12 rounded-full px-2 pt-0.5 flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-span-12 lg:col-span-6 xxxl:col-span-4 flex flex-col gap-6 justify-center items-center"
+        >
+          <div class="relative h-[400px] lg:h-full w-full">
+            <!-- For use image -->
+            <video
+              class="w-full h-full object-cover rounded-3xl"
+              muted
+              loop
+              autoplay
+            >
+              <source
+                src="https://softivuspro.com/rest/bar.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <div class="col-span-12 xxxl:col-span-4 grid grid-cols-12 gap-6">
+          <div
+            class="rounded-[20px] overflow-hidden relative col-span-12 md:col-span-6 xl:col-span-4 xxxl:col-span-12"
+            data-aos="flip-right"
+            data-aos-duration="700"
+          >
+            <img
+              src="./assets/images/about-us-blog-img.png"
+              alt=""
+              class="h-full w-full"
+            />
+
+            <h6
+              class="heading-6 text-black absolute top-4 min-[450px]:top-10 left-4 min-[450px]:left-10 rounded-full bg-white py-3 px-4 uppercase"
+            >
+              ABOUT US
+            </h6>
+
+            <div
+              class="z-20 pt-8 absolute bottom-4 min-[450px]:bottom-10 left-4 min-[450px]:left-10"
+            >
+              <a
+                href="./blog.html"
+                aria-label="Contact"
+                class="all 0.4s ease-in-out duration-700 flex items-center text-center move-btn text-black heading-6"
+              >
+                <span
+                  class="one all 0.4s ease-in-out duration-700 min-h-[45px] rounded-full bg-black-4 px-8 py-3 capitalize bg-n4"
+                >
+                  Explore Blogs
+                </span>
+                <span
+                  class="two all 0.4s ease-in-out duration-700 flex min-h-[45px] shrink-0 items-center justify-center rounded-full p-2.5 text-center bg-n4"
+                >
+                  <i class="ph ph-arrow-up-right text-[24px]"> </i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondaryBg border-borderColor p-4 md:p-10 flex flex-col justify-center items-start rounded-[20px] col-span-12 md:col-span-6 xl:col-span-8 xxxl:col-span-12"
+            data-aos="flip-left"
+            data-aos-delay="300"
+            data-aos-duration="700"
+          >
+            <h6
+              class="heading-6 text-n2 rounded-full border border-borderColor py-3 px-4 uppercase"
+            >
+              RESERVATION
+            </h6>
+            <h1 class="heading-2 font-extrabold pt-6">Working Hours</h1>
+            <p class="text-n3 pt-3">
+              Rolorem, beatae dolorum, praesentium itaque et quam quaerat. Dolor
+              sit amet.
+            </p>
+            <div class="z-20 pt-8">
+              <a
+                href="./book-table.html"
+                aria-label="Contact"
+                class="all 0.4s ease-in-out duration-700 flex items-center text-center move-btn text-black heading-6"
+              >
+                <span
+                  class="one all 0.4s ease-in-out duration-700 min-h-[45px] rounded-full bg-black-4 px-8 py-3 capitalize bg-n4"
+                >
+                  Explore Now
+                </span>
+                <span
+                  class="two all 0.4s ease-in-out duration-700 flex min-h-[45px] shrink-0 items-center justify-center rounded-full p-2.5 text-center bg-n4"
+                >
+                  <i class="ph ph-arrow-up-right text-[24px]"> </i>
+                </span>
+              </a>
+            </div>
+
+            <div
+              class="flex heading-6 justify-between items-center text-center stp-15 w-full"
+            >
+              <div class="">
+                <p>SUNDAY TO TUESDAY</p>
+                <p class="pt-3 pb-2">18 : 00 am</p>
+                <p>23 : 00 pm</p>
+              </div>
+              <div class="">
+                <p>FRIDAY TO SATURDAY</p>
+                <p class="pt-3 pb-2">17 : 00 am</p>
+                <p>23 : 00 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us Section End -->
+    </main>
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/plugin-custom.js"></script>
+    <script src="./index.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

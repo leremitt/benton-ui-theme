@@ -1,0 +1,58 @@
+
+    <div class="navheight flex xl:flex-col justify-between px-2 xxxl:px-7 py-3 xl:py-10 xl:h-[97vh] xl:fixed bg-nb40 border border-nb30 rounded-lg">
+        <div class="flex justify-center items-center">
+            <a class="flex xl:flex-col items-center gap-2 md:gap-3 xl:gap-0" href="index.html">
+                <img class="max-w-fit md:mb-3 w-10 sm:w-13 xl:w-full" src="../assets/images/logomain.png" alt="Logo">
+                <h4 class="font-manrope text-nw40">BenFit</h4>
+            </a>
+        </div>
+        <div class="relative hidden xl:block">
+            <ul class="flex flex-col justify-between gap-1 items-center">
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../index.html">Home</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../about.html">About</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../membership.html">Membership</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../classes.html">Classes</a>
+                </li>
+                <li class="rotate-180">
+                    <a class="[writing-mode:vertical-rl] px-3 py-6 rounded-lg border border-nb30 text-nw40 duration-500 hover:text-nb10 font-medium btnstyle" href="../contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="relative mt-1 xl:mt-0 xl:hidden z-[999]">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul class="flex flex-col justify-between gap-4 sm:gap-6 items-center">
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../index.html">Home</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../about.html">About</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../membership.html">Membership</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../classes.html">Classes</a>
+                        </li>
+                        <li class="">
+                            <a class="px-3 py-6 rounded-lg border border-nb30 text-nw40 hover:bg-primary duration-500 hover:text-nb10 font-medium text-3xl" href="../contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class=" cursor-pointer border border-primary px-2.5 sm:px-2 md:px-3 py-1 md:py-1.5 rounded-3xl">
+                    <span class="text-2xl lg:text-3xl text-primary" onclick="openNav()">&#9776;</span>
+                </div>
+            </div>
+        </div>
+    </div>

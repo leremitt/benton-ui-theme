@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Benfit - HTML Tailwindcss Gym Fitness template">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>Itso - </title>
+<script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
+
+<body>
+
+  <!-- Loader starts -->
+  <div id="preloader" class="pre-item d-center">
+    <div class="loader"></div>
+  </div>
+  <!-- Loader ends -->
+  <!-- Header Starts -->
+  <header class="container my-6 cmnhed border border-nc30 bg-nc40 rounded-3xl">
+    <nav class="bg-nc40 text-nw10 p-4 lg:p-6 rounded-3xl">
+    <div class="flex justify-between items-center relative">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img class="w-[40px] md:w-full" src="../assets/images/logo.png" alt="logo">
+        <h2 class="font-semibold md:hidden lg:block">ITSO</h2>
+      </a>
+
+      <!-- MOBILE NAV ICON -->
+      <div class="md:hidden block absolute top-[15%] right-0">
+        <button aria-label="navigation" type="button"
+          class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+            class="ph-thin ph-list text-3xl" id="bars"></i></button>
+      </div>
+
+      <!-- NAVIGATION - LARGE SCREENS -->
+      <div class="hidden md:flex">
+        <ul class="hidden md:flex gap-4 lg:gap-8 xl:gap-10">
+          <li class="cmnhed"><a href="../index.html"
+              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Home</a>
+          </li>
+          <li class="cmnhed"><a href="../about.html"
+              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">About</a>
+          </li>
+          <li class=""><a href="../services.html"
+              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Services</a>
+          </li>
+          <li class=""><a href="../blog.html"
+              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Blog</a>
+          </li>
+          <li class=""><a href="../project.html"
+              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden md:flex">
+        <a href="../contact-us.html" class="flex items-center group duration-700">
+          <span class="py-2 md:py-3 px-4 lg:px-5 bg-primary text-nb10 rounded-2xl duration-500 font-normal">Contact
+            Us</span>
+          <i
+            class="ph ph-arrow-up-right p-3 lg:p-[14px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+        </a>
+      </div>
+    </div>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+      <div class="flex flex-col justify-center items-center w-full gap-4">
+        <a href="../index.html"
+          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Home</a>
+        <a href="../about.html"
+          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">About</a>
+        <a href="../services.html"
+          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Services</a>
+        <a href="../blog.html"
+          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Blog</a>
+        <a href="../project.html"
+          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary">Project</a>
+        <a href="../contact-us.html" class="flex items-center group duration-700">
+          <span class="py-3 lg:py-4 px-4 lg:px-8 bg-primary text-nb10 rounded-2xl duration-500 font-medium">Contact
+            Us</span>
+          <i
+            class="ph ph-arrow-up-right p-[12px] lg:p-[18px] bg-primary text-nb10 rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <!-- Header Ends -->
+  <!-- Hero Section starts -->
+  <section class="mb-10 lg:mb-[60px]">
+    <div class="container bg-nc40 rounded-3xl py-14 md:py-20 lg:py-[120px] text-center px-3">
+      <span class="font-semibold text-secondary1 mb-3">Digital Marketing Agency</span>
+      <h1 class="display-1 mb-6 lg:mb-10">Seamlesly Combining Creativity &amp; Data-Driven Strategies</h1>
+      <div class="flex justify-center">
+        <a href="../contact.html" class="flex items-center group duration-700">
+          <span class="py-2 lg:py-3 px-3 lg:px-5 bg-primary text-nb10 rounded-lg sm:rounded-2xl duration-500 font-normal">Get Started</span>
+          <i
+            class="ph ph-arrow-up-right p-[6px] md:p-[10px] lg:p-[14px] bg-primary text-nb10 rounded-lg sm:rounded-2xl duration-500 font-medium group-hover:rotate-45"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section Ends -->
+  <!-- brad-carousel Starts -->
+  <div
+class="container bg-nc10 px-5 md:px-10 lg:px-[50px] py-8 md:py-10 lg:py-[60px] rounded-3xl mb-8 md:mb-10 lg:mb-[50px]">
+<div class="swiper brad-carousel">
+  <div class="swiper-wrapper flex">
+    <div class="swiper-slide">
+      <div class="items-wrapper">
+        <img src="../assets/images/brad-carousel-01.png" alt="Icon">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="items-wrapper">
+        <img src="../assets/images/brad-carousel-02.png" alt="Icon">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="items-wrapper">
+        <img src="../assets/images/brad-carousel-03.png" alt="Icon">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="items-wrapper">
+        <img src="../assets/images/brad-carousel-04.png" alt="Icon">
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="items-wrapper">
+        <img src="../assets/images/brad-carousel-05.png" alt="Icon">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <!-- brad-carousel Starts -->
+  <!-- Services Section Starts -->
+  <section class="py-8 md:py-10 lg:py-[50px]">
+    <div class="container">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+        <h5 class="py-3 px-5 bg-nc40 rounded-2xl inline-block font-normal">OUR SERVICES</h5>
+      </div>
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full md:col-span-6">
+          <div
+            class="p-3 sm:p-6 md:p-8 lg:p-12 bg-nc10 rounded-xl relative  before:absolute before:top-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700 group"
+            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="relative z-40">
+              <div class="mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+                <img src="assets/images/icon/branding-design.png" alt="Icon">
+              </div>
+              <h2 class="text-nc20 mb-4 lg:mb-5">Branding Design</h2>
+              <p class="mb-6 md:mb-8 lg:mb-10 text-nc30">We care success relationships fuel real success We love
+                building brands and helping</p>
+              <a href="../service-details.html" class="underline font-normal text-nc20">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-base"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6">
+          <div
+            class="p-3 sm:p-6 md:p-8 lg:p-12 bg-nc10 rounded-xl relative  before:absolute before:top-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700 group"
+            data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="relative z-40">
+              <div class="mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+                <img src="assets/images/icon/web-development.png" alt="Icon">
+              </div>
+              <h2 class="text-nc20 mb-4 lg:mb-5">Web Development</h2>
+              <p class="mb-6 md:mb-8 lg:mb-10 text-nc30">We care success relationships fuel real success We love
+                building brands and helping</p>
+              <a href="../service-details.html" class="underline font-normal text-nc20">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-base"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6">
+          <div
+            class="p-3 sm:p-6 md:p-8 lg:p-12 bg-nc10 rounded-xl relative  before:absolute before:top-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700 group"
+            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="relative z-40">
+              <div class="mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+                <img src="assets/images/icon/socaial-advertising.png" alt="Icon">
+              </div>
+              <h2 class="text-nc20 mb-4 lg:mb-5">Branding Design</h2>
+              <p class="mb-6 md:mb-8 lg:mb-10 text-nc30">We care success relationships fuel real success We love
+                building brands and helping</p>
+              <a href="../service-details.html" class="underline font-normal text-nc20">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-base"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6">
+          <div
+            class="p-3 sm:p-6 md:p-8 lg:p-12 bg-nc10 rounded-xl relative  before:absolute before:top-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700 group"
+            data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="relative z-40">
+              <div class="mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+                <img src="assets/images/icon/digital-marketing.png" alt="Icon">
+              </div>
+              <h2 class="text-nc20 mb-4 lg:mb-5">Web Development</h2>
+              <p class="mb-6 md:mb-8 lg:mb-10 text-nc30">We care success relationships fuel real success We love
+                building brands and helping</p>
+              <a href="../service-details.html" class="underline font-normal text-nc20">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-base"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section Ends -->
+  <!-- Process Section Starts -->
+  <section class="py-8 md:py-10 lg:py-[50px]">
+    <div class="container">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+        <h5 class="py-3 px-5 bg-nc40 rounded-2xl inline-block font-normal">OUR PROCESS</h5>
+      </div>
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full md:col-span-6 xl:col-span-4">
+          <div class="p-3 md:p-6 lg:p-10 rounded-xl bg-nc10" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200">
+            <div class="flex justify-between items-start gap-3 mb-10 md:mb-16">
+              <span class="text-nc20">STEP _01</span>
+              <span
+                class="text-[80px] md:text-[100px] lg:text-[120px] font-bold leading-[20px] text-styleb pt-6">01</span>
+            </div>
+            <h3 class="mb-4 lg:mb-6 text-nc20">Strategic Approach</h3>
+            <p class="text-nc30">We are a creative agency brands building insightful strategy, creating unique designs
+              helping</p>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6 xl:col-span-4">
+          <div class="p-3 md:p-6 lg:p-10 rounded-xl bg-nc10" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="1400">
+            <div class="flex justify-between items-start gap-3 mb-10 md:mb-16">
+              <span class="text-nc20">STEP _02</span>
+              <span
+                class="text-[80px] md:text-[100px] lg:text-[120px] font-bold leading-[20px] text-styleb pt-6">02</span>
+            </div>
+            <h3 class="mb-4 lg:mb-6 text-nc20">Collaboration is Key</h3>
+            <p class="text-nc30">We are a creative agency brands building insightful strategy, creating unique designs
+              helping</p>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6 xl:col-span-4">
+          <div class="p-3 md:p-6 lg:p-10 rounded-xl bg-nc10" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="1600">
+            <div class="flex justify-between items-start gap-3 mb-10 md:mb-16">
+              <span class="text-nc20">STEP _03</span>
+              <span
+                class="text-[80px] md:text-[100px] lg:text-[120px] font-bold leading-[20px] text-styleb pt-6">03</span>
+            </div>
+            <h3 class="mb-4 lg:mb-6 text-nc20">End to End Delivery</h3>
+            <p class="text-nc30">We are a creative agency brands building insightful strategy, creating unique designs
+              helping</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Process Section Ends -->
+  <!-- Our Works Section Starts -->
+  <section class="py-8 md:py-10 lg:py-[50px]">
+    <div class="container">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+        <h5 class="py-3 px-5 bg-nc40 rounded-2xl inline-block font-normal">OUR WORKS</h5>
+      </div>
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full">
+          <div class="py-3 md:py-4 lg:py-6 ps-3 md:ps-4 lg:ps-6 pe-3 md:pe-10 lg:pe-[60px] rounded-xl bg-nc10"
+            data-aos="fade-right" data-aos-duration="1000">
+            <div class="flex items-center max-lg:justify-center max-lg:flex-wrap gap-6 md:gap-10 lg:gap-[60px]">
+              <div class="">
+                <img class="rounded-xl" src="./assets/images/tech-trends.png" alt="Icon">
+              </div>
+              <div class="">
+                <h2 class="text-nc20 mb-3 max-lg:text-center">TECH TRENDS</h2>
+                <p class="text-nc30 mb-6 xl:mb-8 max-lg:text-center">Enhance user engagement, drive website traffic, and
+                  establish TechTrends as a reputable source of tech insights.</p>
+                <div
+                  class="size-[100px] md:size-[120px] xl:size-[140px] flex flex-col justify-center items-center bg-secondary1 rounded-full py-3 lg:py-10 px-3 lg:px-6 max-lg:mx-auto">
+                  <a href="../project-details.html" class="text-nc20 text-sm md:text-base font-normal leading-5 text-center text-nowrap"><i
+                      class="ph-bold ph-arrow-up-right text-nc20 block"></i> LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full">
+          <div class="py-3 md:py-4 lg:py-6 ps-3 md:ps-4 lg:ps-6 pe-3 md:pe-10 lg:pe-[60px] rounded-xl bg-nc10"
+            data-aos="fade-left" data-aos-duration="1000">
+            <div class="flex items-center max-lg:justify-center max-lg:flex-wrap gap-6 md:gap-10 lg:gap-[60px]">
+              <div class="">
+                <img class="rounded-xl" src="./assets/images/eco-eats.png" alt="Icon">
+              </div>
+              <div class="">
+                <h2 class="text-nc20 mb-3 max-lg:text-center">ECO EATS</h2>
+                <p class="text-nc30 mb-6 xl:mb-8 max-lg:text-center">Enhance user engagement, drive website traffic, and
+                  establish TechTrends as a reputable source of tech insights.</p>
+                <div
+                  class="size-[100px] md:size-[120px] xl:size-[140px] flex flex-col justify-center items-center bg-secondary1 rounded-full py-3 lg:py-10 px-3 lg:px-6 max-lg:mx-auto">
+                  <a href="../project-details.html" class="text-nc20 text-sm md:text-base font-normal leading-5 text-center text-nowrap"><i
+                      class="ph-bold ph-arrow-up-right text-nc20 block"></i> LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full">
+          <div class="py-3 md:py-4 lg:py-6 ps-3 md:ps-4 lg:ps-6 pe-3 md:pe-10 lg:pe-[60px] rounded-xl bg-nc10"
+            data-aos="fade-right" data-aos-duration="1000">
+            <div class="flex items-center max-lg:justify-center max-lg:flex-wrap gap-6 md:gap-10 lg:gap-[60px]">
+              <div class="">
+                <img class="rounded-xl" src="./assets/images/sustainablesips.png" alt="Icon">
+              </div>
+              <div class="">
+                <h2 class="text-nc20 mb-3 max-lg:text-center">SUSTAINABLESIPS</h2>
+                <p class="text-nc30 mb-6 xl:mb-8 max-lg:text-center">Enhance user engagement, drive website traffic, and
+                  establish TechTrends as a reputable source of tech insights.</p>
+                <div
+                  class="size-[100px] md:size-[120px] xl:size-[140px] flex flex-col justify-center items-center bg-secondary1 rounded-full py-3 lg:py-10 px-3 lg:px-6 max-lg:mx-auto">
+                  <a href="../project-details.html" class="text-nc20 text-sm md:text-base font-normal leading-5 text-center text-nowrap"><i
+                      class="ph-bold ph-arrow-up-right text-nc20 block"></i> LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-10 md:pt-14 lg:pt-[72px] text-center">
+        <a href="../project-details.html"
+          class="text-center mb-4 sm:mb-8 md:mb-10 lg:mb-[60px] py-3 px-5 bg-nc40 rounded-2xl inline-block font-normal">VIEW
+          ALL WORKS</a>
+      </div>
+    </div>
+  </section>
+  <!-- Our Work End -->
+  <!-- TESTIMONIALS Start -->
+  
+<section class="pb-8 md:pb-10 lg:pb-[50px]">
+    <div class="container">
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full">
+          <div class="p-3 sm:p-6 md:p-8 lg:p-12 rounded-3xl bg-secondary1 swiper" data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="flex justify-center sm:justify-between max-sm:flex-wrap gap-6 mb-8 lg:mb-10 xl:mb-[60px]">
+              <div class="max-sm:text-center">
+                <span class="mb-3 font-normal text-nc20">TESTIMONIALS</span>
+                <h2 class="text-nc20">What clients say about us.</h2>
+              </div>
+              <div class="">
+                <div class="testimonial_slider_btn sm:pb-3">
+                  <div class="slider-btn flex justify-end gap-6">
+                    <button type="button" aria-label="Slide Prev" class="ara-prev">
+                      <img src="./assets/images/icon/arrow-left1.png" alt="Icon">
+                    </button>
+                    <div class="relative">
+                      <span class="text-lg text-nc20 font-normal swiper-pagination flex left-[-10px] top-[-9px]"></span>
+                    </div>
+                    <button type="button" aria-label="Slide Next" class="ara-next z-30">
+                      <img src="./assets/images/icon/arrow-right1.png" alt="Icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="testimonial_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="items-wrapper">
+                      <div class="flex flex-wrap sm:flex-nowrap max-sm:justify-center items-center gap-4 sm:gap-8">
+                        <div class="">
+                          <img class="w-max-unset max-unset rounded-xl" src="../assets/images/testimonial-men.png"
+                            alt="Image">
+                        </div>
+                        <div class="">
+                          <div class="flex items-center max-sm:justify-center gap-1">
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                          </div>
+                          <p class="mb-4 sm:mb-5 lg:mb-6 text-nc20 max-sm:text-center">The process was seamless, thanks
+                            to the knowledgeable and professional team at Solar Eco They patiently explained every step,
+                            addressing all my queries and concerns, making me feel confident about my choice.</p>
+                          <h4 class="mb-1 font-semibold text-nc20 max-sm:text-center">Alex John Martin</h4>
+                          <span class="text-lg text-nc20 max-sm:text-center">Manager</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="items-wrapper">
+                      <div class="flex flex-wrap sm:flex-nowrap max-sm:justify-center items-center gap-4 sm:gap-8">
+                        <div class="">
+                          <img class="w-max-unset max-unset rounded-xl" src="../assets/images/testimonial-men-two.png"
+                            alt="Image">
+                        </div>
+                        <div class="">
+                          <div class="flex items-center max-sm:justify-center gap-1">
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                            <i class="ph-fill ph-star text-nc50"></i>
+                          </div>
+                          <p class="mb-4 sm:mb-5 lg:mb-6 text-nc20 max-sm:text-center">The process was seamless, thanks
+                            to the knowledgeable and professional team at Solar Eco They patiently explained every step,
+                            addressing all my queries and concerns, making me feel confident about my choice.</p>
+                          <h4 class="mb-1 font-semibold text-nc20 max-sm:text-center">Sagor Sheikh</h4>
+                          <span class="text-lg text-nc20 max-sm:text-center">Manager</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TESTIMONIALS End -->
+  <!-- BLOG Section Starts -->
+  <section class="py-8 md:py-10 lg:py-[50px]">
+    <div class="container">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 lg:mb-[60px]">
+        <h5 class="py-3 px-5 bg-nc40 rounded-2xl inline-block font-normal">OUR BLOG</h5>
+      </div>
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full md:col-span-6 xl:col-span-4">
+          <div
+            class="p-3 md:p-4 lg:p-5 rounded-xl bg-nc10 relative  before:absolute before:bottom-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700"
+            data-aos="fade-up" data-aos-duration="1000">
+            <div class="relative z-40">
+              <div class="mb-4 md:mb-6">
+                <img class="rounded-xl w-full" src="assets/images/prime-your-agency.png" alt="Icon">
+              </div>
+              <span class="text-base text-nc40 font-light mb-3">February 8, 2024 Branding</span>
+              <a href="../blog-details.html">
+                <h3 class="mb-4 md:mb-6 lg:mb-10 text-nc20">Prime Your Agency: WordPress Theme Pick"</h3>
+              </a>
+              <a href="../blog-details.html" class="underline font-normal text-nc20 pb-3 md:pb-5">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6 xl:col-span-4">
+          <div
+            class="p-3 md:p-4 lg:p-5 rounded-xl bg-nc10 relative  before:absolute before:bottom-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700"
+            data-aos="fade-up" data-aos-duration="1400">
+            <div class="relative z-40">
+              <div class="mb-4 md:mb-6">
+                <img class="rounded-xl w-full" src="assets/images/ways-of-lying.png" alt="Icon">
+              </div>
+              <span class="text-base text-nc40 font-light mb-3">February 8, 2024 Branding</span>
+              <a href="../blog-details.html">
+                <h3 class="mb-4 md:mb-6 lg:mb-10 text-nc20">Ways of lying to yourself about relationship.</h3>
+              </a>
+              <a href="../blog-details.html" class="underline font-normal text-nc20 pb-3 md:pb-5">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-6 xl:col-span-4">
+          <div
+            class="p-3 md:p-4 lg:p-5 rounded-xl bg-nc10 relative  before:absolute before:bottom-0 before:right-0 before:w-1 before:h-1 before:opacity-0 before:rounded-xl before:bg-secondary1  hover:before:w-full hover:before:h-full hover:before:opacity-100 before:duration-700"
+            data-aos="fade-up" data-aos-duration="1800">
+            <div class="relative z-40">
+              <div class="mb-4 md:mb-6">
+                <img class="rounded-xl w-full" src="assets/images/how-to-bring.png" alt="Icon">
+              </div>
+              <span class="text-base text-nc40 font-light mb-3">February 8, 2024 Branding</span>
+              <a href="../blog-details.html">
+                <h3 class="mb-4 md:mb-6 lg:mb-10 text-nc20">How to bring fold to your startup company..</h3>
+              </a>
+              <a href="../blog-details.html" class="underline font-normal text-nc20 pb-3 md:pb-5">VIEW DETAILS <i
+                  class="ph-bold ph-arrow-up-right max-md:text-lg"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BLOG Section ends -->
+  <!-- CONTACT Section starts -->
+  <section class="py-8 md:py-10 lg:py-[50px]">
+    <div class="container px-3 py-6 sm:p-6 md:p-10 lg:p-[60px] bg-nc40 rounded-3xl">
+      <div class="grid grid-cols-12 gap-4 lg:gap-6">
+        <div class="col-span-full">
+          <span class="display-1 mb-3 md:mb-4 text-center" data-aos="zoom-in" data-aos-duration="2000">Got any Creative
+            Projects on your Mind?</span>
+          <p class="text-lg text-center">We have a feeling that this is the beginning of something wonderful. Send us an
+            email with your project needs, and we’ll get back to you within 1-2 business days (probably sooner).</p>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="border border-nc30 rounded-3xl px-3 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-7 md:py-9 lg:py-12 text-center"
+            data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="0"
+            data-aos-offset="0">
+            <span class="size-[80px] p-3 md:p-5 bg-[#99c3061a] rounded-full d-center mx-auto mb-4 md:mb-6">
+              <i class="ph-fill ph-chats text-3xl text-secondary1"></i>
+            </span>
+            <h3 class="mb-3">Chat to support</h3>
+            <span class="mb-4 md:mb-6">Speak to our friendly team.</span>
+            <a href="mailto:support@servibe.com" class="">support@servibe.com</a>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="border border-nc30 rounded-3xl px-3 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-7 md:py-9 lg:py-12 text-center"
+            data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="0"
+            data-aos-offset="0">
+            <span class="size-[80px] p-3 md:p-5 bg-[#99c3061a] rounded-full d-center mx-auto mb-4 md:mb-6">
+              <i class="ph-fill ph-map-pin text-3xl text-secondary1"></i>
+            </span>
+            <h3 class="mb-3">Visit us</h3>
+            <span class="mb-4 md:mb-6">Visit our office HQ.</span>
+            <a href="https://maps.app.goo.gl/bE7DRDm1bsN8nGSp9" target="_blank" class="">View on Google Maps</a>
+          </div>
+        </div>
+        <div class="col-span-full sm:col-span-6 lg:col-span-4">
+          <div
+            class="border border-nc30 rounded-3xl px-3 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-7 md:py-9 lg:py-12 text-center"
+            data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay="0"
+            data-aos-offset="0">
+            <span class="size-[80px] p-3 md:p-5 bg-[#99c3061a] rounded-full d-center mx-auto mb-4 md:mb-6">
+              <i class="ph-fill ph-phone text-3xl text-secondary1"></i>
+            </span>
+            <h3 class="mb-3">Contact Us</h3>
+            <span class="mb-4 md:mb-6">Mon-Fri from 8am to 5pm.</span>
+            <a href="tel:(239) 555-0108" class="">(239) 555-0108</a>
+          </div>
+        </div>
+        <div class="col-span-full">
+          <div class="border border-nc30 px-3 py-6 sm:p-6 md:p-10 lg:p-[60px] rounded-3xl">
+            <h1 class="mb-8 md:mb-10 lg:mb-[60px] leading-8 max-sm:text-center">CONNECT WITH EASE</h1>
+            <form action="">
+              <div class="flex items-center max-sm:flex-wrap gap-4 md:gap-6 mb-4 md:mb-6">
+                <input type="text" class="w-full rounded-xl border border-nc30 p-4 md:p-5 font-light"
+                  placeholder="Name">
+                <input type="email" class="w-full rounded-xl border border-nc30 p-4 md:p-5 font-light"
+                  placeholder="Email">
+              </div>
+              <textarea rows="6" name="" id=""
+                class="w-full rounded-xl border border-nc30 p-4 md:p-5 font-light mb-4 md:mb-6"
+                placeholder="Messages"></textarea>
+              <button class="w-full bg-secondary1 text-nc20 rounded-xl p-4 md:p-5 font-semibold">Send Message</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-span-full">
+          <div class="px-3 py-6 sm:p-6 md:p-10 lg:p-[60px] bg-secondary1 rounded-3xl text-center" data-aos="flip-left"
+            data-aos-duration="1000">
+            <div class="flex items-center justify-center gap-3 sm:gap-6 md:gap-8 mb-8 md:mb-10 lg:mb-[60px]">
+              <a href="#" class="size-[60px] md:size-[80px] bg-nc20 rounded-xl p-3 md:p-5 d-center"><i
+                  class="ph-fill ph-instagram-logo text-secondary1 fs-one"></i></a>
+              <a href="#" class="size-[60px] md:size-[80px] bg-nc20 rounded-xl p-3 md:p-5 d-center"><i
+                  class="ph-fill ph-twitch-logo text-secondary1 fs-one"></i></a>
+              <a href="#" class="size-[60px] md:size-[80px] bg-nc20 rounded-xl p-3 md:p-5 d-center"><i
+                  class="ph-fill ph-linkedin-logo text-secondary1 fs-one"></i></a>
+              <a href="#" class="size-[60px] md:size-[80px] bg-nc20 rounded-xl p-3 md:p-5 d-center"><i
+                  class="ph-fill ph-youtube-logo text-secondary1 fs-one"></i></a>
+            </div>
+            <h1 class="text-nc20 font-semibold mb-3 leading-8">FOLLOW US IN OUR SOCIAL MEDIA</h1>
+            <span class="text-base text-nc20 font-light">Sneak a Peak in the Life at ReCraft, in our social media</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact section ends -->
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/plguins.js"></script>
+  <script src="./assets/js/plguins-custom.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

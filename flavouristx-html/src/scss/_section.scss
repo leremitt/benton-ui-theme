@@ -1,0 +1,457 @@
+// Header Starts
+.show {
+  @apply hidden duration-500;
+
+}
+
+#mobileMenu {
+  @apply md:hidden
+}
+
+.cmnhed {
+  @apply lg:text-xl;
+
+  .active {
+    // color: #FEC92F;
+    text-decoration: underline;
+  }
+}
+
+
+.navbar-nav {
+
+  &.active,
+  &:hover {
+    color: red;
+  }
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.mainmenu:hover .mainmenu-hover\:visible {
+  visibility: visible;
+  transition: 0.5s linear;
+}
+
+.underout {
+  text-decoration: none !important;
+}
+
+.customunder {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.textd {
+  text-decoration: none !important;
+}
+
+// Header Ends
+// Lodaer Starts
+.pre-item {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+	background: #1C1C1C;
+	height: 100%;
+	width: 100%;
+}
+// Lodaer ends
+
+// Preloader Starts
+#cooking {
+  // position: relative;
+  // margin: 0 auto;
+  // top: 0;
+  width: 75vh;
+  height: 75vh;
+  overflow: hidden;
+}
+
+#cooking #area {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  transform-origin: 15% 60%;
+  animation: flip 2.1s ease-in-out infinite;
+}
+
+#cooking #area #sides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 15% 60%;
+  animation: switchSide 2.1s ease-in-out infinite;
+}
+
+#cooking #area #sides #handle {
+  position: absolute;
+  bottom: 18%;
+  right: 80%;
+  width: 35%;
+  height: 20%;
+  background-color: transparent;
+  border-top: 1vh solid #F47500;
+  border-left: 1vh solid transparent;
+  border-radius: 100%;
+  transform: rotate(20deg) rotateX(0deg) scale(1.3, 0.9);
+}
+
+#cooking #area #sides #pan {
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+  width: 50%;
+  height: 8%;
+  background-color: #D0CDD0;
+  border-radius: 0 0 1.4em 1.4em;
+  transform-origin: -15% 0;
+}
+
+#cooking #area #pancake {
+  position: absolute;
+  top: 24%;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(85deg);
+  animation: jump 2.1s ease-in-out infinite;
+}
+
+#cooking #area #pancake #pastry {
+  position: absolute;
+  bottom: 26%;
+  right: 37%;
+  width: 40%;
+  height: 45%;
+  background-color: #EBC18B;
+  box-shadow: 0 0 3px 0 #EBC18B;
+  border-radius: 100%;
+  transform-origin: -20% 0;
+  animation: fly 2.1s ease-in-out infinite;
+}
+
+#cooking .bubble {
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 0 0.25vh #BE9500;
+  opacity: 0;
+}
+
+#cooking .bubble:nth-child(1) {
+  margin-top: 2.5vh;
+  left: 58%;
+  width: 2.5vh;
+  height: 2.5vh;
+  background-color: #BE9500;
+  animation: bubble 2s cubic-bezier(0.53, 0.16, 0.39, 0.96) infinite;
+}
+
+#cooking .bubble:nth-child(2) {
+  margin-top: 3vh;
+  left: 52%;
+  width: 2vh;
+  height: 2vh;
+  background-color: #BE9500;
+  animation: bubble 2s ease-in-out 0.35s infinite;
+}
+
+#cooking .bubble:nth-child(3) {
+  margin-top: 1.8vh;
+  left: 50%;
+  width: 1.5vh;
+  height: 1.5vh;
+  background-color: #BE9500;
+  animation: bubble 1.5s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
+}
+
+#cooking .bubble:nth-child(4) {
+  margin-top: 2.7vh;
+  left: 56%;
+  width: 1.2vh;
+  height: 1.2vh;
+  background-color: #BE9500;
+  animation: bubble 1.8s cubic-bezier(0.53, 0.16, 0.39, 0.96) 0.55s infinite;
+}
+
+#cooking .bubble:nth-child(5) {
+  margin-top: 2.7vh;
+  left: 63%;
+  width: 1.1vh;
+  height: 1.1vh;
+  background-color: #BE9500;
+  animation: bubble 1.6s ease-in-out 1s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0.25;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  5% {
+    transform: rotate(-27deg);
+  }
+
+  30%,
+  50% {
+    transform: rotate(0deg);
+  }
+
+  55% {
+    transform: rotate(27deg);
+  }
+
+  83.3% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes switchSide {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 24;
+    transform: rotateX(85deg);
+  }
+
+  25% {
+    top: 10%;
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    top: 30%;
+    transform: rotateX(85deg);
+  }
+
+  75% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(85deg);
+  }
+}
+
+@keyframes fly {
+  0% {
+    bottom: 26%;
+    transform: rotate(0deg);
+  }
+
+  10% {
+    bottom: 40%;
+  }
+
+  50% {
+    bottom: 26%;
+    transform: rotate(-190deg);
+  }
+
+  80% {
+    bottom: 40%;
+  }
+
+  100% {
+    bottom: 26%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.15, 0.15);
+    top: 80%;
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.33, 0.33);
+    top: 60%;
+    opacity: 0;
+  }
+}
+
+// Preloader Ends
+// brad-carousel Starts
+// brad-carousel Starts
+.brad-carousel,
+.brad-carousel-show {
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+}
+
+// brad-carousel Ends
+// brad-carousel Ends
+// Countdown Starts
+.counters {
+  span {
+    line-height: inherit;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+  }
+}
+
+// Countdown Ends
+
+.ball {
+  animation: spin-clockwise 12s infinite linear;
+}
+
+@keyframes spin-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+  ;
+}
+
+.box-overly {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+  }
+}
+
+.rotated_animat {
+  animation: rotated_animat 6s linear infinite;
+}
+
+.rotated_animattwo {
+  animation: rotated-animattwo 40s linear infinite;
+}
+
+.rotated_two {
+  animation: rotated_two 6s linear infinite;
+}
+
+@keyframes rotated-animattwo {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotated_animat {
+  0% {
+    transform: rotate(0deg) scale(1);
+    // opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1) scale(0.9);
+    opacity: 1;
+  }
+
+  // 100% {
+  //   transform: rotate(360deg) scale(1);
+  //   // opacity: 0.7;
+  // }
+}
+
+@keyframes rotated_two {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+.line-horizontal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right,
+      transparent 50%,
+      rgb(34, 46, 72, 0.4) 50%);
+  background-size: 10px 100%;
+}
+
+// Image Animation Starts
+.gless-one {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+}
+
+// Image Animation Ends

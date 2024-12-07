@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- ============ swiper js css  ============ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============ odometer css  ============ -->
+    <link href="https://github.hubspot.com/odometer/themes/odometer-theme-default.css" rel="stylesheet" />
+    <!-- ============ aos css  ============ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- ============ phosphor icons  ============ -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- ============ site favicon  ============ -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <title>Menu Details - Coffee Shop Website Template</title>
+  <script defer src="index.js"></script><link href="style.css" rel="stylesheet"></head>
+
+  <body class="bg-white-1 text-secondary text-base p-4 sm:p-6">
+    <main class="custom-container grid grid-cols-12 gap-6">
+      <!-- ================= side video ================= -->
+      <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="col-span-12 xl:col-span-4 3xl:col-span-6">
+  <div class="sticky top-4 sm:top-6">
+    <div class="md:max-h-[90vh] max-lg:h-[450px] mb-6 lg:h-dvh">
+      <!-- For use image -->
+      <!-- <img class="imagemain" src="images/panthouse-tonic.png" alt="icon"> -->
+      <video class="w-full h-full object-cover rounded-3xl" muted loop autoplay>
+        <source src="https://softivuspro.com/rest/Coffee%20Shop.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>
+
+      <div class="col-span-12 xl:col-span-8 overflow-hidden 3xl:col-span-6 flex flex-col gap-10 bg-white-4 rounded-20px p-4 md:p-6">
+        <!-- ================= header ================= -->
+        <div
+  data-aos="zoom-in"
+  data-aos-anchor-placement="top-bottom"
+  data-aos-duration="1500"
+  class="border border-white-3 rounded-20px theme-transition-3 z-50 relative flex w-full items-center justify-between px-5 py-4"
+>
+  <div class="m-text relative font-medium">
+    <button id="mobile-menu-btn" class="text-secondary flex items-center gap-2">
+      <i class="ph ph-list text-4xl"></i>
+    </button>
+    <!--  menu items  -->
+    <div
+      id="mobile-menu"
+      class="hide absolute left-0 top-full z-50 w-64 origin-top-left rounded-md bg-black-4 p-4 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)] duration-500"
+    >
+      <ul class="menu flex flex-col rounded-md bg-white-1 py-3">
+        <li
+          class="active block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="index.html" class="single-menu">Home</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="about.html" class="single-menu">About</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="menu.html" class="single-menu">Menu</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="menu-details.html" class="single-menu">Menu Details</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="blog.html" class="single-menu">Blog</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="blog-details.html" class="single-menu">Blog Details</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="reservation.html" class="single-menu">Reservation</a>
+        </li>
+        <li
+          class="block cursor-pointer rounded-md px-4 py-2 duration-500 hover:text-primary"
+        >
+          <a href="contact.html" class="single-menu">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- logo -->
+  <div>
+    <a href="/">
+      <img
+        src="./assets/images/logo.png"
+        alt="Desktop Logo"
+        class="max-xs:w-25"
+      />
+    </a>
+  </div>
+  <!-- button -->
+  <div class="btn-area max-sm:hidden z-20">
+    <a
+      href="./reservation.html"
+      aria-label="Contact"
+      class="move-btn theme-transition-4 flex items-center text-center text-secondary"
+    >
+      <span
+        class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-black-4 px-8 py-3 font-medium capitalize"
+      >
+        Reservation
+      </span>
+      <span
+        class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-black-4 bg-black-4 p-2.5 text-center"
+      >
+        <i
+          class="ph ph-arrow-up-right text-[24px]"
+          data-icon-name="arrow-right"
+        >
+        </i>
+      </span>
+    </a>
+  </div>
+</div>
+
+        <!-- ================= menu details banner ================== -->
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1500"
+          class="rounded-3xl menu-details-banner bg-cover bg-no-repeat overflow-hidden after:bg-[linear-gradient(0deg,rgba(0,35,39,0.50)_0%,rgba(100,126,129,0.50)_100%)] relative after:top-0 after:left-0 after:h-full after:w-full after:absolute after:z-10"
+        >
+          <div class="spy120px mx-auto max-w-[665px] flex flex-col z-20 relative">
+            <h2 class="border bg-black-4/90 h2 font-bold text-center w-fit mx-auto rounded-lg border-white-2 p-6">Hazelnut Americano</h2>
+            <p class="l-text spt40px text-center">From the robust depths of freshly roasted beans to the aromatic highs of our specialty drinks, every selection tells a story.</p>
+            <div class="flex items-center justify-center gap-3 spt40px">
+              <a href="#" class="spx60px py-3 rounded-md border h6 font-bold border-white-2 bg-black-4"> Explore </a>
+            </div>
+          </div>
+        </div>
+        <!-- ================= coffees slider ================== -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-lg overflow-hidden p-6 border border-black-3 bg-black-4/90">
+          <div class="about-slider smooth">
+            <div class="swiper-wrapper">
+              <!-- swiper slide -->
+              <div class="swiper-slide w-fit">
+                <div class="flex gap-8">
+                  <span class="h2 font-bold text-black-3">COFFEES</span>
+                  <img src="./assets/images/star.png" alt="star" />
+                </div>
+              </div>
+              <!-- swiper slide -->
+              <div class="swiper-slide w-fit">
+                <div class="flex gap-8">
+                  <span class="h2 font-bold text-black-3">COFFEES</span>
+                  <img src="./assets/images/star.png" alt="star" />
+                </div>
+              </div>
+              <!-- swiper slide -->
+              <div class="swiper-slide w-fit">
+                <div class="flex gap-8">
+                  <span class="h2 font-bold text-black-3">COFFEES</span>
+                  <img src="./assets/images/star.png" alt="star" />
+                </div>
+              </div>
+              <!-- swiper slide -->
+              <div class="swiper-slide w-fit">
+                <div class="flex gap-8">
+                  <span class="h2 font-bold text-black-3">COFFEES</span>
+                  <img src="./assets/images/star.png" alt="star" />
+                </div>
+              </div>
+              <!-- swiper slide -->
+              <div class="swiper-slide w-fit">
+                <div class="flex gap-8">
+                  <span class="h2 font-bold text-black-3">COFFEES</span>
+                  <img src="./assets/images/star.png" alt="star" />
+                </div>
+              </div>
+              <!-- swiper slide -->
+              <div class="swiper-slide w-fit">
+                <div class="flex gap-8">
+                  <span class="h2 font-bold text-black-3">COFFEES</span>
+                  <img src="./assets/images/star.png" alt="star" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= menu details price card ================== -->
+        <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="rounded-20px border relative border-black-4 sp40px">
+          <div class="max-w-[700px] mx-auto">
+            <div class="rounded-full w-fit mx-auto h2 border border-black-3 bg-black-4/90 p-4">$10</div>
+            <h3 class="h3 font-bold text-center spt40px">A delightful fusion of our classic mocha with hints of coconut</h3>
+            <p class="h5 font-body-font text-white-2 text-center spt32px">Tropical Mocha Bliss</p>
+          </div>
+        </div>
+        <!-- ================= Our specials section ================= -->
+        <div class="rounded-20px border relative border-black-4 sp32px">
+          <h5 class="h5 font-bold text-primary text-center">From our menu</h5>
+          <h3 class="h3 font-bold text-secondary text-center pt-3">Other tastes & flavors</h3>
+          <div class="flex flex-col gap-6 xxl:gap-10 3xl:gap-15 spt40px">
+            <!-- card one -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <div class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center">Tropical Mocha Bliss</h2>
+                <p class="l-text text-white-2">Coffees</p>
+              </div>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+            <!-- card two -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <div class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center">Hazelnut Americano</h2>
+                <p class="l-text text-white-2">Coffees</p>
+              </div>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+            <!-- card three -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <div class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center">Caramel Latte</h2>
+                <p class="l-text text-white-2">Coffees</p>
+              </div>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+            <!-- card four -->
+            <div class="h-px w-full bg-white-3/60"></div>
+            <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="hover-image group/card relative gap-6">
+              <div class="text-center">
+                <h2 class="h1 font-bold text-white-2 text-center">Mocha Frappuccino</h2>
+                <p class="l-text text-white-2">Coffees</p>
+              </div>
+              <div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one-small pointer-events-none absolute top-1/2 z-20 hidden left-0 h-[118px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+                <div
+                  class="case-study-hover theme-transition-3 home-one-hover-image-one pointer-events-none absolute top-1/2 right-0 z-20 hidden h-[202px] w-[160px] -translate-y-1/2 overflow-hidden rounded-md bg-cover bg-no-repeat opacity-0 group-hover/card:opacity-100 md:block"
+                ></div>
+              </div>
+            </div>
+            <div class="h-px w-full bg-white-3/60"></div>
+          </div>
+          <!-- button -->
+          <div class="btn-area w-fit mx-auto spt40px z-20">
+            <a href="#" aria-label="Contact" class="move-btn theme-transition-4 flex items-center text-center text-secondary">
+              <span class="one m-text theme-transition-4 min-h-[45px] rounded-2xl bg-black-4 px-8 py-3 font-medium capitalize"> View All Menu </span>
+              <span class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-2xl border border-black-4 bg-black-4 p-2.5 text-center">
+                <i class="ph ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- ================= footer section ================= -->
+        <footer class="bg-white-1 rounded-20px sp32px">
+  <div class="flex items-center gap-2 text-primary mx-auto w-fit">
+    <i class="ph ph-instagram-logo text-2xl"></i>
+    <span class="h5 font-bold">Instagram</span>
+  </div>
+  <div
+    class="flex items-center justify-center gap-4 max-lg:flex-wrap lg:gap-6 spt32px"
+  >
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-1.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-2.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-3.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-4.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+    <div
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1500"
+    >
+      <img
+        src="./assets/images/instagram-image-5.png"
+        alt="A delicious cup of coffee beans in a bustling coffee shop"
+        class="rounded-20px"
+      />
+    </div>
+  </div>
+  <div class="flex items-center gap-3 mx-auto w-fit spt60px">
+    <div>
+      <img src="./assets/images/coffe-cup.png" alt="coffee cup" />
+    </div>
+    <div>
+      <img src="./assets/images/logo.png" alt="Logo" />
+    </div>
+  </div>
+  <!-- footer menu -->
+  <div
+    data-aos="fade-right"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1500"
+    class="spt40px flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-11"
+  >
+    <a
+      href="/index.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Home
+    </a>
+    <a
+      href="/about.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      About
+    </a>
+    <a
+      href="/menu.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Menu
+    </a>
+    <a
+      href="/blog.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Blog
+    </a>
+    <a
+      href="/contact.html"
+      class="hover:text-primary hover:border-primary theme-transition-3 border-transparent border-b h5 font-bold"
+    >
+      Contact
+    </a>
+  </div>
+  <!-- social icons -->
+  <div
+    data-aos="fade-left"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1200"
+    class="flex items-center spb48px mx-auto spt48px w-fit gap-3 aos-init aos-animate"
+  >
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-facebook-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-instagram-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-twitch-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+    <a
+      href="/"
+      class="group theme-transition-3 flex size-12 items-center justify-center rounded-full border border-black-4 hover:bg-primary"
+    >
+      <i
+        class="ph ph-linkedin-logo theme-transition-3 shrink-0 text-[24px] text-secondary group-hover:text-white-1"
+      ></i>
+    </a>
+  </div>
+  <!-- copyright -->
+  <div
+    data-aos="fade-right"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="1200"
+    class="border-t mx-auto spt48px border-black-4"
+  >
+    <div class="flex items-center gap-3 max-[480px]:flex-col w-fit mx-auto">
+      <p class="l-text font-medium">Copyright @ 2024 Caffez</p>
+      <div class="h-5 w-0.5 bg-secondary max-[480px]:hidden"></div>
+      <p class="xl-text font-medium text-secondary">
+        Designed By
+        <a href="/" class="text-primary underline">Pixelaxis</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+      </div>
+    </main>
+
+    <!-- ============ swiper plugin js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ============ aos js ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ============ flatpickr js ============ -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- ============ emailjs plugin js ============ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- ============ odometer plugin js ============ -->
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- ============= main js ============ -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ============= index js ============ -->
+    <script src="./index.js"></script>
+  </body>
+</html>
